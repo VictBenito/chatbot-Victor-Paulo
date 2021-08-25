@@ -6,7 +6,7 @@ por temas.
 """
 
 if __name__ == '__main__':
-    with open('filtered_qna.json', 'rb') as f:
+    with open('results/filtered_qna.json', 'rb') as f:
         filtered = json.load(f)
 
     skip = ['hemp', 'canola', 'cbd', 'car', 'tanker', 'salt lake', 'argan', 'town', 'color',

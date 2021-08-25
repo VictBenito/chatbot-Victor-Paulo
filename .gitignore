@@ -1,5 +1,5 @@
 # msmarco completo
-train_v2.1.json
+data/train_v2.1.json
 
 .idea/
 .ipnb_checkpoints/

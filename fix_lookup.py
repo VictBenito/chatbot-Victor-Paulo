@@ -33,7 +33,7 @@ if __name__ == '__main__':
     with open('data/train_v2.1_wellFormedAnswers.json', 'r') as marco_wfanswers:
         marco_wfanswers = json.load(marco_wfanswers)
 
-    with open('lookup_table.json', 'r') as lookupfile:
+    with open('results/lookup_table.json', 'r') as lookupfile:
         lookup_table = json.load(lookupfile)
 
     # substituir chaves pelas corretas
@@ -50,5 +50,6 @@ if __name__ == '__main__':
         final[qid] = temp
 
     print('Feito! Salvando...')
-    with open('filtered_qna.json', 'w') as finalfile:
+    with open('results/filtered_qna.json', 'w') as finalfile:
         json.dump(final, finalfile)
+
