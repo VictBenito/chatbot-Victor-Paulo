@@ -27,18 +27,25 @@ def main():
                 df.loc[i, "chatbot?"] = 0
                 i += 1
                 break
-            elif inp == "b":
-                df.loc[i, "chatbot?"] = -1
+            elif inp in ("b", "back"):
+                df.loc[i - 1, "chatbot?"] = -1
                 i -= 1
                 break
-            elif inp == "s":
+            elif inp in ("s", "save"):
                 salvar = input("Salvar? s/n") == "s"
                 if salvar:
                     with pd.ExcelWriter(
-                        "results/Perguntas.xlsx", mode="a", if_sheet_exists="replace"
+                        "results/Perguntas.xlsx",
+                        mode="a",
+                        engine="openpyxl",
+                        if_sheet_exists="replace",
                     ) as writer:
                         df.to_excel(writer, sheet_name="edited")
+                        print("Salvo!")
                 return
+            elif inp in ("t", "tags"):
+                print("Tags disponíveis:", tag_cols)
+                continue
             inputs = inp.split(",")
             inputs = list(map(lambda x: x.lower().strip(), inputs))
             try:
