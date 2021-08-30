@@ -18,20 +18,30 @@ def main():
             # já preenchi
             i += 1
             continue
-        print("Original:", row["original"])
-        print("Pergunta:", row["pergunta"])
+        print(f"Original: {row['original']}\nPergunta: {row['pergunta']}")
         # tentar obter input do usuário até ele digitar algo válido
         while True:
-            inp = input("-- ")
-            if inp == "":
+            input_sequence = input("-- ")
+            if input_sequence == "":
                 df.loc[i, "chatbot?"] = 0
                 i += 1
                 break
-            elif inp in ("b", "back"):
+            elif input_sequence in ("h", "help"):
+                print(
+                    "Comandos disponíveis:\n"
+                    "help (h): mostra esse texto\n"
+                    "back (b): volta para a pergunta anterior\n"
+                    "save (s): encerra e salva as mudanças\n"
+                    "tags (t): mostra as tags disponíveis"
+                )
                 df.loc[i - 1, "chatbot?"] = -1
                 i -= 1
                 break
-            elif inp in ("s", "save"):
+            elif input_sequence in ("b", "back"):
+                df.loc[i - 1, "chatbot?"] = -1
+                i -= 1
+                break
+            elif input_sequence in ("s", "save"):
                 salvar = input("Salvar? s/n") == "s"
                 if salvar:
                     with pd.ExcelWriter(
@@ -40,13 +50,13 @@ def main():
                         engine="openpyxl",
                         if_sheet_exists="replace",
                     ) as writer:
-                        df.to_excel(writer, sheet_name="edited")
+                        df.to_excel(writer, sheet_name="edited", index=False)
                         print("Salvo!")
                 return
-            elif inp in ("t", "tags"):
+            elif input_sequence in ("t", "tags"):
                 print("Tags disponíveis:", tag_cols)
                 continue
-            inputs = inp.split(",")
+            inputs = input_sequence.split(",")
             inputs = list(map(lambda x: x.lower().strip(), inputs))
             try:
                 chatbot = int(inputs[0])
@@ -59,6 +69,9 @@ def main():
                     df.loc[i, "tag_" + tag] = 1
                 else:
                     print("Tag não reconhecida:", tag)
+                    adicionar_tag = input("Adicionar a tag? s/n").lower().strip() == "s"
+                    if adicionar_tag:
+                        df.loc[i, "tag_" + tag] = 1
             df.loc[i, "chatbot?"] = chatbot
             i += 1
             break
