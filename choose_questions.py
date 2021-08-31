@@ -5,6 +5,8 @@
 
 import pandas as pd
 
+from utils import getInput
+
 
 def main():
     df = pd.read_excel("results/Perguntas.xlsx", "edited", dtype=str)
@@ -45,8 +47,7 @@ def main():
                 i -= 1
                 break
             elif input_sequence in ("s", "save"):
-                salvar = input("Salvar? s/n") == "s"
-                if salvar:
+                if getInput("Salvar?"):
                     with pd.ExcelWriter(
                         "results/Perguntas.xlsx",
                         mode="a",
@@ -66,13 +67,9 @@ def main():
             tags = inputs[1:]
             for tag in tags:
                 if tag not in available_tags:
-                    adicionar_tag = (
-                        input(f"Tag não reconhecida: {tag}\nAdicionar a tag? s/n")
-                        .lower()
-                        .strip()
-                        == "s"
-                    )
-                    if not adicionar_tag:
+                    if getInput(f"Tag não reconhecida: {tag}\nAdicionar a tag?"):
+                        available_tags += [tag]
+                    else:
                         continue
                 df.loc[i, "tag_" + tag] = 1
             df.loc[i, "chatbot?"] = chatbot
