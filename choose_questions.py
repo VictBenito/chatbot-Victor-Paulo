@@ -3,7 +3,7 @@
 # @Time:   25/08/2021
 # @Author: Gabriel O.
 
-from textwrap import fill, wrap
+from textwrap import wrap
 
 import pandas as pd
 
@@ -23,10 +23,11 @@ def main():
             # já preenchi
             i += 1
             continue
+        # printar as tags disponíveis
         formatted_tags = wrap(str(available_tags), width=90)
-        for i, line in enumerate(formatted_tags):
-            if i > 0:
-                formatted_tags[i] = "                   " + line
+        for j, line in enumerate(formatted_tags):
+            if j > 0:
+                formatted_tags[j] = "                   " + line
         formatted_tags = "\n".join(formatted_tags)
         buffer.add(
             f"Tags disponíveis: {formatted_tags}\n"
