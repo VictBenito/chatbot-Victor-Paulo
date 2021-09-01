@@ -3,6 +3,8 @@
 # @Time:   25/08/2021
 # @Author: Gabriel O.
 
+from textwrap import fill
+
 import pandas as pd
 
 from utils import getInput
@@ -21,7 +23,7 @@ def main():
             i += 1
             continue
         print(
-            f"Tags disponíveis: {available_tags}\n"
+            f"Tags disponíveis: {fill(str(available_tags), width=90)}\n"
             f"Original: {row['original']}\n"
             f"Pergunta: {row['pergunta']}"
         )
