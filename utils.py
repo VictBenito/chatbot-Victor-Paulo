@@ -2,6 +2,7 @@
 # @File:   utils.py
 # @Time:   29/06/2021
 # @Author: Gabriel O.
+from dataclasses import dataclass, field
 
 
 def getInput(message, dic: dict = None):
@@ -48,3 +49,19 @@ def sanitize(string) -> str:
         for acc in acentuadas:
             out = out.replace(acc, letra)
     return out
+
+
+@dataclass
+class Buffer:
+    _buffer: list = field(init=False, default_factory=list)
+
+    def add(self, string):
+        self._buffer.append(string)
+
+    def print(self, string: str = None):
+        if string:
+            print(string)
+        else:
+            message = "\n".join(self._buffer)
+            print(message)
+            self._buffer = []
