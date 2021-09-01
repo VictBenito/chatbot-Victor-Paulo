@@ -3,26 +3,38 @@
 
 import json
 from tqdm import tqdm
+import os
 
 
-def fix_lookup(lookup: dict, marco_query: dict) -> dict:
+def load_lookup(marco_query: dict) -> dict:
     """
     Por algum motivo, a lookup table não anotou corretamente o query id de cada query capturada.
     Então, para cada query presente na lookup table, iteramos sobre as queries do arquivo original
     até encontrar o id correto.
 
-    :param lookup: conteudo da lookup_table
     :param marco_query: queries do ms marco
     :return:
     """
-    new_lookup = {}
-    print("Consertando lookup! ~1min")
-    for l_index, l_query in tqdm(lookup["Doc"].items()):
-        real_key = next(
-            m_index for m_index, m_query in marco_query.items() if m_query == l_query
-        )
-        new_lookup[real_key] = l_query
-    return new_lookup
+
+    if os.path.exists("results/lookup_table_fixed.json"):
+        with open("results/lookup_table_fixed.json", "r") as file:
+            lookup_table_fixed = json.load(file)
+    else:
+        with open("results/lookup_table.json", "r") as file:
+            lookup_table = json.load(file)
+        lookup_table_fixed = {}
+        print("Consertando lookup! ~1min")
+        for l_index, l_query in tqdm(lookup_table["Doc"].items()):
+            real_key = next(
+                m_index
+                for m_index, m_query in marco_query.items()
+                if m_query == l_query
+            )
+            lookup_table_fixed[real_key] = l_query
+
+        with open("results/lookup_table_fixed.json", "w") as file:
+            json.dump(lookup_table_fixed, file)
+    return lookup_table_fixed
 
 
 def extract_questions():
@@ -36,11 +48,8 @@ def extract_questions():
     with open("data/train_v2.1_wellFormedAnswers.json", "r") as file:
         marco_wfanswers = json.load(file)
 
-    with open("results/lookup_table.json", "r") as file:
-        lookup_table = json.load(file)
-
-    # substituir chaves pelas corretas
-    lookup_table = fix_lookup(lookup_table, marco_query)
+    # carregar a lookup table
+    lookup_table = load_lookup(marco_query)
 
     final = {}
     print("Formando arquivo final...")
