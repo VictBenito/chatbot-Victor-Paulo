@@ -19,9 +19,8 @@ def getInput(message, dic: dict = None):
     else:
         dic = {k.lower().strip() for k in dic.keys()}
     while True:
-        input_str = sanitize(
-            input(f"{message} ({'/'.join([v[0] for k, v in dic.items()])})")
-        )
+        options = "/".join([v[0] for k, v in dic.items()])
+        input_str = sanitize(input(f"{message} ({options})"))
         try:
             out = next(key for key, value in dic.items() if input_str in value)
             return out
