@@ -57,15 +57,8 @@ def main():
                 i -= 1
                 break
             elif input_sequence in ("s", "save"):
-                if getInput("Salvar?"):
-                    with pd.ExcelWriter(
-                        "results/Perguntas.xlsx",
-                        mode="a",
-                        engine="openpyxl",
-                        if_sheet_exists="replace",
-                    ) as writer:
-                        df.to_excel(writer, sheet_name="edited", index=False)
-                        buffer.print("\nSalvo!")
+                save_df(df)
+                buffer.print("\nSalvo!")
                 return
             inputs = input_sequence.split(",")
             inputs = list(map(lambda x: x.lower().strip(), inputs))
@@ -85,6 +78,21 @@ def main():
             df.loc[i, "chatbot?"] = chatbot
             i += 1
             break
+        if i >= len(df):
+            buffer.print("Chegou ao fim do documento!")
+            save_df(df)
+            break
+
+
+def save_df(df: pd.DataFrame):
+    if getInput("Salvar?"):
+        with pd.ExcelWriter(
+            "results/Perguntas.xlsx",
+            mode="a",
+            engine="openpyxl",
+            if_sheet_exists="replace",
+        ) as writer:
+            df.to_excel(writer, sheet_name="edited", index=False)
 
 
 if __name__ == "__main__":
