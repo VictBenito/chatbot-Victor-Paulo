@@ -12,7 +12,7 @@ from utils import getInput, Buffer
 
 def main():
     buffer = Buffer()
-    df = pd.read_excel("results/Perguntas.xlsx", "edited", dtype=str)
+    df = pd.read_excel("results/Perguntas.xlsx", "editadas", dtype=str)
     df = df.fillna("")
     available_tags = [t.split("_", 1)[1] for t in df.columns if t.find("tag_") > -1]
     i = 0
@@ -92,7 +92,7 @@ def save_df(df: pd.DataFrame):
             engine="openpyxl",
             if_sheet_exists="replace",
         ) as writer:
-            df.to_excel(writer, sheet_name="edited", index=False)
+            df.to_excel(writer, sheet_name="editadas", index=False)
 
 
 if __name__ == "__main__":
