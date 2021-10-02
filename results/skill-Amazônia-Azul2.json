@@ -1100,7 +1100,7 @@
                 "contexto": "corais"
             },
             "conditions": "#corais--definir || @modificador:definir && $contexto==\"corais\" || @modificador:definir && @rotulos:corais",
-            "dialog_node": "node_db375932302a4fe2"
+            "dialog_node": "node_0787da2ed2f54fe8"
         },
         {
             "type": "standard",
@@ -1122,8 +1122,8 @@
                 "contexto": "corais"
             },
             "conditions": "#corais--composicao || @modificador:composicao && $contexto==\"corais\" || @modificador:composicao && @rotulos:corais",
-            "dialog_node": "node_935388d0cb614e54",
-            "previous_sibling": "Corais: definir"
+            "dialog_node": "node_7278e09c952a4ac3",
+            "previous_sibling": "node_0787da2ed2f54fe8"
         },
         {
             "type": "standard",
@@ -1145,8 +1145,8 @@
                 "contexto": "petróleo"
             },
             "conditions": "#petroleo--maiores-reserva || @modificador:maiores && @substantivo:reserva && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:reserva && @rotulos:petroleo",
-            "dialog_node": "node_46c65aa2730f4a0d",
-            "previous_sibling": "Corais: composição"
+            "dialog_node": "node_7abea96829614a6d",
+            "previous_sibling": "node_7278e09c952a4ac3"
         },
         {
             "type": "standard",
@@ -1168,8 +1168,8 @@
                 "contexto": "gás"
             },
             "conditions": "#gas--maiores-estado-producao || @modificador:maiores && @substantivo:estado && @recipiente:producao && $contexto==\"gas\" || @modificador:maiores && @substantivo:estado && @recipiente:producao && @rotulos:gas",
-            "dialog_node": "node_aa08f5865bfe4761",
-            "previous_sibling": "Petróleo: maiores reservas ?"
+            "dialog_node": "node_ba325f019a084265",
+            "previous_sibling": "node_7abea96829614a6d"
         },
         {
             "type": "standard",
@@ -1191,8 +1191,8 @@
                 "contexto": "petróleo"
             },
             "conditions": "#petroleo--maiores-estado-producao || @modificador:maiores && @substantivo:estado && @recipiente:producao && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:estado && @recipiente:producao && @rotulos:petroleo",
-            "dialog_node": "node_bb15f9df54984287",
-            "previous_sibling": "Gás: maiores estados produtores?"
+            "dialog_node": "node_cc6ca94b55bb4dbe",
+            "previous_sibling": "node_ba325f019a084265"
         },
         {
             "type": "standard",
@@ -1214,8 +1214,8 @@
                 "contexto": "petróleo"
             },
             "conditions": "#petroleo--quantidade || @modificador:quantidade && $contexto==\"petroleo\" || @modificador:quantidade && @rotulos:petroleo",
-            "dialog_node": "node_ecc6b62d744c4071",
-            "previous_sibling": "Petróleo: maiores estados produtores?"
+            "dialog_node": "node_d681a618515541d6",
+            "previous_sibling": "node_cc6ca94b55bb4dbe"
         },
         {
             "type": "standard",
@@ -1237,8 +1237,8 @@
                 "contexto": "gás"
             },
             "conditions": "#gas--quantidade-consumo || @modificador:quantidade && @recipiente:consumo && $contexto==\"gas\" || @modificador:quantidade && @recipiente:consumo && @rotulos:gas",
-            "dialog_node": "node_ee9b0d4852c44fd6",
-            "previous_sibling": "Petróleo: quantidade no Brasil?"
+            "dialog_node": "node_826000eb1c9b49cf",
+            "previous_sibling": "node_d681a618515541d6"
         },
         {
             "type": "standard",
@@ -1260,8 +1260,8 @@
                 "contexto": "petróleo"
             },
             "conditions": "#petroleo--localizacao || @modificador:localizacao && $contexto==\"petroleo\" || @modificador:localizacao && @rotulos:petroleo",
-            "dialog_node": "node_02659194d2894a7f",
-            "previous_sibling": "Gás: quantidade consumo?"
+            "dialog_node": "node_4768c3bfb373403d",
+            "previous_sibling": "node_826000eb1c9b49cf"
         },
         {
             "type": "standard",
@@ -1283,8 +1283,8 @@
                 "contexto": "petróleo"
             },
             "conditions": "#petroleo--quantidade-producao || @modificador:quantidade && @recipiente:producao && $contexto==\"petroleo\" || @modificador:quantidade && @recipiente:producao && @rotulos:petroleo",
-            "dialog_node": "node_32fa4372c4894602",
-            "previous_sibling": "Petróleo: localização"
+            "dialog_node": "node_670190ed04cb4da2",
+            "previous_sibling": "node_4768c3bfb373403d"
         },
         {
             "type": "standard",
@@ -1306,8 +1306,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definir-dieta || @modificador:definir && @recipiente:dieta && $contexto==\"tartarugas\" || @modificador:definir && @recipiente:dieta && @rotulos:tartarugas",
-            "dialog_node": "node_0da647804e9542c9",
-            "previous_sibling": "Petróleo: quantidade produção?"
+            "dialog_node": "node_6886bef23194477e",
+            "previous_sibling": "node_670190ed04cb4da2"
         },
         {
             "type": "standard",
@@ -1329,8 +1329,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--listar-especie || @modificador:listar && @substantivo:especie && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:especie && @rotulos:tartarugas",
-            "dialog_node": "node_e8267676ed5b444d",
-            "previous_sibling": "Tartarugas: definir dieta"
+            "dialog_node": "node_f32222c847b5413a",
+            "previous_sibling": "node_6886bef23194477e"
         },
         {
             "type": "standard",
@@ -1352,8 +1352,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--diferenca-jabuti || @modificador:diferenca && @substantivo:jabuti && $contexto==\"tartarugas\" || @modificador:diferenca && @substantivo:jabuti && @rotulos:tartarugas",
-            "dialog_node": "node_6a3baf31920d42f0",
-            "previous_sibling": "Tartarugas: listar espécies"
+            "dialog_node": "node_3636c495e7844b31",
+            "previous_sibling": "node_f32222c847b5413a"
         },
         {
             "type": "standard",
@@ -1375,8 +1375,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--pertence-jabuti || @modificador:pertence && @substantivo:jabuti && $contexto==\"tartarugas\" || @modificador:pertence && @substantivo:jabuti && @rotulos:tartarugas",
-            "dialog_node": "node_5ccac10908d4447f",
-            "previous_sibling": "Tartarugas: diferença entre jabuti e tartarugas?"
+            "dialog_node": "node_334e83113bce40cd",
+            "previous_sibling": "node_3636c495e7844b31"
         },
         {
             "type": "standard",
@@ -1398,8 +1398,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definir-quelonio || @modificador:definir && @substantivo:quelonio && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:quelonio && @rotulos:tartarugas",
-            "dialog_node": "node_bbde6625ae074399",
-            "previous_sibling": "Tartarugas: jabuti é um tartarugas?"
+            "dialog_node": "node_c41a1df0c87e4d5a",
+            "previous_sibling": "node_334e83113bce40cd"
         },
         {
             "type": "standard",
@@ -1421,8 +1421,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definir-jabuti || @modificador:definir && @substantivo:jabuti && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:jabuti && @rotulos:tartarugas",
-            "dialog_node": "node_2564441353c94dbb",
-            "previous_sibling": "Tartarugas: definir quelônio"
+            "dialog_node": "node_4c81da5f67814367",
+            "previous_sibling": "node_c41a1df0c87e4d5a"
         },
         {
             "type": "standard",
@@ -1444,8 +1444,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definir-cagado || @modificador:definir && @substantivo:cagado && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:cagado && @rotulos:tartarugas",
-            "dialog_node": "node_4cc3914aa02348e1",
-            "previous_sibling": "Tartarugas: definir jabuti"
+            "dialog_node": "node_362c31605e2e45e6",
+            "previous_sibling": "node_4c81da5f67814367"
         },
         {
             "type": "standard",
@@ -1467,8 +1467,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definir || @modificador:definir && $contexto==\"tartarugas\" || @modificador:definir && @rotulos:tartarugas",
-            "dialog_node": "node_4e1763111fca4176",
-            "previous_sibling": "Tartarugas: definir cágado"
+            "dialog_node": "node_7a60a26cefd74b78",
+            "previous_sibling": "node_362c31605e2e45e6"
         },
         {
             "type": "standard",
@@ -1490,8 +1490,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--listar-especie-extincao || @modificador:listar && @substantivo:especie && @recipiente:extincao && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:especie && @recipiente:extincao && @rotulos:tartarugas",
-            "dialog_node": "node_c8207f45ad4442c2",
-            "previous_sibling": "Tartarugas: definir"
+            "dialog_node": "node_2993ae9fc25c4613",
+            "previous_sibling": "node_7a60a26cefd74b78"
         },
         {
             "type": "standard",
@@ -1513,8 +1513,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--motivo-extincao || @modificador:motivo && @recipiente:extincao && $contexto==\"tartarugas\" || @modificador:motivo && @recipiente:extincao && @rotulos:tartarugas",
-            "dialog_node": "node_0cec6c0d6c154236",
-            "previous_sibling": "Tartarugas: listar espécies em extinção"
+            "dialog_node": "node_2bd7152eca114b2c",
+            "previous_sibling": "node_2993ae9fc25c4613"
         },
         {
             "type": "standard",
@@ -1536,8 +1536,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definir-ciclo-de-vida || @modificador:definir && @substantivo:ciclo-de-vida && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:ciclo-de-vida && @rotulos:tartarugas",
-            "dialog_node": "node_073cd625742845d9",
-            "previous_sibling": "Tartarugas: motivo extinção"
+            "dialog_node": "node_3f3932db64f34715",
+            "previous_sibling": "node_2bd7152eca114b2c"
         },
         {
             "type": "standard",
@@ -1559,8 +1559,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--localizacao || @modificador:localizacao && $contexto==\"tartarugas\" || @modificador:localizacao && @rotulos:tartarugas",
-            "dialog_node": "node_7d4fba2364dc497c",
-            "previous_sibling": "Tartarugas: definir ciclo de vida"
+            "dialog_node": "node_4762cfc8c380493c",
+            "previous_sibling": "node_3f3932db64f34715"
         },
         {
             "type": "standard",
@@ -1582,8 +1582,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definir-peso || @modificador:definir && @substantivo:peso && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:peso && @rotulos:tartarugas",
-            "dialog_node": "node_f2423515bb4c4af7",
-            "previous_sibling": "Tartarugas: localização"
+            "dialog_node": "node_d06a592feeef4709",
+            "previous_sibling": "node_4762cfc8c380493c"
         },
         {
             "type": "standard",
@@ -1605,8 +1605,8 @@
                 "contexto": "flora"
             },
             "conditions": "#flora--definir-alga || @modificador:definir && @substantivo:alga",
-            "dialog_node": "node_42f53af71013489a",
-            "previous_sibling": "Tartarugas: definir peso"
+            "dialog_node": "node_fed0d93688ef4980",
+            "previous_sibling": "node_d06a592feeef4709"
         },
         {
             "type": "standard",
@@ -1628,8 +1628,8 @@
                 "contexto": "flora-fauna"
             },
             "conditions": "#flora-fauna--definir-liquen || @modificador:definir && @substantivo:liquen",
-            "dialog_node": "node_f5cf932839154f40",
-            "previous_sibling": "Definir alga"
+            "dialog_node": "node_0736d49e3be1469d",
+            "previous_sibling": "node_fed0d93688ef4980"
         },
         {
             "type": "standard",
@@ -1651,8 +1651,8 @@
                 "contexto": "flora-fauna"
             },
             "conditions": "#flora-fauna--definir-polifiletico || @modificador:definir && @substantivo:polifiletico",
-            "dialog_node": "node_06d932b3814341dd",
-            "previous_sibling": "Definir líquen"
+            "dialog_node": "node_eba63bfe9713489a",
+            "previous_sibling": "node_0736d49e3be1469d"
         },
         {
             "type": "standard",
@@ -1675,7 +1675,7 @@
             },
             "conditions": "#fauna--definir-polipo || @modificador:definir && @substantivo:polipo",
             "dialog_node": "node_2ed7979a75b64c26",
-            "previous_sibling": "Definir polifilético"
+            "previous_sibling": "node_eba63bfe9713489a"
         },
         {
             "type": "standard",
@@ -1697,8 +1697,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-coral-dieta || @modificador:definir && @substantivo:coral && @recipiente:dieta",
-            "dialog_node": "node_0da6e830f64e48be",
-            "previous_sibling": "Definir pólipo"
+            "dialog_node": "node_50e4604889654bda",
+            "previous_sibling": "node_2ed7979a75b64c26"
         },
         {
             "type": "standard",
@@ -1720,8 +1720,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-medusa || @modificador:definir && @substantivo:medusa",
-            "dialog_node": "node_7a4355f8625b4d7d",
-            "previous_sibling": "Definir coral dieta"
+            "dialog_node": "node_aefb04f0bcd94865",
+            "previous_sibling": "node_50e4604889654bda"
         },
         {
             "type": "standard",
@@ -1743,8 +1743,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-animal-marinho || @modificador:definir && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_ed171e239c584a89",
-            "previous_sibling": "Definir medusa"
+            "dialog_node": "node_7dece0dbcd174a06",
+            "previous_sibling": "node_aefb04f0bcd94865"
         },
         {
             "type": "standard",
@@ -1766,8 +1766,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-animal-marinho || @modificador:listar && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_513021322dc248fa",
-            "previous_sibling": "Definir animal marinho"
+            "dialog_node": "node_2cff71fd60c74250",
+            "previous_sibling": "node_7dece0dbcd174a06"
         },
         {
             "type": "standard",
@@ -1789,8 +1789,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-peixe || @modificador:definir && @substantivo:peixe",
-            "dialog_node": "node_961f992daf6540bb",
-            "previous_sibling": "Listar animais marinho"
+            "dialog_node": "node_4cb2bab9fbb94d29",
+            "previous_sibling": "node_2cff71fd60c74250"
         },
         {
             "type": "standard",
@@ -1812,8 +1812,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-actinoperigeo || @modificador:definir && @substantivo:actinoperigeo",
-            "dialog_node": "node_5fbb2af577e14569",
-            "previous_sibling": "Definir peixe"
+            "dialog_node": "node_3a95a1f0d8d241e3",
+            "previous_sibling": "node_4cb2bab9fbb94d29"
         },
         {
             "type": "standard",
@@ -1835,8 +1835,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-tubarao || @modificador:definir && @substantivo:tubarao",
-            "dialog_node": "node_a03e674f66b94b83",
-            "previous_sibling": "Definir actinoperígeo"
+            "dialog_node": "node_e5f4c62dcc034b5c",
+            "previous_sibling": "node_3a95a1f0d8d241e3"
         },
         {
             "type": "standard",
@@ -1858,8 +1858,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--maior-animal-marinho || @modificador:maior && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_bad063daeb10475d",
-            "previous_sibling": "Definir tubarão"
+            "dialog_node": "node_fa3a7453045f43c3",
+            "previous_sibling": "node_e5f4c62dcc034b5c"
         },
         {
             "type": "standard",
@@ -1881,8 +1881,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--existe-baleia || @modificador:existe && @substantivo:baleia",
-            "dialog_node": "node_d2b0e33d130a418a",
-            "previous_sibling": "Maior animal marinho"
+            "dialog_node": "node_d76b37b9f9f84295",
+            "previous_sibling": "node_fa3a7453045f43c3"
         },
         {
             "type": "standard",
@@ -1904,8 +1904,8 @@
                 "contexto": "fauna-turismo"
             },
             "conditions": "#fauna-turismo--localizacao-baleia || @modificador:localizacao && @substantivo:baleia",
-            "dialog_node": "node_f2c880a23952492d",
-            "previous_sibling": "Existe baleia  no Brasil?"
+            "dialog_node": "node_070d464a237844ea",
+            "previous_sibling": "node_d76b37b9f9f84295"
         },
         {
             "type": "standard",
@@ -1927,8 +1927,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-plancton || @modificador:definir && @substantivo:plancton",
-            "dialog_node": "node_f599ce78ad5641ed",
-            "previous_sibling": "Localização baleia"
+            "dialog_node": "node_c7a57e0eeac34efa",
+            "previous_sibling": "node_070d464a237844ea"
         },
         {
             "type": "standard",
@@ -1950,8 +1950,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-fitoplancton || @modificador:definir && @substantivo:fitoplancton",
-            "dialog_node": "node_3c09bdf131de48b0",
-            "previous_sibling": "Definir plancton"
+            "dialog_node": "node_71f5a16fa6d84f7b",
+            "previous_sibling": "node_c7a57e0eeac34efa"
         },
         {
             "type": "standard",
@@ -1973,8 +1973,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-salpa || @modificador:definir && @substantivo:salpa",
-            "dialog_node": "node_b0634ef731d9462f",
-            "previous_sibling": "Definir fitoplancton"
+            "dialog_node": "node_d0daf75e483c4f27",
+            "previous_sibling": "node_71f5a16fa6d84f7b"
         },
         {
             "type": "standard",
@@ -1996,8 +1996,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-zooplancton || @modificador:definir && @substantivo:zooplancton",
-            "dialog_node": "node_0d5731f85f5c4363",
-            "previous_sibling": "Definir salpa"
+            "dialog_node": "node_057cb9ddbe83475c",
+            "previous_sibling": "node_d0daf75e483c4f27"
         },
         {
             "type": "standard",
@@ -2019,8 +2019,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-anemona || @modificador:definir && @substantivo:anemona",
-            "dialog_node": "node_7edea7f0fc6c4ad6",
-            "previous_sibling": "Definir zooplancton"
+            "dialog_node": "node_cc2dffbe6c72407c",
+            "previous_sibling": "node_057cb9ddbe83475c"
         },
         {
             "type": "standard",
@@ -2042,8 +2042,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-hidra || @modificador:definir && @substantivo:hidra",
-            "dialog_node": "node_1184871942e3476c",
-            "previous_sibling": "Definir anemona"
+            "dialog_node": "node_a0be2755454f468a",
+            "previous_sibling": "node_cc2dffbe6c72407c"
         },
         {
             "type": "standard",
@@ -2065,8 +2065,8 @@
                 "contexto": "fauna-turismo"
             },
             "conditions": "#fauna-turismo--existe-tubarao || @modificador:existe && @substantivo:tubarao",
-            "dialog_node": "node_89b5c4b65e40449f",
-            "previous_sibling": "Definir hidra"
+            "dialog_node": "node_458d936bc79e4814",
+            "previous_sibling": "node_a0be2755454f468a"
         },
         {
             "type": "standard",
@@ -2088,8 +2088,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-crustaceo || @modificador:listar && @substantivo:crustaceo",
-            "dialog_node": "node_6bb08185d4124dd2",
-            "previous_sibling": "Existe tubarão  no Brasil?"
+            "dialog_node": "node_00a5f6db374844ec",
+            "previous_sibling": "node_458d936bc79e4814"
         },
         {
             "type": "standard",
@@ -2111,8 +2111,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-tunicado || @modificador:definir && @substantivo:tunicado",
-            "dialog_node": "node_8267ff565e6d4d81",
-            "previous_sibling": "Listar crustáceos"
+            "dialog_node": "node_c2c1dddbbd6a4bcf",
+            "previous_sibling": "node_00a5f6db374844ec"
         },
         {
             "type": "standard",
@@ -2134,8 +2134,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-molusco || @modificador:definir && @substantivo:molusco",
-            "dialog_node": "node_4a622a4f6c7e4600",
-            "previous_sibling": "Definir tunicado"
+            "dialog_node": "node_4da30070b96840c7",
+            "previous_sibling": "node_c2c1dddbbd6a4bcf"
         },
         {
             "type": "standard",
@@ -2157,8 +2157,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-molusco || @modificador:listar && @substantivo:molusco",
-            "dialog_node": "node_9b9455ee6fc24364",
-            "previous_sibling": "Definir molusco"
+            "dialog_node": "node_a2b575f181354fcc",
+            "previous_sibling": "node_4da30070b96840c7"
         },
         {
             "type": "standard",
@@ -2180,8 +2180,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-crustaceo || @modificador:definir && @substantivo:crustaceo",
-            "dialog_node": "node_3ddd5278368d4205",
-            "previous_sibling": "Listar moiuscos"
+            "dialog_node": "node_b653eb46a66a4013",
+            "previous_sibling": "node_a2b575f181354fcc"
         },
         {
             "type": "standard",
@@ -2203,8 +2203,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--detalhar-crustaceo || @modificador:detalhar && @substantivo:crustaceo",
-            "dialog_node": "node_5eb70378bd2342e6",
-            "previous_sibling": "Definir crustáceo"
+            "dialog_node": "node_58147cdf57cb4183",
+            "previous_sibling": "node_b653eb46a66a4013"
         },
         {
             "type": "standard",
@@ -2226,8 +2226,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-filo || @modificador:definir && @substantivo:filo",
-            "dialog_node": "node_8d33446199ef4224",
-            "previous_sibling": "Detalhar crustáceo"
+            "dialog_node": "node_b0ba7fd80bb94530",
+            "previous_sibling": "node_58147cdf57cb4183"
         },
         {
             "type": "standard",
@@ -2249,8 +2249,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-cordado || @modificador:definir && @substantivo:cordado",
-            "dialog_node": "node_268a21f247bb41c7",
-            "previous_sibling": "Definir filo"
+            "dialog_node": "node_6cdc752df12243ce",
+            "previous_sibling": "node_b0ba7fd80bb94530"
         },
         {
             "type": "standard",
@@ -2272,8 +2272,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-cnidario || @modificador:definir && @substantivo:cnidario",
-            "dialog_node": "node_938645a333744da7",
-            "previous_sibling": "Definir cordado"
+            "dialog_node": "node_fb0548c553e940f8",
+            "previous_sibling": "node_6cdc752df12243ce"
         },
         {
             "type": "standard",
@@ -2295,8 +2295,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-cnida || @modificador:definir && @substantivo:cnida",
-            "dialog_node": "node_d20e4ca5bcb74e07",
-            "previous_sibling": "Definir cnidario"
+            "dialog_node": "node_5369832761284faa",
+            "previous_sibling": "node_fb0548c553e940f8"
         },
         {
             "type": "standard",
@@ -2318,8 +2318,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-cnidario || @modificador:listar && @substantivo:cnidario",
-            "dialog_node": "node_3837fc4bbf444f30",
-            "previous_sibling": "Definir cnida"
+            "dialog_node": "node_6cbd0fba383b40e2",
+            "previous_sibling": "node_5369832761284faa"
         },
         {
             "type": "standard",
@@ -2341,8 +2341,8 @@
                 "contexto": "gás"
             },
             "conditions": "#gas--definir-producao || @modificador:definir && @recipiente:producao && $contexto==\"gas\" || @modificador:definir && @recipiente:producao && @rotulos:gas",
-            "dialog_node": "node_a8aa7d386c03441d",
-            "previous_sibling": "Listar cnidarios"
+            "dialog_node": "node_1af56a9ff3874cbc",
+            "previous_sibling": "node_6cbd0fba383b40e2"
         },
         {
             "type": "standard",
@@ -2364,8 +2364,8 @@
                 "contexto": "extra"
             },
             "conditions": "#extra--motivo-importancia-aaz || @modificador:motivo && @substantivo:importancia && @recipiente:aaz",
-            "dialog_node": "node_0ae39f09774148b5",
-            "previous_sibling": "Gás: definir produção"
+            "dialog_node": "node_7f65539eef2940a6",
+            "previous_sibling": "node_1af56a9ff3874cbc"
         },
         {
             "type": "standard",
@@ -2387,8 +2387,8 @@
                 "contexto": "extra"
             },
             "conditions": "#extra--motivo-nome-aaz || @modificador:motivo && @substantivo:nome && @recipiente:aaz",
-            "dialog_node": "node_e988efdc01bb408e",
-            "previous_sibling": "Motivo importância aaz"
+            "dialog_node": "node_5f4296acb8094b64",
+            "previous_sibling": "node_7f65539eef2940a6"
         },
         {
             "type": "standard",
@@ -2415,7 +2415,99 @@
             },
             "conditions": "@bool:sim",
             "dialog_node": "node_1_1633148650412",
-            "previous_sibling": "Motivo nome aaz"
+            "previous_sibling": "node_5f4296acb8094b64"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: definir peso",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Varia muito com a espécie. As menores tartarugas marinhas, quando adultas, pesam em torno de 50 kg, já as maiores (tartarugas-de-couro) chegam a até 500 kg! Meia tonelada de tartaruga!"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--definir-peso || @modificador:definir && @substantivo:peso && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:peso && @rótulos:tartaruga",
+            "dialog_node": "node_192555bf19214dd7",
+            "previous_sibling": "node_1_1633148650412"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: definir jabuti",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "O jabuti é um integrante do grupo dos quelônios. Ele é um animal terrestre, capaz de nadar curtas distâncias. O seu casco é alto, pesado e grosso, suas patas, similares às de elefantes, auxiliam no deslocamento na terra. Por serem ectotérmicos, eles dependem do calor do ambiente, sendo sensíveis a baixas temperaturas. Quando precisam se esconder, esses animais retrair o pescoço para dentro do casco. Eles possuem hábitos diurnos e passam a maior parte da vida buscando alimentos em sua dieta vegetal."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--definir-jabuti || @modificador:definir && @substantivo:jabuti && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:jabuti && @rótulos:tartaruga",
+            "dialog_node": "node_1dcaeca644e5460b",
+            "previous_sibling": "node_192555bf19214dd7"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: definir quelônio",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Quelônios são répteis da ordem Chelonia, divididos entre tartarugas, cágados e jabutis e famosos pela carapaça de queratina que envolve seus corpos."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--definir-quelônio || @modificador:definir && @substantivo:quelônio && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:quelônio && @rótulos:tartaruga",
+            "dialog_node": "node_27727227e1af4789",
+            "previous_sibling": "node_1dcaeca644e5460b"
+        },
+        {
+            "type": "standard",
+            "title": "Petróleo: quantidade no Brasil",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Existe grande divergência entre as reservas provadas e as estimativas. A reserva provada tem oscilado entre 11 e 12 bilhões de barris de petróleo, porém estimativas variam entre 100 e 200 bilhões, número esse que colocaria o Brasil em 3o lugar no mundo."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "petróleo"
+            },
+            "conditions": "#petróleo--quantidade || @modificador:quantidade && $contexto==\"petróleo\" || @modificador:quantidade && @rótulos:petróleo",
+            "dialog_node": "node_3f0bb5a220b248ac",
+            "previous_sibling": "node_27727227e1af4789"
         },
         {
             "type": "standard",
@@ -2435,7 +2527,53 @@
             },
             "conditions": "welcome",
             "dialog_node": "node_4_1633059502031",
-            "previous_sibling": "Petróleo: quantidade no Brasil"
+            "previous_sibling": "node_3f0bb5a220b248ac"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: listar espécies",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "As 5 espécies de tartarugas marinhas que ocorrem no Brasil são: tartaruga-verde, tartaruga-cabeçuda ou mestiça, tartaruga-de-couro ou gigante, tartaruga-de-pente ou legítima e tartaruga-oliva."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--listar-espécies || @modificador:listar && @substantivo:espécies && $contexto==\"tartaruga\" || @modificador:listar && @substantivo:espécies && @rótulos:tartaruga",
+            "dialog_node": "node_4d0ee5a30ba84d4c",
+            "previous_sibling": "node_4_1633059502031"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: pertence jabuti",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Não, ambos são quelônios, mas tartarugas se diferenciam por ser aquáticas, enquanto jabutis são terrestres."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--pertence-jabuti || @modificador:pertence && @substantivo:jabuti && $contexto==\"tartaruga\" || @modificador:pertence && @substantivo:jabuti && @rótulos:tartaruga",
+            "dialog_node": "node_508d12da68db4f37",
+            "previous_sibling": "node_4d0ee5a30ba84d4c"
         },
         {
             "type": "standard",
@@ -2461,7 +2599,97 @@
             },
             "conditions": "#adeus && intent.confidence > 0.7",
             "dialog_node": "node_5_1633148229901",
-            "previous_sibling": "Tartaruga: pertence jabuti"
+            "previous_sibling": "node_508d12da68db4f37"
+        },
+        {
+            "type": "standard",
+            "title": "Petróleo: maiores estados produtores",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "O Rio de Janeiro tem liderado o ranking, seguido de São Paulo e Amazonas. O RJ representou 55,8% da produção em 2020, SP foi 15,0% e AM, 12,5%. Outros estados contabilizam cerca de 17% do total."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "petróleo"
+            },
+            "conditions": "#petróleo--maiores-estado-produção || @modificador:maiores && @substantivo:estado && @recipiente:produção && $contexto==\"petróleo\" || @modificador:maiores && @substantivo:estado && @recipiente:produção && @rótulos:petróleo",
+            "dialog_node": "node_525bced9cd4349d6",
+            "previous_sibling": "node_5_1633148229901"
+        },
+        {
+            "type": "standard",
+            "title": "Adeus - não",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Oba! Vamos continuar falando de $contexto (ou pode mudar de assunto!)"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_5_1633148229901",
+            "conditions": "@bool:não",
+            "dialog_node": "node_6_1633148694387",
+            "previous_sibling": "node_525bced9cd4349d6"
+        },
+        {
+            "type": "standard",
+            "title": "Gás: maiores estados produtores",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "O Rio de Janeiro tem liderado o ranking, seguido de São Paulo e Espírito Santo em disputa nos últimos anos. O RJ representou 79,3% da produção em 2020, SP foi 9,1% e ES, 8,4%. Outros estados contabilizam menos de 5% do total."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "gás"
+            },
+            "conditions": "#gás--maiores-estado-produção || @modificador:maiores && @substantivo:estado && @recipiente:produção && $contexto==\"gás\" || @modificador:maiores && @substantivo:estado && @recipiente:produção && @rótulos:gás",
+            "dialog_node": "node_62de62f6def24145",
+            "previous_sibling": "node_6_1633148694387"
+        },
+        {
+            "type": "standard",
+            "title": "Petróleo: localização",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "O petróleo fica em bolsões profundos na terra, nas chamadas bacias sedimentares. Ele fica retido em pedras porosas, que, por sua vez, precisam ser cercadas de pedras impermeáveis para que ele não escape."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "petróleo"
+            },
+            "conditions": "#petróleo--localização || @modificador:localização && $contexto==\"petróleo\" || @modificador:localização && @rótulos:petróleo",
+            "dialog_node": "node_6336c8e02e0d4419",
+            "previous_sibling": "node_62de62f6def24145"
         },
         {
             "type": "standard",
@@ -2485,7 +2713,329 @@
             "conditions": "anything_else",
             "digress_in": "does_not_return",
             "dialog_node": "node_7_1633148066996",
-            "previous_sibling": "Petróleo: localização"
+            "previous_sibling": "node_6336c8e02e0d4419"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: definir dieta",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Algumas espécies de tartarugas marinhas são carnívoras, outras herbívoras, e algumas outras mudam de dieta ao longo da vida. Suas principais fontes de alimentos são corais, crustáceos, cnidários, algas, peixes e moluscos."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--definir-dieta || @modificador:definir && @recipiente:dieta && $contexto==\"tartaruga\" || @modificador:definir && @recipiente:dieta && @rótulos:tartaruga",
+            "dialog_node": "node_7e1b8c0108694f08",
+            "previous_sibling": "node_7_1633148066996"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: definir",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "As tartugas são animais aquáticos (vivem tanto em água doce quanto salgada), possuem o casco alto e achatado e as suas patas são em formato de remo, o que facilita seu deslocamento aquático. Há espécies carnívoras e outras herbívoras."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--definir || @modificador:definir && $contexto==\"tartaruga\" || @modificador:definir && @rótulos:tartaruga",
+            "dialog_node": "node_81740c3bcd054864",
+            "previous_sibling": "node_7e1b8c0108694f08"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: localização",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "As tartarugas são animais aquáticos. Há espécies marinhas e também espécies de água doce (rios e lagos)."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--localização || @modificador:localização && $contexto==\"tartaruga\" || @modificador:localização && @rótulos:tartaruga",
+            "dialog_node": "node_96265b85aef941c7",
+            "previous_sibling": "node_81740c3bcd054864"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: listar espécies em extinção",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Todas as espécies marinhas encontradas no Brasil estão em risco de extinção, segundo critérios internacionais. Dentre elas, a tartaruga-verde está menos exposta, pois desova preferencialmente nas ilhas oceânicas (como Fernando de Noronha), onde as ações humanas têm menos impacto."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--listar-espécies-extinção || @modificador:listar && @substantivo:espécies && @recipiente:extinção && $contexto==\"tartaruga\" || @modificador:listar && @substantivo:espécies && @recipiente:extinção && @rótulos:tartaruga",
+            "dialog_node": "node_9c6d56d626264356",
+            "previous_sibling": "node_96265b85aef941c7"
+        },
+        {
+            "type": "standard",
+            "title": "Gás: definir produção",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A produção tem aumentado nos últimos anos. Ela foi de 104 milhões de metros cúbicos por dia em 2016 e cresceu para 172 em 2020."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "gás"
+            },
+            "conditions": "#gás--definir-produção || @modificador:definir && @recipiente:produção && $contexto==\"gás\" || @modificador:definir && @recipiente:produção && @rótulos:gás",
+            "dialog_node": "node_a1a6d9ce4cb04de5",
+            "previous_sibling": "node_9c6d56d626264356"
+        },
+        {
+            "type": "standard",
+            "title": "Gás: quantidade consumo",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Entre 2016 e 2020, o consumo médio foi de 3885 milhões de metros cúbicos por dia. "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "gás"
+            },
+            "conditions": "#gás--quantidade-consumo || @modificador:quantidade && @recipiente:consumo && $contexto==\"gás\" || @modificador:quantidade && @recipiente:consumo && @rótulos:gás",
+            "dialog_node": "node_a33fc55940534593",
+            "previous_sibling": "node_a1a6d9ce4cb04de5"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: definir cágado",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Os cágados são geralmente menores que outros quelônios e costumam viver tanto em ambientes terrestres (onde saem pra tomar sol e colocar os ovos) e aquáticos de água doce (onde acasalam). O seu casco é achatado e eles possuem patas cilíndricas, com nadadeiras e membranas entre os dedos e pequenas unhas que auxiliam a locomoção na terra. Esses animais costumam dobrar lateralmente o longo pescoço para dentro do casco quando precisam se esconder e costumam ser carnivoros, comendo pequenos peixes e crustáceos."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--definir-cágado || @modificador:definir && @substantivo:cágado && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:cágado && @rótulos:tartaruga",
+            "dialog_node": "node_ab8ba058a1a949e5",
+            "previous_sibling": "node_a33fc55940534593"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: definir ciclo de vida",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Tartarugas marinhas possuem um ciclo de vida complexo, passando por diferentes ambientes ao longo da vida. Começando pelo nascimento, as pequenas tartarugas escavam seu caminho para fora da areia e rumam para o mar. Algumas espécies passam a fase juvenil em regiões costeiras, enquanto outras permanecem no oceano a vida toda, como a tartaruga-de-couro. Elas atingem a maturidade sexual entre os 15 e 30 anos dependendo da espécie, quando retornam às praias onde nasceram para acasalar."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--definir-ciclo-de-vida || @modificador:definir && @substantivo:ciclo-de-vida && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:ciclo-de-vida && @rótulos:tartaruga",
+            "dialog_node": "node_b1bc29ae45434b21",
+            "previous_sibling": "node_ab8ba058a1a949e5"
+        },
+        {
+            "type": "standard",
+            "title": "Petróleo: quantidade produção",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "No ano de 2020, a produção média foi de 2,94 milhões de barris por dia, sendo 68,6% provenientes de campos de pré-sal, 25,4% de pós-sal e apenas 6% terrestres."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "petróleo"
+            },
+            "conditions": "#petróleo--quantidade-produção || @modificador:quantidade && @recipiente:produção && $contexto==\"petróleo\" || @modificador:quantidade && @recipiente:produção && @rótulos:petróleo",
+            "dialog_node": "node_b69de1f9c7714435",
+            "previous_sibling": "node_b1bc29ae45434b21"
+        },
+        {
+            "type": "standard",
+            "title": "Petróleo: maiores reservas",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "As maiores reservas conhecidas de petróleo no Brasil são os campos: Tupi, Búzios, Sapinhoá, Jubarte e Roncador."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "petróleo"
+            },
+            "conditions": "#petróleo--maiores-reserva || @modificador:maiores && @substantivo:reserva && $contexto==\"petróleo\" || @modificador:maiores && @substantivo:reserva && @rótulos:petróleo",
+            "dialog_node": "node_c058d6cba28c4603",
+            "previous_sibling": "node_b69de1f9c7714435"
+        },
+        {
+            "type": "standard",
+            "title": "Coral: composição",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Um coral pode ser constituído de um ou mais pólipos adultos. É comum que possuam um exoesqueleto calcário, ou seja, sejam bem duros por fora."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "coral"
+            },
+            "conditions": "#coral--composição || @modificador:composição && $contexto==\"coral\" || @modificador:composição && @rótulos:coral",
+            "dialog_node": "node_c143e9bdf7af4a16",
+            "previous_sibling": "node_c058d6cba28c4603"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: motivo extinção",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Além dos predadores naturais, a principal ameaça às tartarugas é a ação do homem, devido à pesca, à fotopoluição, ao trânsito de veículos e destruição dos locais de desova, à poluição do oceano e à mudança climática. De cada mil filhotes que nascem, apenas 1 ou 2 viram adultos."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--motivo-extinção || @modificador:motivo && @recipiente:extinção && $contexto==\"tartaruga\" || @modificador:motivo && @recipiente:extinção && @rótulos:tartaruga",
+            "dialog_node": "node_d1ff587083084072",
+            "previous_sibling": "node_c143e9bdf7af4a16"
+        },
+        {
+            "type": "standard",
+            "title": "Coral: definir",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Corais são cnidários que possuem um exoesqueleto calcário ou de matéria orgânica, o que os diferencia de anêmonas."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "coral"
+            },
+            "conditions": "#coral--definir || @modificador:definir && $contexto==\"coral\" || @modificador:definir && @rótulos:coral",
+            "dialog_node": "node_e94eb4837dc34cc2",
+            "previous_sibling": "node_d1ff587083084072"
+        },
+        {
+            "type": "standard",
+            "title": "Tartaruga: diferença entre jabuti e tartaruga",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A principal diferença reside no habitat. Tartarugas são aquáticas, jabutis são terrestres e cágados são semi-aquáticos. Os seus corpos são adaptados para esses ambientes, por exemplo, as patas de tartarugas parecem nadadeiras com seu formato de remo, enquanto as de jabutis são similares às de elefante."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "context": {
+                "contexto": "tartaruga"
+            },
+            "conditions": "#tartaruga--diferença-jabuti || @modificador:diferença && @substantivo:jabuti && $contexto==\"tartaruga\" || @modificador:diferença && @substantivo:jabuti && @rótulos:tartaruga",
+            "dialog_node": "node_f3d04e9205394391",
+            "previous_sibling": "node_e94eb4837dc34cc2"
         }
     ],
     "counterexamples": [],
