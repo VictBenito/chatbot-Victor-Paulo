@@ -915,52 +915,6 @@
     "dialog_nodes": [
         {
             "type": "standard",
-            "title": "definir polifilético",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Polifilético é um grupo de seres vivos que não inclui o ancestral comum de todos eles. Por exemplo, o grupo \"animais de sangue quente\" é polifilético, pois inclui tanto mamíferos quanto aves, cada um com ancestrais evolutivos diferentes."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "flora-fauna"
-            },
-            "conditions": "#flora-fauna--definir-polifilético || @modificador:definir && @substantivo:polifilético",
-            "dialog_node": "node_062ab8a2378e4e1f",
-            "previous_sibling": "node_8843c45191154396"
-        },
-        {
-            "type": "standard",
-            "title": "definir filo",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Filo é a primeira divisão dos reinos biológicos. Por exemplo, dentre os filos do reino Animalia estão os cordados, artrópodes, anelídeos e nemátodes (entre muitos outros!)"
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-filo || @modificador:definir && @substantivo:filo",
-            "dialog_node": "node_0c5c543d03ac4008",
-            "previous_sibling": "node_9b8af6bd03204b7a"
-        },
-        {
-            "type": "standard",
             "title": "Adeus - sim",
             "output": {
                 "generic": [
@@ -1033,52 +987,6 @@
         },
         {
             "type": "standard",
-            "title": "definir cnida",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Cnida (ou nematocisto) é uma cápsula que contém toxinas paralizantes que são ejetadas ao contato, tais como tetramina, histamina e serotonina."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-cnida || @modificador:definir && @substantivo:cnida",
-            "dialog_node": "node_23ed99979c234157",
-            "previous_sibling": "node_c3ecfaa55efd4edf"
-        },
-        {
-            "type": "standard",
-            "title": "listar cnidario",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Os principais exemplos de cnidários são águas-vivas, anêmonas e hidras. Ou seja, animais aquáticos com tentáculos que machucam!"
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--listar-cnidario || @modificador:listar && @substantivo:cnidario",
-            "dialog_node": "node_267d9467b60d4229",
-            "previous_sibling": "node_23ed99979c234157"
-        },
-        {
-            "type": "standard",
             "title": "Tartaruga: definir quelônio",
             "output": {
                 "generic": [
@@ -1102,30 +1010,7 @@
         },
         {
             "type": "standard",
-            "title": "motivo importância aaz",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "A AAz possui importância tanto econômica quanto científica. Nós realizamos pesca, turismo, transporte marítimo, extração de petróleo e gás e geração de energia renovável nela! Mais de 95% de nosso comércio exterior passa pelo mar e de lá tiramos 85% do nosso petróleo, 75% do gás natural e 45% do pescado."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "extra"
-            },
-            "conditions": "#extra--motivo-importância-aaz || @modificador:motivo && @substantivo:importância && @recipiente:aaz",
-            "dialog_node": "node_2c0ea6921aed4871",
-            "previous_sibling": "node_a1a6d9ce4cb04de5"
-        },
-        {
-            "type": "standard",
-            "title": "definir polipo",
+            "title": "Definir pólipo",
             "output": {
                 "generic": [
                     {
@@ -1145,52 +1030,6 @@
             "conditions": "#fauna--definir-polipo || @modificador:definir && @substantivo:polipo",
             "dialog_node": "node_2ed7979a75b64c26",
             "previous_sibling": "node_062ab8a2378e4e1f"
-        },
-        {
-            "type": "standard",
-            "title": "motivo nome aaz",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "A AAz se espelha na Amazônia por possuir uma enorme riqueza de recursos vivos, minerais e energéticos. Ela é lar de uma biodiversidade incrivel e de belezas naturais sem fim, assim como sua versão continental."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "extra"
-            },
-            "conditions": "#extra--motivo-nome-aaz || @modificador:motivo && @substantivo:nome && @recipiente:aaz",
-            "dialog_node": "node_3128692a5d914377",
-            "previous_sibling": "node_2c0ea6921aed4871"
-        },
-        {
-            "type": "standard",
-            "title": "listar animal marinho",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Há muitos! O mar é incrivelmente diverso e belo. Para nomear alguns, existem peixes, tubarões, águas-vivas, tartarugas, anêmonas... Pergunte mais sobre algum deles!"
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--listar-animal-marinho || @modificador:listar && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_3c0c0ea2066d457b",
-            "previous_sibling": "node_9b0d90368f3e4846"
         },
         {
             "type": "standard",
@@ -1217,29 +1056,6 @@
         },
         {
             "type": "standard",
-            "title": "definir crustáceo",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Crustáceos são animais invertebrados do grupo dos artrópodes. Eles possuem um exoesqueleto resistente e são normalmente encontrados em ambientes aquáticos."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-crustáceo || @modificador:definir && @substantivo:crustáceo",
-            "dialog_node": "node_3f58f81d9161469e",
-            "previous_sibling": "node_d78f5aa057134824"
-        },
-        {
-            "type": "standard",
             "title": "Bem vindo",
             "output": {
                 "generic": [
@@ -1256,52 +1072,6 @@
             },
             "conditions": "welcome",
             "dialog_node": "node_4_1633059502031"
-        },
-        {
-            "type": "standard",
-            "title": "definir alga",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Alga é o nome dado a um diversificado e polifilético grupo de organismos fotossintéticos e aquáticos. Algumas espécies habitam o solo, na forma de líquens."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "flora"
-            },
-            "conditions": "#flora--definir-alga || @modificador:definir && @substantivo:alga",
-            "dialog_node": "node_4163ca5a12b24f47",
-            "previous_sibling": "node_192555bf19214dd7"
-        },
-        {
-            "type": "standard",
-            "title": "definir tunicado",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Tunicados (também conhecidos como urocordados) são animais do filo Chordata que vivem fixos no solo marinho em grandes profundidades. O nome vem do fato de possuírem um tecido de celulose em volta do corpo, chamado túnica."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-tunicado || @modificador:definir && @substantivo:tunicado",
-            "dialog_node": "node_494f0ae3120a49a4",
-            "previous_sibling": "node_e367a83028da44f8"
         },
         {
             "type": "standard",
@@ -1467,29 +1237,6 @@
         },
         {
             "type": "standard",
-            "title": "definir cordado",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Chordata, um dos filos do reino Animalia, é caracterizado pela presença de simetria bilateral, notocorda, sistema digestivo completo, um tubo nervoso dorsal, fendas branquiais e uma cauda pós-anal, em pelo menos uma fase da vida. E sabe o que? Você é um desses! Vertebrados são um dos subfilos de cordados."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-cordado || @modificador:definir && @substantivo:cordado",
-            "dialog_node": "node_6b8e692d6f4e4c33",
-            "previous_sibling": "node_0c5c543d03ac4008"
-        },
-        {
-            "type": "standard",
             "title": "Não entendi",
             "output": {
                 "generic": [
@@ -1537,29 +1284,6 @@
         },
         {
             "type": "standard",
-            "title": "existe baleia no Brasil",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Sim! É comum avistar baleias em certos locais, especialmente as francas e jubarte."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--existe-baleia || @modificador:existe && @substantivo:baleia",
-            "dialog_node": "node_816e1d1767984874",
-            "previous_sibling": "node_f6060ac68da6411f"
-        },
-        {
-            "type": "standard",
             "title": "Tartaruga: definir",
             "output": {
                 "generic": [
@@ -1583,98 +1307,6 @@
         },
         {
             "type": "standard",
-            "title": "definir fitoplancton",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Fitoplânctons são plânctons que geram seu próprio alimento através da fotossíntese, sendo um grupo composto de algas microscópicas e cianobactérias. Eles são a base da cadeia alimentar no mar."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-fitoplancton || @modificador:definir && @substantivo:fitoplancton",
-            "dialog_node": "node_83294bf5acdd4899",
-            "previous_sibling": "node_adb293d4af1746d7"
-        },
-        {
-            "type": "standard",
-            "title": "definir líquen",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Líquens são seres vivos complexos, constituídos pela simbiose entre um micobionte (fungo) e um fotobiente (alga ou cianobactéria). De maneira simplificada, o fotobionte realiza fotossíntese e disponibiliza carboidratos ao micobionte, que, por sua vez, oferece proteção e um ambiente interno húmido. Eles são capazes de sobreviver em locais inóspitos e com poucos recursos, como rochas."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "flora-fauna"
-            },
-            "conditions": "#flora-fauna--definir-líquen || @modificador:definir && @substantivo:líquen",
-            "dialog_node": "node_8843c45191154396",
-            "previous_sibling": "node_4163ca5a12b24f47"
-        },
-        {
-            "type": "standard",
-            "title": "definir molusco",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Moluscos são um subfilo dos vertebrados, em sua maior parte aquáticos. Eles são o segundo filo com maior diversidade de espécies, atrás apenas dos artrópodes, possuindo cerca de 93.000 espécies vivas confirmadas, 200.000 espécies vivas estimadas e 70.000 espécies fósseis. Há também uma grande variedade de formas e hábitos. As características principais são o corpo mole, não-segmentado e de simetria bilateral."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-molusco || @modificador:definir && @substantivo:molusco",
-            "dialog_node": "node_8cf755f068c1453a",
-            "previous_sibling": "node_494f0ae3120a49a4"
-        },
-        {
-            "type": "standard",
-            "title": "existe tubarão no Brasil",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Sim, no Brasil são conhecidas 88 espécies de tubarões."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna-turismo"
-            },
-            "conditions": "#fauna-turismo--existe-tubarão || @modificador:existe && @substantivo:tubarão",
-            "dialog_node": "node_9510ff9fa97e4255",
-            "previous_sibling": "node_b2750fce8919434d"
-        },
-        {
-            "type": "standard",
             "title": "Tartaruga: localização",
             "output": {
                 "generic": [
@@ -1695,52 +1327,6 @@
             "conditions": "#tartaruga--localização || @modificador:localização && $contexto==\"tartaruga\" || @modificador:localização && @rótulos:tartaruga",
             "dialog_node": "node_96265b85aef941c7",
             "previous_sibling": "node_b1bc29ae45434b21"
-        },
-        {
-            "type": "standard",
-            "title": "definir animal marinho",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Animais marinhos são aqueles que vivem no mar. É importante distinguí-los de animais de água doce, que vivem, por exemplo, em rios. Ambos são aquáticos."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-animal-marinho || @modificador:definir && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_9b0d90368f3e4846",
-            "previous_sibling": "node_ea36d553df9b4b4d"
-        },
-        {
-            "type": "standard",
-            "title": "detalhar crustáceo",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "É difícil encontrar características que se apliquem a todos, porém com frequência eles possuem dois pares de antenas, um par de mandíbulas, dois pares de maxilas e uma carapaça revestindo o tórax."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--detalhar-crustáceo || @modificador:detalhar && @substantivo:crustáceo",
-            "dialog_node": "node_9b8af6bd03204b7a",
-            "previous_sibling": "node_3f58f81d9161469e"
         },
         {
             "type": "standard",
@@ -1813,75 +1399,6 @@
         },
         {
             "type": "standard",
-            "title": "definir salpa",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Salpas são um conjunto de espécies de tunicados que possuem corpos gelatinosos de forma cilíndrica. Elas também são considerados um tipo de zooplâncton."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-salpa || @modificador:definir && @substantivo:salpa",
-            "dialog_node": "node_a3facdc6643646b5",
-            "previous_sibling": "node_83294bf5acdd4899"
-        },
-        {
-            "type": "standard",
-            "title": "definir zooplancton",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Zooplânctons são plânctons que não realizam fotossíntese. Muitos animais pertencem a esse grupo, tais como crustáceos, e nem todos são microscópicos - salpas, por exemplo, podem formar colônias com vários metros de comprimento."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-zooplancton || @modificador:definir && @substantivo:zooplancton",
-            "dialog_node": "node_a9af311a0dc244a2",
-            "previous_sibling": "node_a3facdc6643646b5"
-        },
-        {
-            "type": "standard",
-            "title": "definir coral dieta",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Corais se alimentam de pequenos seres vivos, como zooplâncton e pequenos peixes."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-coral-dieta || @modificador:definir && @substantivo:coral && @recipiente:dieta",
-            "dialog_node": "node_ab2f3dd43bfe41bb",
-            "previous_sibling": "node_2ed7979a75b64c26"
-        },
-        {
-            "type": "standard",
             "title": "Tartaruga: definir cágado",
             "output": {
                 "generic": [
@@ -1905,29 +1422,6 @@
         },
         {
             "type": "standard",
-            "title": "definir plancton",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Plânctons são um grupo de organismos com pouca capacidade de locomoção e que são transportados por correntes d'água. É um grupo diversificado, que inclui desde vírus até plantas e animais. Eles podem ser divididos entre fitoplânctons e zooplânctons."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-plancton || @modificador:definir && @substantivo:plancton",
-            "dialog_node": "node_adb293d4af1746d7",
-            "previous_sibling": "node_c0dc1b7d09ac4172"
-        },
-        {
-            "type": "standard",
             "title": "Tartaruga: definir ciclo de vida",
             "output": {
                 "generic": [
@@ -1948,29 +1442,6 @@
             "conditions": "#tartaruga--definir-ciclo-de-vida || @modificador:definir && @substantivo:ciclo-de-vida && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:ciclo-de-vida && @rótulos:tartaruga",
             "dialog_node": "node_b1bc29ae45434b21",
             "previous_sibling": "node_d1ff587083084072"
-        },
-        {
-            "type": "standard",
-            "title": "definir hidra",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Hidras são cnidários em forma de pólipo que vivem em água doce e presas a rochas ou vegetação. Elas se locomovem de uma superfície para outra, não ficando presas a um único local sua vida inteira como outros cnidários."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-hidra || @modificador:definir && @substantivo:hidra",
-            "dialog_node": "node_b2750fce8919434d",
-            "previous_sibling": "node_c8fa217bf24d4734"
         },
         {
             "type": "standard",
@@ -2020,29 +1491,6 @@
         },
         {
             "type": "standard",
-            "title": "localização baleia",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Os principais locais para avistar baleias no Brasil são o arquipélago de Abrolhos, as cidades de Porto Seguro e Praia do Forte, na Bahia; a Rota da Baleia, situada em Santa Catarina; e o Arraial do Cabo, no Rio de Janeiro."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna-turismo"
-            },
-            "conditions": "#fauna-turismo--localização-baleia || @modificador:localização && @substantivo:baleia",
-            "dialog_node": "node_c0dc1b7d09ac4172",
-            "previous_sibling": "node_816e1d1767984874"
-        },
-        {
-            "type": "standard",
             "title": "Coral: composição",
             "output": {
                 "generic": [
@@ -2063,52 +1511,6 @@
             "conditions": "#coral--composição || @modificador:composição && $contexto==\"coral\" || @modificador:composição && @rótulos:coral",
             "dialog_node": "node_c143e9bdf7af4a16",
             "previous_sibling": "node_e94eb4837dc34cc2"
-        },
-        {
-            "type": "standard",
-            "title": "definir cnidario",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Cnidários são animais do filo Cnidaria, de estrutura simples e caracterizados pela presença da estrutura celular chamada cnida (ou nematocisto) e pelo corpo em formato de saco com simetria radial."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-cnidario || @modificador:definir && @substantivo:cnidario",
-            "dialog_node": "node_c3ecfaa55efd4edf",
-            "previous_sibling": "node_6b8e692d6f4e4c33"
-        },
-        {
-            "type": "standard",
-            "title": "definir anemona",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Anêmonas-do-mar são um grupo de animais sésseis (imóveis, fixos a algo) que usam tentáculos para capturar alimentos. Sendo cnidários, são próximas a corais, águas-vivas e hidras."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-anemona || @modificador:definir && @substantivo:anemona",
-            "dialog_node": "node_c8fa217bf24d4734",
-            "previous_sibling": "node_a9af311a0dc244a2"
         },
         {
             "type": "standard",
@@ -2135,121 +1537,6 @@
         },
         {
             "type": "standard",
-            "title": "listar molusco",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Ostras, lulas, polvos e caramujos."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--listar-molusco || @modificador:listar && @substantivo:molusco",
-            "dialog_node": "node_d78f5aa057134824",
-            "previous_sibling": "node_8cf755f068c1453a"
-        },
-        {
-            "type": "standard",
-            "title": "definir tubarão",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Tubarões são peixes de esqueleto cartilaginoso, corpo hidrodinâmico (salvo exceções), com 5 a 7 fendas branquiais, que geralmente vivem em água salgada. Eles são conhecidos por serem exímios caçadores, capazes de farejar e detectar presas através de impulsos elétricos."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-tubarão || @modificador:definir && @substantivo:tubarão",
-            "dialog_node": "node_dee4324ea71f45b9",
-            "previous_sibling": "node_e0e66f3561334376"
-        },
-        {
-            "type": "standard",
-            "title": "definir actinoperígeo",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Actinoperígeos são uma classe de peixes cujas nadadeiras são compostas de redes de pele apoiadas em espinhos ósseos ou queratinosos (também chamados de raios)."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-actinoperígeo || @modificador:definir && @substantivo:actinoperígeo",
-            "dialog_node": "node_e0e66f3561334376",
-            "previous_sibling": "node_e11a78aa79c84517"
-        },
-        {
-            "type": "standard",
-            "title": "definir peixe",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Peixes são animais aquáticos que possuem crânio, brânquias (guelras) e membros transformados em barbatanas ou nadadeiras. Essa definição inclui muitos seres vivos. Normalmente, quando falamos de peixes estamos nos referindo aos actinoperígeos, grupo ao qual pertencem cerca de 99% dos peixes vivos hoje."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-peixe || @modificador:definir && @substantivo:peixe",
-            "dialog_node": "node_e11a78aa79c84517",
-            "previous_sibling": "node_3c0c0ea2066d457b"
-        },
-        {
-            "type": "standard",
-            "title": "listar crustáceo",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Camarões, lagostas, cracas, carangueijos e tatus-bola são todos crustáceos!"
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--listar-crustáceo || @modificador:listar && @substantivo:crustáceo",
-            "dialog_node": "node_e367a83028da44f8",
-            "previous_sibling": "node_9510ff9fa97e4255"
-        },
-        {
-            "type": "standard",
             "title": "Coral: definir",
             "output": {
                 "generic": [
@@ -2273,29 +1560,6 @@
         },
         {
             "type": "standard",
-            "title": "definir medusa",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Águas-vivas, medusas ou caravelas são cnidários, ou seja, sacos gelatinosos com simetria radial e que usam tentáculos para caçar. 95-99% de seu corpo é composto de água."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--definir-medusa || @modificador:definir && @substantivo:medusa",
-            "dialog_node": "node_ea36d553df9b4b4d",
-            "previous_sibling": "node_ab2f3dd43bfe41bb"
-        },
-        {
-            "type": "standard",
             "title": "Tartaruga: diferença entre jabuti e tartaruga",
             "output": {
                 "generic": [
@@ -2316,29 +1580,6 @@
             "conditions": "#tartaruga--diferença-jabuti || @modificador:diferença && @substantivo:jabuti && $contexto==\"tartaruga\" || @modificador:diferença && @substantivo:jabuti && @rótulos:tartaruga",
             "dialog_node": "node_f3d04e9205394391",
             "previous_sibling": "node_4d0ee5a30ba84d4c"
-        },
-        {
-            "type": "standard",
-            "title": "maior animal marinho",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Considerando o volume ocupado, a baleia-azul ganha de longe a competição, alcançando até 35 metros de comprimento e 160 toneladas de peso. Ela habita a maioria dos oceanos do planeta, sendo raras vezes avistada no Brasil, longe da costa."
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "context": {
-                "contexto": "fauna"
-            },
-            "conditions": "#fauna--maior-animal-marinho || @modificador:maior && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_f6060ac68da6411f",
-            "previous_sibling": "node_dee4324ea71f45b9"
         }
     ],
     "counterexamples": [],

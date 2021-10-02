@@ -1,7 +1,7 @@
 {
     "intents": [
         {
-            "intent": "coral--definir",
+            "intent": "corais--definir",
             "examples": [
                 {
                     "text": "O que é um coral?"
@@ -10,7 +10,7 @@
             "description": ""
         },
         {
-            "intent": "coral--composição",
+            "intent": "corais--composição",
             "examples": [
                 {
                     "text": "Do que é feito um coral?"
@@ -82,7 +82,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--definir-dieta",
+            "intent": "tartarugas--definir-dieta",
             "examples": [
                 {
                     "text": "O que tartarugas comem?"
@@ -91,7 +91,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--listar-espécies",
+            "intent": "tartarugas--listar-espécie",
             "examples": [
                 {
                     "text": "Que tipos de espécies de tartarugas existem?"
@@ -100,7 +100,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--diferença-jabuti",
+            "intent": "tartarugas--diferença-jabuti",
             "examples": [
                 {
                     "text": "Qual é a diferença entre uma tartaruga e um jabuti?"
@@ -109,7 +109,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--pertence-jabuti",
+            "intent": "tartarugas--pertence-jabuti",
             "examples": [
                 {
                     "text": "Jabuti é um tipo de tartaruga?"
@@ -118,7 +118,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--definir-quelônio",
+            "intent": "tartarugas--definir-quelônio",
             "examples": [
                 {
                     "text": "O que é um quelônio?"
@@ -127,7 +127,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--definir-jabuti",
+            "intent": "tartarugas--definir-jabuti",
             "examples": [
                 {
                     "text": "O que é um jabuti?"
@@ -136,7 +136,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--definir-cágado",
+            "intent": "tartarugas--definir-cágado",
             "examples": [
                 {
                     "text": "O que é um cágado?"
@@ -145,7 +145,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--definir",
+            "intent": "tartarugas--definir",
             "examples": [
                 {
                     "text": "O que é uma tartaruga?"
@@ -154,7 +154,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--listar-espécies-extinção",
+            "intent": "tartarugas--listar-espécie-extinção",
             "examples": [
                 {
                     "text": "Que espécies de tartarugas estão em extinção?"
@@ -163,7 +163,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--motivo-extinção",
+            "intent": "tartarugas--motivo-extinção",
             "examples": [
                 {
                     "text": "Por que tartarugas estão em extinção?"
@@ -175,7 +175,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--definir-ciclo-de-vida",
+            "intent": "tartarugas--definir-ciclo-de-vida",
             "examples": [
                 {
                     "text": "Como é o ciclo de vida de uma tartaruga?"
@@ -184,7 +184,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--localização",
+            "intent": "tartarugas--localização",
             "examples": [
                 {
                     "text": "Onde vivem as tartarugas?"
@@ -193,7 +193,7 @@
             "description": ""
         },
         {
-            "intent": "tartaruga--definir-peso",
+            "intent": "tartarugas--definir-peso",
             "examples": [
                 {
                     "text": "Qual é o peso de uma tartaruga?"
@@ -229,7 +229,7 @@
             "description": ""
         },
         {
-            "intent": "fauna--definir-polipo",
+            "intent": "fauna--definir-pólipo",
             "examples": [
                 {
                     "text": "O que é um pólipo?"
@@ -542,6 +542,153 @@
                 }
             ],
             "description": ""
+        },
+        {
+            "intent": "coral--composição",
+            "examples": [
+                {
+                    "text": "Do que é feito um coral?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "coral--definir",
+            "examples": [
+                {
+                    "text": "O que é um coral?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "fauna--definir-polipo",
+            "examples": [
+                {
+                    "text": "O que é um pólipo?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--definir",
+            "examples": [
+                {
+                    "text": "O que é uma tartaruga?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--definir-cágado",
+            "examples": [
+                {
+                    "text": "O que é um cágado?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--definir-ciclo-de-vida",
+            "examples": [
+                {
+                    "text": "Como é o ciclo de vida de uma tartaruga?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--definir-dieta",
+            "examples": [
+                {
+                    "text": "O que tartarugas comem?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--definir-jabuti",
+            "examples": [
+                {
+                    "text": "O que é um jabuti?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--definir-peso",
+            "examples": [
+                {
+                    "text": "Qual é o peso de uma tartaruga?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--definir-quelônio",
+            "examples": [
+                {
+                    "text": "O que é um quelônio?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--diferença-jabuti",
+            "examples": [
+                {
+                    "text": "Qual é a diferença entre uma tartaruga e um jabuti?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--listar-espécies",
+            "examples": [
+                {
+                    "text": "Que tipos de espécies de tartarugas existem?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--listar-espécies-extinção",
+            "examples": [
+                {
+                    "text": "Que espécies de tartarugas estão em extinção?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--localização",
+            "examples": [
+                {
+                    "text": "Onde vivem as tartarugas?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--motivo-extinção",
+            "examples": [
+                {
+                    "text": "Por que tartarugas estão em extinção?"
+                },
+                {
+                    "text": "Quais são as ameaças às tartarugas?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "tartaruga--pertence-jabuti",
+            "examples": [
+                {
+                    "text": "Jabuti é um tipo de tartaruga?"
+                }
+            ],
+            "description": ""
         }
     ],
     "entities": [
@@ -550,7 +697,22 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "gás",
+                    "value": "extra",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "corais",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "flora",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "petróleo",
                     "synonyms": []
                 },
                 {
@@ -565,22 +727,17 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "tartarugas",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "gás",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "coral",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "petróleo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "flora",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "extra",
                     "synonyms": []
                 },
                 {
@@ -596,42 +753,7 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "localização",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "maiores",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "quantidade",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "existe",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "composição",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "detalhar",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "motivo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "maior",
                     "synonyms": []
                 },
                 {
@@ -643,7 +765,37 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "composição",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "localização",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "maior",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "motivo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "pertence",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "diferença",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "maiores",
                     "synonyms": []
                 },
                 {
@@ -653,7 +805,12 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "diferença",
+                    "value": "existe",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "quantidade",
                     "synonyms": []
                 }
             ],
@@ -664,12 +821,22 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "cnida",
+                    "value": "coral",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "fitoplancton",
+                    "value": "espécie",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "peso",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "baleia",
                     "synonyms": []
                 },
                 {
@@ -679,127 +846,12 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "actinoperígeo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "plancton",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "importância",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "vida",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "molusco",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "espécies",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cnidario",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "zooplancton",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "anemona",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "medusa",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "estado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "ciclo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "de",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "coral",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cágado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "animal",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "polifilético",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "jabuti",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "quelônio",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "polipo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "reserva",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tunicado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "líquen",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "hidra",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tubarão",
+                    "value": "pólipo",
                     "synonyms": []
                 },
                 {
@@ -809,12 +861,132 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "hidra",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "líquen",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "nome",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
+                    "value": "plancton",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "molusco",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "estado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "zooplancton",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "quelônio",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cnida",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "filo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "medusa",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "vida",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tubarão",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cnidario",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "jabuti",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cágado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "fitoplancton",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "reserva",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "actinoperígeo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tunicado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "de",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "ciclo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "importância",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "alga",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "anemona",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "animal",
                     "synonyms": []
                 },
                 {
@@ -829,17 +1001,12 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "filo",
+                    "value": "espécies",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "peso",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "baleia",
+                    "value": "polipo",
                     "synonyms": []
                 }
             ],
@@ -850,14 +1017,7 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "aaz",
-                    "synonyms": [
-                        "amazônia azul"
-                    ]
-                },
-                {
-                    "type": "synonyms",
-                    "value": "consumo",
+                    "value": "produção",
                     "synonyms": []
                 },
                 {
@@ -867,8 +1027,15 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "produção",
+                    "value": "consumo",
                     "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "aaz",
+                    "synonyms": [
+                        "amazônia azul"
+                    ]
                 },
                 {
                     "type": "synonyms",
@@ -915,7 +1082,7 @@
     "dialog_nodes": [
         {
             "type": "standard",
-            "title": "Coral: definir",
+            "title": "Corais: definir",
             "output": {
                 "generic": [
                     {
@@ -930,15 +1097,14 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--definir || @modificador:definir && $contexto==\"coral\" || @modificador:definir && @rótulos:coral",
-            "dialog_node": "node_e94eb4837dc34cc2",
-            "previous_sibling": "node_4_1633059502031"
+            "conditions": "#corais--definir || @modificador:definir && $contexto==\"corais\" || @modificador:definir && @rotulos:corais",
+            "dialog_node": "node_db375932302a4fe2"
         },
         {
             "type": "standard",
-            "title": "Coral: composição",
+            "title": "Corais: composição",
             "output": {
                 "generic": [
                     {
@@ -953,15 +1119,15 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--composição || @modificador:composição && $contexto==\"coral\" || @modificador:composição && @rótulos:coral",
-            "dialog_node": "node_c143e9bdf7af4a16",
-            "previous_sibling": "node_e94eb4837dc34cc2"
+            "conditions": "#corais--composicao || @modificador:composicao && $contexto==\"corais\" || @modificador:composicao && @rotulos:corais",
+            "dialog_node": "node_935388d0cb614e54",
+            "previous_sibling": "Corais: definir"
         },
         {
             "type": "standard",
-            "title": "Petróleo: maiores reservas",
+            "title": "Petróleo: maiores reservas ?",
             "output": {
                 "generic": [
                     {
@@ -978,13 +1144,13 @@
             "context": {
                 "contexto": "petróleo"
             },
-            "conditions": "#petróleo--maiores-reserva || @modificador:maiores && @substantivo:reserva && $contexto==\"petróleo\" || @modificador:maiores && @substantivo:reserva && @rótulos:petróleo",
-            "dialog_node": "node_c058d6cba28c4603",
-            "previous_sibling": "node_c143e9bdf7af4a16"
+            "conditions": "#petroleo--maiores-reserva || @modificador:maiores && @substantivo:reserva && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:reserva && @rotulos:petroleo",
+            "dialog_node": "node_46c65aa2730f4a0d",
+            "previous_sibling": "Corais: composição"
         },
         {
             "type": "standard",
-            "title": "Gás: maiores estados produtores",
+            "title": "Gás: maiores estados produtores?",
             "output": {
                 "generic": [
                     {
@@ -1001,13 +1167,13 @@
             "context": {
                 "contexto": "gás"
             },
-            "conditions": "#gás--maiores-estado-produção || @modificador:maiores && @substantivo:estado && @recipiente:produção && $contexto==\"gás\" || @modificador:maiores && @substantivo:estado && @recipiente:produção && @rótulos:gás",
-            "dialog_node": "node_62de62f6def24145",
-            "previous_sibling": "node_c058d6cba28c4603"
+            "conditions": "#gas--maiores-estado-producao || @modificador:maiores && @substantivo:estado && @recipiente:producao && $contexto==\"gas\" || @modificador:maiores && @substantivo:estado && @recipiente:producao && @rotulos:gas",
+            "dialog_node": "node_aa08f5865bfe4761",
+            "previous_sibling": "Petróleo: maiores reservas ?"
         },
         {
             "type": "standard",
-            "title": "Petróleo: maiores estados produtores",
+            "title": "Petróleo: maiores estados produtores?",
             "output": {
                 "generic": [
                     {
@@ -1024,13 +1190,13 @@
             "context": {
                 "contexto": "petróleo"
             },
-            "conditions": "#petróleo--maiores-estado-produção || @modificador:maiores && @substantivo:estado && @recipiente:produção && $contexto==\"petróleo\" || @modificador:maiores && @substantivo:estado && @recipiente:produção && @rótulos:petróleo",
-            "dialog_node": "node_525bced9cd4349d6",
-            "previous_sibling": "node_62de62f6def24145"
+            "conditions": "#petroleo--maiores-estado-producao || @modificador:maiores && @substantivo:estado && @recipiente:producao && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:estado && @recipiente:producao && @rotulos:petroleo",
+            "dialog_node": "node_bb15f9df54984287",
+            "previous_sibling": "Gás: maiores estados produtores?"
         },
         {
             "type": "standard",
-            "title": "Petróleo: quantidade no Brasil",
+            "title": "Petróleo: quantidade no Brasil?",
             "output": {
                 "generic": [
                     {
@@ -1047,13 +1213,13 @@
             "context": {
                 "contexto": "petróleo"
             },
-            "conditions": "#petróleo--quantidade || @modificador:quantidade && $contexto==\"petróleo\" || @modificador:quantidade && @rótulos:petróleo",
-            "dialog_node": "node_3f0bb5a220b248ac",
-            "previous_sibling": "node_525bced9cd4349d6"
+            "conditions": "#petroleo--quantidade || @modificador:quantidade && $contexto==\"petroleo\" || @modificador:quantidade && @rotulos:petroleo",
+            "dialog_node": "node_ecc6b62d744c4071",
+            "previous_sibling": "Petróleo: maiores estados produtores?"
         },
         {
             "type": "standard",
-            "title": "Gás: quantidade consumo",
+            "title": "Gás: quantidade consumo?",
             "output": {
                 "generic": [
                     {
@@ -1070,9 +1236,9 @@
             "context": {
                 "contexto": "gás"
             },
-            "conditions": "#gás--quantidade-consumo || @modificador:quantidade && @recipiente:consumo && $contexto==\"gás\" || @modificador:quantidade && @recipiente:consumo && @rótulos:gás",
-            "dialog_node": "node_a33fc55940534593",
-            "previous_sibling": "node_3f0bb5a220b248ac"
+            "conditions": "#gas--quantidade-consumo || @modificador:quantidade && @recipiente:consumo && $contexto==\"gas\" || @modificador:quantidade && @recipiente:consumo && @rotulos:gas",
+            "dialog_node": "node_ee9b0d4852c44fd6",
+            "previous_sibling": "Petróleo: quantidade no Brasil?"
         },
         {
             "type": "standard",
@@ -1093,13 +1259,13 @@
             "context": {
                 "contexto": "petróleo"
             },
-            "conditions": "#petróleo--localização || @modificador:localização && $contexto==\"petróleo\" || @modificador:localização && @rótulos:petróleo",
-            "dialog_node": "node_6336c8e02e0d4419",
-            "previous_sibling": "node_a33fc55940534593"
+            "conditions": "#petroleo--localizacao || @modificador:localizacao && $contexto==\"petroleo\" || @modificador:localizacao && @rotulos:petroleo",
+            "dialog_node": "node_02659194d2894a7f",
+            "previous_sibling": "Gás: quantidade consumo?"
         },
         {
             "type": "standard",
-            "title": "Petróleo: quantidade produção",
+            "title": "Petróleo: quantidade produção?",
             "output": {
                 "generic": [
                     {
@@ -1116,13 +1282,13 @@
             "context": {
                 "contexto": "petróleo"
             },
-            "conditions": "#petróleo--quantidade-produção || @modificador:quantidade && @recipiente:produção && $contexto==\"petróleo\" || @modificador:quantidade && @recipiente:produção && @rótulos:petróleo",
-            "dialog_node": "node_b69de1f9c7714435",
-            "previous_sibling": "node_6336c8e02e0d4419"
+            "conditions": "#petroleo--quantidade-producao || @modificador:quantidade && @recipiente:producao && $contexto==\"petroleo\" || @modificador:quantidade && @recipiente:producao && @rotulos:petroleo",
+            "dialog_node": "node_32fa4372c4894602",
+            "previous_sibling": "Petróleo: localização"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: definir dieta",
+            "title": "Tartarugas: definir dieta",
             "output": {
                 "generic": [
                     {
@@ -1137,15 +1303,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--definir-dieta || @modificador:definir && @recipiente:dieta && $contexto==\"tartaruga\" || @modificador:definir && @recipiente:dieta && @rótulos:tartaruga",
-            "dialog_node": "node_7e1b8c0108694f08",
-            "previous_sibling": "node_b69de1f9c7714435"
+            "conditions": "#tartarugas--definir-dieta || @modificador:definir && @recipiente:dieta && $contexto==\"tartarugas\" || @modificador:definir && @recipiente:dieta && @rotulos:tartarugas",
+            "dialog_node": "node_0da647804e9542c9",
+            "previous_sibling": "Petróleo: quantidade produção?"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: listar espécies",
+            "title": "Tartarugas: listar espécies",
             "output": {
                 "generic": [
                     {
@@ -1160,15 +1326,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--listar-espécies || @modificador:listar && @substantivo:espécies && $contexto==\"tartaruga\" || @modificador:listar && @substantivo:espécies && @rótulos:tartaruga",
-            "dialog_node": "node_4d0ee5a30ba84d4c",
-            "previous_sibling": "node_7e1b8c0108694f08"
+            "conditions": "#tartarugas--listar-especie || @modificador:listar && @substantivo:especie && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:especie && @rotulos:tartarugas",
+            "dialog_node": "node_e8267676ed5b444d",
+            "previous_sibling": "Tartarugas: definir dieta"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: diferença entre jabuti e tartaruga",
+            "title": "Tartarugas: diferença entre jabuti e tartarugas?",
             "output": {
                 "generic": [
                     {
@@ -1183,15 +1349,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--diferença-jabuti || @modificador:diferença && @substantivo:jabuti && $contexto==\"tartaruga\" || @modificador:diferença && @substantivo:jabuti && @rótulos:tartaruga",
-            "dialog_node": "node_f3d04e9205394391",
-            "previous_sibling": "node_4d0ee5a30ba84d4c"
+            "conditions": "#tartarugas--diferenca-jabuti || @modificador:diferenca && @substantivo:jabuti && $contexto==\"tartarugas\" || @modificador:diferenca && @substantivo:jabuti && @rotulos:tartarugas",
+            "dialog_node": "node_6a3baf31920d42f0",
+            "previous_sibling": "Tartarugas: listar espécies"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: pertence jabuti",
+            "title": "Tartarugas: jabuti é um tartarugas?",
             "output": {
                 "generic": [
                     {
@@ -1206,15 +1372,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--pertence-jabuti || @modificador:pertence && @substantivo:jabuti && $contexto==\"tartaruga\" || @modificador:pertence && @substantivo:jabuti && @rótulos:tartaruga",
-            "dialog_node": "node_508d12da68db4f37",
-            "previous_sibling": "node_f3d04e9205394391"
+            "conditions": "#tartarugas--pertence-jabuti || @modificador:pertence && @substantivo:jabuti && $contexto==\"tartarugas\" || @modificador:pertence && @substantivo:jabuti && @rotulos:tartarugas",
+            "dialog_node": "node_5ccac10908d4447f",
+            "previous_sibling": "Tartarugas: diferença entre jabuti e tartarugas?"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: definir quelônio",
+            "title": "Tartarugas: definir quelônio",
             "output": {
                 "generic": [
                     {
@@ -1229,15 +1395,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--definir-quelônio || @modificador:definir && @substantivo:quelônio && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:quelônio && @rótulos:tartaruga",
-            "dialog_node": "node_27727227e1af4789",
-            "previous_sibling": "node_508d12da68db4f37"
+            "conditions": "#tartarugas--definir-quelonio || @modificador:definir && @substantivo:quelonio && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:quelonio && @rotulos:tartarugas",
+            "dialog_node": "node_bbde6625ae074399",
+            "previous_sibling": "Tartarugas: jabuti é um tartarugas?"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: definir jabuti",
+            "title": "Tartarugas: definir jabuti",
             "output": {
                 "generic": [
                     {
@@ -1252,15 +1418,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--definir-jabuti || @modificador:definir && @substantivo:jabuti && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:jabuti && @rótulos:tartaruga",
-            "dialog_node": "node_1dcaeca644e5460b",
-            "previous_sibling": "node_27727227e1af4789"
+            "conditions": "#tartarugas--definir-jabuti || @modificador:definir && @substantivo:jabuti && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:jabuti && @rotulos:tartarugas",
+            "dialog_node": "node_2564441353c94dbb",
+            "previous_sibling": "Tartarugas: definir quelônio"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: definir cágado",
+            "title": "Tartarugas: definir cágado",
             "output": {
                 "generic": [
                     {
@@ -1275,15 +1441,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--definir-cágado || @modificador:definir && @substantivo:cágado && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:cágado && @rótulos:tartaruga",
-            "dialog_node": "node_ab8ba058a1a949e5",
-            "previous_sibling": "node_1dcaeca644e5460b"
+            "conditions": "#tartarugas--definir-cagado || @modificador:definir && @substantivo:cagado && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:cagado && @rotulos:tartarugas",
+            "dialog_node": "node_4cc3914aa02348e1",
+            "previous_sibling": "Tartarugas: definir jabuti"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: definir",
+            "title": "Tartarugas: definir",
             "output": {
                 "generic": [
                     {
@@ -1298,15 +1464,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--definir || @modificador:definir && $contexto==\"tartaruga\" || @modificador:definir && @rótulos:tartaruga",
-            "dialog_node": "node_81740c3bcd054864",
-            "previous_sibling": "node_ab8ba058a1a949e5"
+            "conditions": "#tartarugas--definir || @modificador:definir && $contexto==\"tartarugas\" || @modificador:definir && @rotulos:tartarugas",
+            "dialog_node": "node_4e1763111fca4176",
+            "previous_sibling": "Tartarugas: definir cágado"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: listar espécies em extinção",
+            "title": "Tartarugas: listar espécies em extinção",
             "output": {
                 "generic": [
                     {
@@ -1321,15 +1487,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--listar-espécies-extinção || @modificador:listar && @substantivo:espécies && @recipiente:extinção && $contexto==\"tartaruga\" || @modificador:listar && @substantivo:espécies && @recipiente:extinção && @rótulos:tartaruga",
-            "dialog_node": "node_9c6d56d626264356",
-            "previous_sibling": "node_81740c3bcd054864"
+            "conditions": "#tartarugas--listar-especie-extincao || @modificador:listar && @substantivo:especie && @recipiente:extincao && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:especie && @recipiente:extincao && @rotulos:tartarugas",
+            "dialog_node": "node_c8207f45ad4442c2",
+            "previous_sibling": "Tartarugas: definir"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: motivo extinção",
+            "title": "Tartarugas: motivo extinção",
             "output": {
                 "generic": [
                     {
@@ -1344,15 +1510,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--motivo-extinção || @modificador:motivo && @recipiente:extinção && $contexto==\"tartaruga\" || @modificador:motivo && @recipiente:extinção && @rótulos:tartaruga",
-            "dialog_node": "node_d1ff587083084072",
-            "previous_sibling": "node_9c6d56d626264356"
+            "conditions": "#tartarugas--motivo-extincao || @modificador:motivo && @recipiente:extincao && $contexto==\"tartarugas\" || @modificador:motivo && @recipiente:extincao && @rotulos:tartarugas",
+            "dialog_node": "node_0cec6c0d6c154236",
+            "previous_sibling": "Tartarugas: listar espécies em extinção"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: definir ciclo de vida",
+            "title": "Tartarugas: definir ciclo de vida",
             "output": {
                 "generic": [
                     {
@@ -1367,15 +1533,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--definir-ciclo-de-vida || @modificador:definir && @substantivo:ciclo-de-vida && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:ciclo-de-vida && @rótulos:tartaruga",
-            "dialog_node": "node_b1bc29ae45434b21",
-            "previous_sibling": "node_d1ff587083084072"
+            "conditions": "#tartarugas--definir-ciclo-de-vida || @modificador:definir && @substantivo:ciclo-de-vida && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:ciclo-de-vida && @rotulos:tartarugas",
+            "dialog_node": "node_073cd625742845d9",
+            "previous_sibling": "Tartarugas: motivo extinção"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: localização",
+            "title": "Tartarugas: localização",
             "output": {
                 "generic": [
                     {
@@ -1390,15 +1556,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--localização || @modificador:localização && $contexto==\"tartaruga\" || @modificador:localização && @rótulos:tartaruga",
-            "dialog_node": "node_96265b85aef941c7",
-            "previous_sibling": "node_b1bc29ae45434b21"
+            "conditions": "#tartarugas--localizacao || @modificador:localizacao && $contexto==\"tartarugas\" || @modificador:localizacao && @rotulos:tartarugas",
+            "dialog_node": "node_7d4fba2364dc497c",
+            "previous_sibling": "Tartarugas: definir ciclo de vida"
         },
         {
             "type": "standard",
-            "title": "Tartaruga: definir peso",
+            "title": "Tartarugas: definir peso",
             "output": {
                 "generic": [
                     {
@@ -1413,15 +1579,15 @@
                 ]
             },
             "context": {
-                "contexto": "tartaruga"
+                "contexto": "tartarugas"
             },
-            "conditions": "#tartaruga--definir-peso || @modificador:definir && @substantivo:peso && $contexto==\"tartaruga\" || @modificador:definir && @substantivo:peso && @rótulos:tartaruga",
-            "dialog_node": "node_192555bf19214dd7",
-            "previous_sibling": "node_96265b85aef941c7"
+            "conditions": "#tartarugas--definir-peso || @modificador:definir && @substantivo:peso && $contexto==\"tartarugas\" || @modificador:definir && @substantivo:peso && @rotulos:tartarugas",
+            "dialog_node": "node_f2423515bb4c4af7",
+            "previous_sibling": "Tartarugas: localização"
         },
         {
             "type": "standard",
-            "title": "definir alga",
+            "title": "Definir alga",
             "output": {
                 "generic": [
                     {
@@ -1439,12 +1605,12 @@
                 "contexto": "flora"
             },
             "conditions": "#flora--definir-alga || @modificador:definir && @substantivo:alga",
-            "dialog_node": "node_4163ca5a12b24f47",
-            "previous_sibling": "node_192555bf19214dd7"
+            "dialog_node": "node_42f53af71013489a",
+            "previous_sibling": "Tartarugas: definir peso"
         },
         {
             "type": "standard",
-            "title": "definir líquen",
+            "title": "Definir líquen",
             "output": {
                 "generic": [
                     {
@@ -1461,13 +1627,13 @@
             "context": {
                 "contexto": "flora-fauna"
             },
-            "conditions": "#flora-fauna--definir-líquen || @modificador:definir && @substantivo:líquen",
-            "dialog_node": "node_8843c45191154396",
-            "previous_sibling": "node_4163ca5a12b24f47"
+            "conditions": "#flora-fauna--definir-liquen || @modificador:definir && @substantivo:liquen",
+            "dialog_node": "node_f5cf932839154f40",
+            "previous_sibling": "Definir alga"
         },
         {
             "type": "standard",
-            "title": "definir polifilético",
+            "title": "Definir polifilético",
             "output": {
                 "generic": [
                     {
@@ -1484,13 +1650,13 @@
             "context": {
                 "contexto": "flora-fauna"
             },
-            "conditions": "#flora-fauna--definir-polifilético || @modificador:definir && @substantivo:polifilético",
-            "dialog_node": "node_062ab8a2378e4e1f",
-            "previous_sibling": "node_8843c45191154396"
+            "conditions": "#flora-fauna--definir-polifiletico || @modificador:definir && @substantivo:polifiletico",
+            "dialog_node": "node_06d932b3814341dd",
+            "previous_sibling": "Definir líquen"
         },
         {
             "type": "standard",
-            "title": "definir polipo",
+            "title": "Definir pólipo",
             "output": {
                 "generic": [
                     {
@@ -1509,11 +1675,11 @@
             },
             "conditions": "#fauna--definir-polipo || @modificador:definir && @substantivo:polipo",
             "dialog_node": "node_2ed7979a75b64c26",
-            "previous_sibling": "node_062ab8a2378e4e1f"
+            "previous_sibling": "Definir polifilético"
         },
         {
             "type": "standard",
-            "title": "definir coral dieta",
+            "title": "Definir coral dieta",
             "output": {
                 "generic": [
                     {
@@ -1531,12 +1697,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-coral-dieta || @modificador:definir && @substantivo:coral && @recipiente:dieta",
-            "dialog_node": "node_ab2f3dd43bfe41bb",
-            "previous_sibling": "node_2ed7979a75b64c26"
+            "dialog_node": "node_0da6e830f64e48be",
+            "previous_sibling": "Definir pólipo"
         },
         {
             "type": "standard",
-            "title": "definir medusa",
+            "title": "Definir medusa",
             "output": {
                 "generic": [
                     {
@@ -1554,12 +1720,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-medusa || @modificador:definir && @substantivo:medusa",
-            "dialog_node": "node_ea36d553df9b4b4d",
-            "previous_sibling": "node_ab2f3dd43bfe41bb"
+            "dialog_node": "node_7a4355f8625b4d7d",
+            "previous_sibling": "Definir coral dieta"
         },
         {
             "type": "standard",
-            "title": "definir animal marinho",
+            "title": "Definir animal marinho",
             "output": {
                 "generic": [
                     {
@@ -1577,12 +1743,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-animal-marinho || @modificador:definir && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_9b0d90368f3e4846",
-            "previous_sibling": "node_ea36d553df9b4b4d"
+            "dialog_node": "node_ed171e239c584a89",
+            "previous_sibling": "Definir medusa"
         },
         {
             "type": "standard",
-            "title": "listar animal marinho",
+            "title": "Listar animais marinho",
             "output": {
                 "generic": [
                     {
@@ -1600,12 +1766,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-animal-marinho || @modificador:listar && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_3c0c0ea2066d457b",
-            "previous_sibling": "node_9b0d90368f3e4846"
+            "dialog_node": "node_513021322dc248fa",
+            "previous_sibling": "Definir animal marinho"
         },
         {
             "type": "standard",
-            "title": "definir peixe",
+            "title": "Definir peixe",
             "output": {
                 "generic": [
                     {
@@ -1623,12 +1789,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-peixe || @modificador:definir && @substantivo:peixe",
-            "dialog_node": "node_e11a78aa79c84517",
-            "previous_sibling": "node_3c0c0ea2066d457b"
+            "dialog_node": "node_961f992daf6540bb",
+            "previous_sibling": "Listar animais marinho"
         },
         {
             "type": "standard",
-            "title": "definir actinoperígeo",
+            "title": "Definir actinoperígeo",
             "output": {
                 "generic": [
                     {
@@ -1645,13 +1811,13 @@
             "context": {
                 "contexto": "fauna"
             },
-            "conditions": "#fauna--definir-actinoperígeo || @modificador:definir && @substantivo:actinoperígeo",
-            "dialog_node": "node_e0e66f3561334376",
-            "previous_sibling": "node_e11a78aa79c84517"
+            "conditions": "#fauna--definir-actinoperigeo || @modificador:definir && @substantivo:actinoperigeo",
+            "dialog_node": "node_5fbb2af577e14569",
+            "previous_sibling": "Definir peixe"
         },
         {
             "type": "standard",
-            "title": "definir tubarão",
+            "title": "Definir tubarão",
             "output": {
                 "generic": [
                     {
@@ -1668,13 +1834,13 @@
             "context": {
                 "contexto": "fauna"
             },
-            "conditions": "#fauna--definir-tubarão || @modificador:definir && @substantivo:tubarão",
-            "dialog_node": "node_dee4324ea71f45b9",
-            "previous_sibling": "node_e0e66f3561334376"
+            "conditions": "#fauna--definir-tubarao || @modificador:definir && @substantivo:tubarao",
+            "dialog_node": "node_a03e674f66b94b83",
+            "previous_sibling": "Definir actinoperígeo"
         },
         {
             "type": "standard",
-            "title": "maior animal marinho",
+            "title": "Maior animal marinho",
             "output": {
                 "generic": [
                     {
@@ -1692,12 +1858,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--maior-animal-marinho || @modificador:maior && @substantivo:animal && @recipiente:marinho",
-            "dialog_node": "node_f6060ac68da6411f",
-            "previous_sibling": "node_dee4324ea71f45b9"
+            "dialog_node": "node_bad063daeb10475d",
+            "previous_sibling": "Definir tubarão"
         },
         {
             "type": "standard",
-            "title": "existe baleia no Brasil",
+            "title": "Existe baleia  no Brasil?",
             "output": {
                 "generic": [
                     {
@@ -1715,12 +1881,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--existe-baleia || @modificador:existe && @substantivo:baleia",
-            "dialog_node": "node_816e1d1767984874",
-            "previous_sibling": "node_f6060ac68da6411f"
+            "dialog_node": "node_d2b0e33d130a418a",
+            "previous_sibling": "Maior animal marinho"
         },
         {
             "type": "standard",
-            "title": "localização baleia",
+            "title": "Localização baleia",
             "output": {
                 "generic": [
                     {
@@ -1737,13 +1903,13 @@
             "context": {
                 "contexto": "fauna-turismo"
             },
-            "conditions": "#fauna-turismo--localização-baleia || @modificador:localização && @substantivo:baleia",
-            "dialog_node": "node_c0dc1b7d09ac4172",
-            "previous_sibling": "node_816e1d1767984874"
+            "conditions": "#fauna-turismo--localizacao-baleia || @modificador:localizacao && @substantivo:baleia",
+            "dialog_node": "node_f2c880a23952492d",
+            "previous_sibling": "Existe baleia  no Brasil?"
         },
         {
             "type": "standard",
-            "title": "definir plancton",
+            "title": "Definir plancton",
             "output": {
                 "generic": [
                     {
@@ -1761,12 +1927,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-plancton || @modificador:definir && @substantivo:plancton",
-            "dialog_node": "node_adb293d4af1746d7",
-            "previous_sibling": "node_c0dc1b7d09ac4172"
+            "dialog_node": "node_f599ce78ad5641ed",
+            "previous_sibling": "Localização baleia"
         },
         {
             "type": "standard",
-            "title": "definir fitoplancton",
+            "title": "Definir fitoplancton",
             "output": {
                 "generic": [
                     {
@@ -1784,12 +1950,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-fitoplancton || @modificador:definir && @substantivo:fitoplancton",
-            "dialog_node": "node_83294bf5acdd4899",
-            "previous_sibling": "node_adb293d4af1746d7"
+            "dialog_node": "node_3c09bdf131de48b0",
+            "previous_sibling": "Definir plancton"
         },
         {
             "type": "standard",
-            "title": "definir salpa",
+            "title": "Definir salpa",
             "output": {
                 "generic": [
                     {
@@ -1807,12 +1973,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-salpa || @modificador:definir && @substantivo:salpa",
-            "dialog_node": "node_a3facdc6643646b5",
-            "previous_sibling": "node_83294bf5acdd4899"
+            "dialog_node": "node_b0634ef731d9462f",
+            "previous_sibling": "Definir fitoplancton"
         },
         {
             "type": "standard",
-            "title": "definir zooplancton",
+            "title": "Definir zooplancton",
             "output": {
                 "generic": [
                     {
@@ -1830,12 +1996,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-zooplancton || @modificador:definir && @substantivo:zooplancton",
-            "dialog_node": "node_a9af311a0dc244a2",
-            "previous_sibling": "node_a3facdc6643646b5"
+            "dialog_node": "node_0d5731f85f5c4363",
+            "previous_sibling": "Definir salpa"
         },
         {
             "type": "standard",
-            "title": "definir anemona",
+            "title": "Definir anemona",
             "output": {
                 "generic": [
                     {
@@ -1853,12 +2019,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-anemona || @modificador:definir && @substantivo:anemona",
-            "dialog_node": "node_c8fa217bf24d4734",
-            "previous_sibling": "node_a9af311a0dc244a2"
+            "dialog_node": "node_7edea7f0fc6c4ad6",
+            "previous_sibling": "Definir zooplancton"
         },
         {
             "type": "standard",
-            "title": "definir hidra",
+            "title": "Definir hidra",
             "output": {
                 "generic": [
                     {
@@ -1876,12 +2042,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-hidra || @modificador:definir && @substantivo:hidra",
-            "dialog_node": "node_b2750fce8919434d",
-            "previous_sibling": "node_c8fa217bf24d4734"
+            "dialog_node": "node_1184871942e3476c",
+            "previous_sibling": "Definir anemona"
         },
         {
             "type": "standard",
-            "title": "existe tubarão no Brasil",
+            "title": "Existe tubarão  no Brasil?",
             "output": {
                 "generic": [
                     {
@@ -1898,13 +2064,13 @@
             "context": {
                 "contexto": "fauna-turismo"
             },
-            "conditions": "#fauna-turismo--existe-tubarão || @modificador:existe && @substantivo:tubarão",
-            "dialog_node": "node_9510ff9fa97e4255",
-            "previous_sibling": "node_b2750fce8919434d"
+            "conditions": "#fauna-turismo--existe-tubarao || @modificador:existe && @substantivo:tubarao",
+            "dialog_node": "node_89b5c4b65e40449f",
+            "previous_sibling": "Definir hidra"
         },
         {
             "type": "standard",
-            "title": "listar crustáceo",
+            "title": "Listar crustáceos",
             "output": {
                 "generic": [
                     {
@@ -1921,13 +2087,13 @@
             "context": {
                 "contexto": "fauna"
             },
-            "conditions": "#fauna--listar-crustáceo || @modificador:listar && @substantivo:crustáceo",
-            "dialog_node": "node_e367a83028da44f8",
-            "previous_sibling": "node_9510ff9fa97e4255"
+            "conditions": "#fauna--listar-crustaceo || @modificador:listar && @substantivo:crustaceo",
+            "dialog_node": "node_6bb08185d4124dd2",
+            "previous_sibling": "Existe tubarão  no Brasil?"
         },
         {
             "type": "standard",
-            "title": "definir tunicado",
+            "title": "Definir tunicado",
             "output": {
                 "generic": [
                     {
@@ -1945,12 +2111,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-tunicado || @modificador:definir && @substantivo:tunicado",
-            "dialog_node": "node_494f0ae3120a49a4",
-            "previous_sibling": "node_e367a83028da44f8"
+            "dialog_node": "node_8267ff565e6d4d81",
+            "previous_sibling": "Listar crustáceos"
         },
         {
             "type": "standard",
-            "title": "definir molusco",
+            "title": "Definir molusco",
             "output": {
                 "generic": [
                     {
@@ -1968,12 +2134,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-molusco || @modificador:definir && @substantivo:molusco",
-            "dialog_node": "node_8cf755f068c1453a",
-            "previous_sibling": "node_494f0ae3120a49a4"
+            "dialog_node": "node_4a622a4f6c7e4600",
+            "previous_sibling": "Definir tunicado"
         },
         {
             "type": "standard",
-            "title": "listar molusco",
+            "title": "Listar moiuscos",
             "output": {
                 "generic": [
                     {
@@ -1991,12 +2157,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-molusco || @modificador:listar && @substantivo:molusco",
-            "dialog_node": "node_d78f5aa057134824",
-            "previous_sibling": "node_8cf755f068c1453a"
+            "dialog_node": "node_9b9455ee6fc24364",
+            "previous_sibling": "Definir molusco"
         },
         {
             "type": "standard",
-            "title": "definir crustáceo",
+            "title": "Definir crustáceo",
             "output": {
                 "generic": [
                     {
@@ -2013,13 +2179,13 @@
             "context": {
                 "contexto": "fauna"
             },
-            "conditions": "#fauna--definir-crustáceo || @modificador:definir && @substantivo:crustáceo",
-            "dialog_node": "node_3f58f81d9161469e",
-            "previous_sibling": "node_d78f5aa057134824"
+            "conditions": "#fauna--definir-crustaceo || @modificador:definir && @substantivo:crustaceo",
+            "dialog_node": "node_3ddd5278368d4205",
+            "previous_sibling": "Listar moiuscos"
         },
         {
             "type": "standard",
-            "title": "detalhar crustáceo",
+            "title": "Detalhar crustáceo",
             "output": {
                 "generic": [
                     {
@@ -2036,13 +2202,13 @@
             "context": {
                 "contexto": "fauna"
             },
-            "conditions": "#fauna--detalhar-crustáceo || @modificador:detalhar && @substantivo:crustáceo",
-            "dialog_node": "node_9b8af6bd03204b7a",
-            "previous_sibling": "node_3f58f81d9161469e"
+            "conditions": "#fauna--detalhar-crustaceo || @modificador:detalhar && @substantivo:crustaceo",
+            "dialog_node": "node_5eb70378bd2342e6",
+            "previous_sibling": "Definir crustáceo"
         },
         {
             "type": "standard",
-            "title": "definir filo",
+            "title": "Definir filo",
             "output": {
                 "generic": [
                     {
@@ -2060,12 +2226,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-filo || @modificador:definir && @substantivo:filo",
-            "dialog_node": "node_0c5c543d03ac4008",
-            "previous_sibling": "node_9b8af6bd03204b7a"
+            "dialog_node": "node_8d33446199ef4224",
+            "previous_sibling": "Detalhar crustáceo"
         },
         {
             "type": "standard",
-            "title": "definir cordado",
+            "title": "Definir cordado",
             "output": {
                 "generic": [
                     {
@@ -2083,12 +2249,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-cordado || @modificador:definir && @substantivo:cordado",
-            "dialog_node": "node_6b8e692d6f4e4c33",
-            "previous_sibling": "node_0c5c543d03ac4008"
+            "dialog_node": "node_268a21f247bb41c7",
+            "previous_sibling": "Definir filo"
         },
         {
             "type": "standard",
-            "title": "definir cnidario",
+            "title": "Definir cnidario",
             "output": {
                 "generic": [
                     {
@@ -2106,12 +2272,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-cnidario || @modificador:definir && @substantivo:cnidario",
-            "dialog_node": "node_c3ecfaa55efd4edf",
-            "previous_sibling": "node_6b8e692d6f4e4c33"
+            "dialog_node": "node_938645a333744da7",
+            "previous_sibling": "Definir cordado"
         },
         {
             "type": "standard",
-            "title": "definir cnida",
+            "title": "Definir cnida",
             "output": {
                 "generic": [
                     {
@@ -2129,12 +2295,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definir-cnida || @modificador:definir && @substantivo:cnida",
-            "dialog_node": "node_23ed99979c234157",
-            "previous_sibling": "node_c3ecfaa55efd4edf"
+            "dialog_node": "node_d20e4ca5bcb74e07",
+            "previous_sibling": "Definir cnidario"
         },
         {
             "type": "standard",
-            "title": "listar cnidario",
+            "title": "Listar cnidarios",
             "output": {
                 "generic": [
                     {
@@ -2152,8 +2318,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-cnidario || @modificador:listar && @substantivo:cnidario",
-            "dialog_node": "node_267d9467b60d4229",
-            "previous_sibling": "node_23ed99979c234157"
+            "dialog_node": "node_3837fc4bbf444f30",
+            "previous_sibling": "Definir cnida"
         },
         {
             "type": "standard",
@@ -2174,13 +2340,13 @@
             "context": {
                 "contexto": "gás"
             },
-            "conditions": "#gás--definir-produção || @modificador:definir && @recipiente:produção && $contexto==\"gás\" || @modificador:definir && @recipiente:produção && @rótulos:gás",
-            "dialog_node": "node_a1a6d9ce4cb04de5",
-            "previous_sibling": "node_267d9467b60d4229"
+            "conditions": "#gas--definir-producao || @modificador:definir && @recipiente:producao && $contexto==\"gas\" || @modificador:definir && @recipiente:producao && @rotulos:gas",
+            "dialog_node": "node_a8aa7d386c03441d",
+            "previous_sibling": "Listar cnidarios"
         },
         {
             "type": "standard",
-            "title": "motivo importância aaz",
+            "title": "Motivo importância aaz",
             "output": {
                 "generic": [
                     {
@@ -2197,13 +2363,13 @@
             "context": {
                 "contexto": "extra"
             },
-            "conditions": "#extra--motivo-importância-aaz || @modificador:motivo && @substantivo:importância && @recipiente:aaz",
-            "dialog_node": "node_2c0ea6921aed4871",
-            "previous_sibling": "node_a1a6d9ce4cb04de5"
+            "conditions": "#extra--motivo-importancia-aaz || @modificador:motivo && @substantivo:importancia && @recipiente:aaz",
+            "dialog_node": "node_0ae39f09774148b5",
+            "previous_sibling": "Gás: definir produção"
         },
         {
             "type": "standard",
-            "title": "motivo nome aaz",
+            "title": "Motivo nome aaz",
             "output": {
                 "generic": [
                     {
@@ -2221,8 +2387,8 @@
                 "contexto": "extra"
             },
             "conditions": "#extra--motivo-nome-aaz || @modificador:motivo && @substantivo:nome && @recipiente:aaz",
-            "dialog_node": "node_3128692a5d914377",
-            "previous_sibling": "node_2c0ea6921aed4871"
+            "dialog_node": "node_e988efdc01bb408e",
+            "previous_sibling": "Motivo importância aaz"
         },
         {
             "type": "standard",
@@ -2248,7 +2414,8 @@
                 "contexto": ""
             },
             "conditions": "@bool:sim",
-            "dialog_node": "node_1_1633148650412"
+            "dialog_node": "node_1_1633148650412",
+            "previous_sibling": "Motivo nome aaz"
         },
         {
             "type": "standard",
@@ -2267,7 +2434,8 @@
                 ]
             },
             "conditions": "welcome",
-            "dialog_node": "node_4_1633059502031"
+            "dialog_node": "node_4_1633059502031",
+            "previous_sibling": "Petróleo: quantidade no Brasil"
         },
         {
             "type": "standard",
@@ -2293,28 +2461,7 @@
             },
             "conditions": "#adeus && intent.confidence > 0.7",
             "dialog_node": "node_5_1633148229901",
-            "previous_sibling": "node_3128692a5d914377"
-        },
-        {
-            "type": "standard",
-            "title": "Adeus - não",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "Oba! Vamos continuar falando de $contexto (ou pode mudar de assunto!)"
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "parent": "node_5_1633148229901",
-            "conditions": "@bool:não",
-            "dialog_node": "node_6_1633148694387",
-            "previous_sibling": "node_1_1633148650412"
+            "previous_sibling": "Tartaruga: pertence jabuti"
         },
         {
             "type": "standard",
@@ -2338,7 +2485,7 @@
             "conditions": "anything_else",
             "digress_in": "does_not_return",
             "dialog_node": "node_7_1633148066996",
-            "previous_sibling": "node_5_1633148229901"
+            "previous_sibling": "Petróleo: localização"
         }
     ],
     "counterexamples": [],
