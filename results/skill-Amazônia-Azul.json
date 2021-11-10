@@ -412,6 +412,18 @@
       "description": ""
     },
     {
+      "intent": "o-que-é-keml",
+      "examples": [
+        {
+          "text": "KEML?"
+        },
+        {
+          "text": "O que é KEML?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "outras--motivo-importância-aaz",
       "examples": [
         {
@@ -1645,10 +1657,44 @@
     {
       "type": "standard",
       "title": "Quem sou eu",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu fui criado pelo Gabriel Okamoto, aluno de Engenharia Mecatrônica da Universidade de São Paulo, como um trabalho de conclusão de curso. Meu objetivo é educar as pessoas sobre o significado e a importância da Amazônia Azul e, ao mesmo tempo, demonstrar o poder dos Chatbots como ferramentas para educação. Esse trabalho é uma das iniciativas do KEML - se quiser saber mais, pergunte!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
       "parent": "node_3_1636423463289",
       "conditions": "#quem-sou-eu",
       "dialog_node": "node_4_1636412764367",
       "previous_sibling": "node_6_1636417093133"
+    },
+    {
+      "type": "standard",
+      "title": "O que é KEML",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O Knowledge-Enhanced Machine Learning for Reasoning about Ocean Data (KEML) é um grupo de alunos e pesquisadores com o objetivo de desenvolver um framework para agentes conversacionais que possa responder a pedidos de alto nível sobre um determinado assunto, como perguntas, causas, argumentos etc. Para testar e demonstrar essa capacidade, está sob desenvolvimento um expert conversacional sobre a Amazônia Azul no BLue Amazon Brain (BLAB). O grupo é liderado pelos professores Fabio Cozman e Eduardo Tannuri, da Universidade de São Paulo. Leia mais: https://c4ai.inova.usp.br/keml-en/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1636423463289",
+      "conditions": "#o-que-é-keml",
+      "dialog_node": "node_4_1636567999545",
+      "previous_sibling": "node_4_1636412764367"
     },
     {
       "type": "standard",
@@ -2246,7 +2292,7 @@
       "parent": "node_3_1636423463289",
       "conditions": "#oi",
       "dialog_node": "node_8_1633366447466",
-      "previous_sibling": "node_4_1636412764367"
+      "previous_sibling": "node_4_1636567999545"
     },
     {
       "type": "standard",
