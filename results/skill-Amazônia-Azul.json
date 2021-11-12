@@ -649,19 +649,13 @@
       "description": ""
     },
     {
-      "intent": "maré--explicar-causa",
-      "examples": [
-        {
-          "text": "O que controla a maré?"
-        }
-      ],
-      "description": ""
-    },
-    {
       "intent": "maré--motivo",
       "examples": [
         {
           "text": "O que causa marés na terra?"
+        },
+        {
+          "text": "O que controla a maré?"
         }
       ],
       "description": ""
@@ -2160,7 +2154,7 @@
                 "text": "Eu sou um robô muito interessado na Amazônia Azul (jajá te explico o que é) e adoro conversar! Você pode fazer perguntas sobre diferentes temas relacionados a ela e eu responderei o melhor que puder. Quando estiver satisfeito, por favor, responda ao formulário de avaliação! Basta pedir e eu te direi o link."
               },
               {
-                "text": "Se quiser saber mais sobre mim, pode perguntar também! E se ficar sem ideia do que perguntar, peça ajuda e eu te darei umas dicas :) Vamos lá<? $nome ? \", \"+$nome : \"\" ?>!"
+                "text": "Se quiser saber mais sobre mim, pode perguntar também! E se ficar sem ideia do que perguntar, peça ajuda e eu te darei umas dicas :) Minhas principais áreas de conhecimento são a biologia marinha, o petróleo e fenômenos físicos. Vamos lá!"
               }
             ],
             "response_type": "text",
@@ -2176,6 +2170,32 @@
       },
       "dialog_node": "node_1_1636422782005",
       "previous_sibling": "node_7_1633362438517"
+    },
+    {
+      "type": "standard",
+      "title": "Sabe o que é AAz - outro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Responde isso aqui, rapidinho! Já está acabando, eu prometo :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1633362162069",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1633362162069"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_1_1636690662852",
+      "previous_sibling": "node_3_1636421109581"
     },
     {
       "type": "standard",
@@ -2272,13 +2292,42 @@
       "output": {
         "generic": [
           {
-            "values": [
+            "title": "",
+            "options": [
               {
-                "text": "Que tal perguntar algo sobre petróleo?"
+                "label": "O que é petróleo?",
+                "value": {
+                  "input": {
+                    "text": "petróleo definição"
+                  }
+                }
+              },
+              {
+                "label": "Qual a diferença entre tartarugas e jabutis?",
+                "value": {
+                  "input": {
+                    "text": "tartarugas diferença jabuti"
+                  }
+                }
+              },
+              {
+                "label": "O que causa as marés?",
+                "value": {
+                  "input": {
+                    "text": "maré motivo"
+                  }
+                }
+              },
+              {
+                "label": "Exemplos de animais marinhos",
+                "value": {
+                  "input": {
+                    "text": "fauna listar animal marinho"
+                  }
+                }
               }
             ],
-            "response_type": "text",
-            "selection_policy": "sequential"
+            "response_type": "option"
           }
         ]
       },
@@ -2498,7 +2547,7 @@
     },
     {
       "type": "standard",
-      "title": "Oi - não",
+      "title": "Oi - sim",
       "parent": "node_8_1633366447466",
       "next_step": {
         "behavior": "jump_to",
@@ -2834,29 +2883,6 @@
       "conditions": "#petróleo--listar-empresa-brasil || @modificador:listar && @substantivo:empresa && @recipiente:brasil && $contexto==\"petroleo\" || @modificador:listar && @substantivo:empresa && @recipiente:brasil && @rótulos:petroleo",
       "dialog_node": "node_443e90f82daa429a",
       "previous_sibling": "node_ba1bfadf28ab4467"
-    },
-    {
-      "type": "standard",
-      "title": "Maré: explicar causa",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "A maré é controlada, principalmente, pela atração gravitacional da Lua e do Sol."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "context": {
-        "contexto": "mare"
-      },
-      "conditions": "#maré--explicar-causa || @modificador:explicar && @substantivo:causa && $contexto==\"mare\" || @modificador:explicar && @substantivo:causa && @rótulos:mare",
-      "dialog_node": "node_456fe89b98464f55",
-      "previous_sibling": "node_5d44721be2164159"
     },
     {
       "type": "standard",
@@ -3274,7 +3300,7 @@
       "next_step": {
         "behavior": "jump_to",
         "selector": "body",
-        "dialog_node": "node_2_1633362162069"
+        "dialog_node": "node_1_1636422782005"
       },
       "conditions": "@bool:não",
       "dialog_node": "node_6_1633362478482",
@@ -3665,7 +3691,7 @@
     },
     {
       "type": "standard",
-      "title": "Oi - sim",
+      "title": "Oi - não",
       "parent": "node_8_1633366447466",
       "next_step": {
         "behavior": "jump_to",
@@ -3675,6 +3701,32 @@
       "conditions": "@bool:mal || @bool:não",
       "dialog_node": "node_8_1633366913333",
       "previous_sibling": "node_3_1633366889420"
+    },
+    {
+      "type": "standard",
+      "title": "Bem vindo - outro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ops, responde minha pergunta primeiro, por favor!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1633059502031",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1633059502031"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_8_1636690323695",
+      "previous_sibling": "node_6_1633362478482"
     },
     {
       "type": "standard",
@@ -3996,7 +4048,7 @@
       },
       "conditions": "#maré--motivo || @modificador:motivo && $contexto==\"mare\" || @modificador:motivo && @rótulos:mare",
       "dialog_node": "node_9fa5b528887c4f8b",
-      "previous_sibling": "node_456fe89b98464f55"
+      "previous_sibling": "node_5d44721be2164159"
     },
     {
       "type": "standard",
