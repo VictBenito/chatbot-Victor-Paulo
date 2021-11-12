@@ -2470,7 +2470,7 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--definição-branqueamento || @modificador:definição && @substantivo:branqueamento && $contexto==\"coral\" || @modificador:definição && @substantivo:branqueamento && @rótulos:coral",
-            "dialog_node": "node_803f1ce95a104178",
+            "dialog_node": "node_6329c625452a4977",
             "previous_sibling": "node_7c47de8cd1f742ce"
         },
         {
@@ -2493,8 +2493,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--definição-recife || @modificador:definição && @substantivo:recife && $contexto==\"coral\" || @modificador:definição && @substantivo:recife && @rótulos:coral",
-            "dialog_node": "node_10ef4cac47734191",
-            "previous_sibling": "node_803f1ce95a104178"
+            "dialog_node": "node_2ae04bf8f062402d",
+            "previous_sibling": "node_6329c625452a4977"
         },
         {
             "type": "standard",
@@ -2516,8 +2516,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--definição-recife-artificial || @modificador:definição && @substantivo:recife-artificial && $contexto==\"coral\" || @modificador:definição && @substantivo:recife-artificial && @rótulos:coral",
-            "dialog_node": "node_e1306c18922d4eb8",
-            "previous_sibling": "node_10ef4cac47734191"
+            "dialog_node": "node_2628960983bd43dd",
+            "previous_sibling": "node_2ae04bf8f062402d"
         },
         {
             "type": "standard",
@@ -2540,7 +2540,7 @@
             },
             "conditions": "#coral--detalhar-dieta || @modificador:detalhar && @recipiente:dieta && $contexto==\"coral\" || @modificador:detalhar && @recipiente:dieta && @rótulos:coral",
             "dialog_node": "node_327bd5622a5a4d5b",
-            "previous_sibling": "node_e1306c18922d4eb8"
+            "previous_sibling": "node_2628960983bd43dd"
         },
         {
             "type": "standard",
@@ -2562,7 +2562,7 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--detalhar-símbolo || @modificador:detalhar && @recipiente:símbolo && $contexto==\"coral\" || @modificador:detalhar && @recipiente:símbolo && @rótulos:coral",
-            "dialog_node": "node_32e51d6282434f8c",
+            "dialog_node": "node_95fe8aa8334348bc",
             "previous_sibling": "node_327bd5622a5a4d5b"
         },
         {
@@ -2585,8 +2585,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--efeito-branqueamento-ambiente || @modificador:efeito && @substantivo:branqueamento && @recipiente:ambiente && $contexto==\"coral\" || @modificador:efeito && @substantivo:branqueamento && @recipiente:ambiente && @rótulos:coral",
-            "dialog_node": "node_1f9dfd2f081747da",
-            "previous_sibling": "node_32e51d6282434f8c"
+            "dialog_node": "node_a261d1e3da0b473f",
+            "previous_sibling": "node_95fe8aa8334348bc"
         },
         {
             "type": "standard",
@@ -2608,8 +2608,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--explicar-importância || @modificador:explicar && @substantivo:importância && $contexto==\"coral\" || @modificador:explicar && @substantivo:importância && @rótulos:coral",
-            "dialog_node": "node_9a76f97d72aa452c",
-            "previous_sibling": "node_1f9dfd2f081747da"
+            "dialog_node": "node_fb600af5a8344839",
+            "previous_sibling": "node_a261d1e3da0b473f"
         },
         {
             "type": "standard",
@@ -2631,8 +2631,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--listar-iniciativas-governo || @modificador:listar && @substantivo:iniciativas && @recipiente:governo && $contexto==\"coral\" || @modificador:listar && @substantivo:iniciativas && @recipiente:governo && @rótulos:coral",
-            "dialog_node": "node_d1469996019c41e0",
-            "previous_sibling": "node_9a76f97d72aa452c"
+            "dialog_node": "node_fa5e977dab6f4177",
+            "previous_sibling": "node_fb600af5a8344839"
         },
         {
             "type": "standard",
@@ -2654,8 +2654,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--listar-tipos || @modificador:listar && @recipiente:tipos && $contexto==\"coral\" || @modificador:listar && @recipiente:tipos && @rótulos:coral",
-            "dialog_node": "node_18dfc18881c244e0",
-            "previous_sibling": "node_d1469996019c41e0"
+            "dialog_node": "node_61d3d0fb49154322",
+            "previous_sibling": "node_fa5e977dab6f4177"
         },
         {
             "type": "standard",
@@ -2677,8 +2677,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--localização-recife || @modificador:localização && @substantivo:recife && $contexto==\"coral\" || @modificador:localização && @substantivo:recife && @rótulos:coral",
-            "dialog_node": "node_3ed4f114335647a6",
-            "previous_sibling": "node_18dfc18881c244e0"
+            "dialog_node": "node_0572073e892d4f4d",
+            "previous_sibling": "node_61d3d0fb49154322"
         },
         {
             "type": "standard",
@@ -2700,8 +2700,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--maior-recife-brasil || @modificador:maior && @substantivo:recife && @recipiente:brasil && $contexto==\"coral\" || @modificador:maior && @substantivo:recife && @recipiente:brasil && @rótulos:coral",
-            "dialog_node": "node_71288bbbf3474282",
-            "previous_sibling": "node_3ed4f114335647a6"
+            "dialog_node": "node_eb85797d560d488b",
+            "previous_sibling": "node_0572073e892d4f4d"
         },
         {
             "type": "standard",
@@ -2723,8 +2723,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--maior-recife-mundo || @modificador:maior && @substantivo:recife && @recipiente:mundo && $contexto==\"coral\" || @modificador:maior && @substantivo:recife && @recipiente:mundo && @rótulos:coral",
-            "dialog_node": "node_3fdae01b5c894e34",
-            "previous_sibling": "node_71288bbbf3474282"
+            "dialog_node": "node_42ee0190af304a4c",
+            "previous_sibling": "node_eb85797d560d488b"
         },
         {
             "type": "standard",
@@ -2746,8 +2746,8 @@
                 "contexto": "coral"
             },
             "conditions": "#coral--motivo-branqueamento || @modificador:motivo && @substantivo:branqueamento && $contexto==\"coral\" || @modificador:motivo && @substantivo:branqueamento && @rótulos:coral",
-            "dialog_node": "node_4c570c4975f54c53",
-            "previous_sibling": "node_3fdae01b5c894e34"
+            "dialog_node": "node_bab971be2bd647b5",
+            "previous_sibling": "node_42ee0190af304a4c"
         },
         {
             "type": "standard",
@@ -2768,9 +2768,9 @@
             "context": {
                 "contexto": "coral_turismo"
             },
-            "conditions": "#coral_turismo--efeito-turismo || @modificador:efeito && @substantivo:turismo",
-            "dialog_node": "node_6e7a0967a8db4022",
-            "previous_sibling": "node_4c570c4975f54c53"
+            "conditions": "#coral_turismo--efeito-turismo || @modificador:efeito && @substantivo:turismo && $contexto==\"coral\" || @modificador:efeito && @substantivo:turismo && @rótulos:coral",
+            "dialog_node": "node_17a7a8267ccc4f33",
+            "previous_sibling": "node_bab971be2bd647b5"
         },
         {
             "type": "standard",
@@ -2792,8 +2792,8 @@
                 "contexto": "corrente"
             },
             "conditions": "#corrente--definição || @modificador:definição && $contexto==\"corrente\" || @modificador:definição && @rótulos:corrente",
-            "dialog_node": "node_20cd9477b3db4ad0",
-            "previous_sibling": "node_6e7a0967a8db4022"
+            "dialog_node": "node_e4f89b1e99414a68",
+            "previous_sibling": "node_17a7a8267ccc4f33"
         },
         {
             "type": "standard",
@@ -2814,9 +2814,9 @@
             "context": {
                 "contexto": "energia-de-mare"
             },
-            "conditions": "#energia-de-maré--definição || @modificador:definição && $contexto==\"energia\" || @modificador:definição && @rótulos:energia || @modificador:definição && $contexto==\"de\" || @modificador:definição && @rótulos:de || @modificador:definição && $contexto==\"energia-de-mare\" || @modificador:definição && @rótulos:energia-de-mare || @modificador:definição && $contexto==\"mare\" || @modificador:definição && @rótulos:mare",
-            "dialog_node": "node_2e857f7740504e8c",
-            "previous_sibling": "node_20cd9477b3db4ad0"
+            "conditions": "#energia-de-maré--definição || @modificador:definição && $contexto==\"energia-de-mare\" || @modificador:definição && @rótulos:energia-de-mare",
+            "dialog_node": "node_a565a3a639d143d3",
+            "previous_sibling": "node_e4f89b1e99414a68"
         },
         {
             "type": "standard",
@@ -2837,9 +2837,9 @@
             "context": {
                 "contexto": "energia-de-mare"
             },
-            "conditions": "#energia-de-maré--efeito-ambiente || @modificador:efeito && @recipiente:ambiente && $contexto==\"energia\" || @modificador:efeito && @recipiente:ambiente && @rótulos:energia || @modificador:efeito && @recipiente:ambiente && $contexto==\"de\" || @modificador:efeito && @recipiente:ambiente && @rótulos:de || @modificador:efeito && @recipiente:ambiente && $contexto==\"energia-de-mare\" || @modificador:efeito && @recipiente:ambiente && @rótulos:energia-de-mare || @modificador:efeito && @recipiente:ambiente && $contexto==\"mare\" || @modificador:efeito && @recipiente:ambiente && @rótulos:mare",
-            "dialog_node": "node_372bf49fdcad46c9",
-            "previous_sibling": "node_2e857f7740504e8c"
+            "conditions": "#energia-de-maré--efeito-ambiente || @modificador:efeito && @recipiente:ambiente && $contexto==\"energia-de-mare\" || @modificador:efeito && @recipiente:ambiente && @rótulos:energia-de-mare",
+            "dialog_node": "node_04d1c0a1a83a4db5",
+            "previous_sibling": "node_a565a3a639d143d3"
         },
         {
             "type": "standard",
@@ -2860,9 +2860,9 @@
             "context": {
                 "contexto": "energia-de-mare"
             },
-            "conditions": "#energia-de-maré--explicar-geração || @modificador:explicar && @substantivo:geração && $contexto==\"energia\" || @modificador:explicar && @substantivo:geração && @rótulos:energia || @modificador:explicar && @substantivo:geração && $contexto==\"de\" || @modificador:explicar && @substantivo:geração && @rótulos:de || @modificador:explicar && @substantivo:geração && $contexto==\"energia-de-mare\" || @modificador:explicar && @substantivo:geração && @rótulos:energia-de-mare || @modificador:explicar && @substantivo:geração && $contexto==\"mare\" || @modificador:explicar && @substantivo:geração && @rótulos:mare",
-            "dialog_node": "node_ef5fe351e7ab44ce",
-            "previous_sibling": "node_372bf49fdcad46c9"
+            "conditions": "#energia-de-maré--explicar-geração || @modificador:explicar && @substantivo:geração && $contexto==\"energia-de-mare\" || @modificador:explicar && @substantivo:geração && @rótulos:energia-de-mare",
+            "dialog_node": "node_9651befb49874ab3",
+            "previous_sibling": "node_04d1c0a1a83a4db5"
         },
         {
             "type": "standard",
@@ -2883,9 +2883,9 @@
             "context": {
                 "contexto": "energia-de-mare"
             },
-            "conditions": "#energia-de-maré--listar-contras || @modificador:listar && @substantivo:contras && $contexto==\"energia\" || @modificador:listar && @substantivo:contras && @rótulos:energia || @modificador:listar && @substantivo:contras && $contexto==\"de\" || @modificador:listar && @substantivo:contras && @rótulos:de || @modificador:listar && @substantivo:contras && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:contras && @rótulos:energia-de-mare || @modificador:listar && @substantivo:contras && $contexto==\"mare\" || @modificador:listar && @substantivo:contras && @rótulos:mare",
-            "dialog_node": "node_cd39b86bb9e448fb",
-            "previous_sibling": "node_ef5fe351e7ab44ce"
+            "conditions": "#energia-de-maré--listar-contras || @modificador:listar && @substantivo:contras && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:contras && @rótulos:energia-de-mare",
+            "dialog_node": "node_09042e26dd7f4ba1",
+            "previous_sibling": "node_9651befb49874ab3"
         },
         {
             "type": "standard",
@@ -2906,9 +2906,9 @@
             "context": {
                 "contexto": "energia-de-mare"
             },
-            "conditions": "#energia-de-maré--listar-prós || @modificador:listar && @substantivo:prós && $contexto==\"energia\" || @modificador:listar && @substantivo:prós && @rótulos:energia || @modificador:listar && @substantivo:prós && $contexto==\"de\" || @modificador:listar && @substantivo:prós && @rótulos:de || @modificador:listar && @substantivo:prós && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:prós && @rótulos:energia-de-mare || @modificador:listar && @substantivo:prós && $contexto==\"mare\" || @modificador:listar && @substantivo:prós && @rótulos:mare",
-            "dialog_node": "node_4548cc04ecdc4a61",
-            "previous_sibling": "node_cd39b86bb9e448fb"
+            "conditions": "#energia-de-maré--listar-prós || @modificador:listar && @substantivo:prós && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:prós && @rótulos:energia-de-mare",
+            "dialog_node": "node_0a63228be6084e32",
+            "previous_sibling": "node_09042e26dd7f4ba1"
         },
         {
             "type": "standard",
@@ -2929,9 +2929,9 @@
             "context": {
                 "contexto": "energia-de-mare"
             },
-            "conditions": "#energia-de-maré--listar-prós-e-contras || @modificador:listar && @substantivo:prós-e-contras && $contexto==\"energia\" || @modificador:listar && @substantivo:prós-e-contras && @rótulos:energia || @modificador:listar && @substantivo:prós-e-contras && $contexto==\"de\" || @modificador:listar && @substantivo:prós-e-contras && @rótulos:de || @modificador:listar && @substantivo:prós-e-contras && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:prós-e-contras && @rótulos:energia-de-mare || @modificador:listar && @substantivo:prós-e-contras && $contexto==\"mare\" || @modificador:listar && @substantivo:prós-e-contras && @rótulos:mare",
-            "dialog_node": "node_1ea88329b82440cf",
-            "previous_sibling": "node_4548cc04ecdc4a61"
+            "conditions": "#energia-de-maré--listar-prós-e-contras || @modificador:listar && @substantivo:prós-e-contras && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:prós-e-contras && @rótulos:energia-de-mare",
+            "dialog_node": "node_86123c26b33849a0",
+            "previous_sibling": "node_0a63228be6084e32"
         },
         {
             "type": "standard",
@@ -2952,9 +2952,9 @@
             "context": {
                 "contexto": "energia-de-mare"
             },
-            "conditions": "#energia-de-maré--localização || @modificador:localização && $contexto==\"energia\" || @modificador:localização && @rótulos:energia || @modificador:localização && $contexto==\"de\" || @modificador:localização && @rótulos:de || @modificador:localização && $contexto==\"energia-de-mare\" || @modificador:localização && @rótulos:energia-de-mare || @modificador:localização && $contexto==\"mare\" || @modificador:localização && @rótulos:mare",
-            "dialog_node": "node_98472ddfc29043f5",
-            "previous_sibling": "node_1ea88329b82440cf"
+            "conditions": "#energia-de-maré--localização || @modificador:localização && $contexto==\"energia-de-mare\" || @modificador:localização && @rótulos:energia-de-mare",
+            "dialog_node": "node_055dbe0f531c4c06",
+            "previous_sibling": "node_86123c26b33849a0"
         },
         {
             "type": "standard",
@@ -2977,7 +2977,7 @@
             },
             "conditions": "#fauna--definição-actinoperígeo || @modificador:definição && @substantivo:actinoperígeo",
             "dialog_node": "node_ea7ad4aa5fff4bc4",
-            "previous_sibling": "node_98472ddfc29043f5"
+            "previous_sibling": "node_055dbe0f531c4c06"
         },
         {
             "type": "standard",
@@ -3436,7 +3436,7 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--existe-baleia || @modificador:existe && @substantivo:baleia",
-            "dialog_node": "node_8ead651199594cd8",
+            "dialog_node": "node_a7dc5155850c4ad1",
             "previous_sibling": "node_96b886dee61b4ebe"
         },
         {
@@ -3460,7 +3460,7 @@
             },
             "conditions": "#fauna--existe-baleia || @modificador:existe && @substantivo:baleia",
             "dialog_node": "node_781e2fe76ea34f3f",
-            "previous_sibling": "node_8ead651199594cd8"
+            "previous_sibling": "node_a7dc5155850c4ad1"
         },
         {
             "type": "standard",
@@ -3482,7 +3482,7 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--existe-tubarão || @modificador:existe && @substantivo:tubarão",
-            "dialog_node": "node_e7d927d8c4884e1a",
+            "dialog_node": "node_c0a0636fc0704f3c",
             "previous_sibling": "node_781e2fe76ea34f3f"
         },
         {
@@ -3506,7 +3506,7 @@
             },
             "conditions": "#fauna--listar-animal-marinho || @modificador:listar && @substantivo:animal && @recipiente:marinho",
             "dialog_node": "node_dbdf21e663d74268",
-            "previous_sibling": "node_e7d927d8c4884e1a"
+            "previous_sibling": "node_c0a0636fc0704f3c"
         },
         {
             "type": "standard",
@@ -3620,7 +3620,7 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--pertence-tubarão-peixe || @modificador:pertence && @substantivo:tubarão && @recipiente:peixe",
-            "dialog_node": "node_983bd67da1b24924",
+            "dialog_node": "node_61f8c501aab940be",
             "previous_sibling": "node_f02eafc0a559447e"
         },
         {
@@ -3644,7 +3644,7 @@
             },
             "conditions": "#fauna-turismo--existe-tubarão || @modificador:existe && @substantivo:tubarão",
             "dialog_node": "node_763e58585a5942f9",
-            "previous_sibling": "node_983bd67da1b24924"
+            "previous_sibling": "node_61f8c501aab940be"
         },
         {
             "type": "standard",
@@ -3827,7 +3827,7 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--definição-dia-de-maré || @modificador:definição && @substantivo:dia-de-maré && $contexto==\"mare\" || @modificador:definição && @substantivo:dia-de-maré && @rótulos:mare",
-            "dialog_node": "node_5811171f21b64cd5",
+            "dialog_node": "node_f34346fa62ee4de0",
             "previous_sibling": "node_7c859a6294b7464b"
         },
         {
@@ -3850,8 +3850,8 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--detalhar-frequência || @modificador:detalhar && @substantivo:frequência && $contexto==\"mare\" || @modificador:detalhar && @substantivo:frequência && @rótulos:mare",
-            "dialog_node": "node_9e4523913c074139",
-            "previous_sibling": "node_5811171f21b64cd5"
+            "dialog_node": "node_122629fa64334714",
+            "previous_sibling": "node_f34346fa62ee4de0"
         },
         {
             "type": "standard",
@@ -3873,8 +3873,8 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--detalhar-tempo-entre-altas || @modificador:detalhar && @substantivo:tempo-entre-altas && $contexto==\"mare\" || @modificador:detalhar && @substantivo:tempo-entre-altas && @rótulos:mare",
-            "dialog_node": "node_b92cfcb4bb2741f2",
-            "previous_sibling": "node_9e4523913c074139"
+            "dialog_node": "node_71a716a3ed4c4580",
+            "previous_sibling": "node_122629fa64334714"
         },
         {
             "type": "standard",
@@ -3896,8 +3896,8 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--detalhar-variação-da-altura-dia || @modificador:detalhar && @substantivo:variação-da-altura && @recipiente:dia && $contexto==\"mare\" || @modificador:detalhar && @substantivo:variação-da-altura && @recipiente:dia && @rótulos:mare",
-            "dialog_node": "node_1dcb3de22ec9420b",
-            "previous_sibling": "node_b92cfcb4bb2741f2"
+            "dialog_node": "node_a9831bb81f5f481c",
+            "previous_sibling": "node_71a716a3ed4c4580"
         },
         {
             "type": "standard",
@@ -3919,8 +3919,8 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--explicar-causa || @modificador:explicar && @substantivo:causa && $contexto==\"mare\" || @modificador:explicar && @substantivo:causa && @rótulos:mare",
-            "dialog_node": "node_99a7233c72c94b17",
-            "previous_sibling": "node_1dcb3de22ec9420b"
+            "dialog_node": "node_5651e0ac977a4b8e",
+            "previous_sibling": "node_a9831bb81f5f481c"
         },
         {
             "type": "standard",
@@ -3942,8 +3942,8 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--motivo || @modificador:motivo && $contexto==\"mare\" || @modificador:motivo && @rótulos:mare",
-            "dialog_node": "node_aea019d59962448f",
-            "previous_sibling": "node_99a7233c72c94b17"
+            "dialog_node": "node_8078a13791ad4917",
+            "previous_sibling": "node_5651e0ac977a4b8e"
         },
         {
             "type": "standard",
@@ -3965,8 +3965,8 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--quantidade-dia || @modificador:quantidade && @recipiente:dia && $contexto==\"mare\" || @modificador:quantidade && @recipiente:dia && @rótulos:mare",
-            "dialog_node": "node_f5a2505e53fd4857",
-            "previous_sibling": "node_aea019d59962448f"
+            "dialog_node": "node_cb62c23a254848cd",
+            "previous_sibling": "node_8078a13791ad4917"
         },
         {
             "type": "standard",
@@ -3988,8 +3988,8 @@
                 "contexto": "outras"
             },
             "conditions": "#outras--definição-aaz || @modificador:definição && @recipiente:aaz",
-            "dialog_node": "node_5f56a3e09e634836",
-            "previous_sibling": "node_f5a2505e53fd4857"
+            "dialog_node": "node_86bf3199c4774f52",
+            "previous_sibling": "node_cb62c23a254848cd"
         },
         {
             "type": "standard",
@@ -4012,7 +4012,7 @@
             },
             "conditions": "#outras--motivo-importância-aaz || @modificador:motivo && @substantivo:importância && @recipiente:aaz",
             "dialog_node": "node_af69f26ac97b40a2",
-            "previous_sibling": "node_5f56a3e09e634836"
+            "previous_sibling": "node_86bf3199c4774f52"
         },
         {
             "type": "standard",
@@ -4057,7 +4057,7 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--composição || @modificador:composição && $contexto==\"petroleo\" || @modificador:composição && @rótulos:petroleo",
-            "dialog_node": "node_6bd7693f09c04d8c",
+            "dialog_node": "node_3c64ebd8564c4526",
             "previous_sibling": "node_daabd381c6de471c"
         },
         {
@@ -4080,8 +4080,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--definição || @modificador:definição && $contexto==\"petroleo\" || @modificador:definição && @rótulos:petroleo",
-            "dialog_node": "node_9eeafde40ecf44bd",
-            "previous_sibling": "node_6bd7693f09c04d8c"
+            "dialog_node": "node_947ff375ce2d4062",
+            "previous_sibling": "node_3c64ebd8564c4526"
         },
         {
             "type": "standard",
@@ -4103,8 +4103,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--definição-derramamento || @modificador:definição && @substantivo:derramamento && $contexto==\"petroleo\" || @modificador:definição && @substantivo:derramamento && @rótulos:petroleo",
-            "dialog_node": "node_47b456d90ffd441f",
-            "previous_sibling": "node_9eeafde40ecf44bd"
+            "dialog_node": "node_f1b52fb4443748ed",
+            "previous_sibling": "node_947ff375ce2d4062"
         },
         {
             "type": "standard",
@@ -4126,8 +4126,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--definição-onshore-offshore || @modificador:definição && @substantivo:onshore-offshore && $contexto==\"petroleo\" || @modificador:definição && @substantivo:onshore-offshore && @rótulos:petroleo",
-            "dialog_node": "node_5e4e13a09e0e40d4",
-            "previous_sibling": "node_47b456d90ffd441f"
+            "dialog_node": "node_7172926532784604",
+            "previous_sibling": "node_f1b52fb4443748ed"
         },
         {
             "type": "standard",
@@ -4149,8 +4149,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--definição-plataforma || @modificador:definição && @recipiente:plataforma && $contexto==\"petroleo\" || @modificador:definição && @recipiente:plataforma && @rótulos:petroleo",
-            "dialog_node": "node_1964b43589664e54",
-            "previous_sibling": "node_5e4e13a09e0e40d4"
+            "dialog_node": "node_714ebbf99c354242",
+            "previous_sibling": "node_7172926532784604"
         },
         {
             "type": "standard",
@@ -4172,8 +4172,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-extração-custo || @modificador:detalhar && @substantivo:extração && @recipiente:custo && $contexto==\"petroleo\" || @modificador:detalhar && @substantivo:extração && @recipiente:custo && @rótulos:petroleo",
-            "dialog_node": "node_d2de5276d0454f25",
-            "previous_sibling": "node_1964b43589664e54"
+            "dialog_node": "node_0bbfb29916e540df",
+            "previous_sibling": "node_714ebbf99c354242"
         },
         {
             "type": "standard",
@@ -4195,8 +4195,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-fim || @modificador:detalhar && @substantivo:fim && $contexto==\"petroleo\" || @modificador:detalhar && @substantivo:fim && @rótulos:petroleo",
-            "dialog_node": "node_9398cce045c44ed6",
-            "previous_sibling": "node_d2de5276d0454f25"
+            "dialog_node": "node_b48dff0e92bf48de",
+            "previous_sibling": "node_0bbfb29916e540df"
         },
         {
             "type": "standard",
@@ -4218,8 +4218,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-preço || @modificador:detalhar && @substantivo:preço && $contexto==\"petroleo\" || @modificador:detalhar && @substantivo:preço && @rótulos:petroleo",
-            "dialog_node": "node_9c6dbd321e4c4359",
-            "previous_sibling": "node_9398cce045c44ed6"
+            "dialog_node": "node_2c705d6972084097",
+            "previous_sibling": "node_b48dff0e92bf48de"
         },
         {
             "type": "standard",
@@ -4242,7 +4242,7 @@
             },
             "conditions": "#petróleo--detalhar-produção || @modificador:detalhar && @recipiente:produção && $contexto==\"petroleo\" || @modificador:detalhar && @recipiente:produção && @rótulos:petroleo",
             "dialog_node": "node_8867d6bf610e460f",
-            "previous_sibling": "node_9c6dbd321e4c4359"
+            "previous_sibling": "node_2c705d6972084097"
         },
         {
             "type": "standard",
@@ -4264,7 +4264,7 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--efeito-derramamento-ambiente || @modificador:efeito && @substantivo:derramamento && @recipiente:ambiente && $contexto==\"petroleo\" || @modificador:efeito && @substantivo:derramamento && @recipiente:ambiente && @rótulos:petroleo",
-            "dialog_node": "node_734b92fa54f4448d",
+            "dialog_node": "node_c2383a1fac964744",
             "previous_sibling": "node_8867d6bf610e460f"
         },
         {
@@ -4287,8 +4287,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--efeito-derramamento-economia || @modificador:efeito && @substantivo:derramamento && @recipiente:economia && $contexto==\"petroleo\" || @modificador:efeito && @substantivo:derramamento && @recipiente:economia && @rótulos:petroleo",
-            "dialog_node": "node_b1b3dfc694ca40f9",
-            "previous_sibling": "node_734b92fa54f4448d"
+            "dialog_node": "node_01cbe70fafd64e8c",
+            "previous_sibling": "node_c2383a1fac964744"
         },
         {
             "type": "standard",
@@ -4310,8 +4310,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--listar-derivado || @modificador:listar && @substantivo:derivado && $contexto==\"petroleo\" || @modificador:listar && @substantivo:derivado && @rótulos:petroleo",
-            "dialog_node": "node_f005312a412848bf",
-            "previous_sibling": "node_b1b3dfc694ca40f9"
+            "dialog_node": "node_ba10bd1694524b53",
+            "previous_sibling": "node_01cbe70fafd64e8c"
         },
         {
             "type": "standard",
@@ -4333,8 +4333,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--listar-empresa-brasil || @modificador:listar && @substantivo:empresa && @recipiente:brasil && $contexto==\"petroleo\" || @modificador:listar && @substantivo:empresa && @recipiente:brasil && @rótulos:petroleo",
-            "dialog_node": "node_ef28ab0225a94283",
-            "previous_sibling": "node_f005312a412848bf"
+            "dialog_node": "node_3bd75e6df86c460d",
+            "previous_sibling": "node_ba10bd1694524b53"
         },
         {
             "type": "standard",
@@ -4356,8 +4356,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--listar-tipo-plataforma || @modificador:listar && @substantivo:tipo && @recipiente:plataforma && $contexto==\"petroleo\" || @modificador:listar && @substantivo:tipo && @recipiente:plataforma && @rótulos:petroleo",
-            "dialog_node": "node_6a9cb294b84448ad",
-            "previous_sibling": "node_ef28ab0225a94283"
+            "dialog_node": "node_046877fff2d3485d",
+            "previous_sibling": "node_3bd75e6df86c460d"
         },
         {
             "type": "standard",
@@ -4380,7 +4380,7 @@
             },
             "conditions": "#petróleo--localização || @modificador:localização && $contexto==\"petroleo\" || @modificador:localização && @rótulos:petroleo",
             "dialog_node": "node_aac4b5c6f98848cc",
-            "previous_sibling": "node_6a9cb294b84448ad"
+            "previous_sibling": "node_046877fff2d3485d"
         },
         {
             "type": "standard",
@@ -4402,7 +4402,7 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maior-empresa || @modificador:maior && @substantivo:empresa && $contexto==\"petroleo\" || @modificador:maior && @substantivo:empresa && @rótulos:petroleo",
-            "dialog_node": "node_58a3aec3610e4c30",
+            "dialog_node": "node_d69b9bb35e8749ee",
             "previous_sibling": "node_aac4b5c6f98848cc"
         },
         {
@@ -4425,8 +4425,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maior-reserva || @modificador:maior && @substantivo:reserva && $contexto==\"petroleo\" || @modificador:maior && @substantivo:reserva && @rótulos:petroleo",
-            "dialog_node": "node_82ea6876d1c74356",
-            "previous_sibling": "node_58a3aec3610e4c30"
+            "dialog_node": "node_02ff12f978684c3c",
+            "previous_sibling": "node_d69b9bb35e8749ee"
         },
         {
             "type": "standard",
@@ -4448,8 +4448,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maiores-campo || @modificador:maiores && @substantivo:campo && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:campo && @rótulos:petroleo",
-            "dialog_node": "node_2bde83a6a2a945e2",
-            "previous_sibling": "node_82ea6876d1c74356"
+            "dialog_node": "node_74370d0cfa1b403e",
+            "previous_sibling": "node_02ff12f978684c3c"
         },
         {
             "type": "standard",
@@ -4471,8 +4471,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maiores-derramamento || @modificador:maiores && @substantivo:derramamento && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:derramamento && @rótulos:petroleo",
-            "dialog_node": "node_b824f6a9536841dc",
-            "previous_sibling": "node_2bde83a6a2a945e2"
+            "dialog_node": "node_8e339e80101e470b",
+            "previous_sibling": "node_74370d0cfa1b403e"
         },
         {
             "type": "standard",
@@ -4495,7 +4495,7 @@
             },
             "conditions": "#petróleo--maiores-estado-produção || @modificador:maiores && @substantivo:estado && @recipiente:produção && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:estado && @recipiente:produção && @rótulos:petroleo",
             "dialog_node": "node_d190584c5ab04b00",
-            "previous_sibling": "node_b824f6a9536841dc"
+            "previous_sibling": "node_8e339e80101e470b"
         },
         {
             "type": "standard",
@@ -4540,7 +4540,7 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maiores-reserva || @modificador:maiores && @substantivo:reserva && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:reserva && @rótulos:petroleo",
-            "dialog_node": "node_e2b8625c7c004385",
+            "dialog_node": "node_6a1bb49d29f5488a",
             "previous_sibling": "node_ef12302170ea42cc"
         },
         {
@@ -4563,8 +4563,8 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--pertence-recurso-renovável || @modificador:pertence && @recipiente:recurso-renovável && $contexto==\"petroleo\" || @modificador:pertence && @recipiente:recurso-renovável && @rótulos:petroleo",
-            "dialog_node": "node_1a5f25fdd7594a08",
-            "previous_sibling": "node_e2b8625c7c004385"
+            "dialog_node": "node_44b4c63c0b574506",
+            "previous_sibling": "node_6a1bb49d29f5488a"
         },
         {
             "type": "standard",
@@ -4587,7 +4587,7 @@
             },
             "conditions": "#petróleo--quantidade || @modificador:quantidade && $contexto==\"petroleo\" || @modificador:quantidade && @rótulos:petroleo",
             "dialog_node": "node_d17014f9e0e1420d",
-            "previous_sibling": "node_1a5f25fdd7594a08"
+            "previous_sibling": "node_44b4c63c0b574506"
         },
         {
             "type": "standard",
@@ -4609,7 +4609,7 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--quantidade-consumo || @modificador:quantidade && @recipiente:consumo && $contexto==\"petroleo\" || @modificador:quantidade && @recipiente:consumo && @rótulos:petroleo",
-            "dialog_node": "node_afebf184e645426b",
+            "dialog_node": "node_c0885b5a72cf4001",
             "previous_sibling": "node_d17014f9e0e1420d"
         },
         {
@@ -4633,7 +4633,7 @@
             },
             "conditions": "#tartarugas--definição || @modificador:definição && $contexto==\"tartarugas\" || @modificador:definição && @rótulos:tartarugas",
             "dialog_node": "node_74b81b8daad0492b",
-            "previous_sibling": "node_afebf184e645426b"
+            "previous_sibling": "node_c0885b5a72cf4001"
         },
         {
             "type": "standard",
@@ -4747,7 +4747,7 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-idade-reprodutiva || @modificador:detalhar && @recipiente:idade-reprodutiva && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:idade-reprodutiva && @rótulos:tartarugas",
-            "dialog_node": "node_b14a5d66ea8a4c35",
+            "dialog_node": "node_d34dbb5fe96f409d",
             "previous_sibling": "node_016570d2d04a40ab"
         },
         {
@@ -4770,8 +4770,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-origem || @modificador:detalhar && @recipiente:origem && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:origem && @rótulos:tartarugas",
-            "dialog_node": "node_2f1df8a2aa804cd0",
-            "previous_sibling": "node_b14a5d66ea8a4c35"
+            "dialog_node": "node_deeed21e5be240a0",
+            "previous_sibling": "node_d34dbb5fe96f409d"
         },
         {
             "type": "standard",
@@ -4794,7 +4794,7 @@
             },
             "conditions": "#tartarugas--detalhar-peso || @modificador:detalhar && @recipiente:peso && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:peso && @rótulos:tartarugas",
             "dialog_node": "node_9a15b8b2f0294b0b",
-            "previous_sibling": "node_2f1df8a2aa804cd0"
+            "previous_sibling": "node_deeed21e5be240a0"
         },
         {
             "type": "standard",
@@ -4816,7 +4816,7 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-reprodução || @modificador:detalhar && @recipiente:reprodução && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:reprodução && @rótulos:tartarugas",
-            "dialog_node": "node_b68e0ca1bc2e4d29",
+            "dialog_node": "node_2a25acfafe964fa2",
             "previous_sibling": "node_9a15b8b2f0294b0b"
         },
         {
@@ -4840,7 +4840,7 @@
             },
             "conditions": "#tartarugas--diferença-jabuti-tartaruga || @modificador:diferença && @substantivo:jabuti && @recipiente:tartaruga && $contexto==\"tartarugas\" || @modificador:diferença && @substantivo:jabuti && @recipiente:tartaruga && @rótulos:tartarugas",
             "dialog_node": "node_593a16b7776b4d38",
-            "previous_sibling": "node_b68e0ca1bc2e4d29"
+            "previous_sibling": "node_2a25acfafe964fa2"
         },
         {
             "type": "standard",
@@ -4885,7 +4885,7 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--explicar-ciclo-de-vida || @modificador:explicar && @recipiente:ciclo-de-vida && $contexto==\"tartarugas\" || @modificador:explicar && @recipiente:ciclo-de-vida && @rótulos:tartarugas",
-            "dialog_node": "node_c198828632f14688",
+            "dialog_node": "node_8f994c89ae514d1c",
             "previous_sibling": "node_021d1478082e4ee1"
         },
         {
@@ -4909,7 +4909,7 @@
             },
             "conditions": "#tartarugas--listar-espécie || @modificador:listar && @substantivo:espécie && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:espécie && @rótulos:tartarugas",
             "dialog_node": "node_1f92f49e6380498a",
-            "previous_sibling": "node_c198828632f14688"
+            "previous_sibling": "node_8f994c89ae514d1c"
         },
         {
             "type": "standard",
@@ -4954,7 +4954,7 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--listar-predador || @modificador:listar && @substantivo:predador && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:predador && @rótulos:tartarugas",
-            "dialog_node": "node_55b1f6dd08f64809",
+            "dialog_node": "node_4863c98d169a4f78",
             "previous_sibling": "node_f38446cb2abf420a"
         },
         {
@@ -4978,7 +4978,7 @@
             },
             "conditions": "#tartarugas--localização || @modificador:localização && $contexto==\"tartarugas\" || @modificador:localização && @rótulos:tartarugas",
             "dialog_node": "node_6124367bc03c4091",
-            "previous_sibling": "node_55b1f6dd08f64809"
+            "previous_sibling": "node_4863c98d169a4f78"
         },
         {
             "type": "standard",
@@ -5046,7 +5046,7 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--quantidade-anos-de-vida || @modificador:quantidade && @recipiente:anos-de-vida && $contexto==\"tartarugas\" || @modificador:quantidade && @recipiente:anos-de-vida && @rótulos:tartarugas",
-            "dialog_node": "node_1e7d7cca43b34a0c",
+            "dialog_node": "node_806c2f3222884934",
             "previous_sibling": "node_a7731d38babe4a97"
         },
         {
@@ -5070,7 +5070,7 @@
             },
             "conditions": "anything_else",
             "dialog_node": "node_7_1633148066996",
-            "previous_sibling": "node_1e7d7cca43b34a0c",
+            "previous_sibling": "node_806c2f3222884934",
             "digress_in": "returns",
             "digress_out": "allow_all"
         }
