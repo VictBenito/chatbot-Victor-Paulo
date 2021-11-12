@@ -64,10 +64,199 @@
       "description": ""
     },
     {
+      "intent": "coral--definição-branqueamento",
+      "examples": [
+        {
+          "text": "O que é o branqueamento de corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--definição-recife",
+      "examples": [
+        {
+          "text": "O que é um recife de corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--definição-recife-artificial",
+      "examples": [
+        {
+          "text": "O que são recifes artificiais?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "coral--detalhar-dieta",
       "examples": [
         {
           "text": "Do que um coral se alimenta?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--detalhar-símbolo",
+      "examples": [
+        {
+          "text": "O que o coral simboliza?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--efeito-branqueamento-ambiente",
+      "examples": [
+        {
+          "text": "Quais são os efeitos ambientais do branqueamento de corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--explicar-importância",
+      "examples": [
+        {
+          "text": "Qual é a importância dos corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--listar-iniciativas-governo",
+      "examples": [
+        {
+          "text": "Quais são as iniciativas do governo para proteger os corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--listar-tipos",
+      "examples": [
+        {
+          "text": "Que tipos de recifes de corais há?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--localização-recife",
+      "examples": [
+        {
+          "text": "Onde ficam os recifes de corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--maior-recife-brasil",
+      "examples": [
+        {
+          "text": "Qual é o maior recife de corais no Brasil?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--maior-recife-mundo",
+      "examples": [
+        {
+          "text": "Qual é o maior recife de corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral--motivo-branqueamento",
+      "examples": [
+        {
+          "text": "O que causa o branqueamento de corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coral_turismo--efeito-turismo",
+      "examples": [
+        {
+          "text": "Quais são os efeitos do turismo em corais?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "corrente--definição",
+      "examples": [
+        {
+          "text": "O que são correntes oceânicas?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "energia-de-maré--definição",
+      "examples": [
+        {
+          "text": "O que é energia de maré?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "energia-de-maré--efeito-ambiente",
+      "examples": [
+        {
+          "text": "Impactos ambientais da energia de maré?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "energia-de-maré--explicar-geração",
+      "examples": [
+        {
+          "text": "Como é gerada a energia de maré?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "energia-de-maré--listar-contras",
+      "examples": [
+        {
+          "text": "Quais são os principais contras da energia de marés?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "energia-de-maré--listar-prós",
+      "examples": [
+        {
+          "text": "Quais são as vantagens da energia de marés?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "energia-de-maré--listar-prós-e-contras",
+      "examples": [
+        {
+          "text": "Quais são os prós e contras da energia de maré?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "energia-de-maré--localização",
+      "examples": [
+        {
+          "text": "Onde é colhida a energia das marés?"
         }
       ],
       "description": ""
@@ -268,6 +457,15 @@
       "description": ""
     },
     {
+      "intent": "fauna--existe-tubarão",
+      "examples": [
+        {
+          "text": "Há tubarões no Brasil?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "fauna--listar-animal-marinho",
       "examples": [
         {
@@ -308,6 +506,15 @@
       "examples": [
         {
           "text": "Qual é o maior animal no oceano?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "fauna--pertence-tubarão-peixe",
+      "examples": [
+        {
+          "text": "Tubarão é peixe?"
         }
       ],
       "description": ""
@@ -400,6 +607,75 @@
       "description": ""
     },
     {
+      "intent": "maré--definição-dia-de-maré",
+      "examples": [
+        {
+          "text": "O que é um dia de maré?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "maré--detalhar-frequência",
+      "examples": [
+        {
+          "text": "Com que frequência as marés mudam?"
+        },
+        {
+          "text": "Quais são os regimes de marés?"
+        },
+        {
+          "text": "Qual é a periodicidade das marés?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "maré--detalhar-tempo-entre-altas",
+      "examples": [
+        {
+          "text": "Quanto tempo deve decorrer entre duas marés altas?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "maré--detalhar-variação-da-altura-dia",
+      "examples": [
+        {
+          "text": "Qual é o aumento diário e queda do nível do mar?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "maré--explicar-causa",
+      "examples": [
+        {
+          "text": "O que controla a maré?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "maré--motivo",
+      "examples": [
+        {
+          "text": "O que causa marés na terra?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "maré--quantidade-dia",
+      "examples": [
+        {
+          "text": "Quantas marés por dia?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "oi",
       "examples": [
         {
@@ -424,6 +700,15 @@
       "description": ""
     },
     {
+      "intent": "outras--definição-aaz",
+      "examples": [
+        {
+          "text": "O que é Amazônia Azul?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "outras--motivo-importância-aaz",
       "examples": [
         {
@@ -442,6 +727,81 @@
       "description": ""
     },
     {
+      "intent": "petróleo--composição",
+      "examples": [
+        {
+          "text": "Do que é composto o petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--definição",
+      "examples": [
+        {
+          "text": "O que é petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--definição-derramamento",
+      "examples": [
+        {
+          "text": "O que é um derramamento de petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--definição-onshore-offshore",
+      "examples": [
+        {
+          "text": "O que é offshore?"
+        },
+        {
+          "text": "O que é onshore?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--definição-plataforma",
+      "examples": [
+        {
+          "text": "O que é uma plataforma de petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--detalhar-extração-custo",
+      "examples": [
+        {
+          "text": "Quanto custa extrair petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--detalhar-fim",
+      "examples": [
+        {
+          "text": "Quando o petróleo vai acabar?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--detalhar-preço",
+      "examples": [
+        {
+          "text": "Qual é o preço do petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "petróleo--detalhar-produção",
       "examples": [
         {
@@ -451,10 +811,82 @@
       "description": ""
     },
     {
+      "intent": "petróleo--efeito-derramamento-ambiente",
+      "examples": [
+        {
+          "text": "Quais são os impactos ambientais de derramamentos de petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--efeito-derramamento-economia",
+      "examples": [
+        {
+          "text": "Quais são os impactos econômicos de derramamentos de petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--listar-derivado",
+      "examples": [
+        {
+          "text": "O que é feito a partir de petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--listar-empresa-brasil",
+      "examples": [
+        {
+          "text": "Que empresas extraem petróleo no Brasil?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--listar-tipo-plataforma",
+      "examples": [
+        {
+          "text": "Quais são os tipos de plataformas de petróleo?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "petróleo--localização",
       "examples": [
         {
           "text": "Onde o petróleo é encontrado?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--maior-empresa",
+      "examples": [
+        {
+          "text": "Qual é a maior empresa petrolífera?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--maiores-campo",
+      "examples": [
+        {
+          "text": "Quais são as maiores bacias de petróleo no Brasil?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--maiores-derramamento",
+      "examples": [
+        {
+          "text": "Quais foram os maiores derramamentos de petróleo no Brasil?"
         }
       ],
       "description": ""
@@ -478,10 +910,37 @@
       "description": ""
     },
     {
+      "intent": "petróleo--maior-reserva",
+      "examples": [
+        {
+          "text": "Qual é a maior reserva de petróleo no Brasil?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--pertence-recurso-renovável",
+      "examples": [
+        {
+          "text": "Petróleo é um recurso renovável?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "petróleo--quantidade",
       "examples": [
         {
           "text": "Quanto petróleo há no Brasil?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "petróleo--quantidade-consumo",
+      "examples": [
+        {
+          "text": "Qual é o consumo de petróleo do Brasil?"
         }
       ],
       "description": ""
@@ -559,10 +1018,37 @@
       "description": ""
     },
     {
+      "intent": "tartarugas--detalhar-idade-reprodutiva",
+      "examples": [
+        {
+          "text": "Qual é a idade reprodutiva de uma tartaruga?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "tartarugas--detalhar-origem",
+      "examples": [
+        {
+          "text": "Qual é a origem evolutiva das tartarugas?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "tartarugas--detalhar-peso",
       "examples": [
         {
           "text": "Qual é o peso de uma tartaruga?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "tartarugas--detalhar-reprodução",
+      "examples": [
+        {
+          "text": "Como tartarugas se reproduzem?"
         }
       ],
       "description": ""
@@ -604,6 +1090,15 @@
       "description": ""
     },
     {
+      "intent": "tartarugas--listar-predador",
+      "examples": [
+        {
+          "text": "Quais são os predadores de tartarugas?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "tartarugas--localização",
       "examples": [
         {
@@ -629,6 +1124,15 @@
       "examples": [
         {
           "text": "Jabuti é um tipo de tartaruga?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "tartarugas--quantidade-anos-de-vida",
+      "examples": [
+        {
+          "text": "Quantos anos vive uma tartaruga?"
         }
       ],
       "description": ""
@@ -712,6 +1216,11 @@
         },
         {
           "type": "synonyms",
+          "value": "efeito",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "existe",
           "synonyms": []
         },
@@ -775,6 +1284,21 @@
         },
         {
           "type": "synonyms",
+          "value": "ambiente",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "anos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "brasil",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "ciclo",
           "synonyms": []
         },
@@ -785,7 +1309,17 @@
         },
         {
           "type": "synonyms",
+          "value": "custo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "de",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dia",
           "synonyms": []
         },
         {
@@ -797,7 +1331,22 @@
         },
         {
           "type": "synonyms",
+          "value": "economia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "extinção",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "governo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "idade",
           "synonyms": []
         },
         {
@@ -809,7 +1358,27 @@
         },
         {
           "type": "synonyms",
+          "value": "mundo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "origem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "peixe",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "peso",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "plataforma",
           "synonyms": []
         },
         {
@@ -819,7 +1388,37 @@
         },
         {
           "type": "synonyms",
+          "value": "recurso",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "renovável",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "reprodução",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "reprodutiva",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "símbolo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "tartaruga",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tipos",
           "synonyms": []
         },
         {
@@ -842,6 +1441,26 @@
         },
         {
           "type": "synonyms",
+          "value": "coral_turismo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "corrente",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "de",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "energia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "extra",
           "synonyms": []
         },
@@ -852,12 +1471,27 @@
         },
         {
           "type": "synonyms",
+          "value": "fauna_turismo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "flora",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "flora_fauna",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "gás",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "maré",
           "synonyms": []
         },
         {
@@ -876,6 +1510,11 @@
           "synonyms": [
             "tartarugas"
           ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tartarugas",
+          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -900,6 +1539,16 @@
         },
         {
           "type": "synonyms",
+          "value": "altas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "altura",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "anemona",
           "synonyms": []
         },
@@ -910,12 +1559,32 @@
         },
         {
           "type": "synonyms",
+          "value": "artificial",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "baleia",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "branqueamento",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "cágado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "campo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "causa",
           "synonyms": []
         },
         {
@@ -940,6 +1609,11 @@
         },
         {
           "type": "synonyms",
+          "value": "contras",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "coral",
           "synonyms": []
         },
@@ -955,7 +1629,42 @@
         },
         {
           "type": "synonyms",
+          "value": "da",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "de",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "derivado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "derramamento",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "e",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "empresa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "entre",
           "synonyms": []
         },
         {
@@ -975,12 +1684,32 @@
         },
         {
           "type": "synonyms",
+          "value": "extração",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "filo",
           "synonyms": []
         },
         {
           "type": "synonyms",
+          "value": "fim",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "fitoplancton",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "frequência",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "geração",
           "synonyms": []
         },
         {
@@ -995,12 +1724,22 @@
         },
         {
           "type": "synonyms",
+          "value": "iniciativas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "jabuti",
           "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "líquen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "maré",
           "synonyms": []
         },
         {
@@ -1021,6 +1760,16 @@
         {
           "type": "synonyms",
           "value": "nome",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "offshore",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "onshore",
           "synonyms": []
         },
         {
@@ -1055,7 +1804,27 @@
         },
         {
           "type": "synonyms",
+          "value": "preço",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "predador",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "prós",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "quelônio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "recife",
           "synonyms": []
         },
         {
@@ -1070,12 +1839,32 @@
         },
         {
           "type": "synonyms",
+          "value": "tempo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tipo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "tubarão",
           "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "tunicado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "turismo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "variação",
           "synonyms": []
         },
         {
@@ -1120,7 +1909,7 @@
       },
       "conditions": "#fauna--definição-plancton || @modificador:definição && @substantivo:plancton",
       "dialog_node": "node_003d7ee853d64351",
-      "previous_sibling": "node_93272d37c31d4faa"
+      "previous_sibling": "node_ef5ce0ca07bc4d42"
     },
     {
       "type": "standard",
@@ -1143,7 +1932,7 @@
       },
       "conditions": "#gás--detalhar-produção || @modificador:detalhar && @recipiente:produção && $contexto==\"gas\" || @modificador:detalhar && @recipiente:produção && @rótulos:gas",
       "dialog_node": "node_007490dc17ab45e8",
-      "previous_sibling": "node_8d0b3b3471874e94"
+      "previous_sibling": "node_93272d37c31d4faa"
     },
     {
       "type": "standard",
@@ -1166,7 +1955,7 @@
       },
       "conditions": "#tartarugas--detalhar-dieta || @modificador:detalhar && @recipiente:dieta && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:dieta && @rótulos:tartarugas",
       "dialog_node": "node_016570d2d04a40ab",
-      "previous_sibling": "node_2373c4e730f84bcb"
+      "previous_sibling": "node_32da25999e4f4f9b"
     },
     {
       "type": "standard",
@@ -1189,7 +1978,7 @@
       },
       "conditions": "#tartarugas--explicar-ciclo-de-vida || @modificador:explicar && @recipiente:ciclo-de-vida && $contexto==\"tartarugas\" || @modificador:explicar && @recipiente:ciclo-de-vida && @rótulos:tartarugas",
       "dialog_node": "node_021d1478082e4ee1",
-      "previous_sibling": "node_a7731d38babe4a97"
+      "previous_sibling": "node_593a16b7776b4d38"
     },
     {
       "type": "standard",
@@ -1212,7 +2001,7 @@
       },
       "conditions": "#fauna--definição-hidra || @modificador:definição && @substantivo:hidra",
       "dialog_node": "node_05a981b20b624907",
-      "previous_sibling": "node_dbdf21e663d74268"
+      "previous_sibling": "node_a00f26d8969a47ea"
     },
     {
       "type": "standard",
@@ -1235,7 +2024,76 @@
       },
       "conditions": "#fauna--definição-cnida || @modificador:definição && @substantivo:cnida",
       "dialog_node": "node_07c306afdb134c04",
-      "previous_sibling": "node_ddcb5580d63b4546"
+      "previous_sibling": "node_615321168fdf4783"
+    },
+    {
+      "type": "standard",
+      "title": "Energia de maré: efeito em ambiente",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A energia de maré, por ser renovável, apresenta um baixo impacto no ambiente global. Porém, numa escala local, ela pode afetar a vida marinha ao redor, devido ao tamanho das turbinas, onde animais e outros seres podem colidir ou ficar presos. No caso de barragens, o alagamento de uma região de terra traz diversos impactos negativos, problema comum da geração de energia hidrelétrica."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "energia-de-mare"
+      },
+      "conditions": "#energia-de-maré--efeito-ambiente || @modificador:efeito && @recipiente:ambiente && $contexto==\"energia-de-mare\" || @modificador:efeito && @recipiente:ambiente && @rótulos:energia-de-mare",
+      "dialog_node": "node_07d9401cca394dd6",
+      "previous_sibling": "node_c1a97842a8b94292"
+    },
+    {
+      "type": "standard",
+      "title": "Definição de aaz",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Esse é o nome dado à região marítima que pertence economica e politicamente ao Brasil, incluindo tanto praias e o litoral quanto o oceano. O nome é uma referência à Amazônia devido à similaridade em riqueza de recursos vivos, minerais, energéticos e de biodiversidade encontrados nas duas regiões."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "outras"
+      },
+      "conditions": "#outras--definição-aaz || @modificador:definição && @recipiente:aaz",
+      "dialog_node": "node_0bdbd88008754ab8",
+      "previous_sibling": "node_c36af2919c7e4396"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: maior recife brasil",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O maior recife do Brasil é a Costa dos Corais do Alagoas, com uma extensão de cerca de 135 km. Apesar de ser bem menor que a Grande Barreira de Corais da Austrália, ainda está entre os maiores recifes do mundo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--maior-recife-brasil || @modificador:maior && @substantivo:recife && @recipiente:brasil && $contexto==\"coral\" || @modificador:maior && @substantivo:recife && @recipiente:brasil && @rótulos:coral",
+      "dialog_node": "node_0d3bf8a5950a437c",
+      "previous_sibling": "node_1d449bca58424021"
     },
     {
       "type": "standard",
@@ -1258,7 +2116,7 @@
       },
       "conditions": "#fauna--definição-cordado || @modificador:definição && @substantivo:cordado",
       "dialog_node": "node_1103af96828b439d",
-      "previous_sibling": "node_3dd7f692ea0a4bd4"
+      "previous_sibling": "node_2373c4e730f84bcb"
     },
     {
       "type": "standard",
@@ -1321,6 +2179,29 @@
     },
     {
       "type": "standard",
+      "title": "Coral: localização recife",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os recifes são encontrados perto do litoral, separados por lagoas rasas ou profundas, e às vezes no meio do oceano, normalmente onde ilhas costumavam ficar. No Brasil, há grandes comunidades de corais no litoral nordestion, desde a Bahia até o Maranhão."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--localização-recife || @modificador:localização && @substantivo:recife && $contexto==\"coral\" || @modificador:localização && @substantivo:recife && @rótulos:coral",
+      "dialog_node": "node_1d449bca58424021",
+      "previous_sibling": "node_849f88f194ab45fb"
+    },
+    {
+      "type": "standard",
       "title": "Tartarugas: exemplos de espécies",
       "output": {
         "generic": [
@@ -1340,7 +2221,30 @@
       },
       "conditions": "#tartarugas--listar-espécie || @modificador:listar && @substantivo:espécie && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:espécie && @rótulos:tartarugas",
       "dialog_node": "node_1f92f49e6380498a",
-      "previous_sibling": "node_daabd381c6de471c"
+      "previous_sibling": "node_a1211938cac54f29"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: definição de branqueamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O branqueamento de corais é um problema ecológico caracterizado pela perda de coloração dos corais, que se tornam translúcidos, podendo levar à morte."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--definição-branqueamento || @modificador:definição && @substantivo:branqueamento && $contexto==\"coral\" || @modificador:definição && @substantivo:branqueamento && @rótulos:coral",
+      "dialog_node": "node_2042d82357f94941",
+      "previous_sibling": "node_7c47de8cd1f742ce"
     },
     {
       "type": "standard",
@@ -1385,6 +2289,52 @@
     },
     {
       "type": "standard",
+      "title": "Coral: efeito de branqueamento em ambiente",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O branqueamento pode levar à morte dos corais. Mesmo quando sobrevivem, eles ficam enfraquecidos e mais suscetíveis a doenças. Sem os corais, milhares de peixes e outros seres aquáticos ficam sem lar, o que causa uma reação em cadeia no ecossistema marinho."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--efeito-branqueamento-ambiente || @modificador:efeito && @substantivo:branqueamento && @recipiente:ambiente && $contexto==\"coral\" || @modificador:efeito && @substantivo:branqueamento && @recipiente:ambiente && @rótulos:coral",
+      "dialog_node": "node_2214bae73eef41a1",
+      "previous_sibling": "node_f53f0c71a176434e"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: maiores campos?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A maior bacia, em disparado, é a de Santos, com reservas provadas de 1,27 bilhões de m³ de petróleo, enquanto a de Campos pega o segundo lugar com 532 milhões de m³ e o terceiro lugar fica com Potiguar, com seus 28 milhões de m³."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--maiores-campo || @modificador:maiores && @substantivo:campo && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:campo && @rótulos:petroleo",
+      "dialog_node": "node_2216b6dd27b64b1b",
+      "previous_sibling": "node_93db5c2e3bef47d0"
+    },
+    {
+      "type": "standard",
       "title": "Definição de cnidário",
       "output": {
         "generic": [
@@ -1404,7 +2354,76 @@
       },
       "conditions": "#fauna--definição-cnidário || @modificador:definição && @substantivo:cnidário",
       "dialog_node": "node_2373c4e730f84bcb",
-      "previous_sibling": "node_3bffa5817a014d29"
+      "previous_sibling": "node_07c306afdb134c04"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: maiores derramamentos?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O maior derrame que já ocorreu no Brasil foi o de 2019, no Nordeste, a maior tragédia nacional do tipo. Segundo o relatório do Ibama, foram atingidos mais de 1000 locais em 130 municípios, ao longo de 4 mil quilômetros. Segundo a Marinha, foram retiradas mais de 5000 toneladas de petróleo cru da costa brasileira. Não se sabe ao certo o culpado, sendo o principal suspeito um navio grego que transportava petróleo da Venezuela."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--maiores-derramamento || @modificador:maiores && @substantivo:derramamento && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:derramamento && @rótulos:petroleo",
+      "dialog_node": "node_25ea2885d0604968",
+      "previous_sibling": "node_2216b6dd27b64b1b"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: definição de onshore offshore",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os termos onshore e offshore, do inglês \"no litoral\" e \"fora do litoral\", são comumente utilizados para se referir à localização de petróleo, que pode ser em terra firme (para dentro do litoral) ou debaixo do oceano (para fora do litoral)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--definição-onshore-offshore || @modificador:definição && @substantivo:onshore-offshore && $contexto==\"petroleo\" || @modificador:definição && @substantivo:onshore-offshore && @rótulos:petroleo",
+      "dialog_node": "node_283aeb3e41684618",
+      "previous_sibling": "node_503ad4b8828f4d94"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: petróleo é um recurso renovável?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não, muito pelo contrário, o petróleo possui reservas limitadas no mundo. A formação dele leva milhares de anos, enquanto o consumo é imediato, então não há debate sobre se ele acabará, a questão é quando. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--pertence-recurso-renovável || @modificador:pertence && @recipiente:recurso-renovável && $contexto==\"petroleo\" || @modificador:pertence && @recipiente:recurso-renovável && @rótulos:petroleo",
+      "dialog_node": "node_28a63cc3f1e24926",
+      "previous_sibling": "node_d2dd2725770a48a5"
     },
     {
       "type": "standard",
@@ -1427,7 +2446,30 @@
       },
       "conditions": "#fauna--listar-molusco || @modificador:listar && @substantivo:molusco",
       "dialog_node": "node_2fabd31a3b0749e4",
-      "previous_sibling": "node_003d7ee853d64351"
+      "previous_sibling": "node_5e15bd33f700462f"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: detalhar preço",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No Brasil, em 2020, o preço médio foi de R$ 190,90 por barril, o equivalente a US$ 38,46. Na última década, o preço tendeu a subir em reais, apesar de apresentar uma baixa entre 2015 e 2017, enquanto ele tendeu a diminuir em dólares, apresentando uma alta em 2018 e voltando a baixar desde então."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--detalhar-preço || @modificador:detalhar && @substantivo:preço && $contexto==\"petroleo\" || @modificador:detalhar && @substantivo:preço && @rótulos:petroleo",
+      "dialog_node": "node_2fdc1d2e09674fa9",
+      "previous_sibling": "node_fe8a6abc96f74f6d"
     },
     {
       "type": "standard",
@@ -1483,6 +2525,11 @@
         ]
       },
       "parent": "node_2_1633362162069",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_0bdbd88008754ab8"
+      },
       "conditions": "@bool:não",
       "dialog_node": "node_3_1636421109581",
       "previous_sibling": "node_5_1636421066527"
@@ -1514,7 +2561,7 @@
       },
       "conditions": "#coral--detalhar-dieta || @modificador:detalhar && @recipiente:dieta && $contexto==\"coral\" || @modificador:detalhar && @recipiente:dieta && @rótulos:coral",
       "dialog_node": "node_327bd5622a5a4d5b",
-      "previous_sibling": "node_32da25999e4f4f9b"
+      "previous_sibling": "node_c99a39dd04754699"
     },
     {
       "type": "standard",
@@ -1537,7 +2584,30 @@
       },
       "conditions": "#tartarugas--definição-quelônio || @modificador:definição && @substantivo:quelônio && $contexto==\"tartarugas\" || @modificador:definição && @substantivo:quelônio && @rótulos:tartarugas",
       "dialog_node": "node_32da25999e4f4f9b",
-      "previous_sibling": "node_781e2fe76ea34f3f"
+      "previous_sibling": "node_ddcb5580d63b4546"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: definição de plataforma",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Plataformas de petróleo são grandes estruturas marítimas de produção, transferência e armazenamento de petróleo. Há diversos tipos, cada um com suas características."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--definição-plataforma || @modificador:definição && @recipiente:plataforma && $contexto==\"petroleo\" || @modificador:definição && @recipiente:plataforma && @rótulos:petroleo",
+      "dialog_node": "node_39221c40da26417c",
+      "previous_sibling": "node_283aeb3e41684618"
     },
     {
       "type": "standard",
@@ -1560,7 +2630,7 @@
       },
       "conditions": "#flora-fauna--definição-polifilético || @modificador:definição && @substantivo:polifilético",
       "dialog_node": "node_3bffa5817a014d29",
-      "previous_sibling": "node_5e6680a253314989"
+      "previous_sibling": "node_5f2d610185154766"
     },
     {
       "type": "standard",
@@ -1583,7 +2653,30 @@
       },
       "conditions": "#tartarugas--definição-cágado || @modificador:definição && @substantivo:cágado && $contexto==\"tartarugas\" || @modificador:definição && @substantivo:cágado && @rótulos:tartarugas",
       "dialog_node": "node_3dd7f692ea0a4bd4",
-      "previous_sibling": "node_e1b23ca5a2954f6a"
+      "previous_sibling": "node_74b81b8daad0492b"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: quantidade consumo?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em 2020, o Brasil consumiu 2,3 milhões de barris de petróleo por dia, alcançando 8° lugar na classificação mundial com 2,6% do total. Para comparar, os Estados Unidos, na 1ª posição, consumiram 17,2 milhões de barris/dia e a China, em segundo lugar, 14,2 milhões."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--quantidade-consumo || @modificador:quantidade && @recipiente:consumo && $contexto==\"petroleo\" || @modificador:quantidade && @recipiente:consumo && @rótulos:petroleo",
+      "dialog_node": "node_40e6fdc5fbd64aff",
+      "previous_sibling": "node_d17014f9e0e1420d"
     },
     {
       "type": "standard",
@@ -1698,6 +2791,75 @@
     },
     {
       "type": "standard",
+      "title": "Petróleo: definição",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Petróleo é um líquido amarelado escuro que ocorre naturalmente em formações subterrâneas. Ele é refinado em diversos combustíveis, como gasolina e diesel, e possui um enorme valor econômico, sendo muito disputado pelo mundo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--definição || @modificador:definição && $contexto==\"petroleo\" || @modificador:definição && @rótulos:petroleo",
+      "dialog_node": "node_438e78146cd0403f",
+      "previous_sibling": "node_91ebf5167ba14f7e"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: exemplos de empresas no Brasil",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As 5 maiores empresas que extraem petróleo no Brasil são Petrobras (94,91%), Equinor Brasil (,194%), Shell Brasil (1,49%), Total E&P do Brasil (1,00%) e Chevron Frade (0,64%). Juntas, elas totalizam 99,98% da extração."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--listar-empresa-brasil || @modificador:listar && @substantivo:empresa && @recipiente:brasil && $contexto==\"petroleo\" || @modificador:listar && @substantivo:empresa && @recipiente:brasil && @rótulos:petroleo",
+      "dialog_node": "node_443e90f82daa429a",
+      "previous_sibling": "node_ba1bfadf28ab4467"
+    },
+    {
+      "type": "standard",
+      "title": "Maré: explicar causa",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A maré é controlada, principalmente, pela atração gravitacional da Lua e do Sol."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "mare"
+      },
+      "conditions": "#maré--explicar-causa || @modificador:explicar && @substantivo:causa && $contexto==\"mare\" || @modificador:explicar && @substantivo:causa && @rótulos:mare",
+      "dialog_node": "node_456fe89b98464f55",
+      "previous_sibling": "node_5d44721be2164159"
+    },
+    {
+      "type": "standard",
       "title": "Definição de tunicado",
       "output": {
         "generic": [
@@ -1717,7 +2879,7 @@
       },
       "conditions": "#fauna--definição-tunicado || @modificador:definição && @substantivo:tunicado",
       "dialog_node": "node_464a104ef98d40e9",
-      "previous_sibling": "node_ef12302170ea42cc"
+      "previous_sibling": "node_d354ce4252f34fde"
     },
     {
       "type": "standard",
@@ -1740,7 +2902,7 @@
       },
       "conditions": "#fauna--definição-medusa || @modificador:definição && @substantivo:medusa",
       "dialog_node": "node_4cbc493f6b1346e6",
-      "previous_sibling": "node_07c306afdb134c04"
+      "previous_sibling": "node_05a981b20b624907"
     },
     {
       "type": "standard",
@@ -1763,7 +2925,30 @@
       },
       "conditions": "#flora--definição-alga || @modificador:definição && @substantivo:alga",
       "dialog_node": "node_4f30871544e640ec",
-      "previous_sibling": "node_3_1636423463289"
+      "previous_sibling": "node_75eb9df2bca5427e"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: definição de derramamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Um derramamento de petróleo é um acidente em que ocorre a liberação de petróleo líquido no ambiente, especialmente no ecossistema marinho, devido à ação humana. É uma forma de poluição e, dependendo da magnitude, um desastre ambiental, trazendo graves impactos econômicos e ambientais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--definição-derramamento || @modificador:definição && @substantivo:derramamento && $contexto==\"petroleo\" || @modificador:definição && @substantivo:derramamento && @rótulos:petroleo",
+      "dialog_node": "node_503ad4b8828f4d94",
+      "previous_sibling": "node_438e78146cd0403f"
     },
     {
       "type": "standard",
@@ -1819,6 +3004,29 @@
     },
     {
       "type": "standard",
+      "title": "Petróleo: maior empresa",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O grupo chinês Sinopec ocupa o 1° lugar do ranking há anos. Em uma avaliação de 2018, ele teve receita de US$ 420 bilhões, enquanto a Petrobras, maior no Brasil, ficou em 10° lugar com receita de US$ 95 bilhões."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--maior-empresa || @modificador:maior && @substantivo:empresa && $contexto==\"petroleo\" || @modificador:maior && @substantivo:empresa && @rótulos:petroleo",
+      "dialog_node": "node_580b3aa1d8374759",
+      "previous_sibling": "node_aac4b5c6f98848cc"
+    },
+    {
+      "type": "standard",
       "title": "Tartarugas: diferença entre jabuti e tartaruga?",
       "output": {
         "generic": [
@@ -1838,7 +3046,53 @@
       },
       "conditions": "#tartarugas--diferença-jabuti-tartaruga || @modificador:diferença && @substantivo:jabuti && @recipiente:tartaruga && $contexto==\"tartarugas\" || @modificador:diferença && @substantivo:jabuti && @recipiente:tartaruga && @rótulos:tartarugas",
       "dialog_node": "node_593a16b7776b4d38",
-      "previous_sibling": "node_e357f7ad2a274014"
+      "previous_sibling": "node_e210ecc0353741de"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: detalhar extração custo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O custo varia muito com a localização do petróleo. Segundo relatórios financeiros da Petrobras, o custo, em dólares americanos por barril, foi de 31,6 em águas rasas, 19,5 em locais onshore, 13,6 em águas profundas e apenas 5 no Pré-Sal, tornando-o de longe o mais rentável. Ainda assim, a produção em terra permanece viável, pois a extração no mar requer mais capital e é muito mais complexa."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--detalhar-extração-custo || @modificador:detalhar && @substantivo:extração && @recipiente:custo && $contexto==\"petroleo\" || @modificador:detalhar && @substantivo:extração && @recipiente:custo && @rótulos:petroleo",
+      "dialog_node": "node_5d389df444304efb",
+      "previous_sibling": "node_39221c40da26417c"
+    },
+    {
+      "type": "standard",
+      "title": "Maré: detalhar variação da altura dia",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A diferença do nível do mar entre as marés, conhecido como a amplitude da maré, varia muito de local a local. Em um mesmo local, também é possível que a primeira alta do dia seja maior que a segunda alta, por exemplo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "mare"
+      },
+      "conditions": "#maré--detalhar-variação-da-altura-dia || @modificador:detalhar && @substantivo:variação-da-altura && @recipiente:dia && $contexto==\"mare\" || @modificador:detalhar && @substantivo:variação-da-altura && @recipiente:dia && @rótulos:mare",
+      "dialog_node": "node_5d44721be2164159",
+      "previous_sibling": "node_a8a1ac4864334fe3"
     },
     {
       "type": "standard",
@@ -1861,7 +3115,7 @@
       },
       "conditions": "#fauna--listar-crustáceo || @modificador:listar && @substantivo:crustáceo",
       "dialog_node": "node_5e15bd33f700462f",
-      "previous_sibling": "node_bce5a75dc3c54029"
+      "previous_sibling": "node_8d0b3b3471874e94"
     },
     {
       "type": "standard",
@@ -1884,7 +3138,7 @@
       },
       "conditions": "#tartarugas--motivo-extinção || @modificador:motivo && @recipiente:extinção && $contexto==\"tartarugas\" || @modificador:motivo && @recipiente:extinção && @rótulos:tartarugas",
       "dialog_node": "node_5e6680a253314989",
-      "previous_sibling": "node_96b886dee61b4ebe"
+      "previous_sibling": "node_6124367bc03c4091"
     },
     {
       "type": "standard",
@@ -1907,7 +3161,7 @@
       },
       "conditions": "#flora-fauna--definição-líquen || @modificador:definição && @substantivo:líquen",
       "dialog_node": "node_5f2d610185154766",
-      "previous_sibling": "node_1103af96828b439d"
+      "previous_sibling": "node_4f30871544e640ec"
     },
     {
       "type": "standard",
@@ -1930,7 +3184,7 @@
       },
       "conditions": "#tartarugas--localização || @modificador:localização && $contexto==\"tartarugas\" || @modificador:localização && @rótulos:tartarugas",
       "dialog_node": "node_6124367bc03c4091",
-      "previous_sibling": "node_016570d2d04a40ab"
+      "previous_sibling": "node_7b4dd138a10d4e73"
     },
     {
       "type": "standard",
@@ -1953,7 +3207,7 @@
       },
       "conditions": "#fauna--definição-animal-marinho || @modificador:definição && @substantivo:animal-marinho",
       "dialog_node": "node_615321168fdf4783",
-      "previous_sibling": "node_6124367bc03c4091"
+      "previous_sibling": "node_d5fe851aa4a348b0"
     },
     {
       "type": "standard",
@@ -2048,6 +3302,29 @@
     },
     {
       "type": "standard",
+      "title": "Coral: efeito de turismo em coral",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O turismo danifica e até mata os recifes de corais de diferentes formas: o caminhar de pessoas em cima deles, a ancoragem de barcos, o despejo de lixo e outras substâncias tóxicas, a suspensão de sedimento ao andar ou nadar próximo a recifes, prejudicando organismos filtradores."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral_turismo"
+      },
+      "conditions": "#coral_turismo--efeito-turismo || @modificador:efeito && @substantivo:turismo && $contexto==\"coral\" || @modificador:efeito && @substantivo:turismo && @rótulos:coral",
+      "dialog_node": "node_708fb073a706405e",
+      "previous_sibling": "node_81b0d11ae6c94164"
+    },
+    {
+      "type": "standard",
       "title": "Não entendi",
       "output": {
         "generic": [
@@ -2069,7 +3346,7 @@
       "digress_in": "returns",
       "dialog_node": "node_7_1633148066996",
       "digress_out": "allow_all",
-      "previous_sibling": "node_9a15b8b2f0294b0b"
+      "previous_sibling": "node_978183d9647247da"
     },
     {
       "type": "standard",
@@ -2135,7 +3412,7 @@
       },
       "conditions": "#tartarugas--definição || @modificador:definição && $contexto==\"tartarugas\" || @modificador:definição && @rótulos:tartarugas",
       "dialog_node": "node_74b81b8daad0492b",
-      "previous_sibling": "node_593a16b7776b4d38"
+      "previous_sibling": "node_40e6fdc5fbd64aff"
     },
     {
       "type": "standard",
@@ -2158,7 +3435,7 @@
       },
       "conditions": "#fauna-turismo--localização-baleia || @modificador:localização && @substantivo:baleia",
       "dialog_node": "node_75eb9df2bca5427e",
-      "previous_sibling": "node_af69f26ac97b40a2"
+      "previous_sibling": "node_763e58585a5942f9"
     },
     {
       "type": "standard",
@@ -2181,7 +3458,30 @@
       },
       "conditions": "#fauna-turismo--existe-tubarão || @modificador:existe && @substantivo:tubarão",
       "dialog_node": "node_763e58585a5942f9",
-      "previous_sibling": "node_d354ce4252f34fde"
+      "previous_sibling": "node_de82492972a34f81"
+    },
+    {
+      "type": "standard",
+      "title": "Tartarugas: detalhar origem",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As primeiras tartarugas conhecidas são do Período Permiano, entre 290 e 248 milhões de anos atrás! Elas eram da espécie Eunotosaurus africanus, que tinha dentes (as de hoje não têm) e a estrutura óssea precursora da carapaça."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "tartarugas"
+      },
+      "conditions": "#tartarugas--detalhar-origem || @modificador:detalhar && @recipiente:origem && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:origem && @rótulos:tartarugas",
+      "dialog_node": "node_770851346a6d41b2",
+      "previous_sibling": "node_b62b8ea4c0844b9c"
     },
     {
       "type": "standard",
@@ -2204,7 +3504,53 @@
       },
       "conditions": "#fauna--existe-baleia || @modificador:existe && @substantivo:baleia",
       "dialog_node": "node_781e2fe76ea34f3f",
-      "previous_sibling": "node_615321168fdf4783"
+      "previous_sibling": "node_96f4976674474c05"
+    },
+    {
+      "type": "standard",
+      "title": "Tartarugas: exemplos de predadores",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Quando adultas, tartarugas possuem poucos predadores naturais, como as orcas e tubarões. O maior risco é assim que nascem, ou até mesmo antes: diversos animais se alimentam dos ovos e das recém-nascidas, dentre eles siris, aves, polvos e peixes. A consequência é que menos de 1 a cada mil filhotes atinge a idade adulta!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "tartarugas"
+      },
+      "conditions": "#tartarugas--listar-predador || @modificador:listar && @substantivo:predador && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:predador && @rótulos:tartarugas",
+      "dialog_node": "node_7b4dd138a10d4e73",
+      "previous_sibling": "node_f38446cb2abf420a"
+    },
+    {
+      "type": "standard",
+      "title": "Corrente: definição",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Correntes oceânicas são o movimento contínuo, previsível e direcional de água nos oceanos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "corrente"
+      },
+      "conditions": "#corrente--definição || @modificador:definição && $contexto==\"corrente\" || @modificador:definição && @rótulos:corrente",
+      "dialog_node": "node_7c45f108a3464273",
+      "previous_sibling": "node_708fb073a706405e"
     },
     {
       "type": "standard",
@@ -2227,7 +3573,7 @@
       },
       "conditions": "#coral--definição || @modificador:definição && $contexto==\"coral\" || @modificador:definição && @rótulos:coral",
       "dialog_node": "node_7c47de8cd1f742ce",
-      "previous_sibling": "node_05a981b20b624907"
+      "previous_sibling": "node_bce5a75dc3c54029"
     },
     {
       "type": "standard",
@@ -2250,7 +3596,30 @@
       },
       "conditions": "#gás--maiores-estado-produção || @modificador:maiores && @substantivo:estado && @recipiente:produção && $contexto==\"gas\" || @modificador:maiores && @substantivo:estado && @recipiente:produção && @rótulos:gas",
       "dialog_node": "node_7c859a6294b7464b",
-      "previous_sibling": "node_5f2d610185154766"
+      "previous_sibling": "node_007490dc17ab45e8"
+    },
+    {
+      "type": "standard",
+      "title": "Existe tubarão no Brasil?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sim, no Brasil são conhecidas 88 espécies de tubarões."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "fauna"
+      },
+      "conditions": "#fauna--existe-tubarão || @modificador:existe && @substantivo:tubarão",
+      "dialog_node": "node_8106245293554def",
+      "previous_sibling": "node_781e2fe76ea34f3f"
     },
     {
       "type": "standard",
@@ -2309,6 +3678,52 @@
     },
     {
       "type": "standard",
+      "title": "Coral: motivo branqueamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Há diversos fatores envolvidos, como alterações na salinidade da água, poluição e, principalmente, mudanças de temperatura, sendo o aquecimento global um grande responsável."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--motivo-branqueamento || @modificador:motivo && @substantivo:branqueamento && $contexto==\"coral\" || @modificador:motivo && @substantivo:branqueamento && @rótulos:coral",
+      "dialog_node": "node_81b0d11ae6c94164",
+      "previous_sibling": "node_d1cd38055ac544ac"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: exemplos de  tipos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Existem 3 tipos principais: franjas, barreiras e atóis. Os recifes em franja formam-se perto da costa, separando-se dela por lagoas rasas. Os recifes em barreira formam-se paralelo à costa, porém as lagoas são profundas. Já os atóis possuem formato de anel e ficam no meio do oceano, normalmente onde antes havia ilhas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--listar-tipos || @modificador:listar && @recipiente:tipos && $contexto==\"coral\" || @modificador:listar && @recipiente:tipos && @rótulos:coral",
+      "dialog_node": "node_849f88f194ab45fb",
+      "previous_sibling": "node_d1a27a75c8404122"
+    },
+    {
+      "type": "standard",
       "title": "Petróleo: detalhar produção",
       "output": {
         "generic": [
@@ -2328,7 +3743,7 @@
       },
       "conditions": "#petróleo--detalhar-produção || @modificador:detalhar && @recipiente:produção && $contexto==\"petroleo\" || @modificador:detalhar && @recipiente:produção && @rótulos:petroleo",
       "dialog_node": "node_8867d6bf610e460f",
-      "previous_sibling": "node_aac4b5c6f98848cc"
+      "previous_sibling": "node_2fdc1d2e09674fa9"
     },
     {
       "type": "standard",
@@ -2351,7 +3766,53 @@
       },
       "conditions": "#fauna--listar-cnidário || @modificador:listar && @substantivo:cnidário",
       "dialog_node": "node_8d0b3b3471874e94",
-      "previous_sibling": "node_d5fe851aa4a348b0"
+      "previous_sibling": "node_dbdf21e663d74268"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: composição",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O petróleo é composto, essencialmente, de hidrocarbonetos, que são estruturas moleculares com carbono e hidrogênio. Além deles, há também derivados de nitrogênio e enxofre, oxigênio e matéria orgânica decomposta."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--composição || @modificador:composição && $contexto==\"petroleo\" || @modificador:composição && @rótulos:petroleo",
+      "dialog_node": "node_91ebf5167ba14f7e",
+      "previous_sibling": "node_daabd381c6de471c"
+    },
+    {
+      "type": "standard",
+      "title": "Maré: detalhar frequência",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O mais comum é um regime semi-diurno, em que ocorrem 2 ciclos de maré ao longo do dia (ou seja, a maré sobe e desce duas vezes no dia). O segundo tipo mais comum é o diurno, em que o ciclo ocorre uma vez ao dia. O terceiro tipo, chamado de misto, é bem menos comum e apresenta um ou dois ciclos por dia, mas com grande diferença de altura entre uma maré alta e outra, assim como entre as baixas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "mare"
+      },
+      "conditions": "#maré--detalhar-frequência || @modificador:detalhar && @substantivo:frequência && $contexto==\"mare\" || @modificador:detalhar && @substantivo:frequência && @rótulos:mare",
+      "dialog_node": "node_92770e9c4a56417c",
+      "previous_sibling": "node_dd172bbd0d8e4d49"
     },
     {
       "type": "standard",
@@ -2374,7 +3835,30 @@
       },
       "conditions": "#gás--detalhar-consumo || @modificador:detalhar && @recipiente:consumo && $contexto==\"gas\" || @modificador:detalhar && @recipiente:consumo && @rótulos:gas",
       "dialog_node": "node_93272d37c31d4faa",
-      "previous_sibling": "node_ef5ce0ca07bc4d42"
+      "previous_sibling": "node_3bffa5817a014d29"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: maior reserva",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A maior reserva, tanto em termos de produção quanto de potencial conhecido, é o Campo de Tupi, na bacia de Santos. Ele é o primeiro campo supergigante do Brasil e possui mais que o dobro das reservas do campo de Roncador, que era a maior descoberta de petróleo no Brasil anteriormente. Ele possui ao mínimo 6 bilhões de barris de petróleo e produziu, em média, 953 mil barris por dia ao longo de 2020."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--maior-reserva || @modificador:maior && @substantivo:reserva && $contexto==\"petroleo\" || @modificador:maior && @substantivo:reserva && @rótulos:petroleo",
+      "dialog_node": "node_93db5c2e3bef47d0",
+      "previous_sibling": "node_580b3aa1d8374759"
     },
     {
       "type": "standard",
@@ -2397,7 +3881,53 @@
       },
       "conditions": "#fauna--detalhar-crustáceo || @modificador:detalhar && @substantivo:crustáceo",
       "dialog_node": "node_96b886dee61b4ebe",
-      "previous_sibling": "node_a00f26d8969a47ea"
+      "previous_sibling": "node_e357f7ad2a274014"
+    },
+    {
+      "type": "standard",
+      "title": "Existe baleia no Brasil?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sim! É comum avistar baleias em certos locais, especialmente as francas e jubarte."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "fauna"
+      },
+      "conditions": "#fauna--existe-baleia || @modificador:existe && @substantivo:baleia",
+      "dialog_node": "node_96f4976674474c05",
+      "previous_sibling": "node_96b886dee61b4ebe"
+    },
+    {
+      "type": "standard",
+      "title": "Tartarugas: quantidade anos de vida?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Apesar das histórias que costumamos ouvir, há poucos relatos de tartarugas que alcançaram mais de 100 anos de idade. No geral, depende muito da espécie, assim como a idade reprodutiva, podendo chegar a 70 anos. Em ambientes especialmente bem cuidados, como zoológicos, elas podem ir mais longe. O exemplo mais fascinante é o caso de Jonathan, um jabuti que está sob cuidado humano desde 1882 e é o animal terrestre mais velho que ainda vive. Estima-se que ele tenha nascido, no máximo, em 1832, ou seja, ele possui quase 190 anos!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "tartarugas"
+      },
+      "conditions": "#tartarugas--quantidade-anos-de-vida || @modificador:quantidade && @recipiente:anos-de-vida && $contexto==\"tartarugas\" || @modificador:quantidade && @recipiente:anos-de-vida && @rótulos:tartarugas",
+      "dialog_node": "node_978183d9647247da",
+      "previous_sibling": "node_a7731d38babe4a97"
     },
     {
       "type": "standard",
@@ -2420,7 +3950,53 @@
       },
       "conditions": "#tartarugas--detalhar-peso || @modificador:detalhar && @recipiente:peso && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:peso && @rótulos:tartarugas",
       "dialog_node": "node_9a15b8b2f0294b0b",
-      "previous_sibling": "node_cee24448f70742e8"
+      "previous_sibling": "node_770851346a6d41b2"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: exemplos de tipos plataforma",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Há diversos! Resumindo, os tipos de plataforma são: fixa, autoelevável, semissubmersível, FPSO (Floating, Production, Storage and Offloading), TLWP (ou de pernas atirantadas) e navio-sonda. O que as diferencia são a profundidade onde atuam, se são fixas ou flutuantes (móveis), se perfuram, produzem e/ou armazenam petróleo e outros fatores. Para saber em mais detalhes, acesse o infográfico da Petrobras: https://petrobras.com.br/infograficos/tipos-de-plataformas/desktop/index.html"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--listar-tipo-plataforma || @modificador:listar && @substantivo:tipo && @recipiente:plataforma && $contexto==\"petroleo\" || @modificador:listar && @substantivo:tipo && @recipiente:plataforma && @rótulos:petroleo",
+      "dialog_node": "node_9da6c31cd0544199",
+      "previous_sibling": "node_443e90f82daa429a"
+    },
+    {
+      "type": "standard",
+      "title": "Maré: motivo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As marés são causadas pelo efeito combinado das forças gravitacionais exercidas pela Lua e pelo Sol na terra."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "mare"
+      },
+      "conditions": "#maré--motivo || @modificador:motivo && $contexto==\"mare\" || @modificador:motivo && @rótulos:mare",
+      "dialog_node": "node_9fa5b528887c4f8b",
+      "previous_sibling": "node_456fe89b98464f55"
     },
     {
       "type": "standard",
@@ -2443,7 +4019,53 @@
       },
       "conditions": "#fauna--definição-fitoplancton || @modificador:definição && @substantivo:fitoplancton",
       "dialog_node": "node_a00f26d8969a47ea",
-      "previous_sibling": "node_5e15bd33f700462f"
+      "previous_sibling": "node_e1b23ca5a2954f6a"
+    },
+    {
+      "type": "standard",
+      "title": "Tartarugas: explicar ciclo de vida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tartarugas marinhas possuem um ciclo de vida complexo, passando por diferentes ambientes ao longo da vida. Começando pelo nascimento, as pequenas tartarugas escavam seu caminho para fora da areia e rumam para o mar. Algumas espécies passam a fase juvenil em regiões costeiras, enquanto outras permanecem no oceano a vida toda, como a tartaruga-de-couro. Elas atingem a maturidade sexual entre os 15 e 30 anos dependendo da espécie, quando retornam às praias onde nasceram para acasalar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "tartarugas"
+      },
+      "conditions": "#tartarugas--explicar-ciclo-de-vida || @modificador:explicar && @recipiente:ciclo-de-vida && $contexto==\"tartarugas\" || @modificador:explicar && @recipiente:ciclo-de-vida && @rótulos:tartarugas",
+      "dialog_node": "node_a1211938cac54f29",
+      "previous_sibling": "node_021d1478082e4ee1"
+    },
+    {
+      "type": "standard",
+      "title": "Energia de maré: localização",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Depende do método de geração. Mais comumente, ela é colhida no oceano próximo ao litoral, onde correntes se formam pela mudança da maré."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "energia-de-mare"
+      },
+      "conditions": "#energia-de-maré--localização || @modificador:localização && $contexto==\"energia-de-mare\" || @modificador:localização && @rótulos:energia-de-mare",
+      "dialog_node": "node_a472e38f7d3045a0",
+      "previous_sibling": "node_c9b55881b5ee4706"
     },
     {
       "type": "standard",
@@ -2466,7 +4088,30 @@
       },
       "conditions": "#tartarugas--pertence-jabuti-tartaruga || @modificador:pertence && @substantivo:jabuti && @recipiente:tartaruga && $contexto==\"tartarugas\" || @modificador:pertence && @substantivo:jabuti && @recipiente:tartaruga && @rótulos:tartarugas",
       "dialog_node": "node_a7731d38babe4a97",
-      "previous_sibling": "node_d3a5941293984262"
+      "previous_sibling": "node_5e6680a253314989"
+    },
+    {
+      "type": "standard",
+      "title": "Maré: detalhar tempo entre altas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Isso depende do local. No regime mais comum, o semi-diurno, a média é de 12 horas e 24 minutos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "mare"
+      },
+      "conditions": "#maré--detalhar-tempo-entre-altas || @modificador:detalhar && @substantivo:tempo-entre-altas && $contexto==\"mare\" || @modificador:detalhar && @substantivo:tempo-entre-altas && @rótulos:mare",
+      "dialog_node": "node_a8a1ac4864334fe3",
+      "previous_sibling": "node_92770e9c4a56417c"
     },
     {
       "type": "standard",
@@ -2489,7 +4134,53 @@
       },
       "conditions": "#petróleo--localização || @modificador:localização && $contexto==\"petroleo\" || @modificador:localização && @rótulos:petroleo",
       "dialog_node": "node_aac4b5c6f98848cc",
-      "previous_sibling": "node_d190584c5ab04b00"
+      "previous_sibling": "node_9da6c31cd0544199"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: definição de recife",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Apesar de parecer um monte de rochas, na verdade os recifes são compostos principalmente dos próprios corais, cujo esqueleto de carbonato de cálcio resulta na aparência e textura dos recifes."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--definição-recife || @modificador:definição && @substantivo:recife && $contexto==\"coral\" || @modificador:definição && @substantivo:recife && @rótulos:coral",
+      "dialog_node": "node_ab65f03467274c02",
+      "previous_sibling": "node_2042d82357f94941"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: efeito de derramamento em ambiente",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O petróleo desencadeia uma série de prejuízos ao ecossistema, causando alterações físicas e químicas onde é lançado. O principal impacto é o bloqueio da passagem de luz solar, que impede o crescimento de fitoplâncton, a base da cadeia alimentar marinha. Animais e plantas podem se intoxicar, morrer por asfixia ou mesmo ficar presos no óleo espesso. Aves prejudicadas são incapazes de voar ou nadar, o que rapidamente causa sua morte."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--efeito-derramamento-ambiente || @modificador:efeito && @substantivo:derramamento && @recipiente:ambiente && $contexto==\"petroleo\" || @modificador:efeito && @substantivo:derramamento && @recipiente:ambiente && @rótulos:petroleo",
+      "dialog_node": "node_acd676c5a1be4d4c",
+      "previous_sibling": "node_8867d6bf610e460f"
     },
     {
       "type": "standard",
@@ -2512,7 +4203,53 @@
       },
       "conditions": "#outras--motivo-importância-aaz || @modificador:motivo && @substantivo:importância && @recipiente:aaz",
       "dialog_node": "node_af69f26ac97b40a2",
-      "previous_sibling": "node_cc20b636e32a4aaf"
+      "previous_sibling": "node_0bdbd88008754ab8"
+    },
+    {
+      "type": "standard",
+      "title": "Tartarugas: detalhar idade reprodutiva",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Isso depende, principalmente, do tamanho da tartaruga adulta de cada espécie. Para as tartarugas bem pequenas (menos que 10 cm de comprimento), pode ser 2 a 3 anos, enquanto as maiores podem levar até 50 anos para atingir a maturidade sexual. No caso de tartarugas marinhas, costuma variar entre 15 e 30 anos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "tartarugas"
+      },
+      "conditions": "#tartarugas--detalhar-idade-reprodutiva || @modificador:detalhar && @recipiente:idade-reprodutiva && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:idade-reprodutiva && @rótulos:tartarugas",
+      "dialog_node": "node_b62b8ea4c0844b9c",
+      "previous_sibling": "node_016570d2d04a40ab"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: exemplos de derivados",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Diversos compostos são obtidos a partir do refino de petróleo, sendo dividos entre energéticos e não energéticos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--listar-derivado || @modificador:listar && @substantivo:derivado && $contexto==\"petroleo\" || @modificador:listar && @substantivo:derivado && @rótulos:petroleo",
+      "dialog_node": "node_ba1bfadf28ab4467",
+      "previous_sibling": "node_fc4a220fff71401d"
     },
     {
       "type": "standard",
@@ -2535,7 +4272,99 @@
       },
       "conditions": "#coral--composição || @modificador:composição && $contexto==\"coral\" || @modificador:composição && @rótulos:coral",
       "dialog_node": "node_bce5a75dc3c54029",
-      "previous_sibling": "node_4f30871544e640ec"
+      "previous_sibling": "node_3_1636423463289"
+    },
+    {
+      "type": "standard",
+      "title": "Energia de maré: definição",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A energia de maré é produzida pelos movimentos da água que surgem com o encher e esvaziar da maré. Ela é uma fonte de energia renovável, ainda em estudo e há poucas instalações operando no mundo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "energia-de-mare"
+      },
+      "conditions": "#energia-de-maré--definição || @modificador:definição && $contexto==\"energia-de-mare\" || @modificador:definição && @rótulos:energia-de-mare",
+      "dialog_node": "node_c1a97842a8b94292",
+      "previous_sibling": "node_7c45f108a3464273"
+    },
+    {
+      "type": "standard",
+      "title": "Maré: quantidade dia?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Depende do local, mas o mais comum é 2 ciclos completos por dia (a maré enche e esvazia duas vezes)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "mare"
+      },
+      "conditions": "#maré--quantidade-dia || @modificador:quantidade && @recipiente:dia && $contexto==\"mare\" || @modificador:quantidade && @recipiente:dia && @rótulos:mare",
+      "dialog_node": "node_c36af2919c7e4396",
+      "previous_sibling": "node_9fa5b528887c4f8b"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: definição de recife artificial",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Recifes artificiais são construções humanas que tentam imitar a estrutura de recifes verdadeiros com o objetivo de impulsionar a biodiversidade local. Eles são empregados principalmente na reabilitação de habitats, ou seja, na recuperação de locais impactados pela ação do homem."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--definição-recife-artificial || @modificador:definição && @substantivo:recife-artificial && $contexto==\"coral\" || @modificador:definição && @substantivo:recife-artificial && @rótulos:coral",
+      "dialog_node": "node_c99a39dd04754699",
+      "previous_sibling": "node_ab65f03467274c02"
+    },
+    {
+      "type": "standard",
+      "title": "Energia de maré: exemplos de prós e contras",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As principais vantagens da energia de maré são o baixo impacto ambiental e o fato de ser uma fonte renovável. O principal contra é o preço elevado, que muitas vezes não justifica sua construção."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "energia-de-mare"
+      },
+      "conditions": "#energia-de-maré--listar-prós-e-contras || @modificador:listar && @substantivo:prós-e-contras && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:prós-e-contras && @rótulos:energia-de-mare",
+      "dialog_node": "node_c9b55881b5ee4706",
+      "previous_sibling": "node_e562eb3215734e0b"
     },
     {
       "type": "standard",
@@ -2558,7 +4387,30 @@
       },
       "conditions": "#fauna--definição-pólipo || @modificador:definição && @substantivo:pólipo",
       "dialog_node": "node_cc20b636e32a4aaf",
-      "previous_sibling": "node_e0a825f78d154c1f"
+      "previous_sibling": "node_003d7ee853d64351"
+    },
+    {
+      "type": "standard",
+      "title": "Energia de maré: exemplos de contrases",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O principal contra da energia de maré é o preço elevado, que muitas vezes não justifica sua construção."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "energia-de-mare"
+      },
+      "conditions": "#energia-de-maré--listar-contras || @modificador:listar && @substantivo:contras && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:contras && @rótulos:energia-de-mare",
+      "dialog_node": "node_cd1529befade42a6",
+      "previous_sibling": "node_e1a3daafeaa44ab5"
     },
     {
       "type": "standard",
@@ -2581,7 +4433,7 @@
       },
       "conditions": "#fauna--definição-molusco || @modificador:definição && @substantivo:molusco",
       "dialog_node": "node_cee24448f70742e8",
-      "previous_sibling": "node_7c47de8cd1f742ce"
+      "previous_sibling": "node_4cbc493f6b1346e6"
     },
     {
       "type": "standard",
@@ -2604,7 +4456,7 @@
       },
       "conditions": "#petróleo--quantidade || @modificador:quantidade && $contexto==\"petroleo\" || @modificador:quantidade && @rótulos:petroleo",
       "dialog_node": "node_d17014f9e0e1420d",
-      "previous_sibling": "node_74b81b8daad0492b"
+      "previous_sibling": "node_28a63cc3f1e24926"
     },
     {
       "type": "standard",
@@ -2627,7 +4479,76 @@
       },
       "conditions": "#petróleo--maiores-estado-produção || @modificador:maiores && @substantivo:estado && @recipiente:produção && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:estado && @recipiente:produção && @rótulos:petroleo",
       "dialog_node": "node_d190584c5ab04b00",
-      "previous_sibling": "node_f02eafc0a559447e"
+      "previous_sibling": "node_25ea2885d0604968"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: exemplos de iniciativases governo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O maior programa de proteção aos corais é, atualmente, o Plano de Ação Nacional para a Conservação dos Ambientes Coralíneos (PAN Corais). Ele estabelece 146 ações distribuídas para cumprir 10 objetivos visando melhorar o estado de conservação dos ambientes coralíneos. Leia mais na página do governo: https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-corais. Para saber mais sobre outras iniciativas e um pouco da história da preservação no Brasil, acesse aqui: https://antigo.mma.gov.br/processo-eletronico/item/397-recifes-de-corais.html"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--listar-iniciativas-governo || @modificador:listar && @substantivo:iniciativas && @recipiente:governo && $contexto==\"coral\" || @modificador:listar && @substantivo:iniciativas && @recipiente:governo && @rótulos:coral",
+      "dialog_node": "node_d1a27a75c8404122",
+      "previous_sibling": "node_e7287cfd72674ee0"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: maior recife mundo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O maior recife do mundo é a Grande Barreira de Corais da Austrália, que se estende por 2700 km de comprimento e 700 km de largura. Devido ao tamanho e à quantidade de espécies que abriga (em torno de 3 mil!), ela é considerada patrimônio mundial da Unesco e uma das Sete Maravilhas Naturais do mundo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--maior-recife-mundo || @modificador:maior && @substantivo:recife && @recipiente:mundo && $contexto==\"coral\" || @modificador:maior && @substantivo:recife && @recipiente:mundo && @rótulos:coral",
+      "dialog_node": "node_d1cd38055ac544ac",
+      "previous_sibling": "node_0d3bf8a5950a437c"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: maiores reservas?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As maiores reservas produtoras de petróleo no Brasil são os campos: Tupi, Búzios, Sapinhoá, Jubarte e Roncador."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--maiores-reserva || @modificador:maiores && @substantivo:reserva && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:reserva && @rótulos:petroleo",
+      "dialog_node": "node_d2dd2725770a48a5",
+      "previous_sibling": "node_ef12302170ea42cc"
     },
     {
       "type": "standard",
@@ -2650,7 +4571,7 @@
       },
       "conditions": "#fauna--definição-tubarão || @modificador:definição && @substantivo:tubarão",
       "dialog_node": "node_d354ce4252f34fde",
-      "previous_sibling": "node_f38446cb2abf420a"
+      "previous_sibling": "node_d3a5941293984262"
     },
     {
       "type": "standard",
@@ -2673,7 +4594,7 @@
       },
       "conditions": "#fauna--definição-salpa || @modificador:definição && @substantivo:salpa",
       "dialog_node": "node_d3a5941293984262",
-      "previous_sibling": "node_7c859a6294b7464b"
+      "previous_sibling": "node_cc20b636e32a4aaf"
     },
     {
       "type": "standard",
@@ -2696,7 +4617,7 @@
       },
       "conditions": "#fauna--definição-anemona || @modificador:definição && @substantivo:anemona",
       "dialog_node": "node_d5fe851aa4a348b0",
-      "previous_sibling": "node_d17014f9e0e1420d"
+      "previous_sibling": "node_ea7ad4aa5fff4bc4"
     },
     {
       "type": "standard",
@@ -2719,7 +4640,7 @@
       },
       "conditions": "#outras--motivo-nome-aaz || @modificador:motivo && @substantivo:nome && @recipiente:aaz",
       "dialog_node": "node_daabd381c6de471c",
-      "previous_sibling": "node_007490dc17ab45e8"
+      "previous_sibling": "node_af69f26ac97b40a2"
     },
     {
       "type": "standard",
@@ -2742,7 +4663,30 @@
       },
       "conditions": "#fauna--listar-animal-marinho || @modificador:listar && @substantivo:animal && @recipiente:marinho",
       "dialog_node": "node_dbdf21e663d74268",
-      "previous_sibling": "node_2fabd31a3b0749e4"
+      "previous_sibling": "node_8106245293554def"
+    },
+    {
+      "type": "standard",
+      "title": "Maré: definição de dia de maré",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Um dia de maré é o tempo que normalmente passa entre duas marés altas em um regime semi-diurno. Ele vale, na média, 24 horas e 51 minutos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "mare"
+      },
+      "conditions": "#maré--definição-dia-de-maré || @modificador:definição && @substantivo:dia-de-maré && $contexto==\"mare\" || @modificador:definição && @substantivo:dia-de-maré && @rótulos:mare",
+      "dialog_node": "node_dd172bbd0d8e4d49",
+      "previous_sibling": "node_7c859a6294b7464b"
     },
     {
       "type": "standard",
@@ -2765,7 +4709,30 @@
       },
       "conditions": "#tartarugas--definição-jabuti || @modificador:definição && @substantivo:jabuti && $contexto==\"tartarugas\" || @modificador:definição && @substantivo:jabuti && @rótulos:tartarugas",
       "dialog_node": "node_ddcb5580d63b4546",
-      "previous_sibling": "node_1f92f49e6380498a"
+      "previous_sibling": "node_3dd7f692ea0a4bd4"
+    },
+    {
+      "type": "standard",
+      "title": "Tubarão é um peixe?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sim! Tubarões são um tipo de peixe."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "fauna"
+      },
+      "conditions": "#fauna--pertence-tubarão-peixe || @modificador:pertence && @substantivo:tubarão && @recipiente:peixe",
+      "dialog_node": "node_de82492972a34f81",
+      "previous_sibling": "node_f02eafc0a559447e"
     },
     {
       "type": "standard",
@@ -2788,7 +4755,30 @@
       },
       "conditions": "#fauna--definição-crustáceo || @modificador:definição && @substantivo:crustáceo",
       "dialog_node": "node_e0a825f78d154c1f",
-      "previous_sibling": "node_763e58585a5942f9"
+      "previous_sibling": "node_1103af96828b439d"
+    },
+    {
+      "type": "standard",
+      "title": "Energia de maré: explicar geração",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Atualmente existem 3 maneiras de se extrair energia das marés: correntes de maré, barragens e lagoas de maré. A maioria dos geradores é do primeiro tipo, que consiste de turbinas posicionadas no mar em locais onde passam correntes geradas pela mudança da maré. O segundo tipo, de barragem, tem o mesmo funcionamento que usinas hidrelétricas. Durante a alta, a barragem enche, durante o resto do tempo ela canaliza a água através de turbinas. As lagoas de maré funcionariam como barragens, exceto que construídas ao longo do litoral e com materiais naturais como pedras, reduzindo o impacto ambiental. No entanto, não há ainda no mundo construções desse tipo em funcionamento."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "energia-de-mare"
+      },
+      "conditions": "#energia-de-maré--explicar-geração || @modificador:explicar && @substantivo:geração && $contexto==\"energia-de-mare\" || @modificador:explicar && @substantivo:geração && @rótulos:energia-de-mare",
+      "dialog_node": "node_e1a3daafeaa44ab5",
+      "previous_sibling": "node_07d9401cca394dd6"
     },
     {
       "type": "standard",
@@ -2811,7 +4801,30 @@
       },
       "conditions": "#fauna--definição-filo || @modificador:definição && @substantivo:filo",
       "dialog_node": "node_e1b23ca5a2954f6a",
-      "previous_sibling": "node_4cbc493f6b1346e6"
+      "previous_sibling": "node_e0a825f78d154c1f"
+    },
+    {
+      "type": "standard",
+      "title": "Tartarugas: detalhar reprodução",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Assim como muitas outras espécies do reino animal, as tartarugas acasalam em um ritual que envolve o macho montar nas costas da fêmea. Devido à posição da cauda, que atrapalha, é necessária a cooperação da fêmea, que os machos obtêm através de mordidas e comportamento agressivo até a submissão, ou através de excitação, vibrando as patas dianteiras nos ombros e cabeça da fêmea."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "tartarugas"
+      },
+      "conditions": "#tartarugas--detalhar-reprodução || @modificador:detalhar && @recipiente:reprodução && $contexto==\"tartarugas\" || @modificador:detalhar && @recipiente:reprodução && @rótulos:tartarugas",
+      "dialog_node": "node_e210ecc0353741de",
+      "previous_sibling": "node_9a15b8b2f0294b0b"
     },
     {
       "type": "standard",
@@ -2834,7 +4847,53 @@
       },
       "conditions": "#fauna--definição-zooplancton || @modificador:definição && @substantivo:zooplancton",
       "dialog_node": "node_e357f7ad2a274014",
-      "previous_sibling": "node_8867d6bf610e460f"
+      "previous_sibling": "node_464a104ef98d40e9"
+    },
+    {
+      "type": "standard",
+      "title": "Energia de maré: exemplos de próses",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As principais vantagens da energia de maré são o baixo impacto ambiental e o fato de ser uma fonte renovável."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "energia-de-mare"
+      },
+      "conditions": "#energia-de-maré--listar-prós || @modificador:listar && @substantivo:prós && $contexto==\"energia-de-mare\" || @modificador:listar && @substantivo:prós && @rótulos:energia-de-mare",
+      "dialog_node": "node_e562eb3215734e0b",
+      "previous_sibling": "node_cd1529befade42a6"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: explicar importância",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os recifes de corais são ecossistemas que abrigam muitas formas de vida marinhas. Aproximadamente 65% dos peixes marinhos moram nesse habitat, tornando essencial a sua preservação."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--explicar-importância || @modificador:explicar && @substantivo:importância && $contexto==\"coral\" || @modificador:explicar && @substantivo:importância && @rótulos:coral",
+      "dialog_node": "node_e7287cfd72674ee0",
+      "previous_sibling": "node_2214bae73eef41a1"
     },
     {
       "type": "standard",
@@ -2857,7 +4916,7 @@
       },
       "conditions": "#fauna--definição-actinoperígeo || @modificador:definição && @substantivo:actinoperígeo",
       "dialog_node": "node_ea7ad4aa5fff4bc4",
-      "previous_sibling": "node_464a104ef98d40e9"
+      "previous_sibling": "node_a472e38f7d3045a0"
     },
     {
       "type": "standard",
@@ -2880,7 +4939,7 @@
       },
       "conditions": "#petróleo--maiores-reserva || @modificador:maiores && @substantivo:reserva && $contexto==\"petroleo\" || @modificador:maiores && @substantivo:reserva && @rótulos:petroleo",
       "dialog_node": "node_ef12302170ea42cc",
-      "previous_sibling": "node_75eb9df2bca5427e"
+      "previous_sibling": "node_d190584c5ab04b00"
     },
     {
       "type": "standard",
@@ -2903,7 +4962,7 @@
       },
       "conditions": "#fauna--definição-peixe || @modificador:definição && @substantivo:peixe",
       "dialog_node": "node_ef5ce0ca07bc4d42",
-      "previous_sibling": "node_ea7ad4aa5fff4bc4"
+      "previous_sibling": "node_cee24448f70742e8"
     },
     {
       "type": "standard",
@@ -2926,7 +4985,7 @@
       },
       "conditions": "#fauna--maior-animal-marinho || @modificador:maior && @substantivo:animal && @recipiente:marinho",
       "dialog_node": "node_f02eafc0a559447e",
-      "previous_sibling": "node_327bd5622a5a4d5b"
+      "previous_sibling": "node_2fabd31a3b0749e4"
     },
     {
       "type": "standard",
@@ -2949,7 +5008,76 @@
       },
       "conditions": "#tartarugas--listar-espécie-extinção || @modificador:listar && @substantivo:espécie && @recipiente:extinção && $contexto==\"tartarugas\" || @modificador:listar && @substantivo:espécie && @recipiente:extinção && @rótulos:tartarugas",
       "dialog_node": "node_f38446cb2abf420a",
-      "previous_sibling": "node_021d1478082e4ee1"
+      "previous_sibling": "node_1f92f49e6380498a"
+    },
+    {
+      "type": "standard",
+      "title": "Coral: detalhar símbolo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os corais ensinam a paciência, já que demoram muitos anos para se formar. Partes de corais já foram usadas como amuletos para trazer proteção, por exemplo, pelos egípcios. Para os romanos, eles simbolizavam a fertilidade."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "coral"
+      },
+      "conditions": "#coral--detalhar-símbolo || @modificador:detalhar && @recipiente:símbolo && $contexto==\"coral\" || @modificador:detalhar && @recipiente:símbolo && @rótulos:coral",
+      "dialog_node": "node_f53f0c71a176434e",
+      "previous_sibling": "node_327bd5622a5a4d5b"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: efeito de derramamento em economia",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os derramamentos de petróleo impedem a atividade turística e prejudicam a pesca, que são as principais fontes de renda em muito do litoral brasileiro."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--efeito-derramamento-economia || @modificador:efeito && @substantivo:derramamento && @recipiente:economia && $contexto==\"petroleo\" || @modificador:efeito && @substantivo:derramamento && @recipiente:economia && @rótulos:petroleo",
+      "dialog_node": "node_fc4a220fff71401d",
+      "previous_sibling": "node_acd676c5a1be4d4c"
+    },
+    {
+      "type": "standard",
+      "title": "Petróleo: detalhar fim",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É muito difícil prever uma data, pois, além do consumo, que aumenta com o tempo, a quantidade de petróleo descoberto aumenta também. À medida que as tecnologias de prospecção evoluem e novas áreas são sondadas, cada vez mais petróleo é encontrado. Em 1999, o Instituto Americano de Petróleo estimou que ele acabaria entre 2062 e 2094. Desde então, em 2006, a Cambridge Energy Research Associates estimou que, na verdade, possuímos 3 vezes a quantidade de óleo prevista anteriormente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "petroleo"
+      },
+      "conditions": "#petróleo--detalhar-fim || @modificador:detalhar && @substantivo:fim && $contexto==\"petroleo\" || @modificador:detalhar && @substantivo:fim && @rótulos:petroleo",
+      "dialog_node": "node_fe8a6abc96f74f6d",
+      "previous_sibling": "node_5d389df444304efb"
     }
   ],
   "counterexamples": [],

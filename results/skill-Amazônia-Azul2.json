@@ -1156,22 +1156,47 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "detalhar",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "definição",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "maior",
+                    "value": "listar",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "localização",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "composição",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
                     "value": "existe",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "motivo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "quantidade",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "detalhar",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "maiores",
                     "synonyms": []
                 },
                 {
@@ -1186,27 +1211,7 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "composição",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "explicar",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "motivo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "localização",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "quantidade",
                     "synonyms": []
                 },
                 {
@@ -1216,12 +1221,7 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "maiores",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "listar",
+                    "value": "maior",
                     "synonyms": []
                 },
                 {
@@ -1239,12 +1239,7 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "consumo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "ciclo",
+                    "value": "produção",
                     "synonyms": []
                 },
                 {
@@ -1254,24 +1249,12 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "extinção",
+                    "value": "de",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "aaz",
-                    "synonyms": [
-                        "amazônia azul"
-                    ]
-                },
-                {
-                    "type": "synonyms",
-                    "value": "reprodução",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "renovável",
+                    "value": "idade",
                     "synonyms": []
                 },
                 {
@@ -1283,44 +1266,7 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "tipos",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "dieta",
-                    "synonyms": [
-                        "come"
-                    ]
-                },
-                {
-                    "type": "synonyms",
-                    "value": "peso",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "origem",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "economia",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "reprodutiva",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "brasil",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "plataforma",
+                    "value": "mundo",
                     "synonyms": []
                 },
                 {
@@ -1330,52 +1276,17 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "tartaruga",
+                    "value": "brasil",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "recurso",
+                    "value": "consumo",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "produção",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "de",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "custo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "mundo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "anos",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "idade",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "vida",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "símbolo",
+                    "value": "tipos",
                     "synonyms": []
                 },
                 {
@@ -1385,8 +1296,97 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "recurso",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "aaz",
+                    "synonyms": [
+                        "amazônia azul"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "extinção",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "reprodução",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tartaruga",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "plataforma",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "anos",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "origem",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "símbolo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "renovável",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "custo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "vida",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "peso",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "ciclo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "economia",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "dia",
                     "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "reprodutiva",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "dieta",
+                    "synonyms": [
+                        "come"
+                    ]
                 }
             ],
             "fuzzy_match": true
@@ -1396,34 +1396,7 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "energia",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "coral",
-                    "synonyms": [
-                        "corais"
-                    ]
-                },
-                {
-                    "type": "synonyms",
-                    "value": "coral_turismo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "maré",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tartarugas",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "flora",
+                    "value": "outras",
                     "synonyms": []
                 },
                 {
@@ -1438,22 +1411,29 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "fauna",
+                    "value": "energia",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "fauna_turismo",
+                    "value": "flora",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "corrente",
+                    "value": "coral",
+                    "synonyms": [
+                        "corais"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "maré",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "outras",
+                    "value": "coral_turismo",
                     "synonyms": []
                 },
                 {
@@ -1464,6 +1444,26 @@
                 {
                     "type": "synonyms",
                     "value": "gás",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "corrente",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "fauna_turismo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "fauna",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tartarugas",
                     "synonyms": []
                 },
                 {
@@ -1491,262 +1491,7 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "tunicado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "espécie",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "offshore",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "artificial",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "iniciativas",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "jabuti",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tipo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "dia",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "anemona",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "actinoperígeo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "marinho",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "da",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cnida",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "onshore",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "campo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "altura",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "derivado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "e",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "crustáceo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "nome",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "preço",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "causa",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "plancton",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "altas",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "alga",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "geração",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "líquen",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "entre",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cordado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "derramamento",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "zooplancton",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "prós",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "baleia",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "maré",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "filo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cágado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "fim",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tempo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "importância",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "variação",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "contras",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "animal",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "hidra",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "quelônio",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "frequência",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "polifilético",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tubarão",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cnidário",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "reserva",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "fitoplancton",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "estado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "molusco",
                     "synonyms": []
                 },
                 {
@@ -1761,6 +1506,146 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "anemona",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "fim",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "empresa",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "marinho",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "hidra",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cágado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "filo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "derramamento",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "derivado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "e",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "peixe",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "animal",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cordado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "iniciativas",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "artificial",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "importância",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "maré",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "entre",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "polifilético",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "reserva",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "quelônio",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "pólipo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "fitoplancton",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "líquen",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "onshore",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cnida",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "nome",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "salpa",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "branqueamento",
                     "synonyms": []
                 },
@@ -1771,12 +1656,102 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "tempo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "preço",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "actinoperígeo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "espécie",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cnidário",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "variação",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "recife",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "pólipo",
+                    "value": "contras",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "causa",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "extração",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "estado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "altas",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "da",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "baleia",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "zooplancton",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "offshore",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "campo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "frequência",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "alga",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "crustáceo",
                     "synonyms": []
                 },
                 {
@@ -1786,22 +1761,47 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "peixe",
+                    "value": "altura",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "salpa",
+                    "value": "tubarão",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "empresa",
+                    "value": "dia",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "extração",
+                    "value": "molusco",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tunicado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tipo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "prós",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "jabuti",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "geração",
                     "synonyms": []
                 },
                 {
@@ -2145,7 +2145,12 @@
             "conditions": "@bool:não",
             "dialog_node": "node_3_1636421109581",
             "previous_sibling": "node_5_1636421066527",
-            "parent": "node_2_1633362162069"
+            "parent": "node_2_1633362162069",
+            "next_step": {
+                "behavior": "jump_to",
+                "selector": "body",
+                "dialog_node": "node_0bdbd88008754ab8"
+            }
         },
         {
             "type": "standard",
