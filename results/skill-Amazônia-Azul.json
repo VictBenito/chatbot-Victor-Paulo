@@ -1165,13 +1165,22 @@
         {
           "type": "synonyms",
           "value": "não",
-          "synonyms": []
+          "synonyms": [
+            "n",
+            "nah",
+            "nao",
+            "nem",
+            "nn",
+            "nop"
+          ]
         },
         {
           "type": "synonyms",
           "value": "sim",
           "synonyms": [
             "claro",
+            "s",
+            "ss",
             "tenho"
           ]
         }
@@ -1308,11 +1317,6 @@
         },
         {
           "type": "synonyms",
-          "value": "de",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "dia",
           "synonyms": []
         },
@@ -1441,11 +1445,6 @@
         {
           "type": "synonyms",
           "value": "corrente",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "de",
           "synonyms": []
         },
         {
@@ -1603,11 +1602,6 @@
         },
         {
           "type": "synonyms",
-          "value": "contras",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "coral",
           "synonyms": []
         },
@@ -1623,16 +1617,6 @@
         },
         {
           "type": "synonyms",
-          "value": "da",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "de",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "derivado",
           "synonyms": []
         },
@@ -1644,11 +1628,6 @@
         {
           "type": "synonyms",
           "value": "dia",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "e",
           "synonyms": []
         },
         {
@@ -1804,11 +1783,6 @@
         {
           "type": "synonyms",
           "value": "predador",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "prós",
           "synonyms": []
         },
         {
@@ -2284,11 +2258,11 @@
       },
       "parent": "node_3_1636423463289",
       "dialog_node": "node_2_1633362162069",
-      "previous_sibling": "node_7_1636424625354"
+      "previous_sibling": "node_1_1636422782005"
     },
     {
       "type": "standard",
-      "title": "Ajuda",
+      "title": "Ajuda inicial",
       "output": {
         "generic": [
           {
@@ -2332,9 +2306,9 @@
         ]
       },
       "parent": "node_3_1636423463289",
-      "conditions": "#ajuda",
+      "conditions": "",
       "dialog_node": "node_2_1636423573906",
-      "previous_sibling": "node_1_1636422782005"
+      "previous_sibling": "node_7_1636424625354"
     },
     {
       "type": "standard",
@@ -2744,6 +2718,13 @@
         ]
       },
       "parent": "node_3_1636423463289",
+      "context": {
+        "intro": true,
+        "intents": {
+          "1": "coral--definição",
+          "2": "abracdabra"
+        }
+      },
       "conditions": "welcome || conversation_start",
       "dialog_node": "node_4_1633059502031"
     },
@@ -3271,12 +3252,12 @@
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
           }
         ]
       },
       "parent": "node_3_1636423463289",
-      "conditions": "#tudo-bem",
+      "conditions": "#tudo-bem && intent.confidence > 0.7",
       "dialog_node": "node_6_1633360929172",
       "previous_sibling": "node_8_1633366447466"
     },
@@ -3324,7 +3305,7 @@
       },
       "parent": "node_3_1636423463289",
       "dialog_node": "node_6_1636417093133",
-      "previous_sibling": "node_2_1633362162069"
+      "previous_sibling": "node_7_1636766479073"
     },
     {
       "type": "standard",
@@ -3415,6 +3396,64 @@
       "parent": "node_3_1636423463289",
       "conditions": "#formulário",
       "dialog_node": "node_7_1636424625354",
+      "previous_sibling": "node_5_1633148229901"
+    },
+    {
+      "type": "standard",
+      "title": "Fim da introdução",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Prontinho. Vou te dar umas dicas para começar. Pode pedir mais depois se precisar!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1636423463289",
+      "context": {
+        "intro": false
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1636423573906"
+      },
+      "conditions": "$intro==true",
+      "dialog_node": "node_7_1636766479073",
+      "previous_sibling": "node_2_1633362162069"
+    },
+    {
+      "type": "standard",
+      "title": "Ajuda automática",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "<? context['titles'][context['dica']] ?>",
+                "value": {
+                  "input": {
+                    "text": "<? context['intents'][context['dica']] ?>"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1636423463289",
+      "context": {
+          "dica1": "<? new Random().nextInt() ?>"
+      },
+      "conditions": "#ajuda",
+      "dialog_node": "node_7_1636770186943",
       "previous_sibling": "node_2_1636423573906"
     },
     {
@@ -3685,7 +3724,7 @@
         ]
       },
       "parent": "node_3_1636423463289",
-      "conditions": "#oi",
+      "conditions": "#oi && intent.confidence > 0.7",
       "dialog_node": "node_8_1633366447466",
       "previous_sibling": "node_4_1636567999545"
     },
