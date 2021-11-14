@@ -19,7 +19,7 @@
             "description": ""
         },
         {
-            "intent": "coral--definição",
+            "intent": "corais--definição",
             "examples": [
                 {
                     "text": "O que é um coral?"
@@ -28,7 +28,7 @@
             "description": ""
         },
         {
-            "intent": "coral--definição-branqueamento-coral",
+            "intent": "corais--definição-branqueamento-corais",
             "examples": [
                 {
                     "text": "O que é o branqueamento de corais?"
@@ -37,7 +37,7 @@
             "description": ""
         },
         {
-            "intent": "coral--definição-recife-artificial-coral",
+            "intent": "corais--definição-recife-artificial-corais",
             "examples": [
                 {
                     "text": "O que são recifes artificiais?"
@@ -46,7 +46,7 @@
             "description": ""
         },
         {
-            "intent": "coral--definição-recife-coral",
+            "intent": "corais--definição-recife-corais",
             "examples": [
                 {
                     "text": "O que é um recife de corais?"
@@ -55,7 +55,7 @@
             "description": ""
         },
         {
-            "intent": "coral--detalhar-composição",
+            "intent": "corais--detalhar-composição",
             "examples": [
                 {
                     "text": "Do que é feito um coral?"
@@ -64,7 +64,7 @@
             "description": ""
         },
         {
-            "intent": "coral--detalhar-dieta",
+            "intent": "corais--detalhar-dieta",
             "examples": [
                 {
                     "text": "Do que um coral se alimenta?"
@@ -73,7 +73,7 @@
             "description": ""
         },
         {
-            "intent": "coral--detalhar-símbolo",
+            "intent": "corais--detalhar-símbolo",
             "examples": [
                 {
                     "text": "O que o coral simboliza?"
@@ -82,7 +82,7 @@
             "description": ""
         },
         {
-            "intent": "coral--efeito-branqueamento-ambiente",
+            "intent": "corais--efeito-branqueamento-ambiente",
             "examples": [
                 {
                     "text": "Quais são os efeitos ambientais do branqueamento de corais?"
@@ -91,7 +91,7 @@
             "description": ""
         },
         {
-            "intent": "coral--explicar-importância",
+            "intent": "corais--explicar-importância",
             "examples": [
                 {
                     "text": "Qual é a importância dos corais?"
@@ -100,7 +100,7 @@
             "description": ""
         },
         {
-            "intent": "coral--listar-iniciativa-governo",
+            "intent": "corais--listar-iniciativa-governo",
             "examples": [
                 {
                     "text": "Quais são as iniciativas do governo para proteger os corais?"
@@ -109,7 +109,7 @@
             "description": ""
         },
         {
-            "intent": "coral--listar-tipo",
+            "intent": "corais--listar-tipo",
             "examples": [
                 {
                     "text": "Que tipos de recifes de corais há?"
@@ -118,7 +118,7 @@
             "description": ""
         },
         {
-            "intent": "coral--localização-recife",
+            "intent": "corais--localização-recife-corais",
             "examples": [
                 {
                     "text": "Onde ficam os recifes de corais?"
@@ -127,7 +127,7 @@
             "description": ""
         },
         {
-            "intent": "coral--maior-recife-brasil",
+            "intent": "corais--maior-recife-brasil",
             "examples": [
                 {
                     "text": "Qual é o maior recife de corais no Brasil?"
@@ -136,7 +136,7 @@
             "description": ""
         },
         {
-            "intent": "coral--maior-recife-mundo",
+            "intent": "corais--maior-recife-mundo",
             "examples": [
                 {
                     "text": "Qual é o maior recife de corais?"
@@ -145,7 +145,7 @@
             "description": ""
         },
         {
-            "intent": "coral--motivo-branqueamento",
+            "intent": "corais--motivo-branqueamento",
             "examples": [
                 {
                     "text": "O que causa o branqueamento de corais?"
@@ -154,7 +154,7 @@
             "description": ""
         },
         {
-            "intent": "coral_turismo--efeito-turismo",
+            "intent": "corais_turismo--efeito-turismo",
             "examples": [
                 {
                     "text": "Quais são os efeitos do turismo em corais?"
@@ -412,7 +412,7 @@
             "description": ""
         },
         {
-            "intent": "fauna--detalhar-característica-crustáceo",
+            "intent": "fauna--detalhar-características-crustáceo",
             "examples": [
                 {
                     "text": "O que são características de crustáceos?"
@@ -439,7 +439,7 @@
             "description": ""
         },
         {
-            "intent": "fauna--listar-animal-marinho",
+            "intent": "fauna--listar-animais-marinhos",
             "examples": [
                 {
                     "text": "Exemplos de animais marinhos"
@@ -739,7 +739,7 @@
             "description": ""
         },
         {
-            "intent": "petróleo--listar-empresa-brasil",
+            "intent": "petróleo--listar-empresa",
             "examples": [
                 {
                     "text": "Que empresas extraem petróleo no Brasil?"
@@ -1141,10 +1141,56 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "motivo",
+                    "value": "maior",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "diferença",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "listar",
                     "synonyms": [
-                        "por que",
-                        "causa"
+                        "quais"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "localização",
+                    "synonyms": [
+                        "onde"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "definição",
+                    "synonyms": [
+                        "significado",
+                        "o que é",
+                        "definir",
+                        "defina"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "maiores",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "existe",
+                    "synonyms": [
+                        "há"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "explicar",
+                    "synonyms": [
+                        "explique",
+                        "como"
                     ]
                 },
                 {
@@ -1157,22 +1203,8 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "listar",
-                    "synonyms": [
-                        "quais"
-                    ]
-                },
-                {
-                    "type": "synonyms",
                     "value": "pertence",
                     "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "existe",
-                    "synonyms": [
-                        "há"
-                    ]
                 },
                 {
                     "type": "synonyms",
@@ -1184,43 +1216,11 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "definição",
+                    "value": "motivo",
                     "synonyms": [
-                        "o que é",
-                        "defina",
-                        "significado",
-                        "definir"
+                        "por que",
+                        "causa"
                     ]
-                },
-                {
-                    "type": "synonyms",
-                    "value": "localização",
-                    "synonyms": [
-                        "onde"
-                    ]
-                },
-                {
-                    "type": "synonyms",
-                    "value": "explicar",
-                    "synonyms": [
-                        "como",
-                        "explique"
-                    ]
-                },
-                {
-                    "type": "synonyms",
-                    "value": "maiores",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "diferença",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "maior",
-                    "synonyms": []
                 },
                 {
                     "type": "synonyms",
@@ -1237,99 +1237,7 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "tartaruga",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "baleia",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cordado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "filo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "petróleo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "animal marinho",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "quelônio",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "molusco",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "coral",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "brasil",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "marinho",
-                    "synonyms": [
-                        "marítimo"
-                    ]
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tubarão",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "jabuti",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "dia de maré",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cágado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "crustáceo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "peixe",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "onshore",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "recife",
                     "synonyms": []
                 },
                 {
@@ -1339,7 +1247,12 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "governo",
+                    "value": "altura",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tubarão",
                     "synonyms": []
                 },
                 {
@@ -1349,47 +1262,17 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "anêmona",
+                    "value": "brasil",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "extinção",
+                    "value": "tartaruga",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "recurso renovável",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cnidário",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "hidra",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "polifilético",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "salpa",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "economia",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cnida",
+                    "value": "medusa",
                     "synonyms": []
                 },
                 {
@@ -1399,12 +1282,22 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "actinoperígeo",
+                    "value": "hidra",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "líquen",
+                    "value": "zooplâncton",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cágado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "molusco",
                     "synonyms": []
                 },
                 {
@@ -1419,22 +1312,52 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "altura",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "alga",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "zooplâncton",
+                    "value": "filo",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "fitoplâncton",
+                    "value": "economia",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "anêmona",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "peixe",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cnida",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "jabuti",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "actinoperígeo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "governo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "dia de maré",
                     "synonyms": []
                 },
                 {
@@ -1444,12 +1367,77 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "animal marinho",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "mundo",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "medusa",
+                    "value": "fitoplâncton",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "onshore",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "polifilético",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "corais",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cordado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cnidário",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "recurso renovável",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "extinção",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "salpa",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "crustáceo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "líquen",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "quelônio",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "petróleo",
                     "synonyms": []
                 },
                 {
@@ -1467,6 +1455,11 @@
                 {
                     "type": "synonyms",
                     "value": "consumo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "coral",
                     "synonyms": []
                 },
                 {
@@ -1493,6 +1486,13 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "marinho",
+                    "synonyms": [
+                        "marítimo"
+                    ]
+                },
+                {
+                    "type": "synonyms",
                     "value": "origem",
                     "synonyms": []
                 },
@@ -1504,6 +1504,11 @@
                 {
                     "type": "synonyms",
                     "value": "produção",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "recife",
                     "synonyms": []
                 },
                 {
@@ -1524,12 +1529,7 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "flora",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tartarugas",
+                    "value": "amazônia azul",
                     "synonyms": []
                 },
                 {
@@ -1539,12 +1539,17 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "fauna_turismo",
+                    "value": "correntes oceânicas",
                     "synonyms": []
                 },
                 {
                     "type": "synonyms",
-                    "value": "petróleo",
+                    "value": "corais_turismo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "flora",
                     "synonyms": []
                 },
                 {
@@ -1554,7 +1559,12 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "amazônia azul",
+                    "value": "fauna",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "fauna_turismo",
                     "synonyms": []
                 },
                 {
@@ -1564,17 +1574,22 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "correntes oceânicas",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "fauna",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "energia de maré",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tartarugas",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "corais",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "petróleo",
                     "synonyms": []
                 },
                 {
@@ -1607,22 +1622,7 @@
             "values": [
                 {
                     "type": "synonyms",
-                    "value": "derivado",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "espécie",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "idade reprodutiva",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "produção",
+                    "value": "geração",
                     "synonyms": []
                 },
                 {
@@ -1632,7 +1632,7 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "origem",
+                    "value": "animais marinhos",
                     "synonyms": []
                 },
                 {
@@ -1642,187 +1642,7 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "animal marinho",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "importância",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "prós",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "molusco",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
                     "value": "reprodução",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "composição",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "característica",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "dieta",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tubarão",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "jabuti",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "variação",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "branqueamento",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "longevidade",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tipo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "predador",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "crustáceo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "iniciativa",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "recife",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "campo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "consumo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "animal",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "extinção",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "cnidário",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "símbolo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "nome",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "empresa",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "frequência",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "custo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "prós e contras",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "derramamento",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "geração",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "fim",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "contras",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "turismo",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "tempo entre altas",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "reserva",
-                    "synonyms": []
-                },
-                {
-                    "type": "synonyms",
-                    "value": "peso",
                     "synonyms": []
                 },
                 {
@@ -1832,7 +1652,47 @@
                 },
                 {
                     "type": "synonyms",
-                    "value": "plataforma",
+                    "value": "características",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "reserva",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "custo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "origem",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tubarão",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tempo entre altas",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "variação",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "molusco",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "composição",
                     "synonyms": []
                 },
                 {
@@ -1842,7 +1702,162 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "nome",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "frequência",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "derivado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "fim",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "longevidade",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "recife",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "prós",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "espécie",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "peso",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "branqueamento",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "prós e contras",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "jabuti",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "consumo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "idade reprodutiva",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "plataforma",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "animal marinho",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "estados produtores",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "tipo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "importância",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "cnidário",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "turismo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "dieta",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "iniciativa",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "contras",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "empresa",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "produção",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "extinção",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "predador",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "campo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "derramamento",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "símbolo",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "crustáceo",
                     "synonyms": []
                 },
                 {
@@ -1869,7 +1884,17 @@
                 },
                 {
                     "type": "synonyms",
+                    "value": "animal",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
                     "value": "cágado",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "característica",
                     "synonyms": []
                 },
                 {
@@ -2034,8 +2059,7 @@
             "type": "folder",
             "title": "Diálogo",
             "dialog_node": "node_3_1636423463289",
-            "digress_in": "does_not_return",
-            "intent": ""
+            "digress_in": "does_not_return"
         },
         {
             "type": "standard",
@@ -2056,32 +2080,32 @@
             "context": {
                 "intro": true,
                 "titles": {
-                    "0": "Explicar importância de amazônia azul",
-                    "1": "Motivo para nome de amazônia azul?",
-                    "2": "Definição de coral?",
-                    "3": "Definição de branqueamento de coral?",
-                    "4": "Definição de recife artificial de coral?",
-                    "5": "Definição de recife de coral?",
-                    "6": "Detalhar composição de coral",
-                    "7": "Detalhar dieta de coral",
-                    "8": "Detalhar símbolo de coral",
-                    "9": "Coral: efeito de branqueamento em ambiente?",
-                    "10": "Explicar importância de coral",
-                    "11": "Coral: listar iniciativas do governo",
-                    "12": "Listar tipos de coral",
-                    "13": "De recife?",
-                    "14": "Maior recife de coral no Brasil ?",
-                    "15": "Maior recife de coral do mundo ?",
-                    "16": "Motivo para branqueamento de coral?",
-                    "17": "Coral: efeito de turismo em coral?",
+                    "0": "Explicar importância da Amazônia Azul",
+                    "1": "Motivo para nome da Amazônia Azul?",
+                    "2": "Definição de corais?",
+                    "3": "Definição do branqueamento de corais?",
+                    "4": "Definição de recife artificial de corais?",
+                    "5": "Definição de recife de corais?",
+                    "6": "Detalhar composição de corais",
+                    "7": "Detalhar dieta de corais",
+                    "8": "Detalhar símbolo de corais",
+                    "9": "Corais: efeito do branqueamento no ambiente?",
+                    "10": "Explicar importância de corais",
+                    "11": "Corais: listar iniciativas do governo",
+                    "12": "Listar tipos de corais",
+                    "13": "Localização de recifes de corais?",
+                    "14": "Maior recife de corais no Brasil ?",
+                    "15": "Maior recife de corais do mundo ?",
+                    "16": "Motivo para branqueamento de corais?",
+                    "17": "Corais: efeito de turismo em corais?",
                     "18": "Definição de correntes oceânicas?",
                     "19": "Definição de energia de maré?",
-                    "20": "Energia de maré: efeito em ambiente?",
+                    "20": "Energia de maré: efeito no ambiente?",
                     "21": "Explicar geração de energia de maré",
                     "22": "Listar contras de energia de maré",
                     "23": "Listar prós de energia de maré",
                     "24": "Listar prós e contras de energia de maré",
-                    "25": "De energia de maré?",
+                    "25": "Localização de energia de maré?",
                     "26": "Definição de actinoperígeo?",
                     "27": "Definição de animal marinho?",
                     "28": "Definição de anêmona?",
@@ -2101,16 +2125,16 @@
                     "42": "Definição de tubarão?",
                     "43": "Definição de tunicado?",
                     "44": "Definição de zooplâncton?",
-                    "45": "Detalhar característica de crustáceo",
+                    "45": "Detalhar características de crustáceo",
                     "46": "Existe baleia no Brasil?",
                     "47": "Existe tubarão no Brasil?",
-                    "48": ": listar animais marinho",
-                    "49": "Listar cnidários de",
-                    "50": "Listar crustáceos de",
-                    "51": "Listar moiuscos de",
+                    "48": "Listar animais marinhos",
+                    "49": "Listar cnidários",
+                    "50": "Listar crustáceos",
+                    "51": "Listar moiuscos",
                     "52": "Maior animal marinho ?",
                     "53": "Tubarão é um peixe?",
-                    "54": "De baleia?",
+                    "54": "Localização de baleia?",
                     "55": "Definição de alga?",
                     "56": "Definição de líquen?",
                     "57": "Definição de polifilético?",
@@ -2120,33 +2144,33 @@
                     "61": "Definição de dia de maré?",
                     "62": "Detalhar frequência de maré",
                     "63": "Detalhar tempo entre altas de maré",
-                    "64": "Detalhar variação de maré",
+                    "64": "Detalhar variação de altura de maré",
                     "65": "Motivo para maré?",
-                    "66": "Quantidade maré em dia ?",
-                    "67": "Definição de petróleo?",
-                    "68": "Definição de derramamento de petróleo?",
+                    "66": "Quantidade de maré em dia ?",
+                    "67": "Definição do petróleo?",
+                    "68": "Definição de derramamento do petróleo?",
                     "69": "Definição de onshore?",
-                    "70": "Definição de plataforma de petróleo?",
-                    "71": "Detalhar composição de petróleo",
-                    "72": "Detalhar consumo de petróleo",
-                    "73": "Detalhar custo de petróleo",
-                    "74": "Detalhar fim de petróleo",
-                    "75": "Detalhar preço de petróleo",
-                    "76": "Detalhar produção de petróleo",
-                    "77": "Petróleo: efeito de derramamento em ambiente?",
+                    "70": "Definição de plataforma do petróleo?",
+                    "71": "Detalhar composição do petróleo",
+                    "72": "Detalhar consumo do petróleo",
+                    "73": "Detalhar custo do petróleo",
+                    "74": "Detalhar fim do petróleo",
+                    "75": "Detalhar preço do petróleo",
+                    "76": "Detalhar produção do petróleo",
+                    "77": "Petróleo: efeito de derramamento no ambiente?",
                     "78": "Petróleo: efeito de derramamento em economia?",
-                    "79": "Listar derivados de petróleo",
-                    "80": "Petróleo: listar empresas no Brasil",
+                    "79": "Listar derivados do petróleo",
+                    "80": "Listar empresas do petróleo",
                     "81": "Petróleo: listar tipos de plataforma",
-                    "82": "De petróleo?",
-                    "83": "Maior empresa de petróleo ?",
-                    "84": "Maior reserva de petróleo ?",
-                    "85": "Maiores campos de petróleo ?",
-                    "86": "Maiores derramamentos de petróleo ?",
-                    "87": "Maiores estados produtores de petróleo ?",
-                    "88": "Maiores reservas de petróleo ?",
+                    "82": "Localização do petróleo?",
+                    "83": "Maior empresa do petróleo ?",
+                    "84": "Maior reserva do petróleo ?",
+                    "85": "Maiores campos do petróleo ?",
+                    "86": "Maiores derramamentos do petróleo ?",
+                    "87": "Maiores estados produtores do petróleo ?",
+                    "88": "Maiores reservas do petróleo ?",
                     "89": "Petróleo é um recurso renovável?",
-                    "90": "Quantidade petróleo no Brasil ?",
+                    "90": "Quantidade do petróleo no Brasil ?",
                     "91": "Definição de tartarugas?",
                     "92": "Definição de cágado?",
                     "93": "Definição de jabuti?",
@@ -2162,29 +2186,29 @@
                     "103": "Listar espécies de tartarugas",
                     "104": "Tartarugas: listar espécies em extinção",
                     "105": "Listar predadores de tartarugas",
-                    "106": "De tartarugas?",
+                    "106": "Localização de tartarugas?",
                     "107": "Motivo para extinção de tartarugas?",
-                    "108": "Jabuti é um tartaruga?"
+                    "108": "Jabuti é uma tartaruga?"
                 },
                 "intents": {
                     "0": "amazônia-azul--explicar-importância",
                     "1": "amazônia-azul--motivo-nome",
-                    "2": "coral--definição",
-                    "3": "coral--definição-branqueamento-coral",
-                    "4": "coral--definição-recife-artificial-coral",
-                    "5": "coral--definição-recife-coral",
-                    "6": "coral--detalhar-composição",
-                    "7": "coral--detalhar-dieta",
-                    "8": "coral--detalhar-símbolo",
-                    "9": "coral--efeito-branqueamento-ambiente",
-                    "10": "coral--explicar-importância",
-                    "11": "coral--listar-iniciativa-governo",
-                    "12": "coral--listar-tipo",
-                    "13": "coral--localização-recife",
-                    "14": "coral--maior-recife-brasil",
-                    "15": "coral--maior-recife-mundo",
-                    "16": "coral--motivo-branqueamento",
-                    "17": "coral_turismo--efeito-turismo",
+                    "2": "corais--definição",
+                    "3": "corais--definição-branqueamento-corais",
+                    "4": "corais--definição-recife-artificial-corais",
+                    "5": "corais--definição-recife-corais",
+                    "6": "corais--detalhar-composição",
+                    "7": "corais--detalhar-dieta",
+                    "8": "corais--detalhar-símbolo",
+                    "9": "corais--efeito-branqueamento-ambiente",
+                    "10": "corais--explicar-importância",
+                    "11": "corais--listar-iniciativa-governo",
+                    "12": "corais--listar-tipo",
+                    "13": "corais--localização-recife-corais",
+                    "14": "corais--maior-recife-brasil",
+                    "15": "corais--maior-recife-mundo",
+                    "16": "corais--motivo-branqueamento",
+                    "17": "corais_turismo--efeito-turismo",
                     "18": "correntes-oceânicas--definição",
                     "19": "energia-de-maré--definição",
                     "20": "energia-de-maré--efeito-ambiente",
@@ -2212,10 +2236,10 @@
                     "42": "fauna--definição-tubarão",
                     "43": "fauna--definição-tunicado",
                     "44": "fauna--definição-zooplâncton",
-                    "45": "fauna--detalhar-característica-crustáceo",
+                    "45": "fauna--detalhar-características-crustáceo",
                     "46": "fauna--existe-baleia-brasil",
                     "47": "fauna--existe-tubarão-brasil",
-                    "48": "fauna--listar-animal-marinho",
+                    "48": "fauna--listar-animais-marinhos",
                     "49": "fauna--listar-cnidário",
                     "50": "fauna--listar-crustáceo",
                     "51": "fauna--listar-molusco",
@@ -2247,7 +2271,7 @@
                     "77": "petróleo--efeito-derramamento-ambiente",
                     "78": "petróleo--efeito-derramamento-economia",
                     "79": "petróleo--listar-derivado",
-                    "80": "petróleo--listar-empresa-brasil",
+                    "80": "petróleo--listar-empresa",
                     "81": "petróleo--listar-tipo-plataforma",
                     "82": "petróleo--localização",
                     "83": "petróleo--maior-empresa",
@@ -2280,8 +2304,7 @@
             },
             "conditions": "welcome || conversation_start",
             "dialog_node": "node_4_1633059502031",
-            "parent": "node_3_1636423463289",
-            "intent": ""
+            "parent": "node_3_1636423463289"
         },
         {
             "type": "standard",
@@ -2302,8 +2325,7 @@
                 "behavior": "jump_to",
                 "selector": "body",
                 "dialog_node": "node_7_1633362438517"
-            },
-            "intent": ""
+            }
         },
         {
             "type": "standard",
@@ -2329,8 +2351,7 @@
                 "selector": "body",
                 "dialog_node": "node_1_1636422782005"
             },
-            "previous_sibling": "node_4_1633362384011",
-            "intent": ""
+            "previous_sibling": "node_4_1633362384011"
         },
         {
             "type": "standard",
@@ -2356,8 +2377,7 @@
                 "selector": "body",
                 "dialog_node": "node_4_1633059502031"
             },
-            "previous_sibling": "node_6_1633362478482",
-            "intent": ""
+            "previous_sibling": "node_6_1633362478482"
         },
         {
             "type": "standard",
@@ -2379,8 +2399,7 @@
             "conditions": "#seu-nome",
             "dialog_node": "node_7_1633362438517",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_4_1633059502031",
-            "intent": "seu-nome"
+            "previous_sibling": "node_4_1633059502031"
         },
         {
             "type": "standard",
@@ -2408,8 +2427,7 @@
                 "behavior": "jump_to",
                 "selector": "body",
                 "dialog_node": "node_1_1636422782005"
-            },
-            "intent": ""
+            }
         },
         {
             "type": "standard",
@@ -2437,8 +2455,7 @@
                 "selector": "body",
                 "dialog_node": "node_2_1633362162069"
             },
-            "previous_sibling": "node_7_1633362438517",
-            "intent": ""
+            "previous_sibling": "node_7_1633362438517"
         },
         {
             "type": "standard",
@@ -2458,8 +2475,7 @@
             },
             "dialog_node": "node_2_1633362162069",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_1_1636422782005",
-            "intent": ""
+            "previous_sibling": "node_1_1636422782005"
         },
         {
             "type": "standard",
@@ -2483,9 +2499,8 @@
             "next_step": {
                 "behavior": "jump_to",
                 "selector": "body",
-                "dialog_node": "node_6_1636417093133"
-            },
-            "intent": ""
+                "dialog_node": "node_7_1636766479073"
+            }
         },
         {
             "type": "standard",
@@ -2511,8 +2526,7 @@
                 "selector": "body",
                 "dialog_node": "node_1_1636817313470"
             },
-            "previous_sibling": "node_5_1636421066527",
-            "intent": ""
+            "previous_sibling": "node_5_1636421066527"
         },
         {
             "type": "standard",
@@ -2538,8 +2552,7 @@
                 "selector": "body",
                 "dialog_node": "node_2_1633362162069"
             },
-            "previous_sibling": "node_3_1636421109581",
-            "intent": ""
+            "previous_sibling": "node_3_1636421109581"
         },
         {
             "type": "standard",
@@ -2565,8 +2578,7 @@
                 "selector": "condition",
                 "dialog_node": "node_7_1636766479073"
             },
-            "previous_sibling": "node_2_1633362162069",
-            "intent": "definição-aaz"
+            "previous_sibling": "node_2_1633362162069"
         },
         {
             "type": "standard",
@@ -2595,8 +2607,7 @@
                 "selector": "body",
                 "dialog_node": "node_2_1636423573906"
             },
-            "previous_sibling": "node_1_1636817313470",
-            "intent": ""
+            "previous_sibling": "node_1_1636817313470"
         },
         {
             "type": "standard",
@@ -2616,8 +2627,7 @@
             },
             "dialog_node": "node_6_1636417093133",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_7_1636766479073",
-            "intent": ""
+            "previous_sibling": "node_7_1636766479073"
         },
         {
             "type": "standard",
@@ -2638,8 +2648,7 @@
             "conditions": "#quem-sou-eu",
             "dialog_node": "node_4_1636412764367",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_6_1636417093133",
-            "intent": "quem-sou-eu"
+            "previous_sibling": "node_6_1636417093133"
         },
         {
             "type": "standard",
@@ -2660,8 +2669,7 @@
             "conditions": "#o-que-é-keml",
             "dialog_node": "node_4_1636567999545",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_4_1636412764367",
-            "intent": "o-que-é-keml"
+            "previous_sibling": "node_4_1636412764367"
         },
         {
             "type": "standard",
@@ -2682,8 +2690,7 @@
             "conditions": "#oi && intent.confidence > 0.7",
             "dialog_node": "node_8_1633366447466",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_4_1636567999545",
-            "intent": "oi"
+            "previous_sibling": "node_4_1636567999545"
         },
         {
             "type": "standard",
@@ -2695,8 +2702,7 @@
                 "behavior": "jump_to",
                 "selector": "body",
                 "dialog_node": "node_3_1633361144017"
-            },
-            "intent": ""
+            }
         },
         {
             "type": "standard",
@@ -2709,8 +2715,7 @@
                 "selector": "body",
                 "dialog_node": "node_8_1633361932436"
             },
-            "previous_sibling": "node_3_1633366889420",
-            "intent": ""
+            "previous_sibling": "node_3_1633366889420"
         },
         {
             "type": "standard",
@@ -2734,8 +2739,7 @@
             "conditions": "#tudo-bem && intent.confidence > 0.7",
             "dialog_node": "node_6_1633360929172",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_8_1633366447466",
-            "intent": "tudo-bem"
+            "previous_sibling": "node_8_1633366447466"
         },
         {
             "type": "standard",
@@ -2760,8 +2764,7 @@
                 "behavior": "jump_to",
                 "selector": "body",
                 "dialog_node": "node_6_1636417093133"
-            },
-            "intent": ""
+            }
         },
         {
             "type": "standard",
@@ -2782,8 +2785,7 @@
             "conditions": "@bool:mal || @bool:não",
             "dialog_node": "node_8_1633361932436",
             "parent": "node_6_1633360929172",
-            "previous_sibling": "node_3_1633361144017",
-            "intent": ""
+            "previous_sibling": "node_3_1633361144017"
         },
         {
             "type": "standard",
@@ -2810,8 +2812,7 @@
             "conditions": "#adeus && intent.confidence > 0.7",
             "dialog_node": "node_5_1633148229901",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_6_1633360929172",
-            "intent": "adeus"
+            "previous_sibling": "node_6_1633360929172"
         },
         {
             "type": "standard",
@@ -2842,8 +2843,7 @@
                 "behavior": "jump_to",
                 "selector": "body",
                 "dialog_node": "node_7_1636424625354"
-            },
-            "intent": ""
+            }
         },
         {
             "type": "standard",
@@ -2864,8 +2864,7 @@
             "conditions": "@bool:não",
             "dialog_node": "node_6_1633148694387",
             "parent": "node_5_1633148229901",
-            "previous_sibling": "node_1_1633148650412",
-            "intent": ""
+            "previous_sibling": "node_1_1633148650412"
         },
         {
             "type": "standard",
@@ -2886,8 +2885,7 @@
             "conditions": "#formulário",
             "dialog_node": "node_7_1636424625354",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_5_1633148229901",
-            "intent": "formulário"
+            "previous_sibling": "node_5_1633148229901"
         },
         {
             "type": "standard",
@@ -2937,8 +2935,7 @@
             "conditions": "",
             "dialog_node": "node_2_1636423573906",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_7_1636424625354",
-            "intent": ""
+            "previous_sibling": "node_7_1636424625354"
         },
         {
             "type": "standard",
@@ -2946,7 +2943,7 @@
             "output": {
                 "generic": [
                     {
-                        "title": "",
+                        "title": "Aqui vão algumas dicas:",
                         "options": [
                             {
                                 "label": "<? context['titles'][context['dica0'].toString()] ?>",
@@ -2985,12 +2982,11 @@
             "conditions": "#ajuda",
             "dialog_node": "node_7_1636770186943",
             "parent": "node_3_1636423463289",
-            "previous_sibling": "node_2_1636423573906",
-            "intent": "ajuda"
+            "previous_sibling": "node_2_1636423573906"
         },
         {
             "type": "standard",
-            "title": "Explicar importância de amazônia azul",
+            "title": "Explicar importância da Amazônia Azul",
             "output": {
                 "generic": [
                     {
@@ -3008,13 +3004,32 @@
                 "contexto": "amazonia-azul"
             },
             "conditions": "#amazônia-azul--explicar-importância && intent.confidence > 0.7 || @modificador==\"explicar\" && @substantivo==\"importância\" && $contexto==\"amazônia-azul\" || @modificador==\"explicar\" && @substantivo==\"importância\" && @rótulos==\"amazônia-azul\"",
-            "dialog_node": "node_a6409e26396d48ce",
-            "previous_sibling": "node_3_1636423463289",
-            "intent": "amazônia-azul--explicar-importância"
+            "dialog_node": "node_84a60c72a28b4b40",
+            "previous_sibling": "node_3_1636423463289"
         },
         {
             "type": "standard",
-            "title": "Motivo para nome de amazônia azul?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.marinha.mil.br/economia-azul/noticias/o-que-%C3%A9-amaz%C3%B4nia-azul-e-por-que-o-brasil-quer-se-tornar-pot%C3%AAncia-militar-no-atl%C3%A2ntico"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_29d27993471944dd",
+            "parent": "node_84a60c72a28b4b40"
+        },
+        {
+            "type": "standard",
+            "title": "Motivo para nome da Amazônia Azul?",
             "output": {
                 "generic": [
                     {
@@ -3032,13 +3047,32 @@
                 "contexto": "amazonia-azul"
             },
             "conditions": "#amazônia-azul--motivo-nome && intent.confidence > 0.7 || @modificador==\"motivo\" && @substantivo==\"nome\" && $contexto==\"amazônia-azul\" || @modificador==\"motivo\" && @substantivo==\"nome\" && @rótulos==\"amazônia-azul\"",
-            "dialog_node": "node_e0cb2d93978044c5",
-            "previous_sibling": "node_a6409e26396d48ce",
-            "intent": "amazônia-azul--motivo-nome"
+            "dialog_node": "node_1b1c0e8cac3c4921",
+            "previous_sibling": "node_84a60c72a28b4b40"
         },
         {
             "type": "standard",
-            "title": "Definição de coral?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.revistas.usp.br/revusp/article/view/139265/134606"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_adff694f3c5945f0",
+            "parent": "node_1b1c0e8cac3c4921"
+        },
+        {
+            "type": "standard",
+            "title": "Definição de corais?",
             "output": {
                 "generic": [
                     {
@@ -3053,16 +3087,15 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--definição && intent.confidence > 0.7 || @modificador==\"definição\" && $contexto==\"coral\" || @modificador==\"definição\" && @rótulos==\"coral\"",
-            "dialog_node": "node_339ac7f8f8ab494b",
-            "previous_sibling": "node_e0cb2d93978044c5",
-            "intent": "coral--definição"
+            "conditions": "#corais--definição && intent.confidence > 0.7 || @modificador==\"definição\" && $contexto==\"corais\" || @modificador==\"definição\" && @rótulos==\"corais\"",
+            "dialog_node": "node_14054e4cc1914fa6",
+            "previous_sibling": "node_1b1c0e8cac3c4921"
         },
         {
             "type": "standard",
-            "title": "Definição de branqueamento de coral?",
+            "title": "Definição do branqueamento de corais?",
             "output": {
                 "generic": [
                     {
@@ -3077,16 +3110,15 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--definição-branqueamento-coral && intent.confidence > 0.7 || @modificador==\"definição\" && @substantivo==\"branqueamento\" && @recipiente==\"coral\" && $contexto==\"coral\" || @modificador==\"definição\" && @substantivo==\"branqueamento\" && @recipiente==\"coral\" && @rótulos==\"coral\"",
-            "dialog_node": "node_4545e4aa98f9445e",
-            "previous_sibling": "node_339ac7f8f8ab494b",
-            "intent": "coral--definição-branqueamento-coral"
+            "conditions": "#corais--definição-branqueamento-corais && intent.confidence > 0.7 || @modificador==\"definição\" && @substantivo==\"branqueamento\" && @recipiente==\"corais\" && $contexto==\"corais\" || @modificador==\"definição\" && @substantivo==\"branqueamento\" && @recipiente==\"corais\" && @rótulos==\"corais\"",
+            "dialog_node": "node_ac24a5e29d60458c",
+            "previous_sibling": "node_14054e4cc1914fa6"
         },
         {
             "type": "standard",
-            "title": "Definição de recife artificial de coral?",
+            "title": "Definição de recife artificial de corais?",
             "output": {
                 "generic": [
                     {
@@ -3101,16 +3133,35 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--definição-recife-artificial-coral && intent.confidence > 0.7 || @modificador==\"definição\" && @substantivo==\"recife-artificial\" && @recipiente==\"coral\" && $contexto==\"coral\" || @modificador==\"definição\" && @substantivo==\"recife-artificial\" && @recipiente==\"coral\" && @rótulos==\"coral\"",
-            "dialog_node": "node_7bbcc7c25d4941f0",
-            "previous_sibling": "node_4545e4aa98f9445e",
-            "intent": "coral--definição-recife-artificial-coral"
+            "conditions": "#corais--definição-recife-artificial-corais && intent.confidence > 0.7 || @modificador==\"definição\" && @substantivo==\"recife-artificial\" && @recipiente==\"corais\" && $contexto==\"corais\" || @modificador==\"definição\" && @substantivo==\"recife-artificial\" && @recipiente==\"corais\" && @rótulos==\"corais\"",
+            "dialog_node": "node_f036a0bcf4ad43cb",
+            "previous_sibling": "node_ac24a5e29d60458c"
         },
         {
             "type": "standard",
-            "title": "Definição de recife de coral?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.infoescola.com/ecologia/recifes-artificiais/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_acc3311585bd4919",
+            "parent": "node_f036a0bcf4ad43cb"
+        },
+        {
+            "type": "standard",
+            "title": "Definição de recife de corais?",
             "output": {
                 "generic": [
                     {
@@ -3125,16 +3176,35 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--definição-recife-coral && intent.confidence > 0.7 || @modificador==\"definição\" && @substantivo==\"recife\" && @recipiente==\"coral\" && $contexto==\"coral\" || @modificador==\"definição\" && @substantivo==\"recife\" && @recipiente==\"coral\" && @rótulos==\"coral\"",
-            "dialog_node": "node_ae5127cffb7f4c7d",
-            "previous_sibling": "node_7bbcc7c25d4941f0",
-            "intent": "coral--definição-recife-coral"
+            "conditions": "#corais--definição-recife-corais && intent.confidence > 0.7 || @modificador==\"definição\" && @substantivo==\"recife\" && @recipiente==\"corais\" && $contexto==\"corais\" || @modificador==\"definição\" && @substantivo==\"recife\" && @recipiente==\"corais\" && @rótulos==\"corais\"",
+            "dialog_node": "node_ee3573fb98604c48",
+            "previous_sibling": "node_f036a0bcf4ad43cb"
         },
         {
             "type": "standard",
-            "title": "Detalhar composição de coral",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://brasilescola.uol.com.br/biologia/recifes-corais.htm"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_bfb06403d6424cd9",
+            "parent": "node_ee3573fb98604c48"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar composição de corais",
             "output": {
                 "generic": [
                     {
@@ -3149,16 +3219,15 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--detalhar-composição && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"composição\" && $contexto==\"coral\" || @modificador==\"detalhar\" && @substantivo==\"composição\" && @rótulos==\"coral\"",
-            "dialog_node": "node_33f6647d8e3c4cce",
-            "previous_sibling": "node_ae5127cffb7f4c7d",
-            "intent": "coral--detalhar-composição"
+            "conditions": "#corais--detalhar-composição && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"composição\" && $contexto==\"corais\" || @modificador==\"detalhar\" && @substantivo==\"composição\" && @rótulos==\"corais\"",
+            "dialog_node": "node_a9b73e07cc0c492d",
+            "previous_sibling": "node_ee3573fb98604c48"
         },
         {
             "type": "standard",
-            "title": "Detalhar dieta de coral",
+            "title": "Detalhar dieta de corais",
             "output": {
                 "generic": [
                     {
@@ -3173,16 +3242,35 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--detalhar-dieta && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"dieta\" && $contexto==\"coral\" || @modificador==\"detalhar\" && @substantivo==\"dieta\" && @rótulos==\"coral\"",
-            "dialog_node": "node_553f6d24befd4cde",
-            "previous_sibling": "node_33f6647d8e3c4cce",
-            "intent": "coral--detalhar-dieta"
+            "conditions": "#corais--detalhar-dieta && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"dieta\" && $contexto==\"corais\" || @modificador==\"detalhar\" && @substantivo==\"dieta\" && @rótulos==\"corais\"",
+            "dialog_node": "node_852543f20830463d",
+            "previous_sibling": "node_a9b73e07cc0c492d"
         },
         {
             "type": "standard",
-            "title": "Detalhar símbolo de coral",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Coral"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_c4fcdff63a104bb0",
+            "parent": "node_852543f20830463d"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar símbolo de corais",
             "output": {
                 "generic": [
                     {
@@ -3197,16 +3285,35 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--detalhar-símbolo && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"símbolo\" && $contexto==\"coral\" || @modificador==\"detalhar\" && @substantivo==\"símbolo\" && @rótulos==\"coral\"",
-            "dialog_node": "node_d47583681cdd4119",
-            "previous_sibling": "node_553f6d24befd4cde",
-            "intent": "coral--detalhar-símbolo"
+            "conditions": "#corais--detalhar-símbolo && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"símbolo\" && $contexto==\"corais\" || @modificador==\"detalhar\" && @substantivo==\"símbolo\" && @rótulos==\"corais\"",
+            "dialog_node": "node_50947cca544b4f5d",
+            "previous_sibling": "node_852543f20830463d"
         },
         {
             "type": "standard",
-            "title": "Coral: efeito de branqueamento em ambiente?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://whatismyspiritanimal.com/spirit-totem-power-animal-meanings/fish/coral-symbolism-meaning/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_5e670c3d9ddf495e",
+            "parent": "node_50947cca544b4f5d"
+        },
+        {
+            "type": "standard",
+            "title": "Corais: efeito do branqueamento no ambiente?",
             "output": {
                 "generic": [
                     {
@@ -3221,16 +3328,15 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--efeito-branqueamento-ambiente && intent.confidence > 0.7 || @modificador==\"efeito\" && @substantivo==\"branqueamento\" && @recipiente==\"ambiente\" && $contexto==\"coral\" || @modificador==\"efeito\" && @substantivo==\"branqueamento\" && @recipiente==\"ambiente\" && @rótulos==\"coral\"",
-            "dialog_node": "node_c286f0f848d7474a",
-            "previous_sibling": "node_d47583681cdd4119",
-            "intent": "coral--efeito-branqueamento-ambiente"
+            "conditions": "#corais--efeito-branqueamento-ambiente && intent.confidence > 0.7 || @modificador==\"efeito\" && @substantivo==\"branqueamento\" && @recipiente==\"ambiente\" && $contexto==\"corais\" || @modificador==\"efeito\" && @substantivo==\"branqueamento\" && @recipiente==\"ambiente\" && @rótulos==\"corais\"",
+            "dialog_node": "node_a024944a2ddc48a4",
+            "previous_sibling": "node_50947cca544b4f5d"
         },
         {
             "type": "standard",
-            "title": "Explicar importância de coral",
+            "title": "Explicar importância de corais",
             "output": {
                 "generic": [
                     {
@@ -3245,16 +3351,15 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--explicar-importância && intent.confidence > 0.7 || @modificador==\"explicar\" && @substantivo==\"importância\" && $contexto==\"coral\" || @modificador==\"explicar\" && @substantivo==\"importância\" && @rótulos==\"coral\"",
-            "dialog_node": "node_0175cbd9905047b4",
-            "previous_sibling": "node_c286f0f848d7474a",
-            "intent": "coral--explicar-importância"
+            "conditions": "#corais--explicar-importância && intent.confidence > 0.7 || @modificador==\"explicar\" && @substantivo==\"importância\" && $contexto==\"corais\" || @modificador==\"explicar\" && @substantivo==\"importância\" && @rótulos==\"corais\"",
+            "dialog_node": "node_531d85cd93b34f2d",
+            "previous_sibling": "node_a024944a2ddc48a4"
         },
         {
             "type": "standard",
-            "title": "Coral: listar iniciativas do governo",
+            "title": "Corais: listar iniciativas do governo",
             "output": {
                 "generic": [
                     {
@@ -3269,16 +3374,15 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--listar-iniciativa-governo && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"iniciativa\" && @recipiente==\"governo\" && $contexto==\"coral\" || @modificador==\"listar\" && @substantivo==\"iniciativa\" && @recipiente==\"governo\" && @rótulos==\"coral\"",
-            "dialog_node": "node_de6caf70672e4d10",
-            "previous_sibling": "node_0175cbd9905047b4",
-            "intent": "coral--listar-iniciativa-governo"
+            "conditions": "#corais--listar-iniciativa-governo && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"iniciativa\" && @recipiente==\"governo\" && $contexto==\"corais\" || @modificador==\"listar\" && @substantivo==\"iniciativa\" && @recipiente==\"governo\" && @rótulos==\"corais\"",
+            "dialog_node": "node_dc6a330ec180443d",
+            "previous_sibling": "node_531d85cd93b34f2d"
         },
         {
             "type": "standard",
-            "title": "Listar tipos de coral",
+            "title": "Listar tipos de corais",
             "output": {
                 "generic": [
                     {
@@ -3293,16 +3397,35 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--listar-tipo && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"tipo\" && $contexto==\"coral\" || @modificador==\"listar\" && @substantivo==\"tipo\" && @rótulos==\"coral\"",
-            "dialog_node": "node_1705fb23d9634dbb",
-            "previous_sibling": "node_de6caf70672e4d10",
-            "intent": "coral--listar-tipo"
+            "conditions": "#corais--listar-tipo && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"tipo\" && $contexto==\"corais\" || @modificador==\"listar\" && @substantivo==\"tipo\" && @rótulos==\"corais\"",
+            "dialog_node": "node_d3e29a3d8bfb4379",
+            "previous_sibling": "node_dc6a330ec180443d"
         },
         {
             "type": "standard",
-            "title": "De recife?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://brasilescola.uol.com.br/biologia/recifes-corais.htm"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_1fbee28893d84f09",
+            "parent": "node_d3e29a3d8bfb4379"
+        },
+        {
+            "type": "standard",
+            "title": "Localização de recifes de corais?",
             "output": {
                 "generic": [
                     {
@@ -3317,16 +3440,35 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--localização-recife && intent.confidence > 0.7 || @modificador==\"localização\" && @recipiente==\"recife\" && $contexto==\"coral\" || @modificador==\"localização\" && @recipiente==\"recife\" && @rótulos==\"coral\"",
-            "dialog_node": "node_8cf00848853a42cd",
-            "previous_sibling": "node_1705fb23d9634dbb",
-            "intent": "coral--localização-recife"
+            "conditions": "#corais--localização-recife-corais && intent.confidence > 0.7 || @modificador==\"localização\" && @substantivo==\"recife\" && @recipiente==\"corais\" && $contexto==\"corais\" || @modificador==\"localização\" && @substantivo==\"recife\" && @recipiente==\"corais\" && @rótulos==\"corais\"",
+            "dialog_node": "node_1ed20b7abf2c4152",
+            "previous_sibling": "node_d3e29a3d8bfb4379"
         },
         {
             "type": "standard",
-            "title": "Maior recife de coral no Brasil ?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://brasilescola.uol.com.br/biologia/recifes-corais.htm"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_48f61840feeb4089",
+            "parent": "node_1ed20b7abf2c4152"
+        },
+        {
+            "type": "standard",
+            "title": "Maior recife de corais no Brasil ?",
             "output": {
                 "generic": [
                     {
@@ -3341,16 +3483,35 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--maior-recife-brasil && intent.confidence > 0.7 || @modificador==\"maior\" && @substantivo==\"recife\" && @recipiente==\"brasil\" && $contexto==\"coral\" || @modificador==\"maior\" && @substantivo==\"recife\" && @recipiente==\"brasil\" && @rótulos==\"coral\"",
-            "dialog_node": "node_f237375bcdeb42a1",
-            "previous_sibling": "node_8cf00848853a42cd",
-            "intent": "coral--maior-recife-brasil"
+            "conditions": "#corais--maior-recife-brasil && intent.confidence > 0.7 || @modificador==\"maior\" && @substantivo==\"recife\" && @recipiente==\"brasil\" && $contexto==\"corais\" || @modificador==\"maior\" && @substantivo==\"recife\" && @recipiente==\"brasil\" && @rótulos==\"corais\"",
+            "dialog_node": "node_b9ed407a448144a3",
+            "previous_sibling": "node_1ed20b7abf2c4152"
         },
         {
             "type": "standard",
-            "title": "Maior recife de coral do mundo ?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.evidive.com.br/barreiras-corais/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_02305334d35e4fd5",
+            "parent": "node_b9ed407a448144a3"
+        },
+        {
+            "type": "standard",
+            "title": "Maior recife de corais do mundo ?",
             "output": {
                 "generic": [
                     {
@@ -3365,16 +3526,35 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--maior-recife-mundo && intent.confidence > 0.7 || @modificador==\"maior\" && @substantivo==\"recife\" && @recipiente==\"mundo\" && $contexto==\"coral\" || @modificador==\"maior\" && @substantivo==\"recife\" && @recipiente==\"mundo\" && @rótulos==\"coral\"",
-            "dialog_node": "node_84a11ea095cf4d2b",
-            "previous_sibling": "node_f237375bcdeb42a1",
-            "intent": "coral--maior-recife-mundo"
+            "conditions": "#corais--maior-recife-mundo && intent.confidence > 0.7 || @modificador==\"maior\" && @substantivo==\"recife\" && @recipiente==\"mundo\" && $contexto==\"corais\" || @modificador==\"maior\" && @substantivo==\"recife\" && @recipiente==\"mundo\" && @rótulos==\"corais\"",
+            "dialog_node": "node_920a1185c57b4756",
+            "previous_sibling": "node_b9ed407a448144a3"
         },
         {
             "type": "standard",
-            "title": "Motivo para branqueamento de coral?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.evidive.com.br/barreiras-corais/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_8f84f4534f614ae3",
+            "parent": "node_920a1185c57b4756"
+        },
+        {
+            "type": "standard",
+            "title": "Motivo para branqueamento de corais?",
             "output": {
                 "generic": [
                     {
@@ -3389,16 +3569,15 @@
                 ]
             },
             "context": {
-                "contexto": "coral"
+                "contexto": "corais"
             },
-            "conditions": "#coral--motivo-branqueamento && intent.confidence > 0.7 || @modificador==\"motivo\" && @substantivo==\"branqueamento\" && $contexto==\"coral\" || @modificador==\"motivo\" && @substantivo==\"branqueamento\" && @rótulos==\"coral\"",
-            "dialog_node": "node_f4844f4dd9de440e",
-            "previous_sibling": "node_84a11ea095cf4d2b",
-            "intent": "coral--motivo-branqueamento"
+            "conditions": "#corais--motivo-branqueamento && intent.confidence > 0.7 || @modificador==\"motivo\" && @substantivo==\"branqueamento\" && $contexto==\"corais\" || @modificador==\"motivo\" && @substantivo==\"branqueamento\" && @rótulos==\"corais\"",
+            "dialog_node": "node_8701c3fdcdc64587",
+            "previous_sibling": "node_920a1185c57b4756"
         },
         {
             "type": "standard",
-            "title": "Coral: efeito de turismo em coral?",
+            "title": "Corais: efeito de turismo em corais?",
             "output": {
                 "generic": [
                     {
@@ -3413,12 +3592,31 @@
                 ]
             },
             "context": {
-                "contexto": "coral_turismo"
+                "contexto": "corais_turismo"
             },
-            "conditions": "#coral_turismo--efeito-turismo && intent.confidence > 0.7 || @modificador==\"efeito\" && @substantivo==\"turismo\" && $contexto==\"coral\" || @modificador==\"efeito\" && @substantivo==\"turismo\" && @rótulos==\"coral\"",
-            "dialog_node": "node_8c447dc800374d50",
-            "previous_sibling": "node_f4844f4dd9de440e",
-            "intent": "coral_turismo--efeito-turismo"
+            "conditions": "#corais_turismo--efeito-turismo && intent.confidence > 0.7 || @modificador==\"efeito\" && @substantivo==\"turismo\" && $contexto==\"corais\" || @modificador==\"efeito\" && @substantivo==\"turismo\" && @rótulos==\"corais\"",
+            "dialog_node": "node_5cd37d257fc64fd6",
+            "previous_sibling": "node_8701c3fdcdc64587"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.researchgate.net/publication/292222600_O_turismo_em_areas_de_recifes_de_coral_consideracoes_acerca_da_area_de_Protecao_Ambiental_Costa_dos_Corais_estados_de_Pernambuco_e_Alagoas"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_27bbd284a74a4afc",
+            "parent": "node_5cd37d257fc64fd6"
         },
         {
             "type": "standard",
@@ -3440,9 +3638,8 @@
                 "contexto": "correntes-oceanicas"
             },
             "conditions": "#correntes-oceânicas--definição && intent.confidence > 0.7 || @modificador==\"definição\" && $contexto==\"correntes-oceânicas\" || @modificador==\"definição\" && @rótulos==\"correntes-oceânicas\"",
-            "dialog_node": "node_1ed57f073aee4471",
-            "previous_sibling": "node_8c447dc800374d50",
-            "intent": "correntes-oceânicas--definição"
+            "dialog_node": "node_dfb0078b17704020",
+            "previous_sibling": "node_5cd37d257fc64fd6"
         },
         {
             "type": "standard",
@@ -3464,13 +3661,32 @@
                 "contexto": "energia-de-mare"
             },
             "conditions": "#energia-de-maré--definição && intent.confidence > 0.7 || @modificador==\"definição\" && $contexto==\"energia-de-maré\" || @modificador==\"definição\" && @rótulos==\"energia-de-maré\"",
-            "dialog_node": "node_d52be354871b4f9e",
-            "previous_sibling": "node_1ed57f073aee4471",
-            "intent": "energia-de-maré--definição"
+            "dialog_node": "node_5e2372a660874d1c",
+            "previous_sibling": "node_dfb0078b17704020"
         },
         {
             "type": "standard",
-            "title": "Energia de maré: efeito em ambiente?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.nationalgeographic.org/encyclopedia/tidal-energy/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_02dd1ee470624345",
+            "parent": "node_5e2372a660874d1c"
+        },
+        {
+            "type": "standard",
+            "title": "Energia de maré: efeito no ambiente?",
             "output": {
                 "generic": [
                     {
@@ -3488,9 +3704,8 @@
                 "contexto": "energia-de-mare"
             },
             "conditions": "#energia-de-maré--efeito-ambiente && intent.confidence > 0.7 || @modificador==\"efeito\" && @recipiente==\"ambiente\" && $contexto==\"energia-de-maré\" || @modificador==\"efeito\" && @recipiente==\"ambiente\" && @rótulos==\"energia-de-maré\"",
-            "dialog_node": "node_1b1640c8f3734e79",
-            "previous_sibling": "node_d52be354871b4f9e",
-            "intent": "energia-de-maré--efeito-ambiente"
+            "dialog_node": "node_35668936308047b1",
+            "previous_sibling": "node_5e2372a660874d1c"
         },
         {
             "type": "standard",
@@ -3512,9 +3727,28 @@
                 "contexto": "energia-de-mare"
             },
             "conditions": "#energia-de-maré--explicar-geração && intent.confidence > 0.7 || @modificador==\"explicar\" && @substantivo==\"geração\" && $contexto==\"energia-de-maré\" || @modificador==\"explicar\" && @substantivo==\"geração\" && @rótulos==\"energia-de-maré\"",
-            "dialog_node": "node_21b88b62146b454a",
-            "previous_sibling": "node_1b1640c8f3734e79",
-            "intent": "energia-de-maré--explicar-geração"
+            "dialog_node": "node_7b22d4aa29a7486e",
+            "previous_sibling": "node_35668936308047b1"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.nationalgeographic.org/encyclopedia/tidal-energy/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_65c643912f5f4eeb",
+            "parent": "node_7b22d4aa29a7486e"
         },
         {
             "type": "standard",
@@ -3536,9 +3770,28 @@
                 "contexto": "energia-de-mare"
             },
             "conditions": "#energia-de-maré--listar-contras && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"contras\" && $contexto==\"energia-de-maré\" || @modificador==\"listar\" && @substantivo==\"contras\" && @rótulos==\"energia-de-maré\"",
-            "dialog_node": "node_c0fc86a3fae34ef1",
-            "previous_sibling": "node_21b88b62146b454a",
-            "intent": "energia-de-maré--listar-contras"
+            "dialog_node": "node_10d5f5d8ea2d40f3",
+            "previous_sibling": "node_7b22d4aa29a7486e"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.nationalgeographic.org/encyclopedia/tidal-energy/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_3360feeb5fd943e4",
+            "parent": "node_10d5f5d8ea2d40f3"
         },
         {
             "type": "standard",
@@ -3560,9 +3813,28 @@
                 "contexto": "energia-de-mare"
             },
             "conditions": "#energia-de-maré--listar-prós && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"prós\" && $contexto==\"energia-de-maré\" || @modificador==\"listar\" && @substantivo==\"prós\" && @rótulos==\"energia-de-maré\"",
-            "dialog_node": "node_1ef5f34684fd48d7",
-            "previous_sibling": "node_c0fc86a3fae34ef1",
-            "intent": "energia-de-maré--listar-prós"
+            "dialog_node": "node_49e2d6948d634cf6",
+            "previous_sibling": "node_10d5f5d8ea2d40f3"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.nationalgeographic.org/encyclopedia/tidal-energy/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_041653e34ea24ac7",
+            "parent": "node_49e2d6948d634cf6"
         },
         {
             "type": "standard",
@@ -3584,13 +3856,32 @@
                 "contexto": "energia-de-mare"
             },
             "conditions": "#energia-de-maré--listar-prós-e-contras && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"prós-e-contras\" && $contexto==\"energia-de-maré\" || @modificador==\"listar\" && @substantivo==\"prós-e-contras\" && @rótulos==\"energia-de-maré\"",
-            "dialog_node": "node_ca26799ce6c4444e",
-            "previous_sibling": "node_1ef5f34684fd48d7",
-            "intent": "energia-de-maré--listar-prós-e-contras"
+            "dialog_node": "node_15d0050a63b04932",
+            "previous_sibling": "node_49e2d6948d634cf6"
         },
         {
             "type": "standard",
-            "title": "De energia de maré?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.nationalgeographic.org/encyclopedia/tidal-energy/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_be521b67cfc84c8a",
+            "parent": "node_15d0050a63b04932"
+        },
+        {
+            "type": "standard",
+            "title": "Localização de energia de maré?",
             "output": {
                 "generic": [
                     {
@@ -3608,9 +3899,28 @@
                 "contexto": "energia-de-mare"
             },
             "conditions": "#energia-de-maré--localização && intent.confidence > 0.7 || @modificador==\"localização\" && $contexto==\"energia-de-maré\" || @modificador==\"localização\" && @rótulos==\"energia-de-maré\"",
-            "dialog_node": "node_5239b08d1b2f4fcf",
-            "previous_sibling": "node_ca26799ce6c4444e",
-            "intent": "energia-de-maré--localização"
+            "dialog_node": "node_2f41f1e7a02d4068",
+            "previous_sibling": "node_15d0050a63b04932"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.nationalgeographic.org/encyclopedia/tidal-energy/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_b3c3c282d24c4fbd",
+            "parent": "node_2f41f1e7a02d4068"
         },
         {
             "type": "standard",
@@ -3632,9 +3942,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-actinoperígeo && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"actinoperígeo\"",
-            "dialog_node": "node_87b0c3f493a34096",
-            "previous_sibling": "node_5239b08d1b2f4fcf",
-            "intent": "fauna--definição-actinoperígeo"
+            "dialog_node": "node_79d5acef6859402b",
+            "previous_sibling": "node_2f41f1e7a02d4068"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Actinopterygii"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_a3e5cc16f7264442",
+            "parent": "node_79d5acef6859402b"
         },
         {
             "type": "standard",
@@ -3656,9 +3985,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-animal-marinho && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"animal-marinho\"",
-            "dialog_node": "node_3bb38a092952486b",
-            "previous_sibling": "node_87b0c3f493a34096",
-            "intent": "fauna--definição-animal-marinho"
+            "dialog_node": "node_60b60dfb5c584feb",
+            "previous_sibling": "node_79d5acef6859402b"
         },
         {
             "type": "standard",
@@ -3680,9 +4008,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-anêmona && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"anêmona\"",
-            "dialog_node": "node_44fe90c03ee34f2a",
-            "previous_sibling": "node_3bb38a092952486b",
-            "intent": "fauna--definição-anêmona"
+            "dialog_node": "node_7b1e96e9e8b04e21",
+            "previous_sibling": "node_60b60dfb5c584feb"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/An%C3%AAmona-do-mar"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_7d2343c1841b44ab",
+            "parent": "node_7b1e96e9e8b04e21"
         },
         {
             "type": "standard",
@@ -3704,9 +4051,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-cnida && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"cnida\"",
-            "dialog_node": "node_1a8f687ee96d4d90",
-            "previous_sibling": "node_44fe90c03ee34f2a",
-            "intent": "fauna--definição-cnida"
+            "dialog_node": "node_ab6d4822e5d4410d",
+            "previous_sibling": "node_7b1e96e9e8b04e21"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Nematocisto"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_20c2244f5c73498b",
+            "parent": "node_ab6d4822e5d4410d"
         },
         {
             "type": "standard",
@@ -3728,9 +4094,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-cnidário && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"cnidário\"",
-            "dialog_node": "node_d03742a08028444b",
-            "previous_sibling": "node_1a8f687ee96d4d90",
-            "intent": "fauna--definição-cnidário"
+            "dialog_node": "node_81ee5fda0dab40a4",
+            "previous_sibling": "node_ab6d4822e5d4410d"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Cnid%C3%A1rios"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_bc222f11579c459b",
+            "parent": "node_81ee5fda0dab40a4"
         },
         {
             "type": "standard",
@@ -3752,9 +4137,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-cordado && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"cordado\"",
-            "dialog_node": "node_f0c76b79893d4146",
-            "previous_sibling": "node_d03742a08028444b",
-            "intent": "fauna--definição-cordado"
+            "dialog_node": "node_fe79c8ca6f504469",
+            "previous_sibling": "node_81ee5fda0dab40a4"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Cordados"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_b6af942a92a54816",
+            "parent": "node_fe79c8ca6f504469"
         },
         {
             "type": "standard",
@@ -3776,9 +4180,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-crustáceo && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"crustáceo\"",
-            "dialog_node": "node_60a726dfdc9c4b39",
-            "previous_sibling": "node_f0c76b79893d4146",
-            "intent": "fauna--definição-crustáceo"
+            "dialog_node": "node_ad03c813b9084fe3",
+            "previous_sibling": "node_fe79c8ca6f504469"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.todamateria.com.br/crustaceos/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_741dbe83177a460c",
+            "parent": "node_ad03c813b9084fe3"
         },
         {
             "type": "standard",
@@ -3800,9 +4223,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-filo && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"filo\"",
-            "dialog_node": "node_80dbe44626434b76",
-            "previous_sibling": "node_60a726dfdc9c4b39",
-            "intent": "fauna--definição-filo"
+            "dialog_node": "node_f418baf64b7847d4",
+            "previous_sibling": "node_ad03c813b9084fe3"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Filo"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_13dcd03fe1794b1d",
+            "parent": "node_f418baf64b7847d4"
         },
         {
             "type": "standard",
@@ -3824,9 +4266,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-fitoplâncton && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"fitoplâncton\"",
-            "dialog_node": "node_fdf9f8d09d8541c2",
-            "previous_sibling": "node_80dbe44626434b76",
-            "intent": "fauna--definição-fitoplâncton"
+            "dialog_node": "node_64a2ed68dc3347f3",
+            "previous_sibling": "node_f418baf64b7847d4"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.ecycle.com.br/fitoplancton/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_9b0d2ffc7c29433b",
+            "parent": "node_64a2ed68dc3347f3"
         },
         {
             "type": "standard",
@@ -3848,9 +4309,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-hidra && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"hidra\"",
-            "dialog_node": "node_c12d62c1a3b445d5",
-            "previous_sibling": "node_fdf9f8d09d8541c2",
-            "intent": "fauna--definição-hidra"
+            "dialog_node": "node_4526e1d4f9f24f97",
+            "previous_sibling": "node_64a2ed68dc3347f3"
         },
         {
             "type": "standard",
@@ -3872,9 +4332,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-medusa && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"medusa\"",
-            "dialog_node": "node_f597817695644d5e",
-            "previous_sibling": "node_c12d62c1a3b445d5",
-            "intent": "fauna--definição-medusa"
+            "dialog_node": "node_23354f97c90b4b8b",
+            "previous_sibling": "node_4526e1d4f9f24f97"
         },
         {
             "type": "standard",
@@ -3896,9 +4355,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-molusco && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"molusco\"",
-            "dialog_node": "node_d0ad9076cdfc4ced",
-            "previous_sibling": "node_f597817695644d5e",
-            "intent": "fauna--definição-molusco"
+            "dialog_node": "node_92d833045a424b76",
+            "previous_sibling": "node_23354f97c90b4b8b"
         },
         {
             "type": "standard",
@@ -3920,9 +4378,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-peixe && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"peixe\"",
-            "dialog_node": "node_adfb0f3b26384cbb",
-            "previous_sibling": "node_d0ad9076cdfc4ced",
-            "intent": "fauna--definição-peixe"
+            "dialog_node": "node_3cc57428432040b3",
+            "previous_sibling": "node_92d833045a424b76"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://en.wikipedia.org/wiki/Fish"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_cba9b834d32545f5",
+            "parent": "node_3cc57428432040b3"
         },
         {
             "type": "standard",
@@ -3944,9 +4421,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-plâncton && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"plâncton\"",
-            "dialog_node": "node_3526e8a24c724563",
-            "previous_sibling": "node_adfb0f3b26384cbb",
-            "intent": "fauna--definição-plâncton"
+            "dialog_node": "node_8e5fd4e1f6ab4618",
+            "previous_sibling": "node_3cc57428432040b3"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.ecycle.com.br/plancton/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_a935fa336d194a9f",
+            "parent": "node_8e5fd4e1f6ab4618"
         },
         {
             "type": "standard",
@@ -3968,9 +4464,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-pólipo && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"pólipo\"",
-            "dialog_node": "node_17c1450bf4c442cc",
-            "previous_sibling": "node_3526e8a24c724563",
-            "intent": "fauna--definição-pólipo"
+            "dialog_node": "node_20abb1b36852449c",
+            "previous_sibling": "node_8e5fd4e1f6ab4618"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/P%C3%B3lipo"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_750e59b70a6a49e0",
+            "parent": "node_20abb1b36852449c"
         },
         {
             "type": "standard",
@@ -3992,9 +4507,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-salpa && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"salpa\"",
-            "dialog_node": "node_6ddbc57f22db4b10",
-            "previous_sibling": "node_17c1450bf4c442cc",
-            "intent": "fauna--definição-salpa"
+            "dialog_node": "node_767f7a126e9f4700",
+            "previous_sibling": "node_20abb1b36852449c"
         },
         {
             "type": "standard",
@@ -4016,9 +4530,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-tubarão && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"tubarão\"",
-            "dialog_node": "node_8643cbb45c36467d",
-            "previous_sibling": "node_6ddbc57f22db4b10",
-            "intent": "fauna--definição-tubarão"
+            "dialog_node": "node_cf711b01239a49ce",
+            "previous_sibling": "node_767f7a126e9f4700"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Tubar%C3%A3o"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_c0b85ba1689943c1",
+            "parent": "node_cf711b01239a49ce"
         },
         {
             "type": "standard",
@@ -4040,9 +4573,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-tunicado && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"tunicado\"",
-            "dialog_node": "node_3ddca9423d2a4380",
-            "previous_sibling": "node_8643cbb45c36467d",
-            "intent": "fauna--definição-tunicado"
+            "dialog_node": "node_bb9cdeeebf484bc9",
+            "previous_sibling": "node_cf711b01239a49ce"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.infoescola.com/biologia/urocordados-ou-tunicados/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_f37c546c73734f93",
+            "parent": "node_bb9cdeeebf484bc9"
         },
         {
             "type": "standard",
@@ -4064,13 +4616,32 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--definição-zooplâncton && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"zooplâncton\"",
-            "dialog_node": "node_d454b7486c3f4423",
-            "previous_sibling": "node_3ddca9423d2a4380",
-            "intent": "fauna--definição-zooplâncton"
+            "dialog_node": "node_d13e0739f2d2449a",
+            "previous_sibling": "node_bb9cdeeebf484bc9"
         },
         {
             "type": "standard",
-            "title": "Detalhar característica de crustáceo",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Zoopl%C3%A2ncton"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_19ac0e813a5a4f8e",
+            "parent": "node_d13e0739f2d2449a"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar características de crustáceo",
             "output": {
                 "generic": [
                     {
@@ -4087,10 +4658,9 @@
             "context": {
                 "contexto": "fauna"
             },
-            "conditions": "#fauna--detalhar-característica-crustáceo && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"característica\" && @recipiente==\"crustáceo\"",
-            "dialog_node": "node_f1f1a6b6dd9548fc",
-            "previous_sibling": "node_d454b7486c3f4423",
-            "intent": "fauna--detalhar-característica-crustáceo"
+            "conditions": "#fauna--detalhar-características-crustáceo && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"características\" && @recipiente==\"crustáceo\"",
+            "dialog_node": "node_76773cc24e65427f",
+            "previous_sibling": "node_d13e0739f2d2449a"
         },
         {
             "type": "standard",
@@ -4112,9 +4682,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--existe-baleia-brasil && intent.confidence > 0.7 || @modificador==\"existe\" && @substantivo==\"baleia\" && @recipiente==\"brasil\"",
-            "dialog_node": "node_d24d7d4691b749bc",
-            "previous_sibling": "node_f1f1a6b6dd9548fc",
-            "intent": "fauna--existe-baleia-brasil"
+            "dialog_node": "node_481406c74e2246a3",
+            "previous_sibling": "node_76773cc24e65427f"
         },
         {
             "type": "standard",
@@ -4136,13 +4705,32 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--existe-tubarão-brasil && intent.confidence > 0.7 || @modificador==\"existe\" && @substantivo==\"tubarão\" && @recipiente==\"brasil\"",
-            "dialog_node": "node_704fdf4009cd475d",
-            "previous_sibling": "node_d24d7d4691b749bc",
-            "intent": "fauna--existe-tubarão-brasil"
+            "dialog_node": "node_daa6b2ad1b6f4694",
+            "previous_sibling": "node_481406c74e2246a3"
         },
         {
             "type": "standard",
-            "title": ": listar animais marinho",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Tubar%C3%A3o"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_c22eccf4a8924ca7",
+            "parent": "node_daa6b2ad1b6f4694"
+        },
+        {
+            "type": "standard",
+            "title": "Listar animais marinhos",
             "output": {
                 "generic": [
                     {
@@ -4159,14 +4747,13 @@
             "context": {
                 "contexto": "fauna"
             },
-            "conditions": "#fauna--listar-animal-marinho && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"animal\" && @recipiente==\"marinho\"",
-            "dialog_node": "node_f60252b5525746a6",
-            "previous_sibling": "node_704fdf4009cd475d",
-            "intent": "fauna--listar-animal-marinho"
+            "conditions": "#fauna--listar-animais-marinhos && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"animais-marinhos\"",
+            "dialog_node": "node_aa6f85a201614abc",
+            "previous_sibling": "node_daa6b2ad1b6f4694"
         },
         {
             "type": "standard",
-            "title": "Listar cnidários de",
+            "title": "Listar cnidários",
             "output": {
                 "generic": [
                     {
@@ -4184,13 +4771,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-cnidário && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"cnidário\"",
-            "dialog_node": "node_7466af262e0444d3",
-            "previous_sibling": "node_f60252b5525746a6",
-            "intent": "fauna--listar-cnidário"
+            "dialog_node": "node_c54d24301f214a11",
+            "previous_sibling": "node_aa6f85a201614abc"
         },
         {
             "type": "standard",
-            "title": "Listar crustáceos de",
+            "title": "Listar crustáceos",
             "output": {
                 "generic": [
                     {
@@ -4208,13 +4794,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-crustáceo && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"crustáceo\"",
-            "dialog_node": "node_d692f49e4c704e52",
-            "previous_sibling": "node_7466af262e0444d3",
-            "intent": "fauna--listar-crustáceo"
+            "dialog_node": "node_3412d1647bc347ff",
+            "previous_sibling": "node_c54d24301f214a11"
         },
         {
             "type": "standard",
-            "title": "Listar moiuscos de",
+            "title": "Listar moiuscos",
             "output": {
                 "generic": [
                     {
@@ -4232,9 +4817,8 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--listar-molusco && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"molusco\"",
-            "dialog_node": "node_5d21238e4a3e4082",
-            "previous_sibling": "node_d692f49e4c704e52",
-            "intent": "fauna--listar-molusco"
+            "dialog_node": "node_8019ec76a5ae493c",
+            "previous_sibling": "node_3412d1647bc347ff"
         },
         {
             "type": "standard",
@@ -4256,9 +4840,28 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--maior-animal-marinho && intent.confidence > 0.7 || @modificador==\"maior\" && @substantivo==\"animal-marinho\"",
-            "dialog_node": "node_8042d1f6ad9c4110",
-            "previous_sibling": "node_5d21238e4a3e4082",
-            "intent": "fauna--maior-animal-marinho"
+            "dialog_node": "node_5b9fc55b10a44469",
+            "previous_sibling": "node_8019ec76a5ae493c"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Baleia-azul"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_1f9c114e888a473b",
+            "parent": "node_5b9fc55b10a44469"
         },
         {
             "type": "standard",
@@ -4280,13 +4883,12 @@
                 "contexto": "fauna"
             },
             "conditions": "#fauna--pertence-tubarão-peixe && intent.confidence > 0.7 || @modificador==\"pertence\" && @substantivo==\"tubarão\" && @recipiente==\"peixe\"",
-            "dialog_node": "node_99bb805362e44acb",
-            "previous_sibling": "node_8042d1f6ad9c4110",
-            "intent": "fauna--pertence-tubarão-peixe"
+            "dialog_node": "node_aacf122c7bff41f4",
+            "previous_sibling": "node_5b9fc55b10a44469"
         },
         {
             "type": "standard",
-            "title": "De baleia?",
+            "title": "Localização de baleia?",
             "output": {
                 "generic": [
                     {
@@ -4304,9 +4906,28 @@
                 "contexto": "fauna_turismo"
             },
             "conditions": "#fauna_turismo--localização-baleia && intent.confidence > 0.7 || @modificador==\"localização\" && @recipiente==\"baleia\"",
-            "dialog_node": "node_e9f6afb6b64540c0",
-            "previous_sibling": "node_99bb805362e44acb",
-            "intent": "fauna_turismo--localização-baleia"
+            "dialog_node": "node_3d6ae866598a4f71",
+            "previous_sibling": "node_aacf122c7bff41f4"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://desviantes.com.br/blog/post/onde-e-quando-ver-baleias-no-brasil/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_f3f3ab38bc604b2a",
+            "parent": "node_3d6ae866598a4f71"
         },
         {
             "type": "standard",
@@ -4328,9 +4949,28 @@
                 "contexto": "flora"
             },
             "conditions": "#flora--definição-alga && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"alga\"",
-            "dialog_node": "node_50f13a85c3924335",
-            "previous_sibling": "node_e9f6afb6b64540c0",
-            "intent": "flora--definição-alga"
+            "dialog_node": "node_e0e414bd702d4256",
+            "previous_sibling": "node_3d6ae866598a4f71"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Alga"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_7cb4a2cb36834de6",
+            "parent": "node_e0e414bd702d4256"
         },
         {
             "type": "standard",
@@ -4352,9 +4992,28 @@
                 "contexto": "flora_fauna"
             },
             "conditions": "#flora_fauna--definição-líquen && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"líquen\"",
-            "dialog_node": "node_7c37867aaaa54103",
-            "previous_sibling": "node_50f13a85c3924335",
-            "intent": "flora_fauna--definição-líquen"
+            "dialog_node": "node_d15570aa06da412e",
+            "previous_sibling": "node_e0e414bd702d4256"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/L%C3%ADquen"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_f30ae75b468b438f",
+            "parent": "node_d15570aa06da412e"
         },
         {
             "type": "standard",
@@ -4376,9 +5035,28 @@
                 "contexto": "flora_fauna"
             },
             "conditions": "#flora_fauna--definição-polifilético && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"polifilético\"",
-            "dialog_node": "node_a18de7178a6d4b6c",
-            "previous_sibling": "node_7c37867aaaa54103",
-            "intent": "flora_fauna--definição-polifilético"
+            "dialog_node": "node_0f7974b289494fff",
+            "previous_sibling": "node_d15570aa06da412e"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Polifilia"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_a3b0cdc470c64ed4",
+            "parent": "node_0f7974b289494fff"
         },
         {
             "type": "standard",
@@ -4400,9 +5078,8 @@
                 "contexto": "gas"
             },
             "conditions": "#gás--detalhar-consumo && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"consumo\" && $contexto==\"gás\" || @modificador==\"detalhar\" && @substantivo==\"consumo\" && @rótulos==\"gás\"",
-            "dialog_node": "node_f47fe810a1494d9c",
-            "previous_sibling": "node_a18de7178a6d4b6c",
-            "intent": "gás--detalhar-consumo"
+            "dialog_node": "node_f624805305be4f19",
+            "previous_sibling": "node_0f7974b289494fff"
         },
         {
             "type": "standard",
@@ -4424,9 +5101,28 @@
                 "contexto": "gas"
             },
             "conditions": "#gás--detalhar-produção && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"produção\" && $contexto==\"gás\" || @modificador==\"detalhar\" && @substantivo==\"produção\" && @rótulos==\"gás\"",
-            "dialog_node": "node_c490430d66774d19",
-            "previous_sibling": "node_f47fe810a1494d9c",
-            "intent": "gás--detalhar-produção"
+            "dialog_node": "node_d7a123e5576e4aac",
+            "previous_sibling": "node_f624805305be4f19"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/boletins-anp/boletim-mensal-da-producao-de-petroleo-e-gas-natural"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_a3e5017f7456425f",
+            "parent": "node_d7a123e5576e4aac"
         },
         {
             "type": "standard",
@@ -4448,9 +5144,28 @@
                 "contexto": "gas"
             },
             "conditions": "#gás--maiores-estados-produtores && intent.confidence > 0.7 || @modificador==\"maiores\" && @substantivo==\"estados-produtores\" && $contexto==\"gás\" || @modificador==\"maiores\" && @substantivo==\"estados-produtores\" && @rótulos==\"gás\"",
-            "dialog_node": "node_7e4c3885fbbf4b73",
-            "previous_sibling": "node_c490430d66774d19",
-            "intent": "gás--maiores-estados-produtores"
+            "dialog_node": "node_fcec80f68f0540a4",
+            "previous_sibling": "node_d7a123e5576e4aac"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/boletins-anp/boletim-mensal-da-producao-de-petroleo-e-gas-natural"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_752981aaae014c6c",
+            "parent": "node_fcec80f68f0540a4"
         },
         {
             "type": "standard",
@@ -4472,9 +5187,8 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--definição-dia-de-maré && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"dia-de-maré\" && $contexto==\"maré\" || @modificador==\"definição\" && @recipiente==\"dia-de-maré\" && @rótulos==\"maré\"",
-            "dialog_node": "node_b95503c0a07d4706",
-            "previous_sibling": "node_7e4c3885fbbf4b73",
-            "intent": "maré--definição-dia-de-maré"
+            "dialog_node": "node_da013478fc8b42d9",
+            "previous_sibling": "node_fcec80f68f0540a4"
         },
         {
             "type": "standard",
@@ -4496,9 +5210,28 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--detalhar-frequência && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"frequência\" && $contexto==\"maré\" || @modificador==\"detalhar\" && @substantivo==\"frequência\" && @rótulos==\"maré\"",
-            "dialog_node": "node_aa627015e9c94567",
-            "previous_sibling": "node_b95503c0a07d4706",
-            "intent": "maré--detalhar-frequência"
+            "dialog_node": "node_33bdfc2cb66548f9",
+            "previous_sibling": "node_da013478fc8b42d9"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Mar%C3%A9#Caracter%C3%ADsticas"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_208d11f729474779",
+            "parent": "node_33bdfc2cb66548f9"
         },
         {
             "type": "standard",
@@ -4520,13 +5253,32 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--detalhar-tempo-entre-altas && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"tempo-entre-altas\" && $contexto==\"maré\" || @modificador==\"detalhar\" && @substantivo==\"tempo-entre-altas\" && @rótulos==\"maré\"",
-            "dialog_node": "node_58304769e5564246",
-            "previous_sibling": "node_aa627015e9c94567",
-            "intent": "maré--detalhar-tempo-entre-altas"
+            "dialog_node": "node_c17ff6aefce546be",
+            "previous_sibling": "node_33bdfc2cb66548f9"
         },
         {
             "type": "standard",
-            "title": "Detalhar variação de maré",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Mar%C3%A9#Caracter%C3%ADsticas"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_00bf7274343842dc",
+            "parent": "node_c17ff6aefce546be"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar variação de altura de maré",
             "output": {
                 "generic": [
                     {
@@ -4544,9 +5296,28 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--detalhar-variação-altura && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"variação\" && @recipiente==\"altura\" && $contexto==\"maré\" || @modificador==\"detalhar\" && @substantivo==\"variação\" && @recipiente==\"altura\" && @rótulos==\"maré\"",
-            "dialog_node": "node_78b03bb25c0b40b3",
-            "previous_sibling": "node_58304769e5564246",
-            "intent": "maré--detalhar-variação-altura"
+            "dialog_node": "node_5de1aab3079a405d",
+            "previous_sibling": "node_c17ff6aefce546be"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Mar%C3%A9#Caracter%C3%ADsticas"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_122a9e735a3f4af2",
+            "parent": "node_5de1aab3079a405d"
         },
         {
             "type": "standard",
@@ -4568,13 +5339,12 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--motivo && intent.confidence > 0.7 || @modificador==\"motivo\" && $contexto==\"maré\" || @modificador==\"motivo\" && @rótulos==\"maré\"",
-            "dialog_node": "node_1419befcc5fe4838",
-            "previous_sibling": "node_78b03bb25c0b40b3",
-            "intent": "maré--motivo"
+            "dialog_node": "node_03328b0ead654172",
+            "previous_sibling": "node_5de1aab3079a405d"
         },
         {
             "type": "standard",
-            "title": "Quantidade maré em dia ?",
+            "title": "Quantidade de maré em dia ?",
             "output": {
                 "generic": [
                     {
@@ -4592,13 +5362,32 @@
                 "contexto": "mare"
             },
             "conditions": "#maré--quantidade-dia && intent.confidence > 0.7 || @modificador==\"quantidade\" && @recipiente==\"dia\" && $contexto==\"maré\" || @modificador==\"quantidade\" && @recipiente==\"dia\" && @rótulos==\"maré\"",
-            "dialog_node": "node_d306327c15024d5e",
-            "previous_sibling": "node_1419befcc5fe4838",
-            "intent": "maré--quantidade-dia"
+            "dialog_node": "node_b0d761ac8f114d30",
+            "previous_sibling": "node_03328b0ead654172"
         },
         {
             "type": "standard",
-            "title": "Definição de petróleo?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://pt.wikipedia.org/wiki/Mar%C3%A9#Caracter%C3%ADsticas"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_1b668b9337154e89",
+            "parent": "node_b0d761ac8f114d30"
+        },
+        {
+            "type": "standard",
+            "title": "Definição do petróleo?",
             "output": {
                 "generic": [
                     {
@@ -4616,13 +5405,12 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--definição && intent.confidence > 0.7 || @modificador==\"definição\" && $contexto==\"petróleo\" || @modificador==\"definição\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_db57cb26a9324f53",
-            "previous_sibling": "node_d306327c15024d5e",
-            "intent": "petróleo--definição"
+            "dialog_node": "node_a77f0ba832f6440f",
+            "previous_sibling": "node_b0d761ac8f114d30"
         },
         {
             "type": "standard",
-            "title": "Definição de derramamento de petróleo?",
+            "title": "Definição de derramamento do petróleo?",
             "output": {
                 "generic": [
                     {
@@ -4640,9 +5428,28 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--definição-derramamento-petróleo && intent.confidence > 0.7 || @modificador==\"definição\" && @substantivo==\"derramamento\" && @recipiente==\"petróleo\" && $contexto==\"petróleo\" || @modificador==\"definição\" && @substantivo==\"derramamento\" && @recipiente==\"petróleo\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_db475ce63e604616",
-            "previous_sibling": "node_db57cb26a9324f53",
-            "intent": "petróleo--definição-derramamento-petróleo"
+            "dialog_node": "node_9995a1d5a0f84a61",
+            "previous_sibling": "node_a77f0ba832f6440f"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://en.wikipedia.org/wiki/Oil_spill"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_72b539478aff4e56",
+            "parent": "node_9995a1d5a0f84a61"
         },
         {
             "type": "standard",
@@ -4664,13 +5471,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--definição-onshore && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"onshore\" && $contexto==\"petróleo\" || @modificador==\"definição\" && @recipiente==\"onshore\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_59853f2bc401455f",
-            "previous_sibling": "node_db475ce63e604616",
-            "intent": "petróleo--definição-onshore"
+            "dialog_node": "node_1c72aa4e5df2468e",
+            "previous_sibling": "node_9995a1d5a0f84a61"
         },
         {
             "type": "standard",
-            "title": "Definição de plataforma de petróleo?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://opetroleo.com.br/afinal-o-que-onshore-e-offshore/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_899d9e82157b4060",
+            "parent": "node_1c72aa4e5df2468e"
+        },
+        {
+            "type": "standard",
+            "title": "Definição de plataforma do petróleo?",
             "output": {
                 "generic": [
                     {
@@ -4688,13 +5514,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--definição-plataforma-petróleo && intent.confidence > 0.7 || @modificador==\"definição\" && @substantivo==\"plataforma\" && @recipiente==\"petróleo\" && $contexto==\"petróleo\" || @modificador==\"definição\" && @substantivo==\"plataforma\" && @recipiente==\"petróleo\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_5b12dbb6f453412f",
-            "previous_sibling": "node_59853f2bc401455f",
-            "intent": "petróleo--definição-plataforma-petróleo"
+            "dialog_node": "node_884956a52caf40e4",
+            "previous_sibling": "node_1c72aa4e5df2468e"
         },
         {
             "type": "standard",
-            "title": "Detalhar composição de petróleo",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: http://repositorio.poli.ufrj.br/monografias/monopoli10001173.pdf"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_0fb25d9c00b54cbb",
+            "parent": "node_884956a52caf40e4"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar composição do petróleo",
             "output": {
                 "generic": [
                     {
@@ -4712,13 +5557,12 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-composição && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"composição\" && $contexto==\"petróleo\" || @modificador==\"detalhar\" && @substantivo==\"composição\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_5d2ac286b165440b",
-            "previous_sibling": "node_5b12dbb6f453412f",
-            "intent": "petróleo--detalhar-composição"
+            "dialog_node": "node_b3762a3cdeec4b87",
+            "previous_sibling": "node_884956a52caf40e4"
         },
         {
             "type": "standard",
-            "title": "Detalhar consumo de petróleo",
+            "title": "Detalhar consumo do petróleo",
             "output": {
                 "generic": [
                     {
@@ -4736,13 +5580,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-consumo && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"consumo\" && $contexto==\"petróleo\" || @modificador==\"detalhar\" && @substantivo==\"consumo\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_eaf236fb02e14e19",
-            "previous_sibling": "node_5d2ac286b165440b",
-            "intent": "petróleo--detalhar-consumo"
+            "dialog_node": "node_7733aaa296204bf3",
+            "previous_sibling": "node_b3762a3cdeec4b87"
         },
         {
             "type": "standard",
-            "title": "Detalhar custo de petróleo",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/anuario-estatistico/arquivos-anuario-estatistico-2021/anuario-2021.pdf"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_ca26b650eff04563",
+            "parent": "node_7733aaa296204bf3"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar custo do petróleo",
             "output": {
                 "generic": [
                     {
@@ -4760,13 +5623,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-custo && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"custo\" && $contexto==\"petróleo\" || @modificador==\"detalhar\" && @substantivo==\"custo\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_63066fd920bd4c27",
-            "previous_sibling": "node_eaf236fb02e14e19",
-            "intent": "petróleo--detalhar-custo"
+            "dialog_node": "node_f1a685f2e6b44121",
+            "previous_sibling": "node_7733aaa296204bf3"
         },
         {
             "type": "standard",
-            "title": "Detalhar fim de petróleo",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://cbie.com.br/artigos/o-que-sao-os-custos-de-extracao-do-petroleo/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_c2b8c779e91a43f0",
+            "parent": "node_f1a685f2e6b44121"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar fim do petróleo",
             "output": {
                 "generic": [
                     {
@@ -4784,13 +5666,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-fim && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"fim\" && $contexto==\"petróleo\" || @modificador==\"detalhar\" && @substantivo==\"fim\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_f23d5b380a644b37",
-            "previous_sibling": "node_63066fd920bd4c27",
-            "intent": "petróleo--detalhar-fim"
+            "dialog_node": "node_3d47d746f236474a",
+            "previous_sibling": "node_f1a685f2e6b44121"
         },
         {
             "type": "standard",
-            "title": "Detalhar preço de petróleo",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.greenmatters.com/p/when-will-world-run-out-of-oil"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_899d439a0a974e71",
+            "parent": "node_3d47d746f236474a"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar preço do petróleo",
             "output": {
                 "generic": [
                     {
@@ -4808,13 +5709,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-preço && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"preço\" && $contexto==\"petróleo\" || @modificador==\"detalhar\" && @substantivo==\"preço\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_3c52cd8188454c7c",
-            "previous_sibling": "node_f23d5b380a644b37",
-            "intent": "petróleo--detalhar-preço"
+            "dialog_node": "node_688e7fbe5e554381",
+            "previous_sibling": "node_3d47d746f236474a"
         },
         {
             "type": "standard",
-            "title": "Detalhar produção de petróleo",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/anuario-estatistico/arquivos-anuario-estatistico-2021/anuario-2021.pdf p. 97"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_fe2a713ab96d4da6",
+            "parent": "node_688e7fbe5e554381"
+        },
+        {
+            "type": "standard",
+            "title": "Detalhar produção do petróleo",
             "output": {
                 "generic": [
                     {
@@ -4832,13 +5752,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--detalhar-produção && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"produção\" && $contexto==\"petróleo\" || @modificador==\"detalhar\" && @substantivo==\"produção\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_1a8748689bc543d0",
-            "previous_sibling": "node_3c52cd8188454c7c",
-            "intent": "petróleo--detalhar-produção"
+            "dialog_node": "node_90e9ca3edb3e4415",
+            "previous_sibling": "node_688e7fbe5e554381"
         },
         {
             "type": "standard",
-            "title": "Petróleo: efeito de derramamento em ambiente?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/boletins-anp/boletim-mensal-da-producao-de-petroleo-e-gas-natural"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_2830bda0b118419e",
+            "parent": "node_90e9ca3edb3e4415"
+        },
+        {
+            "type": "standard",
+            "title": "Petróleo: efeito de derramamento no ambiente?",
             "output": {
                 "generic": [
                     {
@@ -4856,9 +5795,28 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--efeito-derramamento-ambiente && intent.confidence > 0.7 || @modificador==\"efeito\" && @substantivo==\"derramamento\" && @recipiente==\"ambiente\" && $contexto==\"petróleo\" || @modificador==\"efeito\" && @substantivo==\"derramamento\" && @recipiente==\"ambiente\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_d387758ab76a4d49",
-            "previous_sibling": "node_1a8748689bc543d0",
-            "intent": "petróleo--efeito-derramamento-ambiente"
+            "dialog_node": "node_e72e8b6780e34f22",
+            "previous_sibling": "node_90e9ca3edb3e4415"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://brasilescola.uol.com.br/geografia/poluicao-por-derramamento-petroleo.htm"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_f8f88302c6be4af7",
+            "parent": "node_e72e8b6780e34f22"
         },
         {
             "type": "standard",
@@ -4880,13 +5838,12 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--efeito-derramamento-economia && intent.confidence > 0.7 || @modificador==\"efeito\" && @substantivo==\"derramamento\" && @recipiente==\"economia\" && $contexto==\"petróleo\" || @modificador==\"efeito\" && @substantivo==\"derramamento\" && @recipiente==\"economia\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_2acb2a63aa194e33",
-            "previous_sibling": "node_d387758ab76a4d49",
-            "intent": "petróleo--efeito-derramamento-economia"
+            "dialog_node": "node_34373dc6912c43e6",
+            "previous_sibling": "node_e72e8b6780e34f22"
         },
         {
             "type": "standard",
-            "title": "Listar derivados de petróleo",
+            "title": "Listar derivados do petróleo",
             "output": {
                 "generic": [
                     {
@@ -4904,13 +5861,12 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--listar-derivado && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"derivado\" && $contexto==\"petróleo\" || @modificador==\"listar\" && @substantivo==\"derivado\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_dcbdb4ef5273400f",
-            "previous_sibling": "node_2acb2a63aa194e33",
-            "intent": "petróleo--listar-derivado"
+            "dialog_node": "node_541c986dd8fe4c49",
+            "previous_sibling": "node_34373dc6912c43e6"
         },
         {
             "type": "standard",
-            "title": "Petróleo: listar empresas no Brasil",
+            "title": "Listar empresas do petróleo",
             "output": {
                 "generic": [
                     {
@@ -4927,10 +5883,29 @@
             "context": {
                 "contexto": "petroleo"
             },
-            "conditions": "#petróleo--listar-empresa-brasil && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"empresa\" && @recipiente==\"brasil\" && $contexto==\"petróleo\" || @modificador==\"listar\" && @substantivo==\"empresa\" && @recipiente==\"brasil\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_4267888907d7418a",
-            "previous_sibling": "node_dcbdb4ef5273400f",
-            "intent": "petróleo--listar-empresa-brasil"
+            "conditions": "#petróleo--listar-empresa && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"empresa\" && $contexto==\"petróleo\" || @modificador==\"listar\" && @substantivo==\"empresa\" && @rótulos==\"petróleo\"",
+            "dialog_node": "node_444abadc7eca4ab6",
+            "previous_sibling": "node_541c986dd8fe4c49"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://cbie.com.br/o-que-sao-os-custos-de-extracao-do-petroleo/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_3afa2d91199e4e0e",
+            "parent": "node_444abadc7eca4ab6"
         },
         {
             "type": "standard",
@@ -4952,13 +5927,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--listar-tipo-plataforma && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"tipo\" && @recipiente==\"plataforma\" && $contexto==\"petróleo\" || @modificador==\"listar\" && @substantivo==\"tipo\" && @recipiente==\"plataforma\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_2420b1310bb34003",
-            "previous_sibling": "node_4267888907d7418a",
-            "intent": "petróleo--listar-tipo-plataforma"
+            "dialog_node": "node_fe1423c04c074d43",
+            "previous_sibling": "node_444abadc7eca4ab6"
         },
         {
             "type": "standard",
-            "title": "De petróleo?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://petrobras.com.br/infograficos/tipos-de-plataformas/desktop/index.html"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_d30615c9a4314027",
+            "parent": "node_fe1423c04c074d43"
+        },
+        {
+            "type": "standard",
+            "title": "Localização do petróleo?",
             "output": {
                 "generic": [
                     {
@@ -4976,13 +5970,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--localização && intent.confidence > 0.7 || @modificador==\"localização\" && $contexto==\"petróleo\" || @modificador==\"localização\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_0d16bc1792da40ea",
-            "previous_sibling": "node_2420b1310bb34003",
-            "intent": "petróleo--localização"
+            "dialog_node": "node_26c8d9a3846c4068",
+            "previous_sibling": "node_fe1423c04c074d43"
         },
         {
             "type": "standard",
-            "title": "Maior empresa de petróleo ?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://brasilescola.uol.com.br/geografia/petroleo.htm"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_45a0d35aa5b14658",
+            "parent": "node_26c8d9a3846c4068"
+        },
+        {
+            "type": "standard",
+            "title": "Maior empresa do petróleo ?",
             "output": {
                 "generic": [
                     {
@@ -5000,13 +6013,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maior-empresa && intent.confidence > 0.7 || @modificador==\"maior\" && @substantivo==\"empresa\" && $contexto==\"petróleo\" || @modificador==\"maior\" && @substantivo==\"empresa\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_cbbf64c578244d78",
-            "previous_sibling": "node_0d16bc1792da40ea",
-            "intent": "petróleo--maior-empresa"
+            "dialog_node": "node_d93d76796b2247d0",
+            "previous_sibling": "node_26c8d9a3846c4068"
         },
         {
             "type": "standard",
-            "title": "Maior reserva de petróleo ?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://forbes.com.br/negocios/2019/05/petrobras-e-a-10a-maior-petroleira-do-mundo-em-2018/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_3998fc16845d4b43",
+            "parent": "node_d93d76796b2247d0"
+        },
+        {
+            "type": "standard",
+            "title": "Maior reserva do petróleo ?",
             "output": {
                 "generic": [
                     {
@@ -5024,13 +6056,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maior-reserva && intent.confidence > 0.7 || @modificador==\"maior\" && @substantivo==\"reserva\" && $contexto==\"petróleo\" || @modificador==\"maior\" && @substantivo==\"reserva\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_23bccad0f89c4e96",
-            "previous_sibling": "node_cbbf64c578244d78",
-            "intent": "petróleo--maior-reserva"
+            "dialog_node": "node_7820d9ba89ab4618",
+            "previous_sibling": "node_d93d76796b2247d0"
         },
         {
             "type": "standard",
-            "title": "Maiores campos de petróleo ?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://oglobo.globo.com/economia/petrobras-campo-de-tupi-na-bacia-de-santos-a-maior-reserva-de-petroleo-gas-do-brasil-4142755"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_021dd8a138c94354",
+            "parent": "node_7820d9ba89ab4618"
+        },
+        {
+            "type": "standard",
+            "title": "Maiores campos do petróleo ?",
             "output": {
                 "generic": [
                     {
@@ -5048,13 +6099,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maiores-campo && intent.confidence > 0.7 || @modificador==\"maiores\" && @substantivo==\"campo\" && $contexto==\"petróleo\" || @modificador==\"maiores\" && @substantivo==\"campo\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_7d0140720fac44a4",
-            "previous_sibling": "node_23bccad0f89c4e96",
-            "intent": "petróleo--maiores-campo"
+            "dialog_node": "node_ed17ebc4b84b4f73",
+            "previous_sibling": "node_7820d9ba89ab4618"
         },
         {
             "type": "standard",
-            "title": "Maiores derramamentos de petróleo ?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-estatisticos/arquivos-reservas-nacionais-de-petroleo-e-gas-natural/boletim_reservas_2020.pdf"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_ed377b0460314647",
+            "parent": "node_ed17ebc4b84b4f73"
+        },
+        {
+            "type": "standard",
+            "title": "Maiores derramamentos do petróleo ?",
             "output": {
                 "generic": [
                     {
@@ -5072,13 +6142,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maiores-derramamento && intent.confidence > 0.7 || @modificador==\"maiores\" && @substantivo==\"derramamento\" && $contexto==\"petróleo\" || @modificador==\"maiores\" && @substantivo==\"derramamento\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_841aa3cba4bc434b",
-            "previous_sibling": "node_7d0140720fac44a4",
-            "intent": "petróleo--maiores-derramamento"
+            "dialog_node": "node_e0423625d47240f0",
+            "previous_sibling": "node_ed17ebc4b84b4f73"
         },
         {
             "type": "standard",
-            "title": "Maiores estados produtores de petróleo ?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.wwf.org.br/?76948/Vazamento-de-petroleo-completa-um-ano-sem-solucao"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_5b6e968035e843e5",
+            "parent": "node_e0423625d47240f0"
+        },
+        {
+            "type": "standard",
+            "title": "Maiores estados produtores do petróleo ?",
             "output": {
                 "generic": [
                     {
@@ -5096,13 +6185,32 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maiores-estados-produtores && intent.confidence > 0.7 || @modificador==\"maiores\" && @substantivo==\"estados-produtores\" && $contexto==\"petróleo\" || @modificador==\"maiores\" && @substantivo==\"estados-produtores\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_28a1a2edf9724b10",
-            "previous_sibling": "node_841aa3cba4bc434b",
-            "intent": "petróleo--maiores-estados-produtores"
+            "dialog_node": "node_8b7dc0eb5234427c",
+            "previous_sibling": "node_e0423625d47240f0"
         },
         {
             "type": "standard",
-            "title": "Maiores reservas de petróleo ?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/boletins-anp/boletim-mensal-da-producao-de-petroleo-e-gas-natural"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_b2e0a6cf02c44c3a",
+            "parent": "node_8b7dc0eb5234427c"
+        },
+        {
+            "type": "standard",
+            "title": "Maiores reservas do petróleo ?",
             "output": {
                 "generic": [
                     {
@@ -5120,9 +6228,28 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--maiores-reserva && intent.confidence > 0.7 || @modificador==\"maiores\" && @substantivo==\"reserva\" && $contexto==\"petróleo\" || @modificador==\"maiores\" && @substantivo==\"reserva\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_55fc10df8a034913",
-            "previous_sibling": "node_28a1a2edf9724b10",
-            "intent": "petróleo--maiores-reserva"
+            "dialog_node": "node_a2c6a4e456014d43",
+            "previous_sibling": "node_8b7dc0eb5234427c"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/boletins-anp/boletim-mensal-da-producao-de-petroleo-e-gas-natural"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_8ed6ca741cbe4f66",
+            "parent": "node_a2c6a4e456014d43"
         },
         {
             "type": "standard",
@@ -5144,13 +6271,12 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--pertence-recurso-renovável && intent.confidence > 0.7 || @modificador==\"pertence\" && @recipiente==\"recurso-renovável\" && $contexto==\"petróleo\" || @modificador==\"pertence\" && @recipiente==\"recurso-renovável\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_983d1acb1cda4637",
-            "previous_sibling": "node_55fc10df8a034913",
-            "intent": "petróleo--pertence-recurso-renovável"
+            "dialog_node": "node_cbc619b4b7884b6c",
+            "previous_sibling": "node_a2c6a4e456014d43"
         },
         {
             "type": "standard",
-            "title": "Quantidade petróleo no Brasil ?",
+            "title": "Quantidade do petróleo no Brasil ?",
             "output": {
                 "generic": [
                     {
@@ -5168,9 +6294,28 @@
                 "contexto": "petroleo"
             },
             "conditions": "#petróleo--quantidade-brasil && intent.confidence > 0.7 || @modificador==\"quantidade\" && @recipiente==\"brasil\" && $contexto==\"petróleo\" || @modificador==\"quantidade\" && @recipiente==\"brasil\" && @rótulos==\"petróleo\"",
-            "dialog_node": "node_32e73d66b1c54c71",
-            "previous_sibling": "node_983d1acb1cda4637",
-            "intent": "petróleo--quantidade-brasil"
+            "dialog_node": "node_4f603ddffefe4379",
+            "previous_sibling": "node_cbc619b4b7884b6c"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.fup.org.br/ultimas-noticias/item/25839-as-reservas-de-petroleo-do-brasil-e-a-petrobras-uma-questao-de-soberania-nacional"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_10d2ed4e8f1e421e",
+            "parent": "node_4f603ddffefe4379"
         },
         {
             "type": "standard",
@@ -5192,9 +6337,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definição && intent.confidence > 0.7 || @modificador==\"definição\" && $contexto==\"tartarugas\" || @modificador==\"definição\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_27ab0344acf043e3",
-            "previous_sibling": "node_32e73d66b1c54c71",
-            "intent": "tartarugas--definição"
+            "dialog_node": "node_c77de79f12e0482d",
+            "previous_sibling": "node_4f603ddffefe4379"
         },
         {
             "type": "standard",
@@ -5216,9 +6360,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definição-cágado && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"cágado\" && $contexto==\"tartarugas\" || @modificador==\"definição\" && @recipiente==\"cágado\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_ac9ea03977ac43c8",
-            "previous_sibling": "node_27ab0344acf043e3",
-            "intent": "tartarugas--definição-cágado"
+            "dialog_node": "node_a380087dcd9d4975",
+            "previous_sibling": "node_c77de79f12e0482d"
         },
         {
             "type": "standard",
@@ -5240,9 +6383,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definição-jabuti && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"jabuti\" && $contexto==\"tartarugas\" || @modificador==\"definição\" && @recipiente==\"jabuti\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_d140933cbb944d74",
-            "previous_sibling": "node_ac9ea03977ac43c8",
-            "intent": "tartarugas--definição-jabuti"
+            "dialog_node": "node_13140abcc4e14285",
+            "previous_sibling": "node_a380087dcd9d4975"
         },
         {
             "type": "standard",
@@ -5264,9 +6406,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--definição-quelônio && intent.confidence > 0.7 || @modificador==\"definição\" && @recipiente==\"quelônio\" && $contexto==\"tartarugas\" || @modificador==\"definição\" && @recipiente==\"quelônio\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_c479bcbbad6f4aa6",
-            "previous_sibling": "node_d140933cbb944d74",
-            "intent": "tartarugas--definição-quelônio"
+            "dialog_node": "node_af0a25e6b33f47d2",
+            "previous_sibling": "node_13140abcc4e14285"
         },
         {
             "type": "standard",
@@ -5288,9 +6429,28 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-dieta && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"dieta\" && $contexto==\"tartarugas\" || @modificador==\"detalhar\" && @substantivo==\"dieta\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_185911a3d3cc4fb2",
-            "previous_sibling": "node_c479bcbbad6f4aa6",
-            "intent": "tartarugas--detalhar-dieta"
+            "dialog_node": "node_884bf02685144f81",
+            "previous_sibling": "node_af0a25e6b33f47d2"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: http://tamar.org.br/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_0df490296d5d4816",
+            "parent": "node_884bf02685144f81"
         },
         {
             "type": "standard",
@@ -5312,9 +6472,28 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-idade-reprodutiva && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"idade-reprodutiva\" && $contexto==\"tartarugas\" || @modificador==\"detalhar\" && @substantivo==\"idade-reprodutiva\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_fcb9aa2d084344f1",
-            "previous_sibling": "node_185911a3d3cc4fb2",
-            "intent": "tartarugas--detalhar-idade-reprodutiva"
+            "dialog_node": "node_3e74c0c745344129",
+            "previous_sibling": "node_884bf02685144f81"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.britannica.com/animal/turtle-reptile/Reproduction#:~:text=The%20age%20at%20which%20turtles,and%20become%20sexually%20mature%20at"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_d088118ed02c4f81",
+            "parent": "node_3e74c0c745344129"
         },
         {
             "type": "standard",
@@ -5336,9 +6515,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-longevidade && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"longevidade\" && $contexto==\"tartarugas\" || @modificador==\"detalhar\" && @substantivo==\"longevidade\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_351f42943b814d02",
-            "previous_sibling": "node_fcb9aa2d084344f1",
-            "intent": "tartarugas--detalhar-longevidade"
+            "dialog_node": "node_b4fd76f27c1e497b",
+            "previous_sibling": "node_3e74c0c745344129"
         },
         {
             "type": "standard",
@@ -5360,9 +6538,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-origem && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"origem\" && $contexto==\"tartarugas\" || @modificador==\"detalhar\" && @substantivo==\"origem\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_8d9e0003f85e4286",
-            "previous_sibling": "node_351f42943b814d02",
-            "intent": "tartarugas--detalhar-origem"
+            "dialog_node": "node_636c331a53634862",
+            "previous_sibling": "node_b4fd76f27c1e497b"
         },
         {
             "type": "standard",
@@ -5384,9 +6561,28 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-peso && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"peso\" && $contexto==\"tartarugas\" || @modificador==\"detalhar\" && @substantivo==\"peso\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_33f9733ca03c4029",
-            "previous_sibling": "node_8d9e0003f85e4286",
-            "intent": "tartarugas--detalhar-peso"
+            "dialog_node": "node_9724501379784707",
+            "previous_sibling": "node_636c331a53634862"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: http://tamar.org.br/"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_26d52b5f91864d76",
+            "parent": "node_9724501379784707"
         },
         {
             "type": "standard",
@@ -5408,9 +6604,28 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--detalhar-reprodução && intent.confidence > 0.7 || @modificador==\"detalhar\" && @substantivo==\"reprodução\" && $contexto==\"tartarugas\" || @modificador==\"detalhar\" && @substantivo==\"reprodução\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_34e3ca1b9fae47b9",
-            "previous_sibling": "node_33f9733ca03c4029",
-            "intent": "tartarugas--detalhar-reprodução"
+            "dialog_node": "node_6311aaa357364c69",
+            "previous_sibling": "node_9724501379784707"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.britannica.com/animal/turtle-reptile/Reproduction"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_5bb1e7fb38314f00",
+            "parent": "node_6311aaa357364c69"
         },
         {
             "type": "standard",
@@ -5432,9 +6647,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--diferença-jabuti-tartaruga && intent.confidence > 0.7 || @modificador==\"diferença\" && @substantivo==\"jabuti\" && @recipiente==\"tartaruga\" && $contexto==\"tartarugas\" || @modificador==\"diferença\" && @substantivo==\"jabuti\" && @recipiente==\"tartaruga\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_32d28aa8b049475c",
-            "previous_sibling": "node_34e3ca1b9fae47b9",
-            "intent": "tartarugas--diferença-jabuti-tartaruga"
+            "dialog_node": "node_34f48167ede94a81",
+            "previous_sibling": "node_6311aaa357364c69"
         },
         {
             "type": "standard",
@@ -5456,9 +6670,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--explicar-ciclo-de-vida && intent.confidence > 0.7 || @modificador==\"explicar\" && @substantivo==\"ciclo-de-vida\" && $contexto==\"tartarugas\" || @modificador==\"explicar\" && @substantivo==\"ciclo-de-vida\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_718745580eb14bfb",
-            "previous_sibling": "node_32d28aa8b049475c",
-            "intent": "tartarugas--explicar-ciclo-de-vida"
+            "dialog_node": "node_0e07dca4d8b948f0",
+            "previous_sibling": "node_34f48167ede94a81"
         },
         {
             "type": "standard",
@@ -5480,9 +6693,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--listar-espécie && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"espécie\" && $contexto==\"tartarugas\" || @modificador==\"listar\" && @substantivo==\"espécie\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_481f23413a2d4a9d",
-            "previous_sibling": "node_718745580eb14bfb",
-            "intent": "tartarugas--listar-espécie"
+            "dialog_node": "node_21207983ba7b48c5",
+            "previous_sibling": "node_0e07dca4d8b948f0"
         },
         {
             "type": "standard",
@@ -5504,9 +6716,28 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--listar-espécie-extinção && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"espécie\" && @recipiente==\"extinção\" && $contexto==\"tartarugas\" || @modificador==\"listar\" && @substantivo==\"espécie\" && @recipiente==\"extinção\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_5aa31c160c824bee",
-            "previous_sibling": "node_481f23413a2d4a9d",
-            "intent": "tartarugas--listar-espécie-extinção"
+            "dialog_node": "node_5799fd5f79a64ea4",
+            "previous_sibling": "node_21207983ba7b48c5"
+        },
+        {
+            "type": "standard",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.tamar.org.br/interna.php?cod=100"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_cbca671d53204a72",
+            "parent": "node_5799fd5f79a64ea4"
         },
         {
             "type": "standard",
@@ -5528,13 +6759,32 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--listar-predador && intent.confidence > 0.7 || @modificador==\"listar\" && @substantivo==\"predador\" && $contexto==\"tartarugas\" || @modificador==\"listar\" && @substantivo==\"predador\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_d4e8cd73484e4172",
-            "previous_sibling": "node_5aa31c160c824bee",
-            "intent": "tartarugas--listar-predador"
+            "dialog_node": "node_a93da23fbbc141fc",
+            "previous_sibling": "node_5799fd5f79a64ea4"
         },
         {
             "type": "standard",
-            "title": "De tartarugas?",
+            "title": "Fonte",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "A fonte da resposta é: https://www.seaturtlecamp.com/sea-turtle-predators/--http://tamar.org.br/interna.php?cod=97"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#fonte",
+            "dialog_node": "node_9bbdab680d7f4e41",
+            "parent": "node_a93da23fbbc141fc"
+        },
+        {
+            "type": "standard",
+            "title": "Localização de tartarugas?",
             "output": {
                 "generic": [
                     {
@@ -5552,9 +6802,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--localização && intent.confidence > 0.7 || @modificador==\"localização\" && $contexto==\"tartarugas\" || @modificador==\"localização\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_29faa7c5510c4a8b",
-            "previous_sibling": "node_d4e8cd73484e4172",
-            "intent": "tartarugas--localização"
+            "dialog_node": "node_96f67b8576cd4c87",
+            "previous_sibling": "node_a93da23fbbc141fc"
         },
         {
             "type": "standard",
@@ -5576,13 +6825,12 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--motivo-extinção && intent.confidence > 0.7 || @modificador==\"motivo\" && @substantivo==\"extinção\" && $contexto==\"tartarugas\" || @modificador==\"motivo\" && @substantivo==\"extinção\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_e3522667d3834954",
-            "previous_sibling": "node_29faa7c5510c4a8b",
-            "intent": "tartarugas--motivo-extinção"
+            "dialog_node": "node_bc382011b06b411e",
+            "previous_sibling": "node_96f67b8576cd4c87"
         },
         {
             "type": "standard",
-            "title": "Jabuti é um tartaruga?",
+            "title": "Jabuti é uma tartaruga?",
             "output": {
                 "generic": [
                     {
@@ -5600,9 +6848,8 @@
                 "contexto": "tartarugas"
             },
             "conditions": "#tartarugas--pertence-jabuti-tartaruga && intent.confidence > 0.7 || @modificador==\"pertence\" && @substantivo==\"jabuti\" && @recipiente==\"tartaruga\" && $contexto==\"tartarugas\" || @modificador==\"pertence\" && @substantivo==\"jabuti\" && @recipiente==\"tartaruga\" && @rótulos==\"tartarugas\"",
-            "dialog_node": "node_526b2635a45d498a",
-            "previous_sibling": "node_e3522667d3834954",
-            "intent": "tartarugas--pertence-jabuti-tartaruga"
+            "dialog_node": "node_34b763ab4fb245ca",
+            "previous_sibling": "node_bc382011b06b411e"
         },
         {
             "type": "standard",
@@ -5625,10 +6872,9 @@
             },
             "conditions": "anything_else",
             "dialog_node": "node_7_1633148066996",
-            "previous_sibling": "node_526b2635a45d498a",
+            "previous_sibling": "node_34b763ab4fb245ca",
             "digress_in": "returns",
-            "digress_out": "allow_all",
-            "intent": ""
+            "digress_out": "allow_all"
         }
     ],
     "counterexamples": [],
