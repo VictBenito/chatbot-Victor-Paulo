@@ -2,6 +2,7 @@
 # @File:   dialog_node_operations.py
 # @Time:   20/11/2021
 # @Author: Gabriel O.
+
 import ast
 import uuid
 from typing import List
@@ -168,7 +169,8 @@ def get_titulo(js: dict) -> str:
         trechos.append(f"de {recipiente or contexto}?")
     elif modificador in ["maior", "menor"]:
         trechos.append(modificador)
-        trechos.append(substantivo)
+        if substantivo:
+            trechos.append(substantivo)
         if contexto:
             trechos.append(f"de {contexto}")
         if recipiente:
@@ -183,18 +185,25 @@ def get_titulo(js: dict) -> str:
             trechos.append(f"de {recipiente}")
         trechos.append("?")
     elif modificador in ["porque"]:
-        if not (contexto and recipiente):
+        if not contexto:
             raise ValueError(
-                f"Perguntas do tipo 'porque' precisam de recipiente e contexto!"
+                f"Perguntas do tipo 'porque' precisam de contexto!"
                 f" Pergunta: {js['pergunta']}"
             )
-        trechos.append(f"{contexto}:")
-        trechos.append("motivo")
-        trechos.append(f"{recipiente}?")
+        elif len(contextos) == 2:
+            trechos.append(f"{contextos[1]}:")
+            trechos.append("motivo para")
+            trechos.append(f"{contextos[0]}?")
+        else:
+            trechos.append(f"{contexto}:")
+            trechos.append("motivo para")
+            if recipiente:
+                trechos.append(recipiente)
+            trechos.append(f"?")
     elif modificador in ["quantidade"]:
         if not (substantivo or contexto):
             raise ValueError(
-                f"Perguntas do tipo 'quantidade' precisam de substantivo ou contetxo!"
+                f"Perguntas do tipo 'quantidade' precisam de substantivo ou contexto!"
                 f" Pergunta: {js['pergunta']}"
             )
         if substantivo:
@@ -279,7 +288,7 @@ def get_all_conditions(js: dict, confidence: float = None) -> str:
 
     base_condition = f"#{js['intent']}"
     if confidence:
-        base_condition = f" && intent.confidence > {confidence}"
+        base_condition += f" && intent.confidence > {confidence}"
     # the next part requires at least one element in the list
     if not contextos:
         contextos = [None]
