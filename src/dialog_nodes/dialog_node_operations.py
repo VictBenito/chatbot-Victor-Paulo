@@ -244,6 +244,7 @@ def get_titulo(js: dict) -> str:
         "um tartaruga": "uma tartaruga",
         "de petróleo": "do petróleo",
         "de projeto de": "do projeto",
+        " ?": "?"
     }
     for palavra, substituta in substituir.items():
         titulo = titulo.replace(palavra, substituta)
