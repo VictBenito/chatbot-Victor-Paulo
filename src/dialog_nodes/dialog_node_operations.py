@@ -4,6 +4,7 @@
 # @Author: Gabriel O.
 
 import ast
+import re
 import uuid
 from typing import List
 
@@ -53,8 +54,7 @@ def get_titulo(js: dict) -> str:
     substantivo = js["substantivo"].replace("-", " ")
     recipiente = js["recipiente"].replace("-", " ")
 
-    contextos = get_contextos(js["rótulos"].split("_"))
-    contextos = list(map(lambda x: x.replace("-", " "), contextos))
+    contextos = get_contexts(js["rótulos"].replace("-", " ").split("_"))
     contexto = f"{'/'.join(contextos)}"
     trechos = []
 
@@ -104,8 +104,8 @@ def get_titulo(js: dict) -> str:
             or (substantivo and recipiente)
         ):
             raise ValueError(
-                f"Perguntas do tipo 'é' precisam de contexto e substantivo ou "
-                f"recipiente! Pergunta: {js['pergunta']}"
+                f"Perguntas do tipo 'é' precisam de dois entre substantivo, recipiente "
+                f"e contexto! Pergunta: {js['pergunta']}"
             )
         else:
             trechos.append(substantivo or contexto)
@@ -120,7 +120,7 @@ def get_titulo(js: dict) -> str:
     elif modificador in ["existe"]:
         if not recipiente:
             raise ValueError(
-                f"Perguntas do tipo 'exist' precisam de recipiente! "
+                f"Perguntas do tipo 'existe' precisam de recipiente! "
                 f"Pergunta: {js['pergunta']}"
             )
         if contexto:
@@ -130,11 +130,6 @@ def get_titulo(js: dict) -> str:
             trechos.append(substantivo)
         trechos.append(f"em {recipiente}?")
     elif modificador in ["explicar"]:
-        if not substantivo:
-            raise ValueError(
-                f"Perguntas do tipo 'explicar' precisam de substantivo! "
-                f"Pergunta: {js['pergunta']}"
-            )
         trechos.append(modificador)
         trechos.append(substantivo)
         if recipiente:
@@ -157,16 +152,6 @@ def get_titulo(js: dict) -> str:
         else:
             trechos.append(modificador)
             trechos.append(contexto)
-    elif modificador in ["localização"]:
-        if not (contexto or recipiente):
-            raise ValueError(
-                f"Perguntas do tipo 'detalhar' precisam de recipiente ou contexto!"
-                f" Pergunta: {js['pergunta']}"
-            )
-        trechos.append(modificador)
-        if substantivo:
-            trechos.append(f"de {plural(substantivo)}")
-        trechos.append(f"de {recipiente or contexto}?")
     elif modificador in ["maior", "menor"]:
         trechos.append(modificador)
         if substantivo:
@@ -184,6 +169,16 @@ def get_titulo(js: dict) -> str:
         if recipiente:
             trechos.append(f"de {recipiente}")
         trechos.append("?")
+    elif modificador in ["onde"]:
+        if not (contexto or recipiente):
+            raise ValueError(
+                f"Perguntas do tipo 'detalhar' precisam de recipiente ou contexto!"
+                f" Pergunta: {js['pergunta']}"
+            )
+        trechos.append(modificador)
+        if substantivo:
+            trechos.append(f"de {plural(substantivo)}")
+        trechos.append(f"de {recipiente or contexto}?")
     elif modificador in ["porque"]:
         if not contexto:
             raise ValueError(
@@ -236,7 +231,6 @@ def get_titulo(js: dict) -> str:
     titulo = " ".join(trechos)
     titulo = titulo.strip()
     substituir = {
-        " ?": "?",
         "em amazônia azul": "na Amazônia Azul",
         "de amazônia azul": "da Amazônia Azul",
         "em brasil": "no Brasil",
@@ -253,10 +247,11 @@ def get_titulo(js: dict) -> str:
     }
     for palavra, substituta in substituir.items():
         titulo = titulo.replace(palavra, substituta)
+    titulo = re.sub(r"\s+", " ", titulo)
     return titulo
 
 
-def get_contextos(tags: List[str]) -> List[str]:
+def get_contexts(tags: List[str]) -> List[str]:
     """
     Returns the contexts of a question based on its tags, considering
     there are tags which do not define context.
@@ -284,7 +279,7 @@ def get_all_conditions(js: dict, confidence: float = None) -> str:
     rotulos = js["rótulos"].replace("-", " ").split("_")
     rotulos += [js["rótulos"].replace("-", " ")]
     rotulos = drop_duplicates(rotulos)
-    contextos = get_contextos(rotulos)
+    contextos = get_contexts(rotulos)
 
     base_condition = f"#{js['intent']}"
     if confidence:
