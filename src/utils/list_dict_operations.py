@@ -17,7 +17,7 @@ def flatten(ls: list) -> list:
     return [item for sublist in ls for item in sublist]
 
 
-def unzip(zipped: List[Tuple]) -> Tuple[List]:
+def unzip(zipped: List[Tuple]) -> Tuple[List, ...]:
     """Does the opposite of zip() -- returns a tuple of lists."""
     return tuple(zip(*zipped))
 
