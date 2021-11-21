@@ -12,6 +12,10 @@ def drop_duplicates(ls: list) -> list:
     return list(filter(None, set(ls)))
 
 
+def drop_empty(ls: list) -> list:
+    return [e for e in ls if e]
+
+
 def flatten(ls: list) -> list:
     """Flattens a list by 1 dimension."""
     return [item for sublist in ls for item in sublist]
