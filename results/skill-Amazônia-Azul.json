@@ -1510,6 +1510,7 @@
           "synonyms": [
             "claro",
             "s",
+            "sei",
             "ss",
             "tenho"
           ]
@@ -1550,7 +1551,9 @@
         {
           "type": "synonyms",
           "value": "é",
-          "synonyms": []
+          "synonyms": [
+            "são"
+          ]
         },
         {
           "type": "synonyms",
@@ -1564,7 +1567,8 @@
           "type": "synonyms",
           "value": "existe",
           "synonyms": [
-            "há"
+            "há",
+            "tem"
           ]
         },
         {
@@ -1601,16 +1605,10 @@
         },
         {
           "type": "synonyms",
-          "value": "motivo",
+          "value": "porque",
           "synonyms": [
-            "causa",
             "por que"
           ]
-        },
-        {
-          "type": "synonyms",
-          "value": "porque",
-          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1624,7 +1622,9 @@
         {
           "type": "synonyms",
           "value": "responsável",
-          "synonyms": []
+          "synonyms": [
+            "quem"
+          ]
         }
       ],
       "fuzzy_match": true
@@ -2673,7 +2673,7 @@
           {
             "values": [
               {
-                "text": "Eu sou um robô muito interessado na Amazônia Azul (jajá te explico o que é) e adoro conversar! Você pode fazer perguntas sobre diferentes temas relacionados a ela e eu responderei o melhor que puder. Quando estiver satisfeito, por favor, responda ao formulário de avaliação! Basta pedir e eu te direi o link. Algumas instruções:"
+                "text": "Eu sou um robô muito interessado na Amazônia Azul e quero te contar muuitas coisas sobre ela! Você pode fazer perguntas sobre diferentes temas relacionados a ela e eu responderei o melhor que puder. Quando estiver satisfeito, por favor, responda ao formulário de avaliação! Basta pedir e eu te direi o link. Algumas instruções:"
               }
             ],
             "response_type": "text",
@@ -2724,7 +2724,7 @@
           {
             "values": [
               {
-                "text": "Esse é o nome dado à região marítima que pertence economica e politicamente ao Brasil, incluindo tanto praias e o litoral quanto o oceano. O nome é uma referência à Amazônia devido à similaridade em riqueza de recursos vivos, minerais, energéticos e de biodiversidade encontrados nas duas regiões."
+                "text": "Esse é o nome dado à região do mar que pertence ao Brasil, desde as praias até o oceano. O nome é uma referência à Amazônia devido à similaridade em riqueza de recursos vivos, minerais, energéticos e de biodiversidade encontrados nas duas regiões."
               }
             ],
             "response_type": "text",
@@ -2748,7 +2748,7 @@
           {
             "values": [
               {
-                "text": "Meus principais assuntos são: corais, petróleo e gás natural, marés, animais marinhos, proteção ambiental e pesca na Amazônia Azul."
+                "text": "Meus principais assuntos são: petróleo e gás natural, animais marinhos (corais, tartarugas, baleias) e pesca na Amazônia Azul."
               }
             ],
             "response_type": "text",
@@ -3220,56 +3220,6 @@
       "conditions": "",
       "dialog_node": "node_2_1633362162069",
       "previous_sibling": "node_5_1637027857643"
-    },
-    {
-      "type": "standard",
-      "title": "Ajuda inicial",
-      "output": {
-        "generic": [
-          {
-            "title": "",
-            "options": [
-              {
-                "label": "O que é petróleo?",
-                "value": {
-                  "input": {
-                    "text": "petróleo definição"
-                  }
-                }
-              },
-              {
-                "label": "Qual a diferença entre tartarugas e jabutis?",
-                "value": {
-                  "input": {
-                    "text": "tartarugas diferença jabuti"
-                  }
-                }
-              },
-              {
-                "label": "O que causa as marés?",
-                "value": {
-                  "input": {
-                    "text": "maré motivo"
-                  }
-                }
-              },
-              {
-                "label": "Exemplos de animais marinhos",
-                "value": {
-                  "input": {
-                    "text": "listar animais marinhos"
-                  }
-                }
-              }
-            ],
-            "response_type": "option"
-          }
-        ]
-      },
-      "parent": "node_3_1636423463289",
-      "conditions": "",
-      "dialog_node": "node_2_1636423573906",
-      "previous_sibling": "node_9_1637181017689"
     },
     {
       "type": "standard",
@@ -4345,7 +4295,7 @@
       "parent": "node_3_1636423463289",
       "conditions": "#quem-sou-eu",
       "dialog_node": "node_4_1636412764367",
-      "previous_sibling": "node_7_1636766479073"
+      "previous_sibling": "node_7_1636770186943"
     },
     {
       "type": "standard",
@@ -4355,7 +4305,7 @@
           {
             "values": [
               {
-                "text": "O Knowledge-Enhanced Machine Learning for Reasoning about Ocean Data (KEML) é um grupo de alunos e pesquisadores com o objetivo de desenvolver um framework para agentes conversacionais que possa responder a pedidos de alto nível sobre um determinado assunto, como perguntas, causas, argumentos etc. Para testar e demonstrar essa capacidade, está sob desenvolvimento um expert conversacional sobre a Amazônia Azul no BLue Amazon Brain (BLAB). O grupo é liderado pelos professores Fabio Cozman e Eduardo Tannuri, da Universidade de São Paulo. Leia mais: https://c4ai.inova.usp.br/keml-en/"
+                "text": "O desafio de pesquisa Knowledge-Enhanced Machine Learning (KEML) congrega um grupo de pesquisadores interessados na conexão entre aprendizado de máquina e representação de conhecimento, dentro do Center for Artificial Intelligence USP/IBM/FAPESP (c4ai.inova.usp.br). Para explorar esse tema, o grupo desenvolve um agente conversacional, chamado BLue Amazonia Brain (BLAB), que oferece vários serviços sobre a Amazônia Azul, de resposta a perguntas a predição de marés e geração de notícias. Leia mais: https://c4ai.inova.usp.br/keml-en/"
               }
             ],
             "response_type": "text",
@@ -4709,7 +4659,7 @@
           {
             "values": [
               {
-                "text": "1. Se quiser saber mais sobre mim ou sobre esse trabalho, pode perguntar.\n2. Se ficar sem ideia do que perguntar, peça ajuda e eu te darei umas dicas :)\n3. Se quiser saber a fonte de qualquer resposta que eu dei, basta perguntar logo em seguida."
+                "text": "1. Se quiser saber mais sobre mim ou sobre esse trabalho, pode perguntar.\n2. Se ficar sem ideia do que perguntar, peça por \"ajuda\" ou \"dicas\" :)\n3. Se quiser saber mais sobre alguma resposta minha, basta perguntar pela fonte logo em seguida.\n4. Diga tchau quando for embora!"
               }
             ],
             "response_type": "text",
@@ -5830,18 +5780,52 @@
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "O que é petróleo?",
+                "value": {
+                  "input": {
+                    "text": "petróleo definição"
+                  }
+                }
+              },
+              {
+                "label": "Qual a diferença entre tartarugas e jabutis?",
+                "value": {
+                  "input": {
+                    "text": "tartarugas diferença jabuti"
+                  }
+                }
+              },
+              {
+                "label": "O que causa as marés?",
+                "value": {
+                  "input": {
+                    "text": "causa da maré"
+                  }
+                }
+              },
+              {
+                "label": "Exemplos de animais marinhos",
+                "value": {
+                  "input": {
+                    "text": "listar animais marinhos"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
           }
         ]
       },
       "parent": "node_3_1636423463289",
       "context": {
         "intro": false
-      },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_2_1636423573906"
       },
       "conditions": "",
       "dialog_node": "node_7_1636766479073",
@@ -5859,7 +5843,7 @@
                 "label": "<? context['titles'][context['dica0'].toString()] ?>",
                 "value": {
                   "input": {
-                    "text": "<? context['intents'][context['dica0'].toString()] ?>"
+                    "text": "<? context['titles'][context['dica0'].toString()] ?>"
                   }
                 }
               },
@@ -5892,7 +5876,7 @@
       },
       "conditions": "#ajuda",
       "dialog_node": "node_7_1636770186943",
-      "previous_sibling": "node_2_1636423573906"
+      "previous_sibling": "node_7_1636766479073"
     },
     {
       "type": "standard",
@@ -6487,7 +6471,7 @@
           {
             "values": [
               {
-                "text": "Poxa<? $nome ? \", \" + $nome : \"\" ?>..."
+                "text": "Poxa<? $nome ? \", \" + $nome : \"\" ?>... será que uma dessas perguntas pode te animar?"
               }
             ],
             "response_type": "text",
