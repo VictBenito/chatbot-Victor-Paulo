@@ -10,8 +10,8 @@ from pathlib import Path
 from src.dialog_nodes.NodeOrganizer import NodeOrganizer
 from src.dialog_nodes.dialog_node_operations import convert_to_list, get_dialog_nodes
 from src.entities.entity_operations import get_entities
-from src.io.file_operations import load_questions, load_skill, save_skill
 from src.intents.intent_operations import get_intents
+from src.io.file_operations import load_questions, load_skill, save_skill
 from src.skills.skill_operations import mix_skills
 from src.utils.list_dict_operations import mix_list, remove
 
@@ -37,6 +37,7 @@ def main(confidence: float):
     new_nodes = get_dialog_nodes(questions, confidence)
     print("Nodes obtained!")
 
+    # delete old generated nodes
     old_nodes = old_skill["dialog_nodes"]
     old_nodes = [n for n in old_nodes if re.search(r"node_._", n["dialog_node"])]
 

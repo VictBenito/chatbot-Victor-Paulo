@@ -137,8 +137,11 @@ class NodeOrganizer:
         titles. This enables the 'help' node, which picks random integers and offers
         a set of questions to the user.
         """
-        df = self.df_generated.reset_index(drop=True)
-        titles = df.title.to_dict()
+        df = self.df_generated.copy()
+        folders = df.type == "folder"
+        has_title = ~df.title.isna()
+        df_titles = df[~folders & has_title].reset_index(drop=True)
+        titles = df_titles.title.to_dict()
         titles = {str(k): v for k, v in titles.items()}
 
         welcome_node = self.df_manual.conditions.str.contains("welcome").fillna(False)
@@ -221,7 +224,7 @@ class NodeOrganizer:
 
     @staticmethod
     def _create_source(parent: pd.Series, cols: pd.Index) -> pd.Series:
-        if "fonte" not in parent:
+        if parent.isna()["fonte"]:
             return pd.Series()
         fontes = parent["fonte"].split("--")
         fontes = drop_duplicates(fontes)
