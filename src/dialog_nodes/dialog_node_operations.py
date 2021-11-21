@@ -303,16 +303,16 @@ def get_all_conditions(js: dict, confidence: float = None) -> str:
 
 
 def get_single_condition(modificador, substantivo, recipiente, contexto) -> list:
-    trechos = [f'@modificador=="{modificador}"']
+    trechos = [f"@modificador:({modificador})"]
     if substantivo:
-        trechos.append(f'&& @substantivo=="{substantivo}"')
+        trechos.append(f"&& @substantivo:({substantivo})")
     if recipiente:
-        trechos.append(f'&& @recipiente=="{recipiente}"')
+        trechos.append(f"&& @recipiente:({recipiente})")
     cond = " ".join(trechos)
     if contexto:
         out = [
-            cond + f' && $contexto=="{contexto}"',
-            cond + f' && @rótulos=="{contexto}"',
+            cond + f" && $contexto:({contexto})",
+            cond + f" && @rótulos:({contexto})",
         ]
     else:
         out = [cond]
