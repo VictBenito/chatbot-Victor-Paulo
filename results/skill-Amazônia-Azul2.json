@@ -19,6 +19,15 @@
       "description": ""
     },
     {
+      "intent": "amazônia-azul--efeito-aquecimento-global",
+      "examples": [
+        {
+          "text": "Qual é o impacto do aquecimento global na Amazônia Azul?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "amazônia-azul--listar-recurso",
       "examples": [
         {
@@ -80,6 +89,18 @@
       "examples": [
         {
           "text": "Por que a Amazônia Azul é chamada assim?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "amazônia-azul--quantidade-espécie",
+      "examples": [
+        {
+          "text": "Quantas espécies existem na Amazônia Azul?"
+        },
+        {
+          "text": "Qual é a diversidade de espécies da amazônia azul?"
         }
       ],
       "description": ""
@@ -859,10 +880,49 @@
       "description": ""
     },
     {
+      "intent": "oceano--definição-acidificação",
+      "examples": [
+        {
+          "text": "O que é a acidificação do oceano?"
+        },
+        {
+          "text": "Definição de acidificação do oceano?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "oceano--efeito-acidificação",
+      "examples": [
+        {
+          "text": "Quais são os efeitos da acidificação do oceano?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "oceano--efeito-aquecimento-global",
+      "examples": [
+        {
+          "text": "Qual é o impacto do aquecimento global no oceano?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "oceano--listar-métodos-de-geração-energia",
       "examples": [
         {
           "text": "Como é possível gerar energia no mar?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "oceano--responsável-acidificação",
+      "examples": [
+        {
+          "text": "Quem está causando a acidificação dos oceanos?"
         }
       ],
       "description": ""
@@ -1498,6 +1558,15 @@
       "description": ""
     },
     {
+      "intent": "tartarugas--listar-ameaça-extinção",
+      "examples": [
+        {
+          "text": "Quais são as ameaças às tartarugas?"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "tartarugas--listar-espécie",
       "examples": [
         {
@@ -1783,29 +1852,6 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "definição",
-          "synonyms": [
-            "defina",
-            "o que é",
-            "significa",
-            "definir",
-            "significado"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "maiores",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "responsável",
-          "synonyms": [
-            "quem"
-          ]
-        },
-        {
-          "type": "synonyms",
           "value": "detalhar",
           "synonyms": [
             "qual"
@@ -1813,33 +1859,12 @@
         },
         {
           "type": "synonyms",
-          "value": "causa",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "efeito",
-          "synonyms": [
-            "consequência",
-            "impacto"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "maior",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "existe",
-          "synonyms": [
-            "tem",
-            "há"
-          ]
-        },
-        {
-          "type": "synonyms",
           "value": "diferença",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "maiores",
           "synonyms": []
         },
         {
@@ -1851,11 +1876,10 @@
         },
         {
           "type": "synonyms",
-          "value": "quantidade",
+          "value": "existe",
           "synonyms": [
-            "número de",
-            "quantas",
-            "quantos"
+            "há",
+            "tem"
           ]
         },
         {
@@ -1867,10 +1891,54 @@
         },
         {
           "type": "synonyms",
+          "value": "explicar",
+          "synonyms": [
+            "como",
+            "explique"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "efeito",
+          "synonyms": [
+            "consequência",
+            "impacto"
+          ]
+        },
+        {
+          "type": "synonyms",
           "value": "porque",
           "synonyms": [
-            "por que",
-            "pq"
+            "pq",
+            "por que"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "definição",
+          "synonyms": [
+            "definir",
+            "significa",
+            "significado",
+            "o que é",
+            "defina"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "maior",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "causa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "responsável",
+          "synonyms": [
+            "quem"
           ]
         },
         {
@@ -1880,10 +1948,11 @@
         },
         {
           "type": "synonyms",
-          "value": "explicar",
+          "value": "quantidade",
           "synonyms": [
-            "explique",
-            "como"
+            "quantos",
+            "quantas",
+            "número de"
           ]
         },
         {
@@ -1901,165 +1970,7 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "milha náutica",
-          "synonyms": [
-            "milha marítima"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "albatroz",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "planície abissal",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "elasmobranchii",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "zona econômica exclusiva",
-          "synonyms": [
-            "zee"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "molusco",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "peixe",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "nome",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "pétrel",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "actinopterígeo",
-          "synonyms": [
-            "actinopterygii"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "cágado",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "anêmona",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "plataforma continental",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "revimar",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "procellariiforme",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "ambiente",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "aquicultura",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "salpa",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "zooplâncton",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "plataforma",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "hidra",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "brasil",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "importância",
-          "synonyms": [
-            "importante"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "polifilético",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "pesca extrativa",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "cnidário",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "filo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "plâncton",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "medusa",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "fitoplâncton",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "cnudm",
           "synonyms": []
         },
         {
@@ -2071,12 +1982,109 @@
         },
         {
           "type": "synonyms",
-          "value": "baleia jubarte",
+          "value": "recurso renovável",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "líquen",
+          "value": "quelônio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "altura",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "energia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pólipo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "salpa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "crustáceo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cordado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "importância",
+          "synonyms": [
+            "importante"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "economia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ectotérmico",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "peixe",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cágado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "plataforma",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "albatroz",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tunicado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "medusa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "linha de base",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cnidário",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "zooplâncton",
           "synonyms": []
         },
         {
@@ -2091,47 +2099,12 @@
         },
         {
           "type": "synonyms",
-          "value": "meros do brasil",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "tunicado",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "biomar",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "crustáceo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "ectotérmico",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "pré sal",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "linha de base",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "talude continental",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "remplac",
+          "value": "molusco",
           "synonyms": []
         },
         {
@@ -2141,52 +2114,7 @@
         },
         {
           "type": "synonyms",
-          "value": "coral vivo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "cordado",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "dia",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "quelônio",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "jabuti",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "energia",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "oceano",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "branqueamento",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "recurso pesqueiro",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "altura",
+          "value": "meros do brasil",
           "synonyms": []
         },
         {
@@ -2196,47 +2124,7 @@
         },
         {
           "type": "synonyms",
-          "value": "dia de maré",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "economia",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "cnida",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "onshore",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "pólipo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "governo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "recurso renovável",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "tubarão",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "leplac",
+          "value": "procellariiforme",
           "synonyms": []
         },
         {
@@ -2246,7 +2134,193 @@
         },
         {
           "type": "synonyms",
+          "value": "zona econômica exclusiva",
+          "synonyms": [
+            "zee"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "acidificação",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "biomar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pétrel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "branqueamento",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "aquicultura",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "hidra",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "revimar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "plataforma continental",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "tamar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pesca extrativa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "governo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "elasmobranchii",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "actinopterígeo",
+          "synonyms": [
+            "actinopterygii"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "jabuti",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cnudm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "talude continental",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "baleia jubarte",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "planície abissal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nome",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "milha náutica",
+          "synonyms": [
+            "milha marítima"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dia de maré",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "coral vivo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "brasil",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cnida",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "plâncton",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "oceano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "remplac",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "leplac",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "líquen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "recurso pesqueiro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "filo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fitoplâncton",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "polifilético",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "onshore",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tubarão",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ambiente",
           "synonyms": []
         },
         {
@@ -2292,34 +2366,19 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "maré",
+          "value": "pesca",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "energia de maré",
+          "value": "animais marinhos",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "flora",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "baleias",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "flora_fauna",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "tartarugas",
+          "value": "corais",
           "synonyms": [
-            "tartaruga"
+            "coral"
           ]
         },
         {
@@ -2334,7 +2393,39 @@
         },
         {
           "type": "synonyms",
+          "value": "petróleo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "flora_fauna",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "flora",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "baleias",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "correntes oceânicas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "amazônia azul",
+          "synonyms": [
+            "aaz"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "energia de maré",
           "synonyms": []
         },
         {
@@ -2344,24 +2435,9 @@
         },
         {
           "type": "synonyms",
-          "value": "petróleo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "pesca",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "corais_turismo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "corais",
+          "value": "tartarugas",
           "synonyms": [
-            "coral"
+            "tartaruga"
           ]
         },
         {
@@ -2371,20 +2447,18 @@
         },
         {
           "type": "synonyms",
+          "value": "corais_turismo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "poluição",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "animais marinhos",
+          "value": "maré",
           "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "amazônia azul",
-          "synonyms": [
-            "aaz"
-          ]
         },
         {
           "type": "synonyms",
@@ -2414,47 +2488,42 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "idade reprodutiva",
+          "value": "contras",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "produção",
+          "value": "prós e contras",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "empresa",
+          "value": "reserva",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "molusco",
+          "value": "derramamento",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "nome",
-          "synonyms": [
-            "nomeada",
-            "chamado",
-            "nomeado",
-            "chamada"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "recursos minerais",
+          "value": "predador",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "iniciativa",
+          "value": "frequência",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "país",
+          "value": "variação",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "campo",
           "synonyms": []
         },
         {
@@ -2464,7 +2533,32 @@
         },
         {
           "type": "synonyms",
-          "value": "tamanho",
+          "value": "turismo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "recursos vivos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "recife",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "derivado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "custo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "crustáceo",
           "synonyms": []
         },
         {
@@ -2476,52 +2570,12 @@
         },
         {
           "type": "synonyms",
-          "value": "prós",
+          "value": "métodos de geração",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "frequência",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "recursos energéticos",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "longevidade",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "tipo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "plataforma",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "custo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "prós e contras",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "projeto",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "cnidário",
+          "value": "características",
           "synonyms": []
         },
         {
@@ -2531,22 +2585,52 @@
         },
         {
           "type": "synonyms",
-          "value": "consumo",
+          "value": "plataforma",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "derramamento",
+          "value": "ameaça",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "peso",
+          "value": "empresa",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "reprodução",
+          "value": "cnidário",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "golfinho",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "definição",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "longevidade",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "produção",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "prós",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "molusco",
           "synonyms": []
         },
         {
@@ -2558,72 +2642,7 @@
         },
         {
           "type": "synonyms",
-          "value": "recursos vivos",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "definição",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "espécie",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "golfinho",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "predador",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "variação",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "métodos de geração",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "crustáceo",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "contras",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "recife artificial",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "tempo entre altas",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "recife",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "jabuti",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "reserva",
+          "value": "acidificação",
           "synonyms": []
         },
         {
@@ -2633,17 +2652,22 @@
         },
         {
           "type": "synonyms",
-          "value": "preço",
+          "value": "ciclo de vida",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "campo",
+          "value": "país",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "ameaça",
+          "value": "aquecimento global",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "recursos energéticos",
           "synonyms": []
         },
         {
@@ -2658,7 +2682,52 @@
         },
         {
           "type": "synonyms",
-          "value": "turismo",
+          "value": "reprodução",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "jabuti",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "consumo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tipo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "espécie",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nome",
+          "synonyms": [
+            "nomeada",
+            "nomeado",
+            "chamado",
+            "chamada"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tamanho",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "iniciativa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "idade reprodutiva",
           "synonyms": []
         },
         {
@@ -2668,27 +2737,42 @@
         },
         {
           "type": "synonyms",
-          "value": "tubarão",
+          "value": "preço",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "derivado",
+          "value": "projeto",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "características",
+          "value": "tempo entre altas",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "ciclo de vida",
+          "value": "recife artificial",
           "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "símbolo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "recursos minerais",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "peso",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tubarão",
           "synonyms": []
         },
         {
@@ -2802,172 +2886,179 @@
         "titles": {
           "0": "Detalhar importância da Amazônia Azul",
           "1": "Detalhar tamanho da Amazônia Azul",
-          "2": "Listar recursos da Amazônia Azul",
-          "3": "Listar recursos energéticos da Amazônia Azul",
-          "4": "Listar recursos minerais da Amazônia Azul",
-          "5": "Listar recursos vivos da Amazônia Azul",
-          "6": "Onde tem amazônia azul?",
-          "7": "Amazônia azul: motivo para importância?",
-          "8": "Amazônia azul: motivo para nome?",
-          "9": "Responsável por nome da Amazônia Azul?",
-          "10": "Definição de animais marinhos?",
-          "11": "Listar animais marinhos",
-          "12": "Animais marinhos: listar espécies de extinção",
-          "13": "Maior de animais marinhos?",
-          "14": "Maior ameaça de animais marinhos de extinção?",
-          "15": "Maiores ameaças de animais marinhos de extinção?",
-          "16": "Animais marinhos: quantidade de espécies em extinção?",
-          "17": "Definição de baleias?",
-          "18": "Definição de baleia jubarte?",
-          "19": "Detalhar tipo de baleias",
-          "20": "Baleias: existe no Brasil?",
-          "21": "Onde tem baleias?",
-          "22": "Causa do branqueamento de corais?",
-          "23": "Definição de corais?",
-          "24": "Definição do branqueamento de corais?",
-          "25": "Definição de recife de corais?",
-          "26": "Definição de recife artificial de corais?",
-          "27": "Detalhar composição de corais",
-          "28": "Detalhar dieta de corais",
-          "29": "Detalhar importância de corais",
-          "30": "Detalhar longevidade de corais",
-          "31": "Detalhar símbolo de corais",
-          "32": "Corais: efeito do branqueamento no ambiente?",
-          "33": "Corais: listar iniciativas do governo",
-          "34": "Listar tipos de corais",
-          "35": "Maior recife de corais?",
-          "36": "Maior recife de corais do Brasil?",
-          "37": "Onde tem corais?",
-          "38": "Corais: efeito de turismo em corais?",
-          "39": "Definição de correntes oceânicas?",
-          "40": "Definição de energia de maré?",
-          "41": "Energia de maré: efeito no ambiente?",
-          "42": "Explicar energia de maré",
-          "43": "Listar contras de energia de maré",
-          "44": "Listar prós de energia de maré",
-          "45": "Listar prós e contras de energia de maré",
-          "46": "Onde tem energia de maré?",
-          "47": "Definição de actinopterígeo?",
-          "48": "Definição de albatroz?",
-          "49": "Definição de anêmona?",
-          "50": "Definição de cnida?",
-          "51": "Definição de cnidário?",
-          "52": "Definição de cordado?",
-          "53": "Definição de crustáceo?",
-          "54": "Definição de ectotérmico?",
-          "55": "Definição de elasmobranchii?",
-          "56": "Definição de filo?",
-          "57": "Definição de fitoplâncton?",
-          "58": "Definição de golfinho rotador?",
-          "59": "Definição de hidra?",
-          "60": "Definição de medusa?",
-          "61": "Definição de molusco?",
-          "62": "Definição de peixe?",
-          "63": "Definição de plâncton?",
-          "64": "Definição de procellariiforme?",
-          "65": "Definição de pétrel?",
-          "66": "Definição de pólipo?",
-          "67": "Definição de salpa?",
-          "68": "Definição de tubarão?",
-          "69": "Definição de tunicado?",
-          "70": "Definição de zooplâncton?",
-          "71": "Detalhar características de crustáceo",
-          "72": "Existe golfinho no Brasil?",
-          "73": "Existe tubarão no Brasil?",
-          "74": "Listar cnidários",
-          "75": "Listar crustáceos",
-          "76": "Listar moiuscos",
-          "77": "Listar tipos de golfinho",
-          "78": "Tubarão é peixe?",
-          "79": "Definição de alga?",
-          "80": "Definição de líquen?",
-          "81": "Definição de polifilético?",
-          "82": "Detalhar consumo de gás",
-          "83": "Detalhar produção de gás",
-          "84": "Maiores estados de gás?",
-          "85": "Causa de maré?",
-          "86": "Definição de maré?",
-          "87": "Definição de dia de maré?",
-          "88": "Detalhar frequência de maré",
-          "89": "Detalhar tempo entre altas de maré",
-          "90": "Detalhar variação de altura de maré",
-          "91": "Quantidade de maré em dia?",
-          "92": "Oceano: listar métodos de geração de energia",
-          "93": "Definição de biomar?",
-          "94": "Definição de cnudm?",
-          "95": "Definição de coral vivo?",
-          "96": "Definição de golfinho rotador?",
-          "97": "Definição de kai?",
-          "98": "Definição de leplac?",
-          "99": "Definição de linha de base?",
-          "100": "Definição de mar territorial?",
-          "101": "Definição de meros do brasil?",
-          "102": "Definição de milha náutica?",
-          "103": "Definição de planície abissal?",
-          "104": "Definição de plataforma continental?",
-          "105": "Definição do projeto albatroz?",
-          "106": "Definição do projeto baleia jubarte?",
-          "107": "Definição de remplac?",
-          "108": "Definição de revimar?",
-          "109": "Definição de talude continental?",
-          "110": "Definição de tamar?",
-          "111": "Definição de zona econômica exclusiva?",
-          "112": "Detalhar tamanho de zona econômica exclusiva",
-          "113": "Responsável por definição de mar territorial?",
-          "114": "Responsável por definição de zona econômica exclusiva?",
-          "115": "Definição de pesca?",
-          "116": "Definição de aquicultura?",
-          "117": "Definição de pesca extrativa?",
-          "118": "Definição de recurso pesqueiro?",
-          "119": "Detalhar tipo de pesca",
-          "120": "Detalhar tipo de peixe de pesca",
-          "121": "Maior estado de pesca?",
-          "122": "Maior país de pesca?",
-          "123": "Quantidade de pesca no Brasil?",
-          "124": "Definição de petróleo?",
-          "125": "Definição de derramamento de petróleo?",
-          "126": "Definição de onshore?",
-          "127": "Definição de plataforma de petróleo?",
-          "128": "Definição de pré sal?",
-          "129": "Detalhar composição de petróleo",
-          "130": "Detalhar consumo de petróleo",
-          "131": "Detalhar custo de petróleo",
-          "132": "Detalhar fim de petróleo",
-          "133": "Detalhar preço de petróleo",
-          "134": "Detalhar produção de petróleo",
-          "135": "Petróleo: efeito de derramamento no ambiente?",
-          "136": "Petróleo: efeito de derramamento em economia?",
-          "137": "Listar derivados de petróleo",
-          "138": "Listar empresas de petróleo",
-          "139": "Petróleo: listar tipos de plataforma",
-          "140": "Maior empresa de petróleo?",
-          "141": "Maior reserva de petróleo?",
-          "142": "Maiores campos de petróleo?",
-          "143": "Maiores derramamentos de petróleo?",
-          "144": "Maiores estados de petróleo?",
-          "145": "Maiores reservas de petróleo?",
-          "146": "Onde tem petróleo?",
-          "147": "Quantidade de petróleo no Brasil?",
-          "148": "Petróleo é recurso renovável?",
-          "149": "Poluição: efeito em oceano?",
-          "150": "Definição de tartarugas?",
-          "151": "Definição de cágado?",
-          "152": "Definição de jabuti?",
-          "153": "Definição de quelônio?",
-          "154": "Detalhar dieta de tartarugas",
-          "155": "Detalhar idade reprodutiva de tartarugas",
-          "156": "Detalhar longevidade de tartarugas",
-          "157": "Detalhar origem de tartarugas",
-          "158": "Detalhar peso de tartarugas",
-          "159": "Diferença entre jabuti e tartarugas?",
-          "160": "Explicar ciclo de vida de tartarugas",
-          "161": "Explicar reprodução de tartarugas",
-          "162": "Listar espécies de tartarugas",
-          "163": "Tartarugas: listar espécies de extinção",
-          "164": "Listar predadores de tartarugas",
-          "165": "Onde tem tartarugas?",
-          "166": "Tartarugas: motivo para extinção?",
-          "167": "Jabuti é tartarugas?"
+          "2": "Efeito de aquecimento global na Amazônia Azul?",
+          "3": "Listar recursos da Amazônia Azul",
+          "4": "Listar recursos energéticos da Amazônia Azul",
+          "5": "Listar recursos minerais da Amazônia Azul",
+          "6": "Listar recursos vivos da Amazônia Azul",
+          "7": "Onde tem amazônia azul?",
+          "8": "Amazônia azul: motivo para importância?",
+          "9": "Amazônia azul: motivo para nome?",
+          "10": "Amazônia azul: quantidade de espécies?",
+          "11": "Responsável por nome da Amazônia Azul?",
+          "12": "Definição de animais marinhos?",
+          "13": "Listar animais marinhos",
+          "14": "Animais marinhos: listar espécies de extinção",
+          "15": "Maior de animais marinhos?",
+          "16": "Maior ameaça de animais marinhos de extinção?",
+          "17": "Maiores ameaças de animais marinhos de extinção?",
+          "18": "Animais marinhos: quantidade de espécies em extinção?",
+          "19": "Definição de baleias?",
+          "20": "Definição de baleia jubarte?",
+          "21": "Detalhar tipo de baleias",
+          "22": "Baleias: existe no Brasil?",
+          "23": "Onde tem baleias?",
+          "24": "Causa do branqueamento de corais?",
+          "25": "Definição de corais?",
+          "26": "Definição do branqueamento de corais?",
+          "27": "Definição de recife de corais?",
+          "28": "Definição de recife artificial de corais?",
+          "29": "Detalhar composição de corais",
+          "30": "Detalhar dieta de corais",
+          "31": "Detalhar importância de corais",
+          "32": "Detalhar longevidade de corais",
+          "33": "Detalhar símbolo de corais",
+          "34": "Efeito do branqueamento de corais no ambiente?",
+          "35": "Corais: listar iniciativas do governo",
+          "36": "Listar tipos de corais",
+          "37": "Maior recife de corais?",
+          "38": "Maior recife de corais do Brasil?",
+          "39": "Onde tem corais?",
+          "40": "Efeito de turismo em corais?",
+          "41": "Definição de correntes oceânicas?",
+          "42": "Definição de energia de maré?",
+          "43": "Efeito de energia de maré no ambiente?",
+          "44": "Explicar energia de maré",
+          "45": "Listar contras de energia de maré",
+          "46": "Listar prós de energia de maré",
+          "47": "Listar prós e contras de energia de maré",
+          "48": "Onde tem energia de maré?",
+          "49": "Definição de actinopterígeo?",
+          "50": "Definição de albatroz?",
+          "51": "Definição de anêmona?",
+          "52": "Definição de cnida?",
+          "53": "Definição de cnidário?",
+          "54": "Definição de cordado?",
+          "55": "Definição de crustáceo?",
+          "56": "Definição de ectotérmico?",
+          "57": "Definição de elasmobranchii?",
+          "58": "Definição de filo?",
+          "59": "Definição de fitoplâncton?",
+          "60": "Definição de golfinho rotador?",
+          "61": "Definição de hidra?",
+          "62": "Definição de medusa?",
+          "63": "Definição de molusco?",
+          "64": "Definição de peixe?",
+          "65": "Definição de plâncton?",
+          "66": "Definição de procellariiforme?",
+          "67": "Definição de pétrel?",
+          "68": "Definição de pólipo?",
+          "69": "Definição de salpa?",
+          "70": "Definição de tubarão?",
+          "71": "Definição de tunicado?",
+          "72": "Definição de zooplâncton?",
+          "73": "Detalhar características de crustáceo",
+          "74": "Existe golfinho no Brasil?",
+          "75": "Existe tubarão no Brasil?",
+          "76": "Listar cnidários",
+          "77": "Listar crustáceos",
+          "78": "Listar moiuscos",
+          "79": "Listar tipos de golfinho",
+          "80": "Tubarão é peixe?",
+          "81": "Definição de alga?",
+          "82": "Definição de líquen?",
+          "83": "Definição de polifilético?",
+          "84": "Detalhar consumo de gás",
+          "85": "Detalhar produção de gás",
+          "86": "Maiores estados de gás?",
+          "87": "Causa de maré?",
+          "88": "Definição de maré?",
+          "89": "Definição de dia de maré?",
+          "90": "Detalhar frequência de maré",
+          "91": "Detalhar tempo entre altas de maré",
+          "92": "Detalhar variação de altura de maré",
+          "93": "Quantidade de maré em dia?",
+          "94": "Definição de acidificação?",
+          "95": "Efeito de acidificação no oceano?",
+          "96": "Efeito de aquecimento global no oceano?",
+          "97": "Oceano: listar métodos de geração de energia",
+          "98": "Responsável por acidificação do oceano?",
+          "99": "Definição de biomar?",
+          "100": "Definição de cnudm?",
+          "101": "Definição de coral vivo?",
+          "102": "Definição de golfinho rotador?",
+          "103": "Definição de kai?",
+          "104": "Definição de leplac?",
+          "105": "Definição de linha de base?",
+          "106": "Definição de mar territorial?",
+          "107": "Definição de meros do brasil?",
+          "108": "Definição de milha náutica?",
+          "109": "Definição de planície abissal?",
+          "110": "Definição de plataforma continental?",
+          "111": "Definição do projeto albatroz?",
+          "112": "Definição do projeto baleia jubarte?",
+          "113": "Definição de remplac?",
+          "114": "Definição de revimar?",
+          "115": "Definição de talude continental?",
+          "116": "Definição de tamar?",
+          "117": "Definição de zona econômica exclusiva?",
+          "118": "Detalhar tamanho de zona econômica exclusiva",
+          "119": "Responsável por definição de mar territorial?",
+          "120": "Responsável por definição de zona econômica exclusiva?",
+          "121": "Definição de pesca?",
+          "122": "Definição de aquicultura?",
+          "123": "Definição de pesca extrativa?",
+          "124": "Definição de recurso pesqueiro?",
+          "125": "Detalhar tipo de pesca",
+          "126": "Detalhar tipo de peixe de pesca",
+          "127": "Maior estado de pesca?",
+          "128": "Maior país de pesca?",
+          "129": "Quantidade de pesca no Brasil?",
+          "130": "Definição de petróleo?",
+          "131": "Definição de derramamento de petróleo?",
+          "132": "Definição de onshore?",
+          "133": "Definição de plataforma de petróleo?",
+          "134": "Definição de pré sal?",
+          "135": "Detalhar composição de petróleo",
+          "136": "Detalhar consumo de petróleo",
+          "137": "Detalhar custo de petróleo",
+          "138": "Detalhar fim de petróleo",
+          "139": "Detalhar preço de petróleo",
+          "140": "Detalhar produção de petróleo",
+          "141": "Efeito de derramamento de petróleo no ambiente?",
+          "142": "Efeito de derramamento de petróleo em economia?",
+          "143": "Listar derivados de petróleo",
+          "144": "Listar empresas de petróleo",
+          "145": "Petróleo: listar tipos de plataforma",
+          "146": "Maior empresa de petróleo?",
+          "147": "Maior reserva de petróleo?",
+          "148": "Maiores campos de petróleo?",
+          "149": "Maiores derramamentos de petróleo?",
+          "150": "Maiores estados de petróleo?",
+          "151": "Maiores reservas de petróleo?",
+          "152": "Onde tem petróleo?",
+          "153": "Quantidade de petróleo no Brasil?",
+          "154": "Petróleo é recurso renovável?",
+          "155": "Efeito da poluição no oceano?",
+          "156": "Definição de tartarugas?",
+          "157": "Definição de cágado?",
+          "158": "Definição de jabuti?",
+          "159": "Definição de quelônio?",
+          "160": "Detalhar dieta de tartarugas",
+          "161": "Detalhar idade reprodutiva de tartarugas",
+          "162": "Detalhar longevidade de tartarugas",
+          "163": "Detalhar origem de tartarugas",
+          "164": "Detalhar peso de tartarugas",
+          "165": "Diferença entre jabuti e tartarugas?",
+          "166": "Explicar ciclo de vida de tartarugas",
+          "167": "Explicar reprodução de tartarugas",
+          "168": "Tartarugas: listar ameaças de extinção",
+          "169": "Listar espécies de tartarugas",
+          "170": "Tartarugas: listar espécies de extinção",
+          "171": "Listar predadores de tartarugas",
+          "172": "Onde tem tartarugas?",
+          "173": "Tartarugas: motivo para extinção?",
+          "174": "Jabuti é tartarugas?"
         }
       },
       "conditions": "welcome || conversation_start",
@@ -3426,9 +3517,9 @@
         ]
       },
       "context": {
-        "dica0": "<? new Random().nextInt(56) +0 ?>",
-        "dica1": "<? new Random().nextInt(56) +56 ?>",
-        "dica2": "<? new Random().nextInt(56) +112 ?>"
+        "dica0": "<? new Random().nextInt(58) +0 ?>",
+        "dica1": "<? new Random().nextInt(58) +58 ?>",
+        "dica2": "<? new Random().nextInt(58) +116 ?>"
       },
       "conditions": "#ajuda",
       "dialog_node": "node_7_1636770186943",
@@ -3729,7 +3820,7 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--detalhar-importância && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(importância) && $contexto:(amazônia azul) || @modificador:(detalhar) && @substantivo:(importância) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_5f816003499e4f91",
+      "dialog_node": "node_0a0ee51f9df34782",
       "previous_sibling": "node_3_1636423463289"
     },
     {
@@ -3749,8 +3840,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_43a560c7b90648f5",
-      "parent": "node_5f816003499e4f91"
+      "dialog_node": "node_d27fae10ca7a4a17",
+      "parent": "node_0a0ee51f9df34782"
     },
     {
       "type": "standard",
@@ -3772,8 +3863,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--detalhar-tamanho && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(tamanho) && $contexto:(amazônia azul) || @modificador:(detalhar) && @substantivo:(tamanho) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_2539d9d7ac2642f8",
-      "previous_sibling": "node_5f816003499e4f91"
+      "dialog_node": "node_ca96627853524788",
+      "previous_sibling": "node_0a0ee51f9df34782"
     },
     {
       "type": "standard",
@@ -3792,8 +3883,51 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c19aa7b4ddeb43aa",
-      "parent": "node_2539d9d7ac2642f8"
+      "dialog_node": "node_bc3938ce5eef4985",
+      "parent": "node_ca96627853524788"
+    },
+    {
+      "type": "standard",
+      "title": "Efeito de aquecimento global na Amazônia Azul?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O aquecimento das águas do oceano possui impactos diretos e indiretos na biota marinha. Por exemplo, corais, um dos alicerces fundamentais da vida no mar, são extremamente sensíveis a condições ambientais, como acidez e temperatura, sendo notável o declínio de suas colônias no último século. A acidificação e o aumento da temperatura dos oceanos estão ambos ligados ao acúmulo de gases de efeito estufa na atmosfera."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "amazonia azul"
+      },
+      "conditions": "#amazônia-azul--efeito-aquecimento-global && intent.confidence > 0.9 || @modificador:(efeito) && @substantivo:(aquecimento global) && $contexto:(amazônia azul) || @modificador:(efeito) && @substantivo:(aquecimento global) && @rótulos:(amazônia azul)",
+      "dialog_node": "node_d4ea8b12e8c9496a",
+      "previous_sibling": "node_ca96627853524788"
+    },
+    {
+      "type": "standard",
+      "title": "Fonte",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A fonte dessa resposta é: https://www.epa.gov/climate-indicators/oceans"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#fonte",
+      "dialog_node": "node_bc4b5f7642d94fca",
+      "parent": "node_d4ea8b12e8c9496a"
     },
     {
       "type": "standard",
@@ -3815,8 +3949,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--listar-recurso && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(recurso) && $contexto:(amazônia azul) || @modificador:(listar) && @substantivo:(recurso) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_b38f9bc3a21a49b7",
-      "previous_sibling": "node_2539d9d7ac2642f8"
+      "dialog_node": "node_18a2520b51c44205",
+      "previous_sibling": "node_d4ea8b12e8c9496a"
     },
     {
       "type": "standard",
@@ -3835,8 +3969,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_484b1d0b49ef4924",
-      "parent": "node_b38f9bc3a21a49b7"
+      "dialog_node": "node_328dd51fce024144",
+      "parent": "node_18a2520b51c44205"
     },
     {
       "type": "standard",
@@ -3858,8 +3992,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--listar-recursos-energéticos && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(recursos energéticos) && $contexto:(amazônia azul) || @modificador:(listar) && @substantivo:(recursos energéticos) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_81bf6339a14b453c",
-      "previous_sibling": "node_b38f9bc3a21a49b7"
+      "dialog_node": "node_883d02389ad04c8c",
+      "previous_sibling": "node_18a2520b51c44205"
     },
     {
       "type": "standard",
@@ -3878,8 +4012,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f61a777a2d3e4bfc",
-      "parent": "node_81bf6339a14b453c"
+      "dialog_node": "node_6a974b204a79488e",
+      "parent": "node_883d02389ad04c8c"
     },
     {
       "type": "standard",
@@ -3901,8 +4035,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--listar-recursos-minerais && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(recursos minerais) && $contexto:(amazônia azul) || @modificador:(listar) && @substantivo:(recursos minerais) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_57fcd843c2674046",
-      "previous_sibling": "node_81bf6339a14b453c"
+      "dialog_node": "node_66c4f7cccb0f4842",
+      "previous_sibling": "node_883d02389ad04c8c"
     },
     {
       "type": "standard",
@@ -3921,8 +4055,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_9490b29e67d14240",
-      "parent": "node_57fcd843c2674046"
+      "dialog_node": "node_df31a03f4a9e4b22",
+      "parent": "node_66c4f7cccb0f4842"
     },
     {
       "type": "standard",
@@ -3944,8 +4078,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--listar-recursos-vivos && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(recursos vivos) && $contexto:(amazônia azul) || @modificador:(listar) && @substantivo:(recursos vivos) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_d8ea0a3f41254171",
-      "previous_sibling": "node_57fcd843c2674046"
+      "dialog_node": "node_ea08baebb9be4cf6",
+      "previous_sibling": "node_66c4f7cccb0f4842"
     },
     {
       "type": "standard",
@@ -3964,8 +4098,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_8b4821d7f14b4bf3",
-      "parent": "node_d8ea0a3f41254171"
+      "dialog_node": "node_54fab7eee2384204",
+      "parent": "node_ea08baebb9be4cf6"
     },
     {
       "type": "standard",
@@ -3987,8 +4121,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--onde && intent.confidence > 0.9 || @modificador:(onde) && $contexto:(amazônia azul) || @modificador:(onde) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_229cf41e1c6945ec",
-      "previous_sibling": "node_d8ea0a3f41254171"
+      "dialog_node": "node_42d8be37b9174664",
+      "previous_sibling": "node_ea08baebb9be4cf6"
     },
     {
       "type": "standard",
@@ -4007,8 +4141,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c9673d26c3984f0d",
-      "parent": "node_229cf41e1c6945ec"
+      "dialog_node": "node_d1da8d5024144168",
+      "parent": "node_42d8be37b9174664"
     },
     {
       "type": "standard",
@@ -4030,8 +4164,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--porque-importância && intent.confidence > 0.9 || @modificador:(porque) && @recipiente:(importância) && $contexto:(amazônia azul) || @modificador:(porque) && @recipiente:(importância) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_cdec66699541443d",
-      "previous_sibling": "node_229cf41e1c6945ec"
+      "dialog_node": "node_512f3342fb0c4b5d",
+      "previous_sibling": "node_42d8be37b9174664"
     },
     {
       "type": "standard",
@@ -4050,8 +4184,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_142ccc926727425f",
-      "parent": "node_cdec66699541443d"
+      "dialog_node": "node_f500377a016e49ee",
+      "parent": "node_512f3342fb0c4b5d"
     },
     {
       "type": "standard",
@@ -4073,8 +4207,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--porque-nome && intent.confidence > 0.9 || @modificador:(porque) && @recipiente:(nome) && $contexto:(amazônia azul) || @modificador:(porque) && @recipiente:(nome) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_1d63357fa3294d75",
-      "previous_sibling": "node_cdec66699541443d"
+      "dialog_node": "node_b9754096380948fa",
+      "previous_sibling": "node_512f3342fb0c4b5d"
     },
     {
       "type": "standard",
@@ -4093,8 +4227,51 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_347cc2e350c544f4",
-      "parent": "node_1d63357fa3294d75"
+      "dialog_node": "node_6d5676ff2ed64f26",
+      "parent": "node_b9754096380948fa"
+    },
+    {
+      "type": "standard",
+      "title": "Amazônia azul: quantidade de espécies?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O ambiente marinho brasileiro é hidrológica e topologicamente complexo. Isso significa que é difícil contabilizar exatamente a quantidade de espécies. Um levantamento de estudos publicado em 2011 chegou a um total de 9103 espécies, sendo os principais grupos: crustáceos (1966 espécies), moluscos (1833 espécies) e peixes (1294 espécies)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "amazonia azul"
+      },
+      "conditions": "#amazônia-azul--quantidade-espécie && intent.confidence > 0.9 || @modificador:(quantidade) && @substantivo:(espécie) && $contexto:(amazônia azul) || @modificador:(quantidade) && @substantivo:(espécie) && @rótulos:(amazônia azul)",
+      "dialog_node": "node_16e966b6873d444d",
+      "previous_sibling": "node_b9754096380948fa"
+    },
+    {
+      "type": "standard",
+      "title": "Fonte",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A fonte dessa resposta é: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0014631"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#fonte",
+      "dialog_node": "node_975447c8aad64cd9",
+      "parent": "node_16e966b6873d444d"
     },
     {
       "type": "standard",
@@ -4116,8 +4293,8 @@
         "contexto": "amazonia azul"
       },
       "conditions": "#amazônia-azul--responsável-nome && intent.confidence > 0.9 || @modificador:(responsável) && @substantivo:(nome) && $contexto:(amazônia azul) || @modificador:(responsável) && @substantivo:(nome) && @rótulos:(amazônia azul)",
-      "dialog_node": "node_201e5806f2d445d4",
-      "previous_sibling": "node_1d63357fa3294d75"
+      "dialog_node": "node_a9e7f69f286444bb",
+      "previous_sibling": "node_16e966b6873d444d"
     },
     {
       "type": "standard",
@@ -4136,8 +4313,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a7b7e29ceb71466f",
-      "parent": "node_201e5806f2d445d4"
+      "dialog_node": "node_4d7e151d55864a1a",
+      "parent": "node_a9e7f69f286444bb"
     },
     {
       "type": "standard",
@@ -4159,8 +4336,8 @@
         "contexto": "animais marinhos"
       },
       "conditions": "#animais-marinhos--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(animais marinhos) || @modificador:(definição) && @rótulos:(animais marinhos)",
-      "dialog_node": "node_3f9acbc0c8384235",
-      "previous_sibling": "node_201e5806f2d445d4"
+      "dialog_node": "node_04ebbf5fbe9642d5",
+      "previous_sibling": "node_a9e7f69f286444bb"
     },
     {
       "type": "standard",
@@ -4179,8 +4356,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_150816ddabb64cf7",
-      "parent": "node_3f9acbc0c8384235"
+      "dialog_node": "node_d77037c3dc5f4f2c",
+      "parent": "node_04ebbf5fbe9642d5"
     },
     {
       "type": "standard",
@@ -4202,8 +4379,8 @@
         "contexto": "animais marinhos"
       },
       "conditions": "#animais-marinhos--listar && intent.confidence > 0.9 || @modificador:(listar) && $contexto:(animais marinhos) || @modificador:(listar) && @rótulos:(animais marinhos)",
-      "dialog_node": "node_d06eced885a14668",
-      "previous_sibling": "node_3f9acbc0c8384235"
+      "dialog_node": "node_d2fd79f5b7344214",
+      "previous_sibling": "node_04ebbf5fbe9642d5"
     },
     {
       "type": "standard",
@@ -4222,8 +4399,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_eae8ec92405644d9",
-      "parent": "node_d06eced885a14668"
+      "dialog_node": "node_1d7872ed82c1472d",
+      "parent": "node_d2fd79f5b7344214"
     },
     {
       "type": "standard",
@@ -4245,8 +4422,8 @@
         "contexto": "animais marinhos"
       },
       "conditions": "#animais-marinhos--listar-espécie-extinção && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(espécie) && @recipiente:(extinção) && $contexto:(animais marinhos) || @modificador:(listar) && @substantivo:(espécie) && @recipiente:(extinção) && @rótulos:(animais marinhos)",
-      "dialog_node": "node_b66840ba28864c13",
-      "previous_sibling": "node_d06eced885a14668"
+      "dialog_node": "node_915fdbc814104b13",
+      "previous_sibling": "node_d2fd79f5b7344214"
     },
     {
       "type": "standard",
@@ -4265,8 +4442,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_27f8b77001af44c0",
-      "parent": "node_b66840ba28864c13"
+      "dialog_node": "node_c69b828afb4a4b5b",
+      "parent": "node_915fdbc814104b13"
     },
     {
       "type": "standard",
@@ -4288,8 +4465,8 @@
         "contexto": "animais marinhos"
       },
       "conditions": "#animais-marinhos--maior && intent.confidence > 0.9 || @modificador:(maior) && $contexto:(animais marinhos) || @modificador:(maior) && @rótulos:(animais marinhos)",
-      "dialog_node": "node_27ebc2f78add44c0",
-      "previous_sibling": "node_b66840ba28864c13"
+      "dialog_node": "node_9427e25661fc4790",
+      "previous_sibling": "node_915fdbc814104b13"
     },
     {
       "type": "standard",
@@ -4308,8 +4485,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_eca7aaa1fac243e1",
-      "parent": "node_27ebc2f78add44c0"
+      "dialog_node": "node_be55ac68752b4dd6",
+      "parent": "node_9427e25661fc4790"
     },
     {
       "type": "standard",
@@ -4331,8 +4508,8 @@
         "contexto": "animais marinhos"
       },
       "conditions": "#animais-marinhos--maior-ameaça-extinção && intent.confidence > 0.9 || @modificador:(maior) && @substantivo:(ameaça) && @recipiente:(extinção) && $contexto:(animais marinhos) || @modificador:(maior) && @substantivo:(ameaça) && @recipiente:(extinção) && @rótulos:(animais marinhos)",
-      "dialog_node": "node_0d4fe7d5123e45b8",
-      "previous_sibling": "node_27ebc2f78add44c0"
+      "dialog_node": "node_88a3bc705b514cc2",
+      "previous_sibling": "node_9427e25661fc4790"
     },
     {
       "type": "standard",
@@ -4351,8 +4528,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ae2eb639416e47c9",
-      "parent": "node_0d4fe7d5123e45b8"
+      "dialog_node": "node_7f326b6bc84a471c",
+      "parent": "node_88a3bc705b514cc2"
     },
     {
       "type": "standard",
@@ -4374,8 +4551,8 @@
         "contexto": "animais marinhos"
       },
       "conditions": "#animais-marinhos--maiores-ameaça-extinção && intent.confidence > 0.9 || @modificador:(maiores) && @substantivo:(ameaça) && @recipiente:(extinção) && $contexto:(animais marinhos) || @modificador:(maiores) && @substantivo:(ameaça) && @recipiente:(extinção) && @rótulos:(animais marinhos)",
-      "dialog_node": "node_9d9cebf4fb2d4ca4",
-      "previous_sibling": "node_0d4fe7d5123e45b8"
+      "dialog_node": "node_2a929cc7582f46f5",
+      "previous_sibling": "node_88a3bc705b514cc2"
     },
     {
       "type": "standard",
@@ -4394,8 +4571,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_6e93b39f86314dde",
-      "parent": "node_9d9cebf4fb2d4ca4"
+      "dialog_node": "node_ca35ba6cfc4c47a2",
+      "parent": "node_2a929cc7582f46f5"
     },
     {
       "type": "standard",
@@ -4417,8 +4594,8 @@
         "contexto": "animais marinhos"
       },
       "conditions": "#animais-marinhos--quantidade-espécie-extinção && intent.confidence > 0.9 || @modificador:(quantidade) && @substantivo:(espécie) && @recipiente:(extinção) && $contexto:(animais marinhos) || @modificador:(quantidade) && @substantivo:(espécie) && @recipiente:(extinção) && @rótulos:(animais marinhos)",
-      "dialog_node": "node_03d5b5e80b764787",
-      "previous_sibling": "node_9d9cebf4fb2d4ca4"
+      "dialog_node": "node_7c813a0a47284bc5",
+      "previous_sibling": "node_2a929cc7582f46f5"
     },
     {
       "type": "standard",
@@ -4437,8 +4614,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f40b8b56a329459b",
-      "parent": "node_03d5b5e80b764787"
+      "dialog_node": "node_ce15a7c41a9c4f57",
+      "parent": "node_7c813a0a47284bc5"
     },
     {
       "type": "standard",
@@ -4460,8 +4637,8 @@
         "contexto": "baleias"
       },
       "conditions": "#baleias--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(baleias) || @modificador:(definição) && @rótulos:(baleias)",
-      "dialog_node": "node_250a54db48dc40ad",
-      "previous_sibling": "node_03d5b5e80b764787"
+      "dialog_node": "node_77b329d9a787487f",
+      "previous_sibling": "node_7c813a0a47284bc5"
     },
     {
       "type": "standard",
@@ -4480,8 +4657,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e85bb4af9f934c45",
-      "parent": "node_250a54db48dc40ad"
+      "dialog_node": "node_3c4cf416db78483b",
+      "parent": "node_77b329d9a787487f"
     },
     {
       "type": "standard",
@@ -4503,8 +4680,8 @@
         "contexto": "baleias"
       },
       "conditions": "#baleias--definição-baleia-jubarte && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(baleia jubarte) && $contexto:(baleias) || @modificador:(definição) && @recipiente:(baleia jubarte) && @rótulos:(baleias)",
-      "dialog_node": "node_78b73237d4f8494a",
-      "previous_sibling": "node_250a54db48dc40ad"
+      "dialog_node": "node_d6fbb0d7434d4887",
+      "previous_sibling": "node_77b329d9a787487f"
     },
     {
       "type": "standard",
@@ -4523,8 +4700,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_794f7c52b65343b9",
-      "parent": "node_78b73237d4f8494a"
+      "dialog_node": "node_c2ce3ada76f8452b",
+      "parent": "node_d6fbb0d7434d4887"
     },
     {
       "type": "standard",
@@ -4546,8 +4723,8 @@
         "contexto": "baleias"
       },
       "conditions": "#baleias--detalhar-tipo && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(tipo) && $contexto:(baleias) || @modificador:(detalhar) && @substantivo:(tipo) && @rótulos:(baleias)",
-      "dialog_node": "node_44aa2609bb614159",
-      "previous_sibling": "node_78b73237d4f8494a"
+      "dialog_node": "node_aa08fd808c664a10",
+      "previous_sibling": "node_d6fbb0d7434d4887"
     },
     {
       "type": "standard",
@@ -4566,8 +4743,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a5edf0dc28124f8c",
-      "parent": "node_44aa2609bb614159"
+      "dialog_node": "node_8f2b3365b99d4bd6",
+      "parent": "node_aa08fd808c664a10"
     },
     {
       "type": "standard",
@@ -4589,8 +4766,8 @@
         "contexto": "baleias"
       },
       "conditions": "#baleias--existe-brasil && intent.confidence > 0.9 || @modificador:(existe) && @recipiente:(brasil) && $contexto:(baleias) || @modificador:(existe) && @recipiente:(brasil) && @rótulos:(baleias)",
-      "dialog_node": "node_90cde87ef60f42d2",
-      "previous_sibling": "node_44aa2609bb614159"
+      "dialog_node": "node_e85d53ca38f842c9",
+      "previous_sibling": "node_aa08fd808c664a10"
     },
     {
       "type": "standard",
@@ -4609,8 +4786,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_4327c1e9dc5b4e9a",
-      "parent": "node_90cde87ef60f42d2"
+      "dialog_node": "node_f999647349044590",
+      "parent": "node_e85d53ca38f842c9"
     },
     {
       "type": "standard",
@@ -4632,8 +4809,8 @@
         "contexto": "baleias_turismo"
       },
       "conditions": "#baleias_turismo--onde-brasil && intent.confidence > 0.9 || @modificador:(onde) && @recipiente:(brasil) && $contexto:(baleias) || @modificador:(onde) && @recipiente:(brasil) && @rótulos:(baleias)",
-      "dialog_node": "node_86d6a08d53854774",
-      "previous_sibling": "node_90cde87ef60f42d2"
+      "dialog_node": "node_5e394ead42cd40d8",
+      "previous_sibling": "node_e85d53ca38f842c9"
     },
     {
       "type": "standard",
@@ -4652,8 +4829,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_14ee1c8279d94908",
-      "parent": "node_86d6a08d53854774"
+      "dialog_node": "node_a2c6f805391a43f2",
+      "parent": "node_5e394ead42cd40d8"
     },
     {
       "type": "standard",
@@ -4663,7 +4840,7 @@
           {
             "values": [
               {
-                "text": "Há diversos fatores envolvidos, como alterações na salinidade da água, poluição e, principalmente, mudanças de temperatura, sendo o aquecimento global um grande responsável."
+                "text": "Há diversos fatores envolvidos, como a acidificação da água, poluição e, principalmente, mudanças de temperatura, tornando o aquecimento global um grande responsável pela morte de recifes pelo mundo todo."
               }
             ],
             "response_type": "text",
@@ -4675,8 +4852,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--causa-branqueamento && intent.confidence > 0.9 || @modificador:(causa) && @recipiente:(branqueamento) && $contexto:(corais) || @modificador:(causa) && @recipiente:(branqueamento) && @rótulos:(corais)",
-      "dialog_node": "node_139df1b4148145a5",
-      "previous_sibling": "node_86d6a08d53854774"
+      "dialog_node": "node_1bc36c2dc474498c",
+      "previous_sibling": "node_5e394ead42cd40d8"
     },
     {
       "type": "standard",
@@ -4695,8 +4872,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_808acf30acda4486",
-      "parent": "node_139df1b4148145a5"
+      "dialog_node": "node_536caf72821c4dd0",
+      "parent": "node_1bc36c2dc474498c"
     },
     {
       "type": "standard",
@@ -4718,8 +4895,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(corais) || @modificador:(definição) && @rótulos:(corais)",
-      "dialog_node": "node_5cf33156f4564932",
-      "previous_sibling": "node_139df1b4148145a5"
+      "dialog_node": "node_c6415325a02f4b80",
+      "previous_sibling": "node_1bc36c2dc474498c"
     },
     {
       "type": "standard",
@@ -4738,8 +4915,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_90d985063da64e9c",
-      "parent": "node_5cf33156f4564932"
+      "dialog_node": "node_b3f5e16723374534",
+      "parent": "node_c6415325a02f4b80"
     },
     {
       "type": "standard",
@@ -4761,8 +4938,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--definição-branqueamento && intent.confidence > 0.9 || @modificador:(definição) && @substantivo:(branqueamento) && $contexto:(corais) || @modificador:(definição) && @substantivo:(branqueamento) && @rótulos:(corais)",
-      "dialog_node": "node_609cc576aae540d8",
-      "previous_sibling": "node_5cf33156f4564932"
+      "dialog_node": "node_19aa6d93dddb4509",
+      "previous_sibling": "node_c6415325a02f4b80"
     },
     {
       "type": "standard",
@@ -4781,8 +4958,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_7cb1f7e47d6843c3",
-      "parent": "node_609cc576aae540d8"
+      "dialog_node": "node_4b8a0d01820c41ce",
+      "parent": "node_19aa6d93dddb4509"
     },
     {
       "type": "standard",
@@ -4804,8 +4981,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--definição-recife && intent.confidence > 0.9 || @modificador:(definição) && @substantivo:(recife) && $contexto:(corais) || @modificador:(definição) && @substantivo:(recife) && @rótulos:(corais)",
-      "dialog_node": "node_d9bec03bac504b4e",
-      "previous_sibling": "node_609cc576aae540d8"
+      "dialog_node": "node_67c12edaaf574575",
+      "previous_sibling": "node_19aa6d93dddb4509"
     },
     {
       "type": "standard",
@@ -4824,8 +5001,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_737b8707df814032",
-      "parent": "node_d9bec03bac504b4e"
+      "dialog_node": "node_24aa8298e9e44ebb",
+      "parent": "node_67c12edaaf574575"
     },
     {
       "type": "standard",
@@ -4847,8 +5024,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--definição-recife-artificial && intent.confidence > 0.9 || @modificador:(definição) && @substantivo:(recife artificial) && $contexto:(corais) || @modificador:(definição) && @substantivo:(recife artificial) && @rótulos:(corais)",
-      "dialog_node": "node_4de8e574956c428c",
-      "previous_sibling": "node_d9bec03bac504b4e"
+      "dialog_node": "node_7917abd5e48c4cbb",
+      "previous_sibling": "node_67c12edaaf574575"
     },
     {
       "type": "standard",
@@ -4867,8 +5044,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a1a3dcdd080e46e0",
-      "parent": "node_4de8e574956c428c"
+      "dialog_node": "node_c774afc042314745",
+      "parent": "node_7917abd5e48c4cbb"
     },
     {
       "type": "standard",
@@ -4890,8 +5067,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--detalhar-composição && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(composição) && $contexto:(corais) || @modificador:(detalhar) && @substantivo:(composição) && @rótulos:(corais)",
-      "dialog_node": "node_741e7ce833444738",
-      "previous_sibling": "node_4de8e574956c428c"
+      "dialog_node": "node_c8c131ca5fb94a28",
+      "previous_sibling": "node_7917abd5e48c4cbb"
     },
     {
       "type": "standard",
@@ -4910,8 +5087,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_3138c1e4544d4c4d",
-      "parent": "node_741e7ce833444738"
+      "dialog_node": "node_e2d01d5ef52048a1",
+      "parent": "node_c8c131ca5fb94a28"
     },
     {
       "type": "standard",
@@ -4933,8 +5110,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--detalhar-dieta && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(dieta) && $contexto:(corais) || @modificador:(detalhar) && @substantivo:(dieta) && @rótulos:(corais)",
-      "dialog_node": "node_e8d48db1185847f8",
-      "previous_sibling": "node_741e7ce833444738"
+      "dialog_node": "node_4802a06911c848ec",
+      "previous_sibling": "node_c8c131ca5fb94a28"
     },
     {
       "type": "standard",
@@ -4953,8 +5130,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f7a465ccc6c34616",
-      "parent": "node_e8d48db1185847f8"
+      "dialog_node": "node_076c2f9591294687",
+      "parent": "node_4802a06911c848ec"
     },
     {
       "type": "standard",
@@ -4976,8 +5153,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--detalhar-importância && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(importância) && $contexto:(corais) || @modificador:(detalhar) && @substantivo:(importância) && @rótulos:(corais)",
-      "dialog_node": "node_2ced2bc0924c4b85",
-      "previous_sibling": "node_e8d48db1185847f8"
+      "dialog_node": "node_44c53edaa40c45d2",
+      "previous_sibling": "node_4802a06911c848ec"
     },
     {
       "type": "standard",
@@ -4996,8 +5173,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e52294a8229a4b9f",
-      "parent": "node_2ced2bc0924c4b85"
+      "dialog_node": "node_27b62414b5c84530",
+      "parent": "node_44c53edaa40c45d2"
     },
     {
       "type": "standard",
@@ -5019,8 +5196,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--detalhar-longevidade && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(longevidade) && $contexto:(corais) || @modificador:(detalhar) && @substantivo:(longevidade) && @rótulos:(corais)",
-      "dialog_node": "node_2cacfacb719a449e",
-      "previous_sibling": "node_2ced2bc0924c4b85"
+      "dialog_node": "node_9e44d64aa86d446c",
+      "previous_sibling": "node_44c53edaa40c45d2"
     },
     {
       "type": "standard",
@@ -5030,7 +5207,7 @@
           {
             "values": [
               {
-                "text": "As fontes dessa resposta são: https://doi.org/10.1073/PNAS.0810875106, https://sciencing.com/plants-biome-coral-reef-7223988.html"
+                "text": "As fontes dessa resposta são: https://sciencing.com/plants-biome-coral-reef-7223988.html, https://doi.org/10.1073/PNAS.0810875106"
               }
             ],
             "response_type": "text",
@@ -5039,8 +5216,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_7b6e37e9997a42a8",
-      "parent": "node_2cacfacb719a449e"
+      "dialog_node": "node_e8a02148691d443e",
+      "parent": "node_9e44d64aa86d446c"
     },
     {
       "type": "standard",
@@ -5062,8 +5239,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--detalhar-símbolo && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(símbolo) && $contexto:(corais) || @modificador:(detalhar) && @substantivo:(símbolo) && @rótulos:(corais)",
-      "dialog_node": "node_a8d4a66712dd46e1",
-      "previous_sibling": "node_2cacfacb719a449e"
+      "dialog_node": "node_47a72b9886a94102",
+      "previous_sibling": "node_9e44d64aa86d446c"
     },
     {
       "type": "standard",
@@ -5082,12 +5259,12 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a6168a90952c45b5",
-      "parent": "node_a8d4a66712dd46e1"
+      "dialog_node": "node_cb0d3a4c64ec4186",
+      "parent": "node_47a72b9886a94102"
     },
     {
       "type": "standard",
-      "title": "Corais: efeito do branqueamento no ambiente?",
+      "title": "Efeito do branqueamento de corais no ambiente?",
       "output": {
         "generic": [
           {
@@ -5105,8 +5282,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--efeito-branqueamento-ambiente && intent.confidence > 0.9 || @modificador:(efeito) && @substantivo:(branqueamento) && @recipiente:(ambiente) && $contexto:(corais) || @modificador:(efeito) && @substantivo:(branqueamento) && @recipiente:(ambiente) && @rótulos:(corais)",
-      "dialog_node": "node_cf0b0e3b25ea456c",
-      "previous_sibling": "node_a8d4a66712dd46e1"
+      "dialog_node": "node_b15028d629124b8c",
+      "previous_sibling": "node_47a72b9886a94102"
     },
     {
       "type": "standard",
@@ -5125,8 +5302,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f3635592aa674b6c",
-      "parent": "node_cf0b0e3b25ea456c"
+      "dialog_node": "node_f49119a541fd45be",
+      "parent": "node_b15028d629124b8c"
     },
     {
       "type": "standard",
@@ -5148,8 +5325,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--listar-iniciativa-governo && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(iniciativa) && @recipiente:(governo) && $contexto:(corais) || @modificador:(listar) && @substantivo:(iniciativa) && @recipiente:(governo) && @rótulos:(corais)",
-      "dialog_node": "node_06460d43217e47b6",
-      "previous_sibling": "node_cf0b0e3b25ea456c"
+      "dialog_node": "node_04d901cd98224357",
+      "previous_sibling": "node_b15028d629124b8c"
     },
     {
       "type": "standard",
@@ -5168,8 +5345,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_dd4beca8f7464aa2",
-      "parent": "node_06460d43217e47b6"
+      "dialog_node": "node_a0ef3217ea4a4454",
+      "parent": "node_04d901cd98224357"
     },
     {
       "type": "standard",
@@ -5191,8 +5368,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--listar-tipo && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(tipo) && $contexto:(corais) || @modificador:(listar) && @substantivo:(tipo) && @rótulos:(corais)",
-      "dialog_node": "node_14dbf420dad64365",
-      "previous_sibling": "node_06460d43217e47b6"
+      "dialog_node": "node_998e0b2d080a45a5",
+      "previous_sibling": "node_04d901cd98224357"
     },
     {
       "type": "standard",
@@ -5211,8 +5388,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b420aa0c3ec9455c",
-      "parent": "node_14dbf420dad64365"
+      "dialog_node": "node_7c84921241e04089",
+      "parent": "node_998e0b2d080a45a5"
     },
     {
       "type": "standard",
@@ -5234,8 +5411,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--maior-recife && intent.confidence > 0.9 || @modificador:(maior) && @substantivo:(recife) && $contexto:(corais) || @modificador:(maior) && @substantivo:(recife) && @rótulos:(corais)",
-      "dialog_node": "node_c7cfe6f64c0442a7",
-      "previous_sibling": "node_14dbf420dad64365"
+      "dialog_node": "node_c089c0300f3d45f1",
+      "previous_sibling": "node_998e0b2d080a45a5"
     },
     {
       "type": "standard",
@@ -5254,8 +5431,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b56a3bfc13c4457d",
-      "parent": "node_c7cfe6f64c0442a7"
+      "dialog_node": "node_09735e5205c04adc",
+      "parent": "node_c089c0300f3d45f1"
     },
     {
       "type": "standard",
@@ -5277,8 +5454,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--maior-recife-brasil && intent.confidence > 0.9 || @modificador:(maior) && @substantivo:(recife) && @recipiente:(brasil) && $contexto:(corais) || @modificador:(maior) && @substantivo:(recife) && @recipiente:(brasil) && @rótulos:(corais)",
-      "dialog_node": "node_4ee0f0efa0d34f6b",
-      "previous_sibling": "node_c7cfe6f64c0442a7"
+      "dialog_node": "node_8357a6bd06da4bd4",
+      "previous_sibling": "node_c089c0300f3d45f1"
     },
     {
       "type": "standard",
@@ -5297,8 +5474,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e096f55acc3e4081",
-      "parent": "node_4ee0f0efa0d34f6b"
+      "dialog_node": "node_974fba29eb2e4022",
+      "parent": "node_8357a6bd06da4bd4"
     },
     {
       "type": "standard",
@@ -5320,8 +5497,8 @@
         "contexto": "corais"
       },
       "conditions": "#corais--onde-recife && intent.confidence > 0.9 || @modificador:(onde) && @substantivo:(recife) && $contexto:(corais) || @modificador:(onde) && @substantivo:(recife) && @rótulos:(corais)",
-      "dialog_node": "node_4750ffb1d6d542fa",
-      "previous_sibling": "node_4ee0f0efa0d34f6b"
+      "dialog_node": "node_6b41f47a30c34b75",
+      "previous_sibling": "node_8357a6bd06da4bd4"
     },
     {
       "type": "standard",
@@ -5340,12 +5517,12 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_5f6c5bce0c734fc5",
-      "parent": "node_4750ffb1d6d542fa"
+      "dialog_node": "node_5880259d87664da6",
+      "parent": "node_6b41f47a30c34b75"
     },
     {
       "type": "standard",
-      "title": "Corais: efeito de turismo em corais?",
+      "title": "Efeito de turismo em corais?",
       "output": {
         "generic": [
           {
@@ -5363,8 +5540,8 @@
         "contexto": "corais_turismo"
       },
       "conditions": "#corais_turismo--efeito-turismo && intent.confidence > 0.9 || @modificador:(efeito) && @substantivo:(turismo) && $contexto:(corais) || @modificador:(efeito) && @substantivo:(turismo) && @rótulos:(corais)",
-      "dialog_node": "node_4cbe8b66abac4eeb",
-      "previous_sibling": "node_4750ffb1d6d542fa"
+      "dialog_node": "node_663ea51740014c93",
+      "previous_sibling": "node_6b41f47a30c34b75"
     },
     {
       "type": "standard",
@@ -5383,8 +5560,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f912076ce0f74e82",
-      "parent": "node_4cbe8b66abac4eeb"
+      "dialog_node": "node_5822a984719d4ef8",
+      "parent": "node_663ea51740014c93"
     },
     {
       "type": "standard",
@@ -5406,8 +5583,8 @@
         "contexto": "correntes oceanicas"
       },
       "conditions": "#correntes-oceânicas--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(correntes oceânicas) || @modificador:(definição) && @rótulos:(correntes oceânicas)",
-      "dialog_node": "node_aa6854fbb8ce4764",
-      "previous_sibling": "node_4cbe8b66abac4eeb"
+      "dialog_node": "node_cd5c629b55b14c1c",
+      "previous_sibling": "node_663ea51740014c93"
     },
     {
       "type": "standard",
@@ -5426,8 +5603,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ffdc244705c645aa",
-      "parent": "node_aa6854fbb8ce4764"
+      "dialog_node": "node_065ac9c4a97c47de",
+      "parent": "node_cd5c629b55b14c1c"
     },
     {
       "type": "standard",
@@ -5449,8 +5626,8 @@
         "contexto": "energia de mare"
       },
       "conditions": "#energia-de-maré--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(energia de maré) || @modificador:(definição) && @rótulos:(energia de maré)",
-      "dialog_node": "node_ecd0a7db0c274cfd",
-      "previous_sibling": "node_aa6854fbb8ce4764"
+      "dialog_node": "node_077603a42d124aa2",
+      "previous_sibling": "node_cd5c629b55b14c1c"
     },
     {
       "type": "standard",
@@ -5469,12 +5646,12 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b6fe0643f060470b",
-      "parent": "node_ecd0a7db0c274cfd"
+      "dialog_node": "node_96a9a5345eff4eb8",
+      "parent": "node_077603a42d124aa2"
     },
     {
       "type": "standard",
-      "title": "Energia de maré: efeito no ambiente?",
+      "title": "Efeito de energia de maré no ambiente?",
       "output": {
         "generic": [
           {
@@ -5492,8 +5669,8 @@
         "contexto": "energia de mare"
       },
       "conditions": "#energia-de-maré--efeito-ambiente && intent.confidence > 0.9 || @modificador:(efeito) && @recipiente:(ambiente) && $contexto:(energia de maré) || @modificador:(efeito) && @recipiente:(ambiente) && @rótulos:(energia de maré)",
-      "dialog_node": "node_83e2ea704c9344df",
-      "previous_sibling": "node_ecd0a7db0c274cfd"
+      "dialog_node": "node_f876b534dddb4149",
+      "previous_sibling": "node_077603a42d124aa2"
     },
     {
       "type": "standard",
@@ -5512,8 +5689,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_50fdf17143894738",
-      "parent": "node_83e2ea704c9344df"
+      "dialog_node": "node_407611e41bf14baa",
+      "parent": "node_f876b534dddb4149"
     },
     {
       "type": "standard",
@@ -5535,8 +5712,8 @@
         "contexto": "energia de mare"
       },
       "conditions": "#energia-de-maré--explicar && intent.confidence > 0.9 || @modificador:(explicar) && $contexto:(energia de maré) || @modificador:(explicar) && @rótulos:(energia de maré)",
-      "dialog_node": "node_054b4b4e9ac54e3b",
-      "previous_sibling": "node_83e2ea704c9344df"
+      "dialog_node": "node_e41f904c16884ce9",
+      "previous_sibling": "node_f876b534dddb4149"
     },
     {
       "type": "standard",
@@ -5555,8 +5732,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_20eab1e715974e76",
-      "parent": "node_054b4b4e9ac54e3b"
+      "dialog_node": "node_2e07e12c7bd046b1",
+      "parent": "node_e41f904c16884ce9"
     },
     {
       "type": "standard",
@@ -5578,8 +5755,8 @@
         "contexto": "energia de mare"
       },
       "conditions": "#energia-de-maré--listar-contras && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(contras) && $contexto:(energia de maré) || @modificador:(listar) && @substantivo:(contras) && @rótulos:(energia de maré)",
-      "dialog_node": "node_4aae3b119e014c23",
-      "previous_sibling": "node_054b4b4e9ac54e3b"
+      "dialog_node": "node_d82c93fb264140b1",
+      "previous_sibling": "node_e41f904c16884ce9"
     },
     {
       "type": "standard",
@@ -5598,8 +5775,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_85aa7b03e21d40e0",
-      "parent": "node_4aae3b119e014c23"
+      "dialog_node": "node_768451ddd3c64a53",
+      "parent": "node_d82c93fb264140b1"
     },
     {
       "type": "standard",
@@ -5621,8 +5798,8 @@
         "contexto": "energia de mare"
       },
       "conditions": "#energia-de-maré--listar-prós && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(prós) && $contexto:(energia de maré) || @modificador:(listar) && @substantivo:(prós) && @rótulos:(energia de maré)",
-      "dialog_node": "node_a3ddca05b4fd4f48",
-      "previous_sibling": "node_4aae3b119e014c23"
+      "dialog_node": "node_022eb49261dc43f6",
+      "previous_sibling": "node_d82c93fb264140b1"
     },
     {
       "type": "standard",
@@ -5641,8 +5818,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_4d002b3ae5304731",
-      "parent": "node_a3ddca05b4fd4f48"
+      "dialog_node": "node_457cbbf8c25d4c9c",
+      "parent": "node_022eb49261dc43f6"
     },
     {
       "type": "standard",
@@ -5664,8 +5841,8 @@
         "contexto": "energia de mare"
       },
       "conditions": "#energia-de-maré--listar-prós-e-contras && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(prós e contras) && $contexto:(energia de maré) || @modificador:(listar) && @substantivo:(prós e contras) && @rótulos:(energia de maré)",
-      "dialog_node": "node_b05b72842b3b4734",
-      "previous_sibling": "node_a3ddca05b4fd4f48"
+      "dialog_node": "node_18c5f255bc1a4c16",
+      "previous_sibling": "node_022eb49261dc43f6"
     },
     {
       "type": "standard",
@@ -5684,8 +5861,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_2bcfca7a25174a79",
-      "parent": "node_b05b72842b3b4734"
+      "dialog_node": "node_de451d51978c424c",
+      "parent": "node_18c5f255bc1a4c16"
     },
     {
       "type": "standard",
@@ -5707,8 +5884,8 @@
         "contexto": "energia de mare"
       },
       "conditions": "#energia-de-maré--onde && intent.confidence > 0.9 || @modificador:(onde) && $contexto:(energia de maré) || @modificador:(onde) && @rótulos:(energia de maré)",
-      "dialog_node": "node_39ab6940eabb491f",
-      "previous_sibling": "node_b05b72842b3b4734"
+      "dialog_node": "node_984400a527dc4675",
+      "previous_sibling": "node_18c5f255bc1a4c16"
     },
     {
       "type": "standard",
@@ -5727,8 +5904,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f5873e5f68e945db",
-      "parent": "node_39ab6940eabb491f"
+      "dialog_node": "node_b9f25dc848214437",
+      "parent": "node_984400a527dc4675"
     },
     {
       "type": "standard",
@@ -5750,8 +5927,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-actinopterígeo && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(actinopterígeo)",
-      "dialog_node": "node_bc11d2228794468a",
-      "previous_sibling": "node_39ab6940eabb491f"
+      "dialog_node": "node_6ad4d7b78d25416a",
+      "previous_sibling": "node_984400a527dc4675"
     },
     {
       "type": "standard",
@@ -5770,8 +5947,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f74b771ff0e840ee",
-      "parent": "node_bc11d2228794468a"
+      "dialog_node": "node_9b0ea1b52db949c0",
+      "parent": "node_6ad4d7b78d25416a"
     },
     {
       "type": "standard",
@@ -5793,8 +5970,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-albatroz && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(albatroz)",
-      "dialog_node": "node_dd1687d5d9704c7b",
-      "previous_sibling": "node_bc11d2228794468a"
+      "dialog_node": "node_1c0fc8e580514e92",
+      "previous_sibling": "node_6ad4d7b78d25416a"
     },
     {
       "type": "standard",
@@ -5804,7 +5981,7 @@
           {
             "values": [
               {
-                "text": "As fontes dessa resposta são: https://projetoalbatroz.org.br/sobre-o-projeto-albatroz/, https://pt.wikipedia.org/wiki/Albatroz"
+                "text": "As fontes dessa resposta são: https://pt.wikipedia.org/wiki/Albatroz, https://projetoalbatroz.org.br/sobre-o-projeto-albatroz/"
               }
             ],
             "response_type": "text",
@@ -5813,8 +5990,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_16fd0718447a45d3",
-      "parent": "node_dd1687d5d9704c7b"
+      "dialog_node": "node_cd7135c5206a46ac",
+      "parent": "node_1c0fc8e580514e92"
     },
     {
       "type": "standard",
@@ -5836,8 +6013,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-anêmona && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(anêmona)",
-      "dialog_node": "node_5685fab759674666",
-      "previous_sibling": "node_dd1687d5d9704c7b"
+      "dialog_node": "node_cd0545e63db3431c",
+      "previous_sibling": "node_1c0fc8e580514e92"
     },
     {
       "type": "standard",
@@ -5856,8 +6033,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_eacad01c99c8413f",
-      "parent": "node_5685fab759674666"
+      "dialog_node": "node_3bca182367c54ed8",
+      "parent": "node_cd0545e63db3431c"
     },
     {
       "type": "standard",
@@ -5879,8 +6056,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-cnida && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(cnida)",
-      "dialog_node": "node_3113411e89f64bf6",
-      "previous_sibling": "node_5685fab759674666"
+      "dialog_node": "node_44ac2702be8e4d00",
+      "previous_sibling": "node_cd0545e63db3431c"
     },
     {
       "type": "standard",
@@ -5899,8 +6076,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_fc4f31ae2ee145e8",
-      "parent": "node_3113411e89f64bf6"
+      "dialog_node": "node_3deaea2becf44a46",
+      "parent": "node_44ac2702be8e4d00"
     },
     {
       "type": "standard",
@@ -5922,8 +6099,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-cnidário && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(cnidário)",
-      "dialog_node": "node_6e834adbeef8428c",
-      "previous_sibling": "node_3113411e89f64bf6"
+      "dialog_node": "node_c0813b279d4e4679",
+      "previous_sibling": "node_44ac2702be8e4d00"
     },
     {
       "type": "standard",
@@ -5942,8 +6119,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_dbdddc1763a64cf2",
-      "parent": "node_6e834adbeef8428c"
+      "dialog_node": "node_6dc104c77d1e4682",
+      "parent": "node_c0813b279d4e4679"
     },
     {
       "type": "standard",
@@ -5965,8 +6142,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-cordado && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(cordado)",
-      "dialog_node": "node_007359dce71d4f95",
-      "previous_sibling": "node_6e834adbeef8428c"
+      "dialog_node": "node_52ec875b07fd403b",
+      "previous_sibling": "node_c0813b279d4e4679"
     },
     {
       "type": "standard",
@@ -5985,8 +6162,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_1a8f5c16b2334a34",
-      "parent": "node_007359dce71d4f95"
+      "dialog_node": "node_188b95ae13d24da2",
+      "parent": "node_52ec875b07fd403b"
     },
     {
       "type": "standard",
@@ -6008,8 +6185,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-crustáceo && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(crustáceo)",
-      "dialog_node": "node_7b64d938bab2476e",
-      "previous_sibling": "node_007359dce71d4f95"
+      "dialog_node": "node_7bf59e7c47994565",
+      "previous_sibling": "node_52ec875b07fd403b"
     },
     {
       "type": "standard",
@@ -6028,8 +6205,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_75172bc4e5e54e5d",
-      "parent": "node_7b64d938bab2476e"
+      "dialog_node": "node_601a848149954f8a",
+      "parent": "node_7bf59e7c47994565"
     },
     {
       "type": "standard",
@@ -6051,8 +6228,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-ectotérmico && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(ectotérmico)",
-      "dialog_node": "node_d041f46c466c423a",
-      "previous_sibling": "node_7b64d938bab2476e"
+      "dialog_node": "node_be1c89424abd42a9",
+      "previous_sibling": "node_7bf59e7c47994565"
     },
     {
       "type": "standard",
@@ -6071,8 +6248,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_47fd03e2155240e7",
-      "parent": "node_d041f46c466c423a"
+      "dialog_node": "node_3361ec424aa64758",
+      "parent": "node_be1c89424abd42a9"
     },
     {
       "type": "standard",
@@ -6094,8 +6271,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-elasmobranchii && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(elasmobranchii)",
-      "dialog_node": "node_dd22ec0f57174bf7",
-      "previous_sibling": "node_d041f46c466c423a"
+      "dialog_node": "node_b5e8d957615f44fb",
+      "previous_sibling": "node_be1c89424abd42a9"
     },
     {
       "type": "standard",
@@ -6114,8 +6291,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_3dc498ac1a7a49c7",
-      "parent": "node_dd22ec0f57174bf7"
+      "dialog_node": "node_07dd6945f4f54267",
+      "parent": "node_b5e8d957615f44fb"
     },
     {
       "type": "standard",
@@ -6137,8 +6314,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-filo && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(filo)",
-      "dialog_node": "node_8157df62fd24430d",
-      "previous_sibling": "node_dd22ec0f57174bf7"
+      "dialog_node": "node_ea4f2b66f8fd4f50",
+      "previous_sibling": "node_b5e8d957615f44fb"
     },
     {
       "type": "standard",
@@ -6157,8 +6334,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c34061965caa4083",
-      "parent": "node_8157df62fd24430d"
+      "dialog_node": "node_2804c6718185434c",
+      "parent": "node_ea4f2b66f8fd4f50"
     },
     {
       "type": "standard",
@@ -6180,8 +6357,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-fitoplâncton && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(fitoplâncton)",
-      "dialog_node": "node_a8c630df09c6407f",
-      "previous_sibling": "node_8157df62fd24430d"
+      "dialog_node": "node_cbc8e707a53b4494",
+      "previous_sibling": "node_ea4f2b66f8fd4f50"
     },
     {
       "type": "standard",
@@ -6200,8 +6377,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b47410c5cfdf4ad0",
-      "parent": "node_a8c630df09c6407f"
+      "dialog_node": "node_1d561d11466e4fd6",
+      "parent": "node_cbc8e707a53b4494"
     },
     {
       "type": "standard",
@@ -6223,8 +6400,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-golfinho-rotador && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(golfinho rotador)",
-      "dialog_node": "node_bf4d658048af4d4e",
-      "previous_sibling": "node_a8c630df09c6407f"
+      "dialog_node": "node_12747d344ce24280",
+      "previous_sibling": "node_cbc8e707a53b4494"
     },
     {
       "type": "standard",
@@ -6243,8 +6420,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b5a1ecaf22a64476",
-      "parent": "node_bf4d658048af4d4e"
+      "dialog_node": "node_1691d41e88784d35",
+      "parent": "node_12747d344ce24280"
     },
     {
       "type": "standard",
@@ -6266,8 +6443,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-hidra && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(hidra)",
-      "dialog_node": "node_51384d7d5fde44d2",
-      "previous_sibling": "node_bf4d658048af4d4e"
+      "dialog_node": "node_cf2d0a4ca2454f8b",
+      "previous_sibling": "node_12747d344ce24280"
     },
     {
       "type": "standard",
@@ -6286,8 +6463,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_053da8aa70ab486c",
-      "parent": "node_51384d7d5fde44d2"
+      "dialog_node": "node_403346c3f8e6410c",
+      "parent": "node_cf2d0a4ca2454f8b"
     },
     {
       "type": "standard",
@@ -6309,8 +6486,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-medusa && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(medusa)",
-      "dialog_node": "node_b4657f61d8474121",
-      "previous_sibling": "node_51384d7d5fde44d2"
+      "dialog_node": "node_07e1bb4736c6478b",
+      "previous_sibling": "node_cf2d0a4ca2454f8b"
     },
     {
       "type": "standard",
@@ -6329,8 +6506,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_2d7a87d30c3340b9",
-      "parent": "node_b4657f61d8474121"
+      "dialog_node": "node_63923b1fea1748ff",
+      "parent": "node_07e1bb4736c6478b"
     },
     {
       "type": "standard",
@@ -6352,8 +6529,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-molusco && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(molusco)",
-      "dialog_node": "node_313ce7f3141f4bfc",
-      "previous_sibling": "node_b4657f61d8474121"
+      "dialog_node": "node_f9ade09d04054e06",
+      "previous_sibling": "node_07e1bb4736c6478b"
     },
     {
       "type": "standard",
@@ -6372,8 +6549,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_60b82f453c174d07",
-      "parent": "node_313ce7f3141f4bfc"
+      "dialog_node": "node_a6ef950f01544ee5",
+      "parent": "node_f9ade09d04054e06"
     },
     {
       "type": "standard",
@@ -6395,8 +6572,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-peixe && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(peixe)",
-      "dialog_node": "node_d55c6ba204764960",
-      "previous_sibling": "node_313ce7f3141f4bfc"
+      "dialog_node": "node_c04bc6e0338243b2",
+      "previous_sibling": "node_f9ade09d04054e06"
     },
     {
       "type": "standard",
@@ -6415,8 +6592,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_8f2e0a96b9b64b29",
-      "parent": "node_d55c6ba204764960"
+      "dialog_node": "node_f581dbb1a7c8441c",
+      "parent": "node_c04bc6e0338243b2"
     },
     {
       "type": "standard",
@@ -6438,8 +6615,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-plâncton && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(plâncton)",
-      "dialog_node": "node_a6d6e77f26dd44dc",
-      "previous_sibling": "node_d55c6ba204764960"
+      "dialog_node": "node_1e433de44a2f4f84",
+      "previous_sibling": "node_c04bc6e0338243b2"
     },
     {
       "type": "standard",
@@ -6458,8 +6635,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_cab9c54b9a0744d3",
-      "parent": "node_a6d6e77f26dd44dc"
+      "dialog_node": "node_05f73f7c94ab42fc",
+      "parent": "node_1e433de44a2f4f84"
     },
     {
       "type": "standard",
@@ -6481,8 +6658,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-procellariiforme && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(procellariiforme)",
-      "dialog_node": "node_f0bf3de081b14f54",
-      "previous_sibling": "node_a6d6e77f26dd44dc"
+      "dialog_node": "node_7a714409b5e24b18",
+      "previous_sibling": "node_1e433de44a2f4f84"
     },
     {
       "type": "standard",
@@ -6492,7 +6669,7 @@
           {
             "values": [
               {
-                "text": "As fontes dessa resposta são: https://pt.wikipedia.org/wiki/Procellariiformes, https://pt.wikipedia.org/wiki/Albatroz"
+                "text": "As fontes dessa resposta são: https://pt.wikipedia.org/wiki/Albatroz, https://pt.wikipedia.org/wiki/Procellariiformes"
               }
             ],
             "response_type": "text",
@@ -6501,8 +6678,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_82d38d60104d4304",
-      "parent": "node_f0bf3de081b14f54"
+      "dialog_node": "node_8f94da780d8045b1",
+      "parent": "node_7a714409b5e24b18"
     },
     {
       "type": "standard",
@@ -6524,8 +6701,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-pétrel && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(pétrel)",
-      "dialog_node": "node_9a282983eb774721",
-      "previous_sibling": "node_f0bf3de081b14f54"
+      "dialog_node": "node_cccaecdff3c44096",
+      "previous_sibling": "node_7a714409b5e24b18"
     },
     {
       "type": "standard",
@@ -6544,8 +6721,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_850e5335a70a43fc",
-      "parent": "node_9a282983eb774721"
+      "dialog_node": "node_588ffa8f124b4e69",
+      "parent": "node_cccaecdff3c44096"
     },
     {
       "type": "standard",
@@ -6567,8 +6744,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-pólipo && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(pólipo)",
-      "dialog_node": "node_2d7b5c8deb72447b",
-      "previous_sibling": "node_9a282983eb774721"
+      "dialog_node": "node_2f61811870834236",
+      "previous_sibling": "node_cccaecdff3c44096"
     },
     {
       "type": "standard",
@@ -6587,8 +6764,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_99fd2bb638204082",
-      "parent": "node_2d7b5c8deb72447b"
+      "dialog_node": "node_c2480e9b4ca34747",
+      "parent": "node_2f61811870834236"
     },
     {
       "type": "standard",
@@ -6610,8 +6787,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-salpa && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(salpa)",
-      "dialog_node": "node_d01a360c734b4f3e",
-      "previous_sibling": "node_2d7b5c8deb72447b"
+      "dialog_node": "node_917c015bd15b4a10",
+      "previous_sibling": "node_2f61811870834236"
     },
     {
       "type": "standard",
@@ -6630,8 +6807,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a12fa103dbc142b4",
-      "parent": "node_d01a360c734b4f3e"
+      "dialog_node": "node_11c5d5e52283404c",
+      "parent": "node_917c015bd15b4a10"
     },
     {
       "type": "standard",
@@ -6653,8 +6830,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-tubarão && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(tubarão)",
-      "dialog_node": "node_6444616d084b4711",
-      "previous_sibling": "node_d01a360c734b4f3e"
+      "dialog_node": "node_41bbd8da83774bcb",
+      "previous_sibling": "node_917c015bd15b4a10"
     },
     {
       "type": "standard",
@@ -6673,8 +6850,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_4b3e763ea7e84e18",
-      "parent": "node_6444616d084b4711"
+      "dialog_node": "node_eb059696af744452",
+      "parent": "node_41bbd8da83774bcb"
     },
     {
       "type": "standard",
@@ -6696,8 +6873,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-tunicado && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(tunicado)",
-      "dialog_node": "node_f6a8943178414789",
-      "previous_sibling": "node_6444616d084b4711"
+      "dialog_node": "node_55bf46c06eef40ee",
+      "previous_sibling": "node_41bbd8da83774bcb"
     },
     {
       "type": "standard",
@@ -6716,8 +6893,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_cd5b21360717454c",
-      "parent": "node_f6a8943178414789"
+      "dialog_node": "node_e38cf886ed3c40d3",
+      "parent": "node_55bf46c06eef40ee"
     },
     {
       "type": "standard",
@@ -6739,8 +6916,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--definição-zooplâncton && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(zooplâncton)",
-      "dialog_node": "node_12a6b91963614eba",
-      "previous_sibling": "node_f6a8943178414789"
+      "dialog_node": "node_3eba36b9b27f4fa1",
+      "previous_sibling": "node_55bf46c06eef40ee"
     },
     {
       "type": "standard",
@@ -6759,8 +6936,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ee6000591f294322",
-      "parent": "node_12a6b91963614eba"
+      "dialog_node": "node_de0b011116164934",
+      "parent": "node_3eba36b9b27f4fa1"
     },
     {
       "type": "standard",
@@ -6782,8 +6959,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--detalhar-características-crustáceo && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(características) && @recipiente:(crustáceo)",
-      "dialog_node": "node_7bfbddc12cfe4e8e",
-      "previous_sibling": "node_12a6b91963614eba"
+      "dialog_node": "node_8fb0909c1ba54803",
+      "previous_sibling": "node_3eba36b9b27f4fa1"
     },
     {
       "type": "standard",
@@ -6802,8 +6979,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_2ad274fc93b741ec",
-      "parent": "node_7bfbddc12cfe4e8e"
+      "dialog_node": "node_ce3059d8151a47b1",
+      "parent": "node_8fb0909c1ba54803"
     },
     {
       "type": "standard",
@@ -6825,8 +7002,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--existe-golfinho-brasil && intent.confidence > 0.9 || @modificador:(existe) && @substantivo:(golfinho) && @recipiente:(brasil)",
-      "dialog_node": "node_1d04b3444bc745db",
-      "previous_sibling": "node_7bfbddc12cfe4e8e"
+      "dialog_node": "node_a12dcb0eeaf943ed",
+      "previous_sibling": "node_8fb0909c1ba54803"
     },
     {
       "type": "standard",
@@ -6845,8 +7022,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a48a6356d4d24ee7",
-      "parent": "node_1d04b3444bc745db"
+      "dialog_node": "node_c77f4c5939b442ad",
+      "parent": "node_a12dcb0eeaf943ed"
     },
     {
       "type": "standard",
@@ -6868,8 +7045,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--existe-tubarão-brasil && intent.confidence > 0.9 || @modificador:(existe) && @substantivo:(tubarão) && @recipiente:(brasil)",
-      "dialog_node": "node_0ab5e73d86ce4322",
-      "previous_sibling": "node_1d04b3444bc745db"
+      "dialog_node": "node_b6360a32507d4fe7",
+      "previous_sibling": "node_a12dcb0eeaf943ed"
     },
     {
       "type": "standard",
@@ -6888,8 +7065,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_91e90489ba0c4e1f",
-      "parent": "node_0ab5e73d86ce4322"
+      "dialog_node": "node_b5d84867db5044e4",
+      "parent": "node_b6360a32507d4fe7"
     },
     {
       "type": "standard",
@@ -6911,8 +7088,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--listar-cnidário && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(cnidário)",
-      "dialog_node": "node_5af3a2e9874e443b",
-      "previous_sibling": "node_0ab5e73d86ce4322"
+      "dialog_node": "node_0a2d2bffb7d648a0",
+      "previous_sibling": "node_b6360a32507d4fe7"
     },
     {
       "type": "standard",
@@ -6931,8 +7108,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b421a34ba55b4c89",
-      "parent": "node_5af3a2e9874e443b"
+      "dialog_node": "node_868a9965bc8e49e7",
+      "parent": "node_0a2d2bffb7d648a0"
     },
     {
       "type": "standard",
@@ -6954,8 +7131,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--listar-crustáceo && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(crustáceo)",
-      "dialog_node": "node_659fbff068d54456",
-      "previous_sibling": "node_5af3a2e9874e443b"
+      "dialog_node": "node_d667a8c17b084e24",
+      "previous_sibling": "node_0a2d2bffb7d648a0"
     },
     {
       "type": "standard",
@@ -6974,8 +7151,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_019cda08eed94792",
-      "parent": "node_659fbff068d54456"
+      "dialog_node": "node_62132ea585f8445b",
+      "parent": "node_d667a8c17b084e24"
     },
     {
       "type": "standard",
@@ -6997,8 +7174,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--listar-molusco && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(molusco)",
-      "dialog_node": "node_cf3acaa31f194bef",
-      "previous_sibling": "node_659fbff068d54456"
+      "dialog_node": "node_b8d37c569c454a0c",
+      "previous_sibling": "node_d667a8c17b084e24"
     },
     {
       "type": "standard",
@@ -7017,8 +7194,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_969ea95879aa4f3c",
-      "parent": "node_cf3acaa31f194bef"
+      "dialog_node": "node_95715968948c4763",
+      "parent": "node_b8d37c569c454a0c"
     },
     {
       "type": "standard",
@@ -7040,8 +7217,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--listar-tipo-golfinho && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(tipo) && @recipiente:(golfinho)",
-      "dialog_node": "node_304cc22d3e5d42c3",
-      "previous_sibling": "node_cf3acaa31f194bef"
+      "dialog_node": "node_7891d5aefb144cd8",
+      "previous_sibling": "node_b8d37c569c454a0c"
     },
     {
       "type": "standard",
@@ -7060,8 +7237,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_392e9ca3c55b4e51",
-      "parent": "node_304cc22d3e5d42c3"
+      "dialog_node": "node_9b75b216c68641f3",
+      "parent": "node_7891d5aefb144cd8"
     },
     {
       "type": "standard",
@@ -7083,8 +7260,8 @@
         "contexto": "fauna"
       },
       "conditions": "#fauna--é-tubarão-peixe && intent.confidence > 0.9 || @modificador:(é) && @substantivo:(tubarão) && @recipiente:(peixe)",
-      "dialog_node": "node_d9afb2d3197144ca",
-      "previous_sibling": "node_304cc22d3e5d42c3"
+      "dialog_node": "node_635129fd37884957",
+      "previous_sibling": "node_7891d5aefb144cd8"
     },
     {
       "type": "standard",
@@ -7103,8 +7280,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_cfd2af9728da43fc",
-      "parent": "node_d9afb2d3197144ca"
+      "dialog_node": "node_334f4bee77134838",
+      "parent": "node_635129fd37884957"
     },
     {
       "type": "standard",
@@ -7126,8 +7303,8 @@
         "contexto": "flora"
       },
       "conditions": "#flora--definição-alga && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(alga)",
-      "dialog_node": "node_829d10118c6d4e1b",
-      "previous_sibling": "node_d9afb2d3197144ca"
+      "dialog_node": "node_bb0fa456a64840e2",
+      "previous_sibling": "node_635129fd37884957"
     },
     {
       "type": "standard",
@@ -7146,8 +7323,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_055d522280c84445",
-      "parent": "node_829d10118c6d4e1b"
+      "dialog_node": "node_a9dc4c26b9c84a83",
+      "parent": "node_bb0fa456a64840e2"
     },
     {
       "type": "standard",
@@ -7169,8 +7346,8 @@
         "contexto": "flora_fauna"
       },
       "conditions": "#flora_fauna--definição-líquen && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(líquen)",
-      "dialog_node": "node_60ed125f751645d6",
-      "previous_sibling": "node_829d10118c6d4e1b"
+      "dialog_node": "node_699a813b67af4f0d",
+      "previous_sibling": "node_bb0fa456a64840e2"
     },
     {
       "type": "standard",
@@ -7189,8 +7366,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e39abf567b9940ce",
-      "parent": "node_60ed125f751645d6"
+      "dialog_node": "node_3ffc6810a65a4071",
+      "parent": "node_699a813b67af4f0d"
     },
     {
       "type": "standard",
@@ -7212,8 +7389,8 @@
         "contexto": "flora_fauna"
       },
       "conditions": "#flora_fauna--definição-polifilético && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(polifilético)",
-      "dialog_node": "node_15a3e2dd67414d7a",
-      "previous_sibling": "node_60ed125f751645d6"
+      "dialog_node": "node_b45c1c45f7754abe",
+      "previous_sibling": "node_699a813b67af4f0d"
     },
     {
       "type": "standard",
@@ -7232,8 +7409,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_1dbc794c88174fcd",
-      "parent": "node_15a3e2dd67414d7a"
+      "dialog_node": "node_e6e85a5e313e42d5",
+      "parent": "node_b45c1c45f7754abe"
     },
     {
       "type": "standard",
@@ -7255,8 +7432,8 @@
         "contexto": "gas"
       },
       "conditions": "#gás--detalhar-consumo && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(consumo) && $contexto:(gás) || @modificador:(detalhar) && @substantivo:(consumo) && @rótulos:(gás)",
-      "dialog_node": "node_2cc828239cec4313",
-      "previous_sibling": "node_15a3e2dd67414d7a"
+      "dialog_node": "node_e3453ac1e2f44e62",
+      "previous_sibling": "node_b45c1c45f7754abe"
     },
     {
       "type": "standard",
@@ -7275,8 +7452,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c0b89a7f70124a8a",
-      "parent": "node_2cc828239cec4313"
+      "dialog_node": "node_f59ff40e79074b11",
+      "parent": "node_e3453ac1e2f44e62"
     },
     {
       "type": "standard",
@@ -7298,8 +7475,8 @@
         "contexto": "gas"
       },
       "conditions": "#gás--detalhar-produção && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(produção) && $contexto:(gás) || @modificador:(detalhar) && @substantivo:(produção) && @rótulos:(gás)",
-      "dialog_node": "node_d6516db21c074d47",
-      "previous_sibling": "node_2cc828239cec4313"
+      "dialog_node": "node_71bc9d09350a4568",
+      "previous_sibling": "node_e3453ac1e2f44e62"
     },
     {
       "type": "standard",
@@ -7318,8 +7495,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f34a814695ea493f",
-      "parent": "node_d6516db21c074d47"
+      "dialog_node": "node_3aae677621f340d2",
+      "parent": "node_71bc9d09350a4568"
     },
     {
       "type": "standard",
@@ -7341,8 +7518,8 @@
         "contexto": "gas"
       },
       "conditions": "#gás--maiores-estado && intent.confidence > 0.9 || @modificador:(maiores) && @substantivo:(estado) && $contexto:(gás) || @modificador:(maiores) && @substantivo:(estado) && @rótulos:(gás)",
-      "dialog_node": "node_b4607acc4d0843a7",
-      "previous_sibling": "node_d6516db21c074d47"
+      "dialog_node": "node_71f679386a624117",
+      "previous_sibling": "node_71bc9d09350a4568"
     },
     {
       "type": "standard",
@@ -7361,8 +7538,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_5741c2dd72944a47",
-      "parent": "node_b4607acc4d0843a7"
+      "dialog_node": "node_ad5a06cfd1514891",
+      "parent": "node_71f679386a624117"
     },
     {
       "type": "standard",
@@ -7384,8 +7561,8 @@
         "contexto": "mare"
       },
       "conditions": "#maré--causa && intent.confidence > 0.9 || @modificador:(causa) && $contexto:(maré) || @modificador:(causa) && @rótulos:(maré)",
-      "dialog_node": "node_814aed2c5df34754",
-      "previous_sibling": "node_b4607acc4d0843a7"
+      "dialog_node": "node_7725eb7c365240b4",
+      "previous_sibling": "node_71f679386a624117"
     },
     {
       "type": "standard",
@@ -7404,8 +7581,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a46d19d51a8e4261",
-      "parent": "node_814aed2c5df34754"
+      "dialog_node": "node_6ef64348be8d444d",
+      "parent": "node_7725eb7c365240b4"
     },
     {
       "type": "standard",
@@ -7427,8 +7604,8 @@
         "contexto": "mare"
       },
       "conditions": "#maré--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(maré) || @modificador:(definição) && @rótulos:(maré)",
-      "dialog_node": "node_fdb2db7afb1447fa",
-      "previous_sibling": "node_814aed2c5df34754"
+      "dialog_node": "node_82f6ac742da34c63",
+      "previous_sibling": "node_7725eb7c365240b4"
     },
     {
       "type": "standard",
@@ -7447,8 +7624,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_7f2fcf0fb1f7492a",
-      "parent": "node_fdb2db7afb1447fa"
+      "dialog_node": "node_8d0cc52bd0794ca6",
+      "parent": "node_82f6ac742da34c63"
     },
     {
       "type": "standard",
@@ -7470,8 +7647,8 @@
         "contexto": "mare"
       },
       "conditions": "#maré--definição-dia-de-maré && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(dia de maré) && $contexto:(maré) || @modificador:(definição) && @recipiente:(dia de maré) && @rótulos:(maré)",
-      "dialog_node": "node_72cf9a5f90cb448b",
-      "previous_sibling": "node_fdb2db7afb1447fa"
+      "dialog_node": "node_827edf684792423e",
+      "previous_sibling": "node_82f6ac742da34c63"
     },
     {
       "type": "standard",
@@ -7490,8 +7667,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_9f18377177804ad4",
-      "parent": "node_72cf9a5f90cb448b"
+      "dialog_node": "node_5a5b0fd1c40a4bf1",
+      "parent": "node_827edf684792423e"
     },
     {
       "type": "standard",
@@ -7513,8 +7690,8 @@
         "contexto": "mare"
       },
       "conditions": "#maré--detalhar-frequência && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(frequência) && $contexto:(maré) || @modificador:(detalhar) && @substantivo:(frequência) && @rótulos:(maré)",
-      "dialog_node": "node_fcdf6b783f06451e",
-      "previous_sibling": "node_72cf9a5f90cb448b"
+      "dialog_node": "node_160c39e6d8254da6",
+      "previous_sibling": "node_827edf684792423e"
     },
     {
       "type": "standard",
@@ -7533,8 +7710,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_16197621105141ab",
-      "parent": "node_fcdf6b783f06451e"
+      "dialog_node": "node_88be9679b7414bc7",
+      "parent": "node_160c39e6d8254da6"
     },
     {
       "type": "standard",
@@ -7556,8 +7733,8 @@
         "contexto": "mare"
       },
       "conditions": "#maré--detalhar-tempo-entre-altas && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(tempo entre altas) && $contexto:(maré) || @modificador:(detalhar) && @substantivo:(tempo entre altas) && @rótulos:(maré)",
-      "dialog_node": "node_d09ac0fcb902448e",
-      "previous_sibling": "node_fcdf6b783f06451e"
+      "dialog_node": "node_8aca1a1d4ee7472e",
+      "previous_sibling": "node_160c39e6d8254da6"
     },
     {
       "type": "standard",
@@ -7576,8 +7753,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_df88233351c54ac3",
-      "parent": "node_d09ac0fcb902448e"
+      "dialog_node": "node_5b45cd7a08674371",
+      "parent": "node_8aca1a1d4ee7472e"
     },
     {
       "type": "standard",
@@ -7599,8 +7776,8 @@
         "contexto": "mare"
       },
       "conditions": "#maré--detalhar-variação-altura && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(variação) && @recipiente:(altura) && $contexto:(maré) || @modificador:(detalhar) && @substantivo:(variação) && @recipiente:(altura) && @rótulos:(maré)",
-      "dialog_node": "node_fbc52a6b88e844fe",
-      "previous_sibling": "node_d09ac0fcb902448e"
+      "dialog_node": "node_35074296f0f74d70",
+      "previous_sibling": "node_8aca1a1d4ee7472e"
     },
     {
       "type": "standard",
@@ -7619,8 +7796,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_14b4f88e4ac244ea",
-      "parent": "node_fbc52a6b88e844fe"
+      "dialog_node": "node_136d4264c6f14e01",
+      "parent": "node_35074296f0f74d70"
     },
     {
       "type": "standard",
@@ -7642,8 +7819,8 @@
         "contexto": "mare"
       },
       "conditions": "#maré--quantidade-dia && intent.confidence > 0.9 || @modificador:(quantidade) && @recipiente:(dia) && $contexto:(maré) || @modificador:(quantidade) && @recipiente:(dia) && @rótulos:(maré)",
-      "dialog_node": "node_d1d4d8727f024984",
-      "previous_sibling": "node_fbc52a6b88e844fe"
+      "dialog_node": "node_cf371fb8ddef453c",
+      "previous_sibling": "node_35074296f0f74d70"
     },
     {
       "type": "standard",
@@ -7662,8 +7839,137 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_615e20b14d5943f4",
-      "parent": "node_d1d4d8727f024984"
+      "dialog_node": "node_832f2924e6614f56",
+      "parent": "node_cf371fb8ddef453c"
+    },
+    {
+      "type": "standard",
+      "title": "Definição de acidificação?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A acidificação do oceano é o processo que tem ocorrido nas últimas décadas que torna a água do mar mais ácida. Isso pode ser atribuído ao acúmulo de gás carbônico na atmosfera e prejudica gravemente corais, plânctons e outros seres vivos na produção de exoesqueletos e conchas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "oceano"
+      },
+      "conditions": "#oceano--definição-acidificação && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(acidificação) && $contexto:(oceano) || @modificador:(definição) && @recipiente:(acidificação) && @rótulos:(oceano)",
+      "dialog_node": "node_aaff2d2f764e4e7e",
+      "previous_sibling": "node_cf371fb8ddef453c"
+    },
+    {
+      "type": "standard",
+      "title": "Fonte",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A fonte dessa resposta é: https://www.epa.gov/climate-indicators/climate-change-indicators-ocean-acidity"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#fonte",
+      "dialog_node": "node_99f48cf288574473",
+      "parent": "node_aaff2d2f764e4e7e"
+    },
+    {
+      "type": "standard",
+      "title": "Efeito de acidificação no oceano?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A acidificação do oceano interfere nos ciclos de vida de animais que produzem exoesqueletos e conchas, como corais e alguns tipos de plânctons. O pH reduzido da água dificulta a obtenção de carbonato de cálcio, que é o principal ingrediente dessas estruturas. Isso ameaça não só esses animais, como também todo o resto do ambiente marinho de forma indireta, que depende deles."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "oceano"
+      },
+      "conditions": "#oceano--efeito-acidificação && intent.confidence > 0.9 || @modificador:(efeito) && @substantivo:(acidificação) && $contexto:(oceano) || @modificador:(efeito) && @substantivo:(acidificação) && @rótulos:(oceano)",
+      "dialog_node": "node_4bb626ec6f8e47a1",
+      "previous_sibling": "node_aaff2d2f764e4e7e"
+    },
+    {
+      "type": "standard",
+      "title": "Fonte",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A fonte dessa resposta é: https://www.epa.gov/climate-indicators/climate-change-indicators-ocean-acidity"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#fonte",
+      "dialog_node": "node_9ecefde9b500421d",
+      "parent": "node_4bb626ec6f8e47a1"
+    },
+    {
+      "type": "standard",
+      "title": "Efeito de aquecimento global no oceano?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O aquecimento das águas do oceano possui impactos diretos e indiretos na biota marinha. Por exemplo, corais, um dos alicerces fundamentais da vida no mar, são extremamente sensíveis a condições ambientais, como acidez e temperatura, sendo notável o declínio de suas colônias no último século. A acidificação e o aumento da temperatura dos oceanos estão ambos ligados ao acúmulo de gases de efeito estufa na atmosfera."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "oceano"
+      },
+      "conditions": "#oceano--efeito-aquecimento-global && intent.confidence > 0.9 || @modificador:(efeito) && @substantivo:(aquecimento global) && $contexto:(oceano) || @modificador:(efeito) && @substantivo:(aquecimento global) && @rótulos:(oceano)",
+      "dialog_node": "node_a10284456ebf4515",
+      "previous_sibling": "node_4bb626ec6f8e47a1"
+    },
+    {
+      "type": "standard",
+      "title": "Fonte",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A fonte dessa resposta é: https://www.epa.gov/climate-indicators/oceans"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#fonte",
+      "dialog_node": "node_6547d0fb886346df",
+      "parent": "node_a10284456ebf4515"
     },
     {
       "type": "standard",
@@ -7685,8 +7991,8 @@
         "contexto": "oceano"
       },
       "conditions": "#oceano--listar-métodos-de-geração-energia && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(métodos de geração) && @recipiente:(energia) && $contexto:(oceano) || @modificador:(listar) && @substantivo:(métodos de geração) && @recipiente:(energia) && @rótulos:(oceano)",
-      "dialog_node": "node_c74fddcff11a400b",
-      "previous_sibling": "node_d1d4d8727f024984"
+      "dialog_node": "node_ce8726e6d8614871",
+      "previous_sibling": "node_a10284456ebf4515"
     },
     {
       "type": "standard",
@@ -7696,7 +8002,7 @@
           {
             "values": [
               {
-                "text": "As fontes dessa resposta são: https://www.revistas.usp.br/revusp/article/view/139265, https://www.cnnbrasil.com.br/business/entenda-como-ondas-e-mares-podem-gerar-energia-no-brasil/"
+                "text": "As fontes dessa resposta são: https://www.cnnbrasil.com.br/business/entenda-como-ondas-e-mares-podem-gerar-energia-no-brasil/, https://www.revistas.usp.br/revusp/article/view/139265"
               }
             ],
             "response_type": "text",
@@ -7705,8 +8011,51 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_7454b9c312db413c",
-      "parent": "node_c74fddcff11a400b"
+      "dialog_node": "node_ba6e8d100230492c",
+      "parent": "node_ce8726e6d8614871"
+    },
+    {
+      "type": "standard",
+      "title": "Responsável por acidificação do oceano?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O responsável pela acidificação dos oceanos é, sem sombra de dúvida, o ser humano. Ela é uma consequência direta do aumento da concentração de gás carbônico na atmosfera, que é um subproduto cientificamente comprovado das sociedades humanas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "oceano"
+      },
+      "conditions": "#oceano--responsável-acidificação && intent.confidence > 0.9 || @modificador:(responsável) && @substantivo:(acidificação) && $contexto:(oceano) || @modificador:(responsável) && @substantivo:(acidificação) && @rótulos:(oceano)",
+      "dialog_node": "node_20908ef4ad35450d",
+      "previous_sibling": "node_ce8726e6d8614871"
+    },
+    {
+      "type": "standard",
+      "title": "Fonte",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A fonte dessa resposta é: https://www.epa.gov/climate-indicators/climate-change-indicators-ocean-acidity"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#fonte",
+      "dialog_node": "node_4c8da1093745435a",
+      "parent": "node_20908ef4ad35450d"
     },
     {
       "type": "standard",
@@ -7728,8 +8077,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-biomar && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(biomar)",
-      "dialog_node": "node_383de1a44bc44650",
-      "previous_sibling": "node_c74fddcff11a400b"
+      "dialog_node": "node_9408bb6992d54dc6",
+      "previous_sibling": "node_20908ef4ad35450d"
     },
     {
       "type": "standard",
@@ -7748,8 +8097,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b6536930e10f4d36",
-      "parent": "node_383de1a44bc44650"
+      "dialog_node": "node_90f66d20286b466d",
+      "parent": "node_9408bb6992d54dc6"
     },
     {
       "type": "standard",
@@ -7771,8 +8120,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-cnudm && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(cnudm)",
-      "dialog_node": "node_a70f6df5d5bd44e4",
-      "previous_sibling": "node_383de1a44bc44650"
+      "dialog_node": "node_3f48c68357924a23",
+      "previous_sibling": "node_9408bb6992d54dc6"
     },
     {
       "type": "standard",
@@ -7791,8 +8140,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_6f0acad3deee4d30",
-      "parent": "node_a70f6df5d5bd44e4"
+      "dialog_node": "node_02d37067d7b0462b",
+      "parent": "node_3f48c68357924a23"
     },
     {
       "type": "standard",
@@ -7814,8 +8163,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-coral-vivo && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(coral vivo)",
-      "dialog_node": "node_c682dbf290db490a",
-      "previous_sibling": "node_a70f6df5d5bd44e4"
+      "dialog_node": "node_5d5c5e4b4f604397",
+      "previous_sibling": "node_3f48c68357924a23"
     },
     {
       "type": "standard",
@@ -7834,8 +8183,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ed4612cab9764fcb",
-      "parent": "node_c682dbf290db490a"
+      "dialog_node": "node_72190fd17be242c6",
+      "parent": "node_5d5c5e4b4f604397"
     },
     {
       "type": "standard",
@@ -7857,8 +8206,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-golfinho-rotador && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(golfinho rotador)",
-      "dialog_node": "node_95e783a392754665",
-      "previous_sibling": "node_c682dbf290db490a"
+      "dialog_node": "node_07e2836c1dbe46ba",
+      "previous_sibling": "node_5d5c5e4b4f604397"
     },
     {
       "type": "standard",
@@ -7877,8 +8226,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e8b1eccc9f574677",
-      "parent": "node_95e783a392754665"
+      "dialog_node": "node_d7348e61725245be",
+      "parent": "node_07e2836c1dbe46ba"
     },
     {
       "type": "standard",
@@ -7900,8 +8249,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-kai && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(kai)",
-      "dialog_node": "node_2372d747441045e4",
-      "previous_sibling": "node_95e783a392754665"
+      "dialog_node": "node_5d60fd35c5d94209",
+      "previous_sibling": "node_07e2836c1dbe46ba"
     },
     {
       "type": "standard",
@@ -7920,8 +8269,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_2303e463d1904d2d",
-      "parent": "node_2372d747441045e4"
+      "dialog_node": "node_44ac2326f3264bc4",
+      "parent": "node_5d60fd35c5d94209"
     },
     {
       "type": "standard",
@@ -7943,8 +8292,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-leplac && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(leplac)",
-      "dialog_node": "node_971c2fb6fe754fdb",
-      "previous_sibling": "node_2372d747441045e4"
+      "dialog_node": "node_4da3667fc92a4972",
+      "previous_sibling": "node_5d60fd35c5d94209"
     },
     {
       "type": "standard",
@@ -7963,8 +8312,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a4eb9d5886a547e4",
-      "parent": "node_971c2fb6fe754fdb"
+      "dialog_node": "node_a846d6189a7e43df",
+      "parent": "node_4da3667fc92a4972"
     },
     {
       "type": "standard",
@@ -7986,8 +8335,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-linha-de-base && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(linha de base)",
-      "dialog_node": "node_3355bd05bda3480d",
-      "previous_sibling": "node_971c2fb6fe754fdb"
+      "dialog_node": "node_b52eae7dd78d4da5",
+      "previous_sibling": "node_4da3667fc92a4972"
     },
     {
       "type": "standard",
@@ -8006,8 +8355,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e1f1950d7dc24ab1",
-      "parent": "node_3355bd05bda3480d"
+      "dialog_node": "node_8f01508c06384137",
+      "parent": "node_b52eae7dd78d4da5"
     },
     {
       "type": "standard",
@@ -8029,8 +8378,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-mar-territorial && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(mar territorial)",
-      "dialog_node": "node_103a0899c16443ab",
-      "previous_sibling": "node_3355bd05bda3480d"
+      "dialog_node": "node_3e03c4ac2c5442fb",
+      "previous_sibling": "node_b52eae7dd78d4da5"
     },
     {
       "type": "standard",
@@ -8049,8 +8398,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_d362a241a6aa4787",
-      "parent": "node_103a0899c16443ab"
+      "dialog_node": "node_c5b251678a794ac2",
+      "parent": "node_3e03c4ac2c5442fb"
     },
     {
       "type": "standard",
@@ -8072,8 +8421,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-meros-do-brasil && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(meros do brasil)",
-      "dialog_node": "node_230b83921f0a49fb",
-      "previous_sibling": "node_103a0899c16443ab"
+      "dialog_node": "node_6d9955a9a94646f9",
+      "previous_sibling": "node_3e03c4ac2c5442fb"
     },
     {
       "type": "standard",
@@ -8092,8 +8441,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_fb3065d49705405a",
-      "parent": "node_230b83921f0a49fb"
+      "dialog_node": "node_de38881364314256",
+      "parent": "node_6d9955a9a94646f9"
     },
     {
       "type": "standard",
@@ -8115,8 +8464,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-milha-náutica && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(milha náutica)",
-      "dialog_node": "node_ef558306f4d7407d",
-      "previous_sibling": "node_230b83921f0a49fb"
+      "dialog_node": "node_7f6b16ef21c248bd",
+      "previous_sibling": "node_6d9955a9a94646f9"
     },
     {
       "type": "standard",
@@ -8135,8 +8484,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b05e7b2ccd5744ea",
-      "parent": "node_ef558306f4d7407d"
+      "dialog_node": "node_2d8880c00b8142f1",
+      "parent": "node_7f6b16ef21c248bd"
     },
     {
       "type": "standard",
@@ -8158,8 +8507,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-planície-abissal && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(planície abissal)",
-      "dialog_node": "node_930c7fcad75e4abe",
-      "previous_sibling": "node_ef558306f4d7407d"
+      "dialog_node": "node_ecc8bbbdb6564564",
+      "previous_sibling": "node_7f6b16ef21c248bd"
     },
     {
       "type": "standard",
@@ -8178,8 +8527,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_fb5e53efba554840",
-      "parent": "node_930c7fcad75e4abe"
+      "dialog_node": "node_517842e47c3b4fe5",
+      "parent": "node_ecc8bbbdb6564564"
     },
     {
       "type": "standard",
@@ -8201,8 +8550,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-plataforma-continental && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(plataforma continental)",
-      "dialog_node": "node_d5aaf619a1304bc4",
-      "previous_sibling": "node_930c7fcad75e4abe"
+      "dialog_node": "node_27d596c209e947dc",
+      "previous_sibling": "node_ecc8bbbdb6564564"
     },
     {
       "type": "standard",
@@ -8221,8 +8570,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_6e9c8bc9ac7d4cb5",
-      "parent": "node_d5aaf619a1304bc4"
+      "dialog_node": "node_5cf756dc3b3e4dc2",
+      "parent": "node_27d596c209e947dc"
     },
     {
       "type": "standard",
@@ -8244,8 +8593,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-projeto-albatroz && intent.confidence > 0.9 || @modificador:(definição) && @substantivo:(projeto) && @recipiente:(albatroz)",
-      "dialog_node": "node_811a007b3bd749e3",
-      "previous_sibling": "node_d5aaf619a1304bc4"
+      "dialog_node": "node_efe05b49cc404d28",
+      "previous_sibling": "node_27d596c209e947dc"
     },
     {
       "type": "standard",
@@ -8264,8 +8613,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ce7d1fdba4bd47ed",
-      "parent": "node_811a007b3bd749e3"
+      "dialog_node": "node_888b139893e34dd3",
+      "parent": "node_efe05b49cc404d28"
     },
     {
       "type": "standard",
@@ -8287,8 +8636,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-projeto-baleia-jubarte && intent.confidence > 0.9 || @modificador:(definição) && @substantivo:(projeto) && @recipiente:(baleia jubarte)",
-      "dialog_node": "node_cf45a7a4005b45c0",
-      "previous_sibling": "node_811a007b3bd749e3"
+      "dialog_node": "node_e4e033d740184ab5",
+      "previous_sibling": "node_efe05b49cc404d28"
     },
     {
       "type": "standard",
@@ -8307,8 +8656,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_8a728e62eff1416d",
-      "parent": "node_cf45a7a4005b45c0"
+      "dialog_node": "node_1ab3f2a7500749f2",
+      "parent": "node_e4e033d740184ab5"
     },
     {
       "type": "standard",
@@ -8330,8 +8679,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-remplac && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(remplac)",
-      "dialog_node": "node_0b6f59bc42a245b3",
-      "previous_sibling": "node_cf45a7a4005b45c0"
+      "dialog_node": "node_13342a33cdc84257",
+      "previous_sibling": "node_e4e033d740184ab5"
     },
     {
       "type": "standard",
@@ -8350,8 +8699,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_eb4fe52789a44ab4",
-      "parent": "node_0b6f59bc42a245b3"
+      "dialog_node": "node_b79b138d0b6044f6",
+      "parent": "node_13342a33cdc84257"
     },
     {
       "type": "standard",
@@ -8373,8 +8722,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-revimar && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(revimar)",
-      "dialog_node": "node_f4e2b6c700794f65",
-      "previous_sibling": "node_0b6f59bc42a245b3"
+      "dialog_node": "node_71916cb495f2490c",
+      "previous_sibling": "node_13342a33cdc84257"
     },
     {
       "type": "standard",
@@ -8393,8 +8742,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_8bdc8763e89c41b5",
-      "parent": "node_f4e2b6c700794f65"
+      "dialog_node": "node_4c4a411681c040c2",
+      "parent": "node_71916cb495f2490c"
     },
     {
       "type": "standard",
@@ -8416,8 +8765,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-talude-continental && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(talude continental)",
-      "dialog_node": "node_5302b031686f470a",
-      "previous_sibling": "node_f4e2b6c700794f65"
+      "dialog_node": "node_f3888cf0157b4042",
+      "previous_sibling": "node_71916cb495f2490c"
     },
     {
       "type": "standard",
@@ -8436,8 +8785,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_9795f5c52efa44b5",
-      "parent": "node_5302b031686f470a"
+      "dialog_node": "node_e251a09e583c4ce2",
+      "parent": "node_f3888cf0157b4042"
     },
     {
       "type": "standard",
@@ -8459,8 +8808,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-tamar && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(tamar)",
-      "dialog_node": "node_f58a88f92f574d4d",
-      "previous_sibling": "node_5302b031686f470a"
+      "dialog_node": "node_964206910b4742ff",
+      "previous_sibling": "node_f3888cf0157b4042"
     },
     {
       "type": "standard",
@@ -8479,8 +8828,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_5656fc9de4544671",
-      "parent": "node_f58a88f92f574d4d"
+      "dialog_node": "node_91687fc2c2364c1d",
+      "parent": "node_964206910b4742ff"
     },
     {
       "type": "standard",
@@ -8502,8 +8851,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--definição-zona-econômica-exclusiva && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(zona econômica exclusiva)",
-      "dialog_node": "node_4040261fd4074d2a",
-      "previous_sibling": "node_f58a88f92f574d4d"
+      "dialog_node": "node_002ce5b8b1e24ebf",
+      "previous_sibling": "node_964206910b4742ff"
     },
     {
       "type": "standard",
@@ -8522,8 +8871,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_3ce947733471431e",
-      "parent": "node_4040261fd4074d2a"
+      "dialog_node": "node_6c2df82c3a0c4953",
+      "parent": "node_002ce5b8b1e24ebf"
     },
     {
       "type": "standard",
@@ -8545,8 +8894,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--detalhar-tamanho-zona-econômica-exclusiva && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(tamanho) && @recipiente:(zona econômica exclusiva)",
-      "dialog_node": "node_bd5216563ff94bbc",
-      "previous_sibling": "node_4040261fd4074d2a"
+      "dialog_node": "node_4f46808cd0554f6d",
+      "previous_sibling": "node_002ce5b8b1e24ebf"
     },
     {
       "type": "standard",
@@ -8565,8 +8914,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_de2f832ab13e455d",
-      "parent": "node_bd5216563ff94bbc"
+      "dialog_node": "node_2bd21d6bd1984dc6",
+      "parent": "node_4f46808cd0554f6d"
     },
     {
       "type": "standard",
@@ -8588,8 +8937,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--responsável-definição-mar-territorial && intent.confidence > 0.9 || @modificador:(responsável) && @substantivo:(definição) && @recipiente:(mar territorial)",
-      "dialog_node": "node_adb09ae3e55c4026",
-      "previous_sibling": "node_bd5216563ff94bbc"
+      "dialog_node": "node_c88fd2880a254b5c",
+      "previous_sibling": "node_4f46808cd0554f6d"
     },
     {
       "type": "standard",
@@ -8608,8 +8957,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f0700f95f7944149",
-      "parent": "node_adb09ae3e55c4026"
+      "dialog_node": "node_fa4946974815495a",
+      "parent": "node_c88fd2880a254b5c"
     },
     {
       "type": "standard",
@@ -8631,8 +8980,8 @@
         "contexto": "outras"
       },
       "conditions": "#outras--responsável-definição-zona-econômica-exclusiva && intent.confidence > 0.9 || @modificador:(responsável) && @substantivo:(definição) && @recipiente:(zona econômica exclusiva)",
-      "dialog_node": "node_da0db6a8e1974d21",
-      "previous_sibling": "node_adb09ae3e55c4026"
+      "dialog_node": "node_624327a60bd2468d",
+      "previous_sibling": "node_c88fd2880a254b5c"
     },
     {
       "type": "standard",
@@ -8651,8 +9000,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_820f8dcd3cd84da1",
-      "parent": "node_da0db6a8e1974d21"
+      "dialog_node": "node_b9866a4c1d35402a",
+      "parent": "node_624327a60bd2468d"
     },
     {
       "type": "standard",
@@ -8674,8 +9023,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(pesca) || @modificador:(definição) && @rótulos:(pesca)",
-      "dialog_node": "node_cc6bd87bff17497e",
-      "previous_sibling": "node_da0db6a8e1974d21"
+      "dialog_node": "node_604067c879c94b93",
+      "previous_sibling": "node_624327a60bd2468d"
     },
     {
       "type": "standard",
@@ -8694,8 +9043,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_68aae814dee7407a",
-      "parent": "node_cc6bd87bff17497e"
+      "dialog_node": "node_7c70d04ce68e45ed",
+      "parent": "node_604067c879c94b93"
     },
     {
       "type": "standard",
@@ -8717,8 +9066,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--definição-aquicultura && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(aquicultura) && $contexto:(pesca) || @modificador:(definição) && @recipiente:(aquicultura) && @rótulos:(pesca)",
-      "dialog_node": "node_7c4661b46ce54908",
-      "previous_sibling": "node_cc6bd87bff17497e"
+      "dialog_node": "node_817d9a73b99f4b10",
+      "previous_sibling": "node_604067c879c94b93"
     },
     {
       "type": "standard",
@@ -8737,8 +9086,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_227db1d54b7f409d",
-      "parent": "node_7c4661b46ce54908"
+      "dialog_node": "node_a2a4f2b39485415e",
+      "parent": "node_817d9a73b99f4b10"
     },
     {
       "type": "standard",
@@ -8760,8 +9109,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--definição-pesca-extrativa && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(pesca extrativa) && $contexto:(pesca) || @modificador:(definição) && @recipiente:(pesca extrativa) && @rótulos:(pesca)",
-      "dialog_node": "node_142f9b3247654178",
-      "previous_sibling": "node_7c4661b46ce54908"
+      "dialog_node": "node_5a72a3a89752460b",
+      "previous_sibling": "node_817d9a73b99f4b10"
     },
     {
       "type": "standard",
@@ -8780,8 +9129,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ad5d5796d826433c",
-      "parent": "node_142f9b3247654178"
+      "dialog_node": "node_8a1a9bfb7a484e45",
+      "parent": "node_5a72a3a89752460b"
     },
     {
       "type": "standard",
@@ -8803,8 +9152,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--definição-recurso-pesqueiro && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(recurso pesqueiro) && $contexto:(pesca) || @modificador:(definição) && @recipiente:(recurso pesqueiro) && @rótulos:(pesca)",
-      "dialog_node": "node_0101e52d4aa14639",
-      "previous_sibling": "node_142f9b3247654178"
+      "dialog_node": "node_d19b35f29e304037",
+      "previous_sibling": "node_5a72a3a89752460b"
     },
     {
       "type": "standard",
@@ -8823,8 +9172,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_bed5f8cb803b4a08",
-      "parent": "node_0101e52d4aa14639"
+      "dialog_node": "node_8622af3f5d2a4c6c",
+      "parent": "node_d19b35f29e304037"
     },
     {
       "type": "standard",
@@ -8846,8 +9195,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--detalhar-tipo && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(tipo) && $contexto:(pesca) || @modificador:(detalhar) && @substantivo:(tipo) && @rótulos:(pesca)",
-      "dialog_node": "node_fdb08fd9e55742cf",
-      "previous_sibling": "node_0101e52d4aa14639"
+      "dialog_node": "node_aa9e811774d44461",
+      "previous_sibling": "node_d19b35f29e304037"
     },
     {
       "type": "standard",
@@ -8866,8 +9215,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_8255ac81806a42b1",
-      "parent": "node_fdb08fd9e55742cf"
+      "dialog_node": "node_2498acf549934d87",
+      "parent": "node_aa9e811774d44461"
     },
     {
       "type": "standard",
@@ -8889,8 +9238,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--detalhar-tipo-peixe && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(tipo) && @recipiente:(peixe) && $contexto:(pesca) || @modificador:(detalhar) && @substantivo:(tipo) && @recipiente:(peixe) && @rótulos:(pesca)",
-      "dialog_node": "node_3bebe8deaa1c4f09",
-      "previous_sibling": "node_fdb08fd9e55742cf"
+      "dialog_node": "node_8cb551565ec54cc3",
+      "previous_sibling": "node_aa9e811774d44461"
     },
     {
       "type": "standard",
@@ -8909,8 +9258,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_051324fd7dba4fc1",
-      "parent": "node_3bebe8deaa1c4f09"
+      "dialog_node": "node_1a7ff94a55c2402b",
+      "parent": "node_8cb551565ec54cc3"
     },
     {
       "type": "standard",
@@ -8932,8 +9281,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--maior-estado && intent.confidence > 0.9 || @modificador:(maior) && @substantivo:(estado) && $contexto:(pesca) || @modificador:(maior) && @substantivo:(estado) && @rótulos:(pesca)",
-      "dialog_node": "node_6ea367f3cd1e49d7",
-      "previous_sibling": "node_3bebe8deaa1c4f09"
+      "dialog_node": "node_9fd5a83530e24cca",
+      "previous_sibling": "node_8cb551565ec54cc3"
     },
     {
       "type": "standard",
@@ -8952,8 +9301,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c5eaecc9a1f84718",
-      "parent": "node_6ea367f3cd1e49d7"
+      "dialog_node": "node_c341041935c24a0a",
+      "parent": "node_9fd5a83530e24cca"
     },
     {
       "type": "standard",
@@ -8975,8 +9324,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--maior-país && intent.confidence > 0.9 || @modificador:(maior) && @substantivo:(país) && $contexto:(pesca) || @modificador:(maior) && @substantivo:(país) && @rótulos:(pesca)",
-      "dialog_node": "node_66f5fe271c9c47c3",
-      "previous_sibling": "node_6ea367f3cd1e49d7"
+      "dialog_node": "node_48b94583d98145aa",
+      "previous_sibling": "node_9fd5a83530e24cca"
     },
     {
       "type": "standard",
@@ -8995,8 +9344,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b8c5eef5fa134fa5",
-      "parent": "node_66f5fe271c9c47c3"
+      "dialog_node": "node_5559703f32294d27",
+      "parent": "node_48b94583d98145aa"
     },
     {
       "type": "standard",
@@ -9018,8 +9367,8 @@
         "contexto": "pesca"
       },
       "conditions": "#pesca--quantidade-brasil && intent.confidence > 0.9 || @modificador:(quantidade) && @recipiente:(brasil) && $contexto:(pesca) || @modificador:(quantidade) && @recipiente:(brasil) && @rótulos:(pesca)",
-      "dialog_node": "node_0039c98842624794",
-      "previous_sibling": "node_66f5fe271c9c47c3"
+      "dialog_node": "node_4a1bed5a82044fdb",
+      "previous_sibling": "node_48b94583d98145aa"
     },
     {
       "type": "standard",
@@ -9038,8 +9387,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c5d2afcebdb743b0",
-      "parent": "node_0039c98842624794"
+      "dialog_node": "node_efac50cdbc134277",
+      "parent": "node_4a1bed5a82044fdb"
     },
     {
       "type": "standard",
@@ -9061,8 +9410,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(petróleo) || @modificador:(definição) && @rótulos:(petróleo)",
-      "dialog_node": "node_228fe0e778ea4eac",
-      "previous_sibling": "node_0039c98842624794"
+      "dialog_node": "node_5bc0741b7dd64490",
+      "previous_sibling": "node_4a1bed5a82044fdb"
     },
     {
       "type": "standard",
@@ -9081,8 +9430,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_4d58139b15b7457b",
-      "parent": "node_228fe0e778ea4eac"
+      "dialog_node": "node_7afa0f1193c24215",
+      "parent": "node_5bc0741b7dd64490"
     },
     {
       "type": "standard",
@@ -9104,8 +9453,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--definição-derramamento && intent.confidence > 0.9 || @modificador:(definição) && @substantivo:(derramamento) && $contexto:(petróleo) || @modificador:(definição) && @substantivo:(derramamento) && @rótulos:(petróleo)",
-      "dialog_node": "node_160aac9a8aeb4398",
-      "previous_sibling": "node_228fe0e778ea4eac"
+      "dialog_node": "node_c35fc45a1ba24bf3",
+      "previous_sibling": "node_5bc0741b7dd64490"
     },
     {
       "type": "standard",
@@ -9124,8 +9473,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ded67c3ed0824ee1",
-      "parent": "node_160aac9a8aeb4398"
+      "dialog_node": "node_34d2c850a6ff4609",
+      "parent": "node_c35fc45a1ba24bf3"
     },
     {
       "type": "standard",
@@ -9147,8 +9496,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--definição-onshore && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(onshore) && $contexto:(petróleo) || @modificador:(definição) && @recipiente:(onshore) && @rótulos:(petróleo)",
-      "dialog_node": "node_9e16aa32b3ed4df9",
-      "previous_sibling": "node_160aac9a8aeb4398"
+      "dialog_node": "node_867d2a50370d4026",
+      "previous_sibling": "node_c35fc45a1ba24bf3"
     },
     {
       "type": "standard",
@@ -9167,8 +9516,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_fad251b5bfab40c9",
-      "parent": "node_9e16aa32b3ed4df9"
+      "dialog_node": "node_ea3cd557e9854991",
+      "parent": "node_867d2a50370d4026"
     },
     {
       "type": "standard",
@@ -9190,8 +9539,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--definição-plataforma && intent.confidence > 0.9 || @modificador:(definição) && @substantivo:(plataforma) && $contexto:(petróleo) || @modificador:(definição) && @substantivo:(plataforma) && @rótulos:(petróleo)",
-      "dialog_node": "node_d049bd87afc44325",
-      "previous_sibling": "node_9e16aa32b3ed4df9"
+      "dialog_node": "node_cbb699effbde4590",
+      "previous_sibling": "node_867d2a50370d4026"
     },
     {
       "type": "standard",
@@ -9210,8 +9559,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c957d8f2d5d74ade",
-      "parent": "node_d049bd87afc44325"
+      "dialog_node": "node_5e04fd1bb92249fd",
+      "parent": "node_cbb699effbde4590"
     },
     {
       "type": "standard",
@@ -9233,8 +9582,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--definição-pré-sal && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(pré sal) && $contexto:(petróleo) || @modificador:(definição) && @recipiente:(pré sal) && @rótulos:(petróleo)",
-      "dialog_node": "node_e208137c961a4507",
-      "previous_sibling": "node_d049bd87afc44325"
+      "dialog_node": "node_9c5ad7d6813a41a4",
+      "previous_sibling": "node_cbb699effbde4590"
     },
     {
       "type": "standard",
@@ -9253,8 +9602,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ce4aa1e206cb473b",
-      "parent": "node_e208137c961a4507"
+      "dialog_node": "node_480100cf36b146d6",
+      "parent": "node_9c5ad7d6813a41a4"
     },
     {
       "type": "standard",
@@ -9276,8 +9625,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--detalhar-composição && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(composição) && $contexto:(petróleo) || @modificador:(detalhar) && @substantivo:(composição) && @rótulos:(petróleo)",
-      "dialog_node": "node_e775d45f0a284e64",
-      "previous_sibling": "node_e208137c961a4507"
+      "dialog_node": "node_55f36f5001544eae",
+      "previous_sibling": "node_9c5ad7d6813a41a4"
     },
     {
       "type": "standard",
@@ -9296,8 +9645,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_6f814cc11fc74bbc",
-      "parent": "node_e775d45f0a284e64"
+      "dialog_node": "node_760fafc59882460e",
+      "parent": "node_55f36f5001544eae"
     },
     {
       "type": "standard",
@@ -9319,8 +9668,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--detalhar-consumo && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(consumo) && $contexto:(petróleo) || @modificador:(detalhar) && @substantivo:(consumo) && @rótulos:(petróleo)",
-      "dialog_node": "node_3d318ef5f8024e39",
-      "previous_sibling": "node_e775d45f0a284e64"
+      "dialog_node": "node_9960a7c70ede4fbd",
+      "previous_sibling": "node_55f36f5001544eae"
     },
     {
       "type": "standard",
@@ -9339,8 +9688,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c9e29b858adc4dfd",
-      "parent": "node_3d318ef5f8024e39"
+      "dialog_node": "node_0ed4ed092a394bde",
+      "parent": "node_9960a7c70ede4fbd"
     },
     {
       "type": "standard",
@@ -9362,8 +9711,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--detalhar-custo && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(custo) && $contexto:(petróleo) || @modificador:(detalhar) && @substantivo:(custo) && @rótulos:(petróleo)",
-      "dialog_node": "node_d2bdd4bfa3004c2b",
-      "previous_sibling": "node_3d318ef5f8024e39"
+      "dialog_node": "node_4a0487a059f443e1",
+      "previous_sibling": "node_9960a7c70ede4fbd"
     },
     {
       "type": "standard",
@@ -9382,8 +9731,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_0abc86083b6a45e7",
-      "parent": "node_d2bdd4bfa3004c2b"
+      "dialog_node": "node_f45f41ac08644666",
+      "parent": "node_4a0487a059f443e1"
     },
     {
       "type": "standard",
@@ -9405,8 +9754,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--detalhar-fim && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(fim) && $contexto:(petróleo) || @modificador:(detalhar) && @substantivo:(fim) && @rótulos:(petróleo)",
-      "dialog_node": "node_129538979cfd4218",
-      "previous_sibling": "node_d2bdd4bfa3004c2b"
+      "dialog_node": "node_ae017969d1914da6",
+      "previous_sibling": "node_4a0487a059f443e1"
     },
     {
       "type": "standard",
@@ -9425,8 +9774,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_1a549c8e47dc4790",
-      "parent": "node_129538979cfd4218"
+      "dialog_node": "node_491d9a12b14e4abe",
+      "parent": "node_ae017969d1914da6"
     },
     {
       "type": "standard",
@@ -9448,8 +9797,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--detalhar-preço && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(preço) && $contexto:(petróleo) || @modificador:(detalhar) && @substantivo:(preço) && @rótulos:(petróleo)",
-      "dialog_node": "node_2024eabe8c2e4cd3",
-      "previous_sibling": "node_129538979cfd4218"
+      "dialog_node": "node_07b36a819e344e9e",
+      "previous_sibling": "node_ae017969d1914da6"
     },
     {
       "type": "standard",
@@ -9468,8 +9817,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_1d9ebdcbf86343a9",
-      "parent": "node_2024eabe8c2e4cd3"
+      "dialog_node": "node_2b39a9d47d32421a",
+      "parent": "node_07b36a819e344e9e"
     },
     {
       "type": "standard",
@@ -9491,8 +9840,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--detalhar-produção && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(produção) && $contexto:(petróleo) || @modificador:(detalhar) && @substantivo:(produção) && @rótulos:(petróleo)",
-      "dialog_node": "node_a4d9259691de4942",
-      "previous_sibling": "node_2024eabe8c2e4cd3"
+      "dialog_node": "node_10cb74ab07314ad6",
+      "previous_sibling": "node_07b36a819e344e9e"
     },
     {
       "type": "standard",
@@ -9511,12 +9860,12 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_df3e172638634bef",
-      "parent": "node_a4d9259691de4942"
+      "dialog_node": "node_774c67134b5c47a9",
+      "parent": "node_10cb74ab07314ad6"
     },
     {
       "type": "standard",
-      "title": "Petróleo: efeito de derramamento no ambiente?",
+      "title": "Efeito de derramamento de petróleo no ambiente?",
       "output": {
         "generic": [
           {
@@ -9534,8 +9883,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--efeito-derramamento-ambiente && intent.confidence > 0.9 || @modificador:(efeito) && @substantivo:(derramamento) && @recipiente:(ambiente) && $contexto:(petróleo) || @modificador:(efeito) && @substantivo:(derramamento) && @recipiente:(ambiente) && @rótulos:(petróleo)",
-      "dialog_node": "node_95825f1ea7484965",
-      "previous_sibling": "node_a4d9259691de4942"
+      "dialog_node": "node_0f3b20ff539246cf",
+      "previous_sibling": "node_10cb74ab07314ad6"
     },
     {
       "type": "standard",
@@ -9554,12 +9903,12 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_49e05fb4f26140fc",
-      "parent": "node_95825f1ea7484965"
+      "dialog_node": "node_7092675aad59450d",
+      "parent": "node_0f3b20ff539246cf"
     },
     {
       "type": "standard",
-      "title": "Petróleo: efeito de derramamento em economia?",
+      "title": "Efeito de derramamento de petróleo em economia?",
       "output": {
         "generic": [
           {
@@ -9577,8 +9926,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--efeito-derramamento-economia && intent.confidence > 0.9 || @modificador:(efeito) && @substantivo:(derramamento) && @recipiente:(economia) && $contexto:(petróleo) || @modificador:(efeito) && @substantivo:(derramamento) && @recipiente:(economia) && @rótulos:(petróleo)",
-      "dialog_node": "node_fcfdd9efea2a44e9",
-      "previous_sibling": "node_95825f1ea7484965"
+      "dialog_node": "node_dac1293b91e447c1",
+      "previous_sibling": "node_0f3b20ff539246cf"
     },
     {
       "type": "standard",
@@ -9597,8 +9946,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_dd24697b31984d29",
-      "parent": "node_fcfdd9efea2a44e9"
+      "dialog_node": "node_2b8ac324a1bb49c6",
+      "parent": "node_dac1293b91e447c1"
     },
     {
       "type": "standard",
@@ -9620,8 +9969,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--listar-derivado && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(derivado) && $contexto:(petróleo) || @modificador:(listar) && @substantivo:(derivado) && @rótulos:(petróleo)",
-      "dialog_node": "node_5a0dd50e1c6549eb",
-      "previous_sibling": "node_fcfdd9efea2a44e9"
+      "dialog_node": "node_83ac2ed314894d48",
+      "previous_sibling": "node_dac1293b91e447c1"
     },
     {
       "type": "standard",
@@ -9640,8 +9989,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_584efa2c0f194ee6",
-      "parent": "node_5a0dd50e1c6549eb"
+      "dialog_node": "node_e68875ed46a84186",
+      "parent": "node_83ac2ed314894d48"
     },
     {
       "type": "standard",
@@ -9663,8 +10012,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--listar-empresa && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(empresa) && $contexto:(petróleo) || @modificador:(listar) && @substantivo:(empresa) && @rótulos:(petróleo)",
-      "dialog_node": "node_5f6e09805b354e61",
-      "previous_sibling": "node_5a0dd50e1c6549eb"
+      "dialog_node": "node_2a14de9713674231",
+      "previous_sibling": "node_83ac2ed314894d48"
     },
     {
       "type": "standard",
@@ -9683,8 +10032,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_d6c68cf77010488d",
-      "parent": "node_5f6e09805b354e61"
+      "dialog_node": "node_9d905f0f2149497b",
+      "parent": "node_2a14de9713674231"
     },
     {
       "type": "standard",
@@ -9706,8 +10055,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--listar-tipo-plataforma && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(tipo) && @recipiente:(plataforma) && $contexto:(petróleo) || @modificador:(listar) && @substantivo:(tipo) && @recipiente:(plataforma) && @rótulos:(petróleo)",
-      "dialog_node": "node_b20c16ace9644f19",
-      "previous_sibling": "node_5f6e09805b354e61"
+      "dialog_node": "node_0d6f3ad590914599",
+      "previous_sibling": "node_2a14de9713674231"
     },
     {
       "type": "standard",
@@ -9726,8 +10075,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_8eaec04a897949c8",
-      "parent": "node_b20c16ace9644f19"
+      "dialog_node": "node_8bb310a2c9814144",
+      "parent": "node_0d6f3ad590914599"
     },
     {
       "type": "standard",
@@ -9749,8 +10098,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--maior-empresa && intent.confidence > 0.9 || @modificador:(maior) && @substantivo:(empresa) && $contexto:(petróleo) || @modificador:(maior) && @substantivo:(empresa) && @rótulos:(petróleo)",
-      "dialog_node": "node_cc0470b777fd4cd5",
-      "previous_sibling": "node_b20c16ace9644f19"
+      "dialog_node": "node_f673f4eec2c4470d",
+      "previous_sibling": "node_0d6f3ad590914599"
     },
     {
       "type": "standard",
@@ -9769,8 +10118,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e79ca4e8942b4d93",
-      "parent": "node_cc0470b777fd4cd5"
+      "dialog_node": "node_4171f6326dae47af",
+      "parent": "node_f673f4eec2c4470d"
     },
     {
       "type": "standard",
@@ -9792,8 +10141,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--maior-reserva && intent.confidence > 0.9 || @modificador:(maior) && @substantivo:(reserva) && $contexto:(petróleo) || @modificador:(maior) && @substantivo:(reserva) && @rótulos:(petróleo)",
-      "dialog_node": "node_d26f72c3ebfd4ad2",
-      "previous_sibling": "node_cc0470b777fd4cd5"
+      "dialog_node": "node_2367b82b5b6a4258",
+      "previous_sibling": "node_f673f4eec2c4470d"
     },
     {
       "type": "standard",
@@ -9812,8 +10161,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_1df17376fe25493c",
-      "parent": "node_d26f72c3ebfd4ad2"
+      "dialog_node": "node_bbe095a1863449ff",
+      "parent": "node_2367b82b5b6a4258"
     },
     {
       "type": "standard",
@@ -9835,8 +10184,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--maiores-campo && intent.confidence > 0.9 || @modificador:(maiores) && @substantivo:(campo) && $contexto:(petróleo) || @modificador:(maiores) && @substantivo:(campo) && @rótulos:(petróleo)",
-      "dialog_node": "node_5b3586d389c74bf0",
-      "previous_sibling": "node_d26f72c3ebfd4ad2"
+      "dialog_node": "node_fb076f9eb66d4b6b",
+      "previous_sibling": "node_2367b82b5b6a4258"
     },
     {
       "type": "standard",
@@ -9855,8 +10204,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f919dbbcc884413b",
-      "parent": "node_5b3586d389c74bf0"
+      "dialog_node": "node_b5d4a7a08f914cbb",
+      "parent": "node_fb076f9eb66d4b6b"
     },
     {
       "type": "standard",
@@ -9878,8 +10227,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--maiores-derramamento && intent.confidence > 0.9 || @modificador:(maiores) && @substantivo:(derramamento) && $contexto:(petróleo) || @modificador:(maiores) && @substantivo:(derramamento) && @rótulos:(petróleo)",
-      "dialog_node": "node_68ea796883ba42c4",
-      "previous_sibling": "node_5b3586d389c74bf0"
+      "dialog_node": "node_8d398e4307f04848",
+      "previous_sibling": "node_fb076f9eb66d4b6b"
     },
     {
       "type": "standard",
@@ -9898,8 +10247,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_74729e39d88d4dd6",
-      "parent": "node_68ea796883ba42c4"
+      "dialog_node": "node_29997cd413d1483b",
+      "parent": "node_8d398e4307f04848"
     },
     {
       "type": "standard",
@@ -9921,8 +10270,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--maiores-estado && intent.confidence > 0.9 || @modificador:(maiores) && @substantivo:(estado) && $contexto:(petróleo) || @modificador:(maiores) && @substantivo:(estado) && @rótulos:(petróleo)",
-      "dialog_node": "node_91cb3259b9094f40",
-      "previous_sibling": "node_68ea796883ba42c4"
+      "dialog_node": "node_2b6e6245aa154d01",
+      "previous_sibling": "node_8d398e4307f04848"
     },
     {
       "type": "standard",
@@ -9941,8 +10290,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_1fb14b6f911f4a9c",
-      "parent": "node_91cb3259b9094f40"
+      "dialog_node": "node_ba60d677959f4be9",
+      "parent": "node_2b6e6245aa154d01"
     },
     {
       "type": "standard",
@@ -9964,8 +10313,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--maiores-reserva && intent.confidence > 0.9 || @modificador:(maiores) && @substantivo:(reserva) && $contexto:(petróleo) || @modificador:(maiores) && @substantivo:(reserva) && @rótulos:(petróleo)",
-      "dialog_node": "node_9ff98eca8c9f4cb1",
-      "previous_sibling": "node_91cb3259b9094f40"
+      "dialog_node": "node_982390360b0547ff",
+      "previous_sibling": "node_2b6e6245aa154d01"
     },
     {
       "type": "standard",
@@ -9984,8 +10333,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_214774db71f54281",
-      "parent": "node_9ff98eca8c9f4cb1"
+      "dialog_node": "node_81dee07499be40f4",
+      "parent": "node_982390360b0547ff"
     },
     {
       "type": "standard",
@@ -10007,8 +10356,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--onde && intent.confidence > 0.9 || @modificador:(onde) && $contexto:(petróleo) || @modificador:(onde) && @rótulos:(petróleo)",
-      "dialog_node": "node_471803a5319c441b",
-      "previous_sibling": "node_9ff98eca8c9f4cb1"
+      "dialog_node": "node_7c6041e256a84b76",
+      "previous_sibling": "node_982390360b0547ff"
     },
     {
       "type": "standard",
@@ -10027,8 +10376,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ce910b8a60e244e8",
-      "parent": "node_471803a5319c441b"
+      "dialog_node": "node_96c77cbe5337429e",
+      "parent": "node_7c6041e256a84b76"
     },
     {
       "type": "standard",
@@ -10050,8 +10399,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--quantidade-brasil && intent.confidence > 0.9 || @modificador:(quantidade) && @recipiente:(brasil) && $contexto:(petróleo) || @modificador:(quantidade) && @recipiente:(brasil) && @rótulos:(petróleo)",
-      "dialog_node": "node_ced05999940442da",
-      "previous_sibling": "node_471803a5319c441b"
+      "dialog_node": "node_6a39eba9f2c54f6e",
+      "previous_sibling": "node_7c6041e256a84b76"
     },
     {
       "type": "standard",
@@ -10070,8 +10419,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_fd134b0fbef34d17",
-      "parent": "node_ced05999940442da"
+      "dialog_node": "node_b8be2bb2f8194a38",
+      "parent": "node_6a39eba9f2c54f6e"
     },
     {
       "type": "standard",
@@ -10093,8 +10442,8 @@
         "contexto": "petroleo"
       },
       "conditions": "#petróleo--é-recurso-renovável && intent.confidence > 0.9 || @modificador:(é) && @recipiente:(recurso renovável) && $contexto:(petróleo) || @modificador:(é) && @recipiente:(recurso renovável) && @rótulos:(petróleo)",
-      "dialog_node": "node_ee461596811041f2",
-      "previous_sibling": "node_ced05999940442da"
+      "dialog_node": "node_7f48ab9a876441fb",
+      "previous_sibling": "node_6a39eba9f2c54f6e"
     },
     {
       "type": "standard",
@@ -10113,12 +10462,12 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_0b6680fe4da24af3",
-      "parent": "node_ee461596811041f2"
+      "dialog_node": "node_9539acc65cfa46b2",
+      "parent": "node_7f48ab9a876441fb"
     },
     {
       "type": "standard",
-      "title": "Poluição: efeito em oceano?",
+      "title": "Efeito da poluição no oceano?",
       "output": {
         "generic": [
           {
@@ -10136,8 +10485,8 @@
         "contexto": "poluicao"
       },
       "conditions": "#poluição--efeito-oceano && intent.confidence > 0.9 || @modificador:(efeito) && @recipiente:(oceano) && $contexto:(poluição) || @modificador:(efeito) && @recipiente:(oceano) && @rótulos:(poluição)",
-      "dialog_node": "node_05ffd2d1d85a4187",
-      "previous_sibling": "node_ee461596811041f2"
+      "dialog_node": "node_821c928380944914",
+      "previous_sibling": "node_7f48ab9a876441fb"
     },
     {
       "type": "standard",
@@ -10156,8 +10505,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_1bc540acc0c64350",
-      "parent": "node_05ffd2d1d85a4187"
+      "dialog_node": "node_72740cf2f7404f34",
+      "parent": "node_821c928380944914"
     },
     {
       "type": "standard",
@@ -10179,8 +10528,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--definição && intent.confidence > 0.9 || @modificador:(definição) && $contexto:(tartarugas) || @modificador:(definição) && @rótulos:(tartarugas)",
-      "dialog_node": "node_9925212bd8fa4781",
-      "previous_sibling": "node_05ffd2d1d85a4187"
+      "dialog_node": "node_54556b3824154b79",
+      "previous_sibling": "node_821c928380944914"
     },
     {
       "type": "standard",
@@ -10199,8 +10548,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_ec1463012c3d4d19",
-      "parent": "node_9925212bd8fa4781"
+      "dialog_node": "node_33d7be1a1318489c",
+      "parent": "node_54556b3824154b79"
     },
     {
       "type": "standard",
@@ -10222,8 +10571,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--definição-cágado && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(cágado) && $contexto:(tartarugas) || @modificador:(definição) && @recipiente:(cágado) && @rótulos:(tartarugas)",
-      "dialog_node": "node_c39f979fec0445a4",
-      "previous_sibling": "node_9925212bd8fa4781"
+      "dialog_node": "node_263ee974b37b4a41",
+      "previous_sibling": "node_54556b3824154b79"
     },
     {
       "type": "standard",
@@ -10242,8 +10591,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e230d706d98b4601",
-      "parent": "node_c39f979fec0445a4"
+      "dialog_node": "node_4b067c7bd47a4b97",
+      "parent": "node_263ee974b37b4a41"
     },
     {
       "type": "standard",
@@ -10265,8 +10614,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--definição-jabuti && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(jabuti) && $contexto:(tartarugas) || @modificador:(definição) && @recipiente:(jabuti) && @rótulos:(tartarugas)",
-      "dialog_node": "node_c4b6dadcf0ab4c5b",
-      "previous_sibling": "node_c39f979fec0445a4"
+      "dialog_node": "node_455ea18e5dda42a5",
+      "previous_sibling": "node_263ee974b37b4a41"
     },
     {
       "type": "standard",
@@ -10285,8 +10634,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_504ebbaf982e4721",
-      "parent": "node_c4b6dadcf0ab4c5b"
+      "dialog_node": "node_ade8b22550a540fe",
+      "parent": "node_455ea18e5dda42a5"
     },
     {
       "type": "standard",
@@ -10308,8 +10657,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--definição-quelônio && intent.confidence > 0.9 || @modificador:(definição) && @recipiente:(quelônio) && $contexto:(tartarugas) || @modificador:(definição) && @recipiente:(quelônio) && @rótulos:(tartarugas)",
-      "dialog_node": "node_fe301202ede94c75",
-      "previous_sibling": "node_c4b6dadcf0ab4c5b"
+      "dialog_node": "node_9bde2e46ebd749c3",
+      "previous_sibling": "node_455ea18e5dda42a5"
     },
     {
       "type": "standard",
@@ -10328,8 +10677,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_e54cb84bfb494432",
-      "parent": "node_fe301202ede94c75"
+      "dialog_node": "node_ffe6b40a6da4458c",
+      "parent": "node_9bde2e46ebd749c3"
     },
     {
       "type": "standard",
@@ -10351,8 +10700,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--detalhar-dieta && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(dieta) && $contexto:(tartarugas) || @modificador:(detalhar) && @substantivo:(dieta) && @rótulos:(tartarugas)",
-      "dialog_node": "node_b66561180dcd4088",
-      "previous_sibling": "node_fe301202ede94c75"
+      "dialog_node": "node_19512831689048fc",
+      "previous_sibling": "node_9bde2e46ebd749c3"
     },
     {
       "type": "standard",
@@ -10371,8 +10720,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a53d91bd08f04131",
-      "parent": "node_b66561180dcd4088"
+      "dialog_node": "node_9f41a37c56d84a94",
+      "parent": "node_19512831689048fc"
     },
     {
       "type": "standard",
@@ -10394,8 +10743,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--detalhar-idade-reprodutiva && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(idade reprodutiva) && $contexto:(tartarugas) || @modificador:(detalhar) && @substantivo:(idade reprodutiva) && @rótulos:(tartarugas)",
-      "dialog_node": "node_af05ad856b22498a",
-      "previous_sibling": "node_b66561180dcd4088"
+      "dialog_node": "node_abd10797b4204c60",
+      "previous_sibling": "node_19512831689048fc"
     },
     {
       "type": "standard",
@@ -10414,8 +10763,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_5b9bace13eac418e",
-      "parent": "node_af05ad856b22498a"
+      "dialog_node": "node_97d4fd517e334cab",
+      "parent": "node_abd10797b4204c60"
     },
     {
       "type": "standard",
@@ -10437,8 +10786,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--detalhar-longevidade && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(longevidade) && $contexto:(tartarugas) || @modificador:(detalhar) && @substantivo:(longevidade) && @rótulos:(tartarugas)",
-      "dialog_node": "node_7bc7d865d3224703",
-      "previous_sibling": "node_af05ad856b22498a"
+      "dialog_node": "node_1c691078240d4203",
+      "previous_sibling": "node_abd10797b4204c60"
     },
     {
       "type": "standard",
@@ -10457,8 +10806,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_c6b2cc2501ff47d3",
-      "parent": "node_7bc7d865d3224703"
+      "dialog_node": "node_665d3f63423e4160",
+      "parent": "node_1c691078240d4203"
     },
     {
       "type": "standard",
@@ -10480,8 +10829,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--detalhar-origem && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(origem) && $contexto:(tartarugas) || @modificador:(detalhar) && @substantivo:(origem) && @rótulos:(tartarugas)",
-      "dialog_node": "node_f610dc3975ec433d",
-      "previous_sibling": "node_7bc7d865d3224703"
+      "dialog_node": "node_be7d0d2bbd63460f",
+      "previous_sibling": "node_1c691078240d4203"
     },
     {
       "type": "standard",
@@ -10500,8 +10849,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_71c3f3e522fe4f99",
-      "parent": "node_f610dc3975ec433d"
+      "dialog_node": "node_4288e455a7eb4dab",
+      "parent": "node_be7d0d2bbd63460f"
     },
     {
       "type": "standard",
@@ -10523,8 +10872,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--detalhar-peso && intent.confidence > 0.9 || @modificador:(detalhar) && @substantivo:(peso) && $contexto:(tartarugas) || @modificador:(detalhar) && @substantivo:(peso) && @rótulos:(tartarugas)",
-      "dialog_node": "node_47fdb8bb1fa440a0",
-      "previous_sibling": "node_f610dc3975ec433d"
+      "dialog_node": "node_19c7510a65674a83",
+      "previous_sibling": "node_be7d0d2bbd63460f"
     },
     {
       "type": "standard",
@@ -10543,8 +10892,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_0828579a9b7a49fe",
-      "parent": "node_47fdb8bb1fa440a0"
+      "dialog_node": "node_dc8d3d1cd85c4a69",
+      "parent": "node_19c7510a65674a83"
     },
     {
       "type": "standard",
@@ -10566,8 +10915,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--diferença-jabuti && intent.confidence > 0.9 || @modificador:(diferença) && @substantivo:(jabuti) && $contexto:(tartarugas) || @modificador:(diferença) && @substantivo:(jabuti) && @rótulos:(tartarugas)",
-      "dialog_node": "node_8208191941d047fe",
-      "previous_sibling": "node_47fdb8bb1fa440a0"
+      "dialog_node": "node_ee9e8549894343f2",
+      "previous_sibling": "node_19c7510a65674a83"
     },
     {
       "type": "standard",
@@ -10586,8 +10935,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_85a2fe49a3cb4b32",
-      "parent": "node_8208191941d047fe"
+      "dialog_node": "node_2513af06f2464f52",
+      "parent": "node_ee9e8549894343f2"
     },
     {
       "type": "standard",
@@ -10609,8 +10958,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--explicar-ciclo-de-vida && intent.confidence > 0.9 || @modificador:(explicar) && @substantivo:(ciclo de vida) && $contexto:(tartarugas) || @modificador:(explicar) && @substantivo:(ciclo de vida) && @rótulos:(tartarugas)",
-      "dialog_node": "node_c9ce44816485430d",
-      "previous_sibling": "node_8208191941d047fe"
+      "dialog_node": "node_e65f490acf8e4659",
+      "previous_sibling": "node_ee9e8549894343f2"
     },
     {
       "type": "standard",
@@ -10629,8 +10978,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_f4f217d84cb04b74",
-      "parent": "node_c9ce44816485430d"
+      "dialog_node": "node_9d2a877dfb0e40ab",
+      "parent": "node_e65f490acf8e4659"
     },
     {
       "type": "standard",
@@ -10652,8 +11001,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--explicar-reprodução && intent.confidence > 0.9 || @modificador:(explicar) && @substantivo:(reprodução) && $contexto:(tartarugas) || @modificador:(explicar) && @substantivo:(reprodução) && @rótulos:(tartarugas)",
-      "dialog_node": "node_557ad726209a4652",
-      "previous_sibling": "node_c9ce44816485430d"
+      "dialog_node": "node_edd2fef38b99498d",
+      "previous_sibling": "node_e65f490acf8e4659"
     },
     {
       "type": "standard",
@@ -10672,8 +11021,51 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_4d617cf297c34b92",
-      "parent": "node_557ad726209a4652"
+      "dialog_node": "node_3e57dd53f0e64215",
+      "parent": "node_edd2fef38b99498d"
+    },
+    {
+      "type": "standard",
+      "title": "Tartarugas: listar ameaças de extinção",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Além dos predadores naturais, a principal ameaça às tartarugas é a ação do homem, devido à pesca, à fotopoluição, ao trânsito de veículos e destruição dos locais de desova, à poluição do oceano e à mudança climática. De cada mil filhotes que nascem, apenas 1 ou 2 viram adultos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "contexto": "tartarugas"
+      },
+      "conditions": "#tartarugas--listar-ameaça-extinção && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(ameaça) && @recipiente:(extinção) && $contexto:(tartarugas) || @modificador:(listar) && @substantivo:(ameaça) && @recipiente:(extinção) && @rótulos:(tartarugas)",
+      "dialog_node": "node_ba87c7624e584530",
+      "previous_sibling": "node_edd2fef38b99498d"
+    },
+    {
+      "type": "standard",
+      "title": "Fonte",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A fonte dessa resposta é: https://www.tamar.org.br/interna.php?cod=100"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#fonte",
+      "dialog_node": "node_dd91941d7d534877",
+      "parent": "node_ba87c7624e584530"
     },
     {
       "type": "standard",
@@ -10695,8 +11087,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--listar-espécie && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(espécie) && $contexto:(tartarugas) || @modificador:(listar) && @substantivo:(espécie) && @rótulos:(tartarugas)",
-      "dialog_node": "node_b57d51c8353d4110",
-      "previous_sibling": "node_557ad726209a4652"
+      "dialog_node": "node_01e83e2842dd43f0",
+      "previous_sibling": "node_ba87c7624e584530"
     },
     {
       "type": "standard",
@@ -10715,8 +11107,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_7649f542bc9440ff",
-      "parent": "node_b57d51c8353d4110"
+      "dialog_node": "node_dc279746bf4e45d4",
+      "parent": "node_01e83e2842dd43f0"
     },
     {
       "type": "standard",
@@ -10738,8 +11130,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--listar-espécie-extinção && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(espécie) && @recipiente:(extinção) && $contexto:(tartarugas) || @modificador:(listar) && @substantivo:(espécie) && @recipiente:(extinção) && @rótulos:(tartarugas)",
-      "dialog_node": "node_92dd4439340e4c15",
-      "previous_sibling": "node_b57d51c8353d4110"
+      "dialog_node": "node_cbae0c2bd9244570",
+      "previous_sibling": "node_01e83e2842dd43f0"
     },
     {
       "type": "standard",
@@ -10758,8 +11150,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_9a3c9c7b300f4ccc",
-      "parent": "node_92dd4439340e4c15"
+      "dialog_node": "node_a4c123f7221f41a8",
+      "parent": "node_cbae0c2bd9244570"
     },
     {
       "type": "standard",
@@ -10781,8 +11173,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--listar-predador && intent.confidence > 0.9 || @modificador:(listar) && @substantivo:(predador) && $contexto:(tartarugas) || @modificador:(listar) && @substantivo:(predador) && @rótulos:(tartarugas)",
-      "dialog_node": "node_9951a28964f74481",
-      "previous_sibling": "node_92dd4439340e4c15"
+      "dialog_node": "node_8030a150dbd54222",
+      "previous_sibling": "node_cbae0c2bd9244570"
     },
     {
       "type": "standard",
@@ -10792,7 +11184,7 @@
           {
             "values": [
               {
-                "text": "As fontes dessa resposta são: http://tamar.org.br/interna.php?cod=97, https://www.seaturtlecamp.com/sea-turtle-predators/"
+                "text": "As fontes dessa resposta são: https://www.seaturtlecamp.com/sea-turtle-predators/, http://tamar.org.br/interna.php?cod=97"
               }
             ],
             "response_type": "text",
@@ -10801,8 +11193,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_b695243b65aa4e01",
-      "parent": "node_9951a28964f74481"
+      "dialog_node": "node_e5bebe58ded948cc",
+      "parent": "node_8030a150dbd54222"
     },
     {
       "type": "standard",
@@ -10824,8 +11216,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--onde && intent.confidence > 0.9 || @modificador:(onde) && $contexto:(tartarugas) || @modificador:(onde) && @rótulos:(tartarugas)",
-      "dialog_node": "node_6150bffcee884a80",
-      "previous_sibling": "node_9951a28964f74481"
+      "dialog_node": "node_4888e2767eab4286",
+      "previous_sibling": "node_8030a150dbd54222"
     },
     {
       "type": "standard",
@@ -10844,8 +11236,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_a803170818c245df",
-      "parent": "node_6150bffcee884a80"
+      "dialog_node": "node_a1cbce746aff4b2e",
+      "parent": "node_4888e2767eab4286"
     },
     {
       "type": "standard",
@@ -10867,8 +11259,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--porque-extinção && intent.confidence > 0.9 || @modificador:(porque) && @recipiente:(extinção) && $contexto:(tartarugas) || @modificador:(porque) && @recipiente:(extinção) && @rótulos:(tartarugas)",
-      "dialog_node": "node_81d3e0f6bcf44876",
-      "previous_sibling": "node_6150bffcee884a80"
+      "dialog_node": "node_838b38da736a4a8c",
+      "previous_sibling": "node_4888e2767eab4286"
     },
     {
       "type": "standard",
@@ -10887,8 +11279,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_02eeb11b96ca485d",
-      "parent": "node_81d3e0f6bcf44876"
+      "dialog_node": "node_45d1b052e36342d0",
+      "parent": "node_838b38da736a4a8c"
     },
     {
       "type": "standard",
@@ -10910,8 +11302,8 @@
         "contexto": "tartarugas"
       },
       "conditions": "#tartarugas--é-jabuti && intent.confidence > 0.9 || @modificador:(é) && @substantivo:(jabuti) && $contexto:(tartarugas) || @modificador:(é) && @substantivo:(jabuti) && @rótulos:(tartarugas)",
-      "dialog_node": "node_005ba763479b400d",
-      "previous_sibling": "node_81d3e0f6bcf44876"
+      "dialog_node": "node_bca20b7a63804d35",
+      "previous_sibling": "node_838b38da736a4a8c"
     },
     {
       "type": "standard",
@@ -10930,8 +11322,8 @@
         ]
       },
       "conditions": "#fonte",
-      "dialog_node": "node_cd241cf578dc43df",
-      "parent": "node_005ba763479b400d"
+      "dialog_node": "node_97e9e9beaaf942c5",
+      "parent": "node_bca20b7a63804d35"
     },
     {
       "type": "standard",
@@ -10951,7 +11343,7 @@
       },
       "conditions": "anything_else",
       "dialog_node": "node_7_1633148066996",
-      "previous_sibling": "node_005ba763479b400d",
+      "previous_sibling": "node_bca20b7a63804d35",
       "digress_in": "does_not_return",
       "digress_out": "allow_all"
     }
