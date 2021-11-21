@@ -73,7 +73,13 @@ class NodeOrganizer:
         """Returns the main dataframe after building and dropping temporary columns."""
         self._build()
         out = self._df.drop(
-            columns=["fonte", "intent", "modificador", "substantivo", "recipiente"],
+            columns=[
+                "fonte",
+                "intent",
+                "modificador",
+                "substantivo",
+                "recipiente",
+            ],
             errors="ignore",
         )
         return out
@@ -89,7 +95,8 @@ class NodeOrganizer:
 
     def sort_nodes(self):
         self.df_manual = self.sort_by_previous_siblings(df=self.df_manual, root=self.root)
-        self.df_generated.sort_values(by=["intent"], inplace=True)
+        # TODO this will require changes to accommodate the new folder structure
+        # self.df_generated.sort_values(by=["intent"], inplace=True)
         self._build()
         self._separate_nodes()
         print("Nodes sorted!")
@@ -214,6 +221,8 @@ class NodeOrganizer:
 
     @staticmethod
     def _create_source(parent: pd.Series, cols: pd.Index) -> pd.Series:
+        if "fonte" not in parent:
+            return pd.Series()
         fontes = parent["fonte"].split("--")
         fontes = drop_duplicates(fontes)
         if len(fontes) > 1:

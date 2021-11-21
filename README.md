@@ -9,3 +9,12 @@ Pega o resultado do notebook, conserta a lookup_table (vide código) e cria um d
 
 ## choose_questions.py
 Permite manualmente filtrar e rotular as perguntas do filtered_qna.json (que foram traduzidas e salvas na planilha Perguntas.xlsx, na aba filtered_qna_manual_sorted). Em um loop, uma pergunta e sua resposta são impressos no terminal e o usuário digita uma sequência de comandos, decidindo se a pergunta será mantida e a quais categorias (tags) ela pertence. O resultado é salvo na página "editadas".
+
+
+## generate_skill.py
+Forma o JSON que contêm o chatbot no formato esperado para upload no Watson Assistant. Para isso, pega o JSON baixado do site, extrai o conteúdo dele para um DataFrame, extrai o conteúdo da planilha de perguntas e respostas para outro DataFrame e realiza diversas operações para combinar as informações das duas fontes. Por último, escreve as informações novamente em formato JSON para realizar upload.
+
+### To do:
+- criar testes
+  - apontar intenções repetidas
+  - apontar títulos divergentes entre planilha e json
