@@ -131,11 +131,14 @@ def get_titulo(js: dict) -> str:
         trechos.append(f"em {recipiente}?")
     elif modificador in ["explicar"]:
         trechos.append(modificador)
-        trechos.append(substantivo)
-        if recipiente:
-            trechos.append(f"de {recipiente}")
-        if contexto:
-            trechos.append(f"de {contexto}")
+        if substantivo:
+            trechos.append(substantivo)
+            if recipiente:
+                trechos.append(f"de {recipiente}")
+            if contexto:
+                trechos.append(f"de {contexto}")
+        else:
+            trechos.append(contexto)
     elif modificador in ["listar"]:
         if substantivo:
             if recipiente:
@@ -175,26 +178,27 @@ def get_titulo(js: dict) -> str:
                 f"Perguntas do tipo 'detalhar' precisam de recipiente ou contexto!"
                 f" Pergunta: {js['pergunta']}"
             )
-        trechos.append(modificador)
-        if substantivo:
-            trechos.append(f"de {plural(substantivo)}")
-        trechos.append(f"de {recipiente or contexto}?")
+        trechos.append(f"{modificador} tem")
+        if not (substantivo and recipiente):
+            trechos.append(contexto)
+        elif substantivo:
+            trechos.append(plural(substantivo))
+            trechos.append(f"de {recipiente or contexto}")
+        else:
+            trechos.append(contexto)
+            trechos.append(f"em {recipiente}")
+        trechos.append("?")
     elif modificador in ["porque"]:
         if not contexto:
             raise ValueError(
                 f"Perguntas do tipo 'porque' precisam de contexto!"
                 f" Pergunta: {js['pergunta']}"
             )
-        elif len(contextos) == 2:
-            trechos.append(f"{contextos[1]}:")
-            trechos.append("motivo para")
-            trechos.append(f"{contextos[0]}?")
-        else:
-            trechos.append(f"{contexto}:")
-            trechos.append("motivo para")
-            if recipiente:
-                trechos.append(recipiente)
-            trechos.append(f"?")
+        trechos.append(f"{contexto}:")
+        trechos.append("motivo para")
+        if recipiente:
+            trechos.append(recipiente)
+        trechos.append(f"?")
     elif modificador in ["quantidade"]:
         if not (substantivo or contexto):
             raise ValueError(
@@ -204,7 +208,7 @@ def get_titulo(js: dict) -> str:
         if substantivo:
             trechos.append(f"{contexto}:")
             trechos.append(modificador)
-            trechos.append(f"{plural(substantivo)}")
+            trechos.append(f"de {plural(substantivo)}")
         else:
             trechos.append(modificador)
             trechos.append(f"de {contexto}")
@@ -231,24 +235,22 @@ def get_titulo(js: dict) -> str:
     titulo = " ".join(trechos)
     titulo = titulo.strip()
     substituir = {
-        "em amazônia azul": "na Amazônia Azul",
-        "de amazônia azul": "da Amazônia Azul",
-        "em brasil": "no Brasil",
-        "de brasil": "no Brasil",
-        "de extinção": "em extinção",
-        "de oceano": "do oceano",
-        "de governo": "do governo",
-        "de mundo": "do mundo",
-        "em ambiente": "no ambiente",
-        "de branqueamento": "do branqueamento",
-        "um tartaruga": "uma tartaruga",
-        "de petróleo": "do petróleo",
-        "de projeto de": "do projeto",
-        " ?": "?"
+        r"\bem amazônia azul": "na Amazônia Azul",
+        r"\bde amazônia azul": "da Amazônia Azul",
+        r"\bem brasil": "no Brasil",
+        r"\bde brasil": "do Brasil",
+        r"\bde oceano": "do oceano",
+        r"\bde governo": "do governo",
+        r"\bde mundo": "do mundo",
+        r"\bem ambiente": "no ambiente",
+        r"\bde branqueamento": "do branqueamento",
+        r"\bum tartaruga": "uma tartaruga",
+        r"\bde projeto de": "do projeto",
+        r"\s+\?": "?",
+        r"\s+": " ",
     }
-    for palavra, substituta in substituir.items():
-        titulo = titulo.replace(palavra, substituta)
-    titulo = re.sub(r"\s+", " ", titulo)
+    for pattern, subs in substituir.items():
+        titulo = re.sub(pattern, subs, titulo)
     return titulo
 
 
