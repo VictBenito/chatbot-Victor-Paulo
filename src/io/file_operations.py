@@ -23,7 +23,7 @@ def load_questions(filepath: str) -> pd.DataFrame:
         "Recipiente": "recipiente",
         "Elocuções": "examples",
     }
-    df = df[list(subs.keys())]
+    df = df[subs]
     df = df.rename(columns=subs)
     df = df.fillna("")
     return df
@@ -39,5 +39,5 @@ def save_skill(filepath: str, to_save: dict):
     root, extension = os.path.splitext(filepath)
     new_skill_path = f"{root}2{extension}"
     with open(new_skill_path, "w", encoding="utf-8") as f:
-        json.dump(to_save, f, ensure_ascii=False, indent=4)
+        json.dump(to_save, f, ensure_ascii=False, indent=2)
     print(f"Skill saved as {new_skill_path}!")
