@@ -4,12 +4,12 @@
 # @Author: Gabriel O.
 
 import re
+from typing import List
 
-from src.dialog_nodes.dialog_node_operations import get_contexts
 from src.utils.plural import plural
 
 
-def get_title(js: dict) -> str:
+def get_title(js: dict, contexts: List[str]) -> str:
     """
     Returns a title for a node based on modificador, substantivo, recipiente
     and rótulos.
@@ -18,8 +18,7 @@ def get_title(js: dict) -> str:
     substantivo = js["substantivo"].replace("-", " ")
     recipiente = js["recipiente"].replace("-", " ")
 
-    contextos = get_contexts(js["rótulos"].replace("-", " ").split("_"))
-    contexto = f"{'/'.join(contextos)}"
+    contexto = "/".join(contexts)
     trechos = []
 
     if modificador in ["causa"]:
@@ -60,7 +59,7 @@ def get_title(js: dict) -> str:
     elif modificador in ["diferença"]:
         trechos.append(modificador)
         trechos.append(f"entre {substantivo}")
-        trechos.append(f"e {recipiente or contextos[0]}?")
+        trechos.append(f"e {recipiente or contexto}?")
     elif modificador in ["é"]:
         if not (
             (substantivo and contexto)

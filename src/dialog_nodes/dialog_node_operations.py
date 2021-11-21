@@ -55,7 +55,7 @@ def get_dialog_nodes(df: pd.DataFrame, confidence) -> List[dict]:
 
     tag_nodes = drop_empty(tag_nodes)
     context_nodes = drop_empty(context_nodes)
-    answer_nodes = drop_empty(tag_nodes)
+    answer_nodes = drop_empty(answer_nodes)
 
     tag_nodes.sort(key=lambda x: x["intent"])
     context_nodes.sort(key=lambda x: x["intent"])
@@ -87,39 +87,44 @@ def get_all_nodes(
     answer_folder_id: str,
 ) -> Tuple[dict, dict, dict]:
     """Returns the tag, context and answer nodes for a record."""
+    tags = record["rótulos"].replace("-", " ")
     context_node_id = f"node_{uuid.uuid4().hex[:16]}"
     answer_node_id = f"node_{uuid.uuid4().hex[:16]}"
 
     return (
-        get_tag_node(record, next_node_id=context_node_id, parent_node_id=tag_folder_id),
+        get_tag_node(
+            record, parent_node_id=tag_folder_id, next_node_id=context_node_id, tags=tags
+        ),
         get_context_node(
             record,
+            parent_node_id=context_folder_id,
             self_id=context_node_id,
             next_node_id=answer_node_id,
-            parent_node_id=context_folder_id,
+            tags=tags,
         ),
         get_answer_node(
             record,
-            self_id=answer_node_id,
-            confidence=confidence,
             parent_node_id=answer_folder_id,
+            self_id=answer_node_id,
+            tags=tags,
+            confidence=confidence,
         ),
     )
 
 
-def get_tag_node(record: dict, next_node_id: str, parent_node_id: str) -> dict:
+def get_tag_node(record: dict, parent_node_id: str, next_node_id: str, tags: str) -> dict:
     """
     Nodes which detect tags, set the context accordingly and redirect to 'context' nodes.
     """
-    context = sanitize(record["rótulos"].replace("-", " "))
-
-    if not context:
+    if not tags:
         return {}
+
+    context = sanitize(tags)
 
     return {
         "type": "standard",
         "context": {"contexto": context},
-        "conditions": f"rótulos:({record['rótulos']})",
+        "conditions": f"rótulos:({context})",
         "dialog_node": f"node_{uuid.uuid4().hex[:16]}",
         "parent": parent_node_id,
         "next_step": {
@@ -135,7 +140,7 @@ def get_tag_node(record: dict, next_node_id: str, parent_node_id: str) -> dict:
 
 
 def get_context_node(
-    record: dict, self_id: str, next_node_id: str, parent_node_id: str
+    record: dict, parent_node_id: str, self_id: str, next_node_id: str, tags: str
 ) -> dict:
     """
     Nodes which detect intent based on context, modifier, noun and recipient
@@ -143,7 +148,7 @@ def get_context_node(
     """
     return {
         "type": "standard",
-        "conditions": get_full_condition(record),
+        "conditions": get_full_condition(record, tags),
         "dialog_node": self_id,
         "parent": parent_node_id,
         "next_step": {
@@ -159,15 +164,17 @@ def get_context_node(
 
 
 def get_answer_node(
-    record: dict, self_id: str, parent_node_id: str, confidence: float = None
+    record: dict, parent_node_id: str, self_id: str, tags: str, confidence: float = None
 ) -> dict:
     """
     Nodes which either detect the intent directly or are redirected to and provide
     the answer.
     """
+    contexts = get_contexts(tags.split("_"))
+
     return {
         "type": "standard",
-        "title": get_title(record),
+        "title": get_title(record, contexts),
         "output": {
             "generic": [
                 {
@@ -209,14 +216,13 @@ def get_contexts(tags: List[str]) -> List[str]:
     ]
 
 
-def get_full_condition(js: dict) -> str:
+def get_full_condition(js: dict, tags: str) -> str:
     modifier = js["modificador"].replace("-", " ")
     noun = js["substantivo"].replace("-", " ")
     recipient = js["recipiente"].replace("-", " ")
-    tags = js["rótulos"].replace("-", " ").split("_")
-    tags += [js["rótulos"].replace("-", " ")]
-    tags = drop_duplicates(tags)
-    contexts = get_contexts(tags)
+    tag_list = [tags, *(tags.split("_"))]
+    tag_list = drop_duplicates(tag_list)
+    contexts = get_contexts(tag_list)
 
     base_condition = get_base_condition(modifier, noun, recipient)
 
