@@ -4,7 +4,7 @@
 # @Author: Gabriel O.
 
 from copy import deepcopy
-from typing import List
+from typing import List, Tuple
 
 
 def drop_duplicates(ls: list) -> list:
@@ -15,6 +15,11 @@ def drop_duplicates(ls: list) -> list:
 def flatten(ls: list) -> list:
     """Flattens a list by 1 dimension."""
     return [item for sublist in ls for item in sublist]
+
+
+def unzip(zipped: List[Tuple]) -> Tuple[List]:
+    """Does the opposite of zip() -- returns a tuple of lists."""
+    return tuple(zip(*zipped))
 
 
 def remove(ls: list, to_remove: list) -> list:
