@@ -111,12 +111,16 @@ def get_titulo(js: dict) -> str:
             trechos.append(substantivo or contexto)
             trechos.append(f"é {recipiente or contexto}?")
     elif modificador in ["efeito"]:
-        if contexto:
-            trechos.append(contexto + ":")
         trechos.append(modificador)
         if substantivo:
             trechos.append(f"de {substantivo}")
-        trechos.append(f"em {recipiente or contextos[0]}?")
+        if recipiente:
+            if contexto:
+                trechos.append(f"de {contexto}")
+            trechos.append(f"em {recipiente}")
+        else:
+            trechos.append(f"em {contexto}")
+        trechos.append("?")
     elif modificador in ["existe"]:
         if not recipiente:
             raise ValueError(
@@ -239,11 +243,13 @@ def get_titulo(js: dict) -> str:
         r"\bde amazônia azul": "da Amazônia Azul",
         r"\bem brasil": "no Brasil",
         r"\bde brasil": "do Brasil",
+        r"\bem oceano": "no oceano",
         r"\bde oceano": "do oceano",
         r"\bde governo": "do governo",
         r"\bde mundo": "do mundo",
         r"\bem ambiente": "no ambiente",
         r"\bde branqueamento": "do branqueamento",
+        r"\bde poluição": "da poluição",
         r"\bum tartaruga": "uma tartaruga",
         r"\bde projeto de": "do projeto",
         r"\s+\?": "?",
