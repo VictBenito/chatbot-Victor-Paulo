@@ -64,9 +64,7 @@ class NodeOrganizer:
 
     def _build(self):
         """Updates the main dataframe to reflect changes in its subparts."""
-        self._df = self.df_manual.append(self.df_generated).append(
-            self.df_anything_else
-        )
+        self._df = self.df_manual.append(self.df_generated).append(self.df_anything_else)
         self._df.reset_index(drop=True, inplace=True)
         self._extract_intents()
 
@@ -90,9 +88,7 @@ class NodeOrganizer:
         self.fix_previous_siblings()
 
     def sort_nodes(self):
-        self.df_manual = self.sort_by_previous_siblings(
-            df=self.df_manual, root=self.root
-        )
+        self.df_manual = self.sort_by_previous_siblings(df=self.df_manual, root=self.root)
         self.df_generated.sort_values(by=["intent"], inplace=True)
         self._build()
         self._separate_nodes()
@@ -131,19 +127,16 @@ class NodeOrganizer:
     def set_contexts_node(self):
         """
         Adds contexts to the 'welcome' node which are a mapping of generated nodes'
-        titles and intents. This enables the 'help' node, which picks random integers
-        and offers a set of questions to the user.
+        titles. This enables the 'help' node, which picks random integers and offers
+        a set of questions to the user.
         """
         df = self.df_generated.reset_index(drop=True)
         titles = df.title.to_dict()
-        intents = df.intent.to_dict()
         titles = {str(k): v for k, v in titles.items()}
-        intents = {str(k): v for k, v in intents.items()}
 
         welcome_node = self.df_manual.conditions.str.contains("welcome").fillna(False)
         node_context = self.df_manual.loc[welcome_node, "context"].to_list()[0]
         node_context["titles"] = titles
-        node_context["intents"] = intents
         self.df_manual.loc[welcome_node, "context"] = str(node_context)
         print("Contexts set!")
 
