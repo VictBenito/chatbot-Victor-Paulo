@@ -4671,7 +4671,7 @@
           "73": "Existe tubarão no Brasil?",
           "74": "Listar cnidários",
           "75": "Listar crustáceos",
-          "76": "Listar moiuscos",
+          "76": "Listar moluscos",
           "77": "Listar tipos de golfinho",
           "78": "Tubarão é peixe?",
           "79": "Definição de alga?",
@@ -10848,7 +10848,7 @@
     },
     {
       "type": "standard",
-      "title": "Listar moiuscos",
+      "title": "Listar moluscos",
       "output": {
         "generic": [
           {
