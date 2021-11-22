@@ -6,7 +6,7 @@
 from __future__ import annotations
 
 import uuid
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Dict, List
 
 from src.utils.list_dict_operations import drop_empty
@@ -27,14 +27,14 @@ class Node:
     modificador: str = None
     substantivo: str = None
     recipiente: str = None
-    children: List["Node"] = None
+    children: List["Node"] = field(default_factory=list, init=False)
 
     def add_child(self, node: Node):
         node.parent = self.dialog_node
         self.children.append(node)
 
-    def to_list(self):
-        return [node.to_dict() for node in self.children]
+    def to_list(self) -> List[dict]:
+        return [self.to_dict()] + [node.to_dict() for node in self.children]
 
-    def to_dict(self):
+    def to_dict(self) -> dict:
         return drop_empty(self.__dict__)
