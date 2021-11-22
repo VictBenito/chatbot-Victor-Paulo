@@ -216,53 +216,48 @@ def create_anything_else_nodes(
     Creates the following anything_else nodes:
     1. one in the context folder, pointing to the contextless intent folder
     2. one in the contextless intent folder, pointing to the intent folder
-    3. one for each intent subfolder, pointing to the answer folder
-    4. one in the answer folder, pointing to the root anything_else node
+    3. one in the intent folder, pointing to the answer folder
+    4. one for each intent subfolder, pointing to the intent anything_else node
+    5. one in the answer folder, pointing to the root anything_else node
     """
-    context_anything_else = Node(
-        title="Anything else",
-        conditions="anything_else",
-        next_step={
-            "behavior": "jump_to",
-            "selector": "body",
-            "dialog_node": contextless_intent_folder.dialog_node,
-        },
+    # 1st type
+    context_anything_else = create_anything_else_node(
+        contextless_intent_folder.dialog_node
     )
     context_folder.add_child(context_anything_else)
 
-    contextless_intent_anything_else = Node(
-        title="Anything else",
-        conditions="anything_else",
-        next_step={
-            "behavior": "jump_to",
-            "selector": "body",
-            "dialog_node": intent_folder.dialog_node,
-        },
+    # 2nd type
+    contextless_intent_anything_else = create_anything_else_node(
+        intent_folder.dialog_node
     )
     contextless_intent_folder.add_child(contextless_intent_anything_else)
 
+    # 3rd type
+    intent_anything_else = create_anything_else_node(answer_folder.dialog_node)
+    intent_folder.add_child(intent_anything_else)
+
+    # 4th type
     for i, subfolder in enumerate(intent_folder.children):
-        subfolder_anything_else = Node(
-            title="Anything else",
-            conditions="anything_else",
-            next_step={
-                "behavior": "jump_to",
-                "selector": "body",
-                "dialog_node": answer_folder.dialog_node,
-            },
+        subfolder_anything_else = create_anything_else_node(
+            intent_anything_else.dialog_node
         )
         subfolder.add_child(subfolder_anything_else)
 
-    answer_anything_else = Node(
+    # 5th type
+    answer_anything_else = create_anything_else_node(root_anything_else.dialog_node)
+    answer_folder.add_child(answer_anything_else)
+
+
+def create_anything_else_node(jump_to: str) -> Node:
+    return Node(
         title="Anything else",
         conditions="anything_else",
         next_step={
             "behavior": "jump_to",
             "selector": "body",
-            "dialog_node": root_anything_else.dialog_node,
+            "dialog_node": jump_to,
         },
     )
-    answer_folder.add_child(answer_anything_else)
 
 
 def get_full_condition(js: Mapping) -> str:
