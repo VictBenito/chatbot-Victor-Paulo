@@ -21,8 +21,8 @@ def check_collisions(
 ):
     for col_value, d in df.groupby(col):
         if d.shape[0] > 1 and d[other_col].isna().sum() > 0:
-            intent = tags if tags == tags else "..."
+            intent = f"#{tags}" if tags == tags else "(no context)"
             print(
-                f"Possible collisions for #{intent}--{modifier}-{col_value}-____: "
-                f"{d[other_col].fillna('').to_list()}"
+                f"Possible collisions for {intent}--{modifier}-{col_value}-____: "
+                f"({', '.join(d[other_col].fillna('___').to_list())})"
             )
