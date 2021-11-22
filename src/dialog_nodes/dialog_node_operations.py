@@ -216,7 +216,7 @@ def create_anything_else_nodes(
     Creates the following anything_else nodes:
     1. one in the context folder, pointing to the contextless intent folder
     2. one in the contextless intent folder, pointing to the intent folder
-    3. one for each intent subfolder pointing to the answer folder
+    3. one for each intent subfolder, pointing to the answer folder
     4. one in the answer folder, pointing to the root anything_else node
     """
     context_anything_else = Node(

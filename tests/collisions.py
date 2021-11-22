@@ -9,9 +9,8 @@ from src.dialog_nodes.NodeOrganizer import NodeOrganizer
 
 
 def run(organizer: NodeOrganizer):
-    for tags, df_tag in organizer.df_generated[organizer.answers].groupby(
-        ["rotulos"], dropna=False
-    ):
+    df = organizer.df_generated[organizer.answers]
+    for tags, df_tag in df.groupby(["rotulos"], dropna=False):
         for modificador, df_modifier in df_tag.groupby(["modificador"]):
             check_collisions(df_modifier, tags, modificador, "substantivo", "recipiente")
             check_collisions(df_modifier, tags, modificador, "recipiente", "substantivo")
