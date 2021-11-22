@@ -15,6 +15,8 @@ def main():
 
     dup = df[df.dialog_node.duplicated()]
     empty = df[df.dialog_node.isna()]
+    is_self_parent = df[df.dialog_node == df.parent]
+    is_self_sibling = df[df.dialog_node == df.previous_sibling]
     print("End")
 
 
