@@ -46,11 +46,16 @@ def get_dialog_nodes(df: pd.DataFrame, confidence: float = None) -> List[dict]:
         df=df, context_folder=context_folder, intent_folder=intent_folder
     )
 
+    # create folder for intents without context
+    contextless_subfolder = Node(title="sem contexto")
+    intent_folder.add_child(contextless_subfolder)
+
     # create intent, answer and source nodes
     create_intent_and_answer_and_source_nodes(
         df=df,
         intent_folder=intent_folder,
         answer_folder=answer_folder,
+        contextless_subfolder=contextless_subfolder,
         confidence=confidence,
     )
 
@@ -83,7 +88,11 @@ def create_context_folders_and_intent_subfolders(
 
 
 def create_intent_and_answer_and_source_nodes(
-    df: pd.DataFrame, intent_folder: Node, answer_folder: Node, confidence: float
+    df: pd.DataFrame,
+    intent_folder: Node,
+    answer_folder: Node,
+    contextless_subfolder: Node,
+    confidence: float,
 ):
     """
     For every record on the spreadsheet, create one node with the answer, one child of
@@ -130,7 +139,7 @@ def create_intent_and_answer_and_source_nodes(
             )
             intent_subfolder.add_child(intent_node)
         except StopIteration:
-            intent_folder.add_child(intent_node)
+            contextless_subfolder.add_child(intent_node)
 
 
 def create_source_node(record: pd.Series):
