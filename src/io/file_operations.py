@@ -5,6 +5,7 @@
 
 import json
 import os
+from pathlib import Path
 
 import pandas as pd
 
@@ -35,9 +36,10 @@ def load_skill(filepath: str) -> dict:
     return sk
 
 
-def save_skill(filepath: str, to_save: dict):
-    root, extension = os.path.splitext(filepath)
-    new_skill_path = f"{root}2{extension}"
-    with open(new_skill_path, "w", encoding="utf-8") as f:
+def save_skill(filepath: Path, to_save: dict):
+    new_stem = f"{filepath.stem}2"
+    new_path = filepath.with_name(new_stem + filepath.suffix)
+    with open(new_path, "w", encoding="utf-8") as f:
         json.dump(to_save, f, ensure_ascii=False, indent=2)
-    print(f"Skill saved as {new_skill_path}!")
+    common_path = os.path.commonpath([Path(__file__), new_path])
+    print(f"Skill saved as {new_path.relative_to(common_path).as_posix()}!")
