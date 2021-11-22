@@ -220,7 +220,7 @@ def create_anything_else_nodes(
     4. one in the answer folder, pointing to the root anything_else node
     """
     context_anything_else = Node(
-        title="Antyhing else",
+        title="Anything else",
         conditions="anything_else",
         next_step={
             "behavior": "jump_to",
@@ -231,7 +231,7 @@ def create_anything_else_nodes(
     context_folder.add_child(context_anything_else)
 
     contextless_intent_anything_else = Node(
-        title="Antyhing else",
+        title="Anything else",
         conditions="anything_else",
         next_step={
             "behavior": "jump_to",
@@ -243,7 +243,7 @@ def create_anything_else_nodes(
 
     for i, subfolder in enumerate(intent_folder.children):
         subfolder_anything_else = Node(
-            title="Antyhing else",
+            title="Anything else",
             conditions="anything_else",
             next_step={
                 "behavior": "jump_to",
@@ -254,7 +254,7 @@ def create_anything_else_nodes(
         subfolder.add_child(subfolder_anything_else)
 
     answer_anything_else = Node(
-        title="Antyhing else",
+        title="Anything else",
         conditions="anything_else",
         next_step={
             "behavior": "jump_to",
