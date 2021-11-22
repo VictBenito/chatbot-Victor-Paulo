@@ -51,13 +51,16 @@ def get_dialog_nodes(df: pd.DataFrame, confidence: float = None) -> List[dict]:
     intent_folder.add_child(contextless_subfolder)
 
     # create intent, answer and source nodes
-    create_intent_and_answer_and_source_nodes(
+    create_intent_and_answer_nodes(
         df=df,
         intent_folder=intent_folder,
         answer_folder=answer_folder,
         contextless_subfolder=contextless_subfolder,
         confidence=confidence,
     )
+
+    # create anything_else nodes
+    create_anything_else_nodes(intent_folder=intent_folder, answer_folder=answer_folder)
 
     return context_folder.to_list() + intent_folder.to_list() + answer_folder.to_list()
 
@@ -87,7 +90,7 @@ def create_context_folders_and_intent_subfolders(
         context_folder.add_child(context_node)
 
 
-def create_intent_and_answer_and_source_nodes(
+def create_intent_and_answer_nodes(
     df: pd.DataFrame,
     intent_folder: Node,
     answer_folder: Node,
@@ -125,7 +128,7 @@ def create_intent_and_answer_and_source_nodes(
         answer_folder.add_child(answer_node)
 
         intent_node = Node(
-            conditions=get_full_condition(record, node_contexts),
+            conditions=get_full_condition(record),
             next_step={
                 "behavior": "jump_to",
                 "selector": "body",
@@ -166,7 +169,41 @@ def create_source_node(record: pd.Series):
     )
 
 
-def get_full_condition(js: Mapping, contexts: List[str]) -> str:
+def create_anything_else_nodes(intent_folder: Node, answer_folder: Node):
+    first_answer_node = answer_folder.children[0]
+    for subfolder in intent_folder.children:
+        anything_else_node = Node(
+            title="Antyhing else",
+            conditions="anything_else",
+            next_step={
+                "behavior": "jump_to",
+                "selector": "body",
+                "dialog_node": first_answer_node.dialog_node,
+            },
+        )
+        subfolder.add_child(anything_else_node)
+
+    anything_else_node = Node(
+        title="Antyhing else",
+        conditions="anything_else",
+        output={
+            "generic": [
+                {
+                    "values": [
+                        {
+                            "text": "Não entendi ou não tenho essa resposta, pode reformular?"
+                        }
+                    ],
+                    "response_type": "text",
+                    "selection_policy": "sequential",
+                }
+            ]
+        },
+    )
+    answer_folder.add_child(anything_else_node)
+
+
+def get_full_condition(js: Mapping) -> str:
     modifier = js["modificador"].replace("-", " ")
     noun = js["substantivo"].replace("-", " ")
     recipient = js["recipiente"].replace("-", " ")
