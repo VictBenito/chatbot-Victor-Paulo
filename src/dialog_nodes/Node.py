@@ -19,7 +19,9 @@ class Node:
     output: Dict = None
     context: Dict = None
     conditions: str = None
-    dialog_node: str = f"node_{uuid.uuid4().hex[:16]}"
+    dialog_node: str = field(
+        default_factory=lambda: f"node_{uuid.uuid4().hex[:16]}", init=False
+    )
     parent: str = None
     next_step: Dict[str, str] = None
     fonte: str = None
