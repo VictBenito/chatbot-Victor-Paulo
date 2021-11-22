@@ -64,15 +64,15 @@ def create_context_folders_and_intent_subfolders(
     all_contexts = get_contexts(all_tags)
     for context in all_contexts:
         intent_subfolder = Node(
-            type="folder",
             title=context,
             conditions=f"$contexto:({context})",
+            next_step={"behavior": "skip_user_input"},
         )
         intent_folder.add_child(intent_subfolder)
 
         context_node = Node(
             context={"contexto": context},
-            conditions=f"rótulos:({context})",
+            conditions=f"@rótulos:({context})",
             next_step={
                 "behavior": "jump_to",
                 "selector": "body",
@@ -162,14 +162,7 @@ def get_full_condition(js: Mapping, contexts: List[str]) -> str:
     noun = js["substantivo"].replace("-", " ")
     recipient = js["recipiente"].replace("-", " ")
 
-    base_condition = get_base_condition(modifier, noun, recipient)
-
-    if not contexts:
-        return base_condition
-
-    conditions = [f"${contexto} && " + base_condition for contexto in contexts]
-    condition_string = " || ".join(conditions)
-    return condition_string
+    return get_base_condition(modifier, noun, recipient)
 
 
 def get_base_condition(modifier, noun, recipient) -> str:
