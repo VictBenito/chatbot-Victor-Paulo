@@ -156,6 +156,7 @@ def create_intent_and_answer_nodes(
             modificador=record["modificador"],
             substantivo=record["substantivo"],
             recipiente=record["recipiente"],
+            rotulos="_".join(node_contexts),
         )
 
         source_node = create_source_node(record)

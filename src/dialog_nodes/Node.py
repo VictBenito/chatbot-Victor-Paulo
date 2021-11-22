@@ -30,6 +30,7 @@ class Node:
     modificador: str = None
     substantivo: str = None
     recipiente: str = None
+    rotulos: str = None
     children: List["Node"] = field(default_factory=list, init=False)
 
     def add_child(self, node: Node):
@@ -42,6 +43,7 @@ class Node:
         out = [self.to_dict()]
         for node in self.children:
             out += node.to_list()
+        out.sort(key=lambda x: x.get("intent", ""))
         return out
 
     def to_dict(self) -> dict:

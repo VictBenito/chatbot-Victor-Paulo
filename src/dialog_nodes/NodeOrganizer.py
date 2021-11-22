@@ -87,6 +87,7 @@ class NodeOrganizer:
                 "substantivo",
                 "recipiente",
                 "children",
+                "rotulos",
             ],
             errors="ignore",
         )
@@ -147,6 +148,8 @@ class NodeOrganizer:
         a set of questions to the user.
         """
         df = self.df_generated[self.answers].reset_index(drop=True)
+        anys = df.conditions.str.contains("anything_else")
+        df = df[~anys]
         titles = df.title.to_dict()
         titles = {str(k): v for k, v in titles.items()}
 
