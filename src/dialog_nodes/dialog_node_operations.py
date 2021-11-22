@@ -4,23 +4,19 @@
 # @Author: Gabriel O.
 
 import ast
-import uuid
-from typing import List, Tuple
+from typing import List, Mapping
 
 import pandas as pd
 
-from src.dialog_nodes.Folder import Folder
 from src.dialog_nodes.Node import Node
 from src.dialog_nodes.get_title import get_contexts, get_title
 from src.utils.list_dict_operations import (
     remove_nans,
     drop_duplicates,
-    drop_empty,
 )
-from src.utils.sanitize import sanitize
 
 
-def get_dialog_nodes(df: pd.DataFrame, confidence) -> List[dict]:
+def get_dialog_nodes(df: pd.DataFrame, confidence: float = None) -> List[dict]:
     """
     Extracts dialog nodes from the spreadsheet. They serve the following purposes:
     1. Detect and set context
@@ -42,16 +38,34 @@ def get_dialog_nodes(df: pd.DataFrame, confidence) -> List[dict]:
     Thus, direct intent matching by Watson is the last resort, for when other means of
     identification have failed.
     """
-    records = df.to_dict(orient="records")
-    tags = df["rótulos"].drop_duplicates().to_list()
-    contexts = get_contexts(tags)
-
     context_folder = Node(type="folder", title="Contexto")
     intent_folder = Node(type="folder", title="Intenção")
     answer_folder = Node(type="folder", title="Respostas")
 
-    for context in contexts:
+    create_context_folders_and_intent_subfolders(
+        df=df, context_folder=context_folder, intent_folder=intent_folder
+    )
+
+    # create intent, answer and source nodes
+    create_intent_and_answer_and_source_nodes(
+        df=df,
+        intent_folder=intent_folder,
+        answer_folder=answer_folder,
+        confidence=confidence,
+    )
+
+    return context_folder.to_list() + intent_folder.to_list() + answer_folder.to_list()
+
+
+def create_context_folders_and_intent_subfolders(
+    df: pd.DataFrame, intent_folder: Node, context_folder: Node
+):
+    all_tags = df["rótulos"].drop_duplicates().to_list()
+    all_contexts = get_contexts(all_tags)
+    for context in all_contexts:
         intent_subfolder = Node(
+            type="folder",
+            title=context,
             conditions=f"$contexto:({context})",
         )
         intent_folder.add_child(intent_subfolder)
@@ -67,160 +81,86 @@ def get_dialog_nodes(df: pd.DataFrame, confidence) -> List[dict]:
         )
         context_folder.add_child(context_node)
 
-    # context_nodes.sort(key=lambda x: x["intent"])
-    # intent_nodes.sort(key=lambda x: x["intent"])
-    # answer_nodes.sort(key=lambda x: x["intent"])
 
-    return []
-
-
-def get_all_nodes(
-    record: dict,
-    confidence: float,
-    context_folder_id: str,
-    intent_folder_id: str,
-    answer_folder_id: str,
-) -> Tuple[dict, dict, dict]:
-    """Returns the tag, context and answer nodes for a record."""
-    tags = record["rótulos"].replace("-", " ")
-    context_node_id = f"node_{uuid.uuid4().hex[:16]}"
-    answer_node_id = f"node_{uuid.uuid4().hex[:16]}"
-
-    return (
-        get_tag_node(
-            record,
-            parent_node_id=context_folder_id,
-            next_node_id=context_node_id,
-            tags=tags,
-        ),
-        get_context_node(
-            record,
-            parent_node_id=intent_folder_id,
-            self_id=context_node_id,
-            next_node_id=answer_node_id,
-            tags=tags,
-        ),
-        get_answer_node(
-            record,
-            parent_node_id=answer_folder_id,
-            self_id=answer_node_id,
-            tags=tags,
-            confidence=confidence,
-        ),
-    )
-
-
-def get_tag_node(record: dict, parent_node_id: str, next_node_id: str, tags: str) -> dict:
+def create_intent_and_answer_and_source_nodes(
+    df: pd.DataFrame, intent_folder: Node, answer_folder: Node, confidence: float
+):
     """
-    Nodes which detect tags, set the context accordingly and redirect to 'context' nodes.
+    For every record on the spreadsheet, create one node with the answer, one child of
+    that node containing the source and a node which jumps to the one with the answer.
     """
-    if not tags:
-        return {}
+    for i, record in df.iterrows():
+        node_tags = record["rótulos"].split("_")
+        node_contexts = get_contexts(node_tags)
+        answer_node = Node(
+            title=get_title(record.to_dict(), node_contexts),
+            conditions=f"#{record['intent']} && intent.confidence > {confidence}",
+            output={
+                "generic": [
+                    {
+                        "values": [{"text": record["resposta"]}],
+                        "response_type": "text",
+                        "selection_policy": "sequential",
+                    }
+                ]
+            },
+            fonte=record["fonte"],
+            intent=record["intent"],
+            modificador=record["modificador"],
+            substantivo=record["substantivo"],
+            recipiente=record["recipiente"],
+        )
 
-    context = sanitize(tags)
+        source_node = create_source_node(record)
+        answer_node.add_child(source_node)
+        answer_folder.add_child(answer_node)
 
-    return {
-        "type": "standard",
-        "context": {"contexto": context},
-        "conditions": f"rótulos:({context})",
-        "dialog_node": f"node_{uuid.uuid4().hex[:16]}",
-        "parent": parent_node_id,
-        "next_step": {
-            "behavior": "jump_to",
-            "selector": "body",
-            "dialog_node": next_node_id,
-        },
-        "intent": record["intent"],
-        "modificador": record["modificador"],
-        "substantivo": record["substantivo"],
-        "recipiente": record["recipiente"],
-    }
+        intent_node = Node(
+            conditions=get_full_condition(record, node_contexts),
+            next_step={
+                "behavior": "jump_to",
+                "selector": "body",
+                "dialog_node": answer_node.dialog_node,
+            },
+        )
 
-
-def get_context_node(
-    record: dict, parent_node_id: str, self_id: str, next_node_id: str, tags: str
-) -> dict:
-    """
-    Nodes which detect intent based on context, modifier, noun and recipient
-    then redirect to the correct 'answer' nodes.
-    """
-    return {
-        "type": "standard",
-        "conditions": get_full_condition(record, tags),
-        "dialog_node": self_id,
-        "parent": parent_node_id,
-        "next_step": {
-            "behavior": "jump_to",
-            "selector": "body",
-            "dialog_node": next_node_id,
-        },
-        "intent": record["intent"],
-        "modificador": record["modificador"],
-        "substantivo": record["substantivo"],
-        "recipiente": record["recipiente"],
-    }
+        try:
+            intent_subfolder = next(
+                child for child in intent_folder.children if child.title in node_contexts
+            )
+            intent_subfolder.add_child(intent_node)
+        except StopIteration:
+            intent_folder.add_child(intent_node)
 
 
-def get_answer_node(
-    record: dict, parent_node_id: str, self_id: str, tags: str, confidence: float = None
-) -> dict:
-    """
-    Nodes which either detect the intent directly or are redirected to and provide
-    the answer.
-    """
-    contexts = get_contexts(tags.split("_"))
-
-    return {
-        "type": "standard",
-        "title": get_title(record, contexts),
-        "output": {
+def create_source_node(record: pd.Series):
+    fontes = record["fonte"].split("--")
+    fontes = drop_duplicates(fontes)
+    if len(fontes) > 1:
+        answer = "As fontes dessa resposta são: " + ", ".join(fontes)
+    elif len(fontes) > 0:
+        answer = "A fonte dessa resposta é: " + ", ".join(fontes)
+    else:
+        answer = "Desculpe, não tenho uma fonte específica para essa resposta."
+    return Node(
+        title="Fonte",
+        conditions="#fonte",
+        output={
             "generic": [
                 {
-                    "values": [{"text": record["resposta"]}],
+                    "values": [{"text": answer}],
                     "response_type": "text",
                     "selection_policy": "sequential",
                 }
             ]
         },
-        "conditions": f"#{record['intent']} && intent.confidence > {confidence}",
-        "dialog_node": self_id,
-        "parent": parent_node_id,
-        "fonte": record["fonte"],
-        "intent": record["intent"],
-        "modificador": record["modificador"],
-        "substantivo": record["substantivo"],
-        "recipiente": record["recipiente"],
-    }
+    )
 
 
-def get_contexts(tags: List[str]) -> List[str]:
-    """
-    Returns the contexts of a question based on its tags, considering
-    there are tags which do not define context.
-    """
-    non_contextual_tags = [
-        "fauna",
-        "flora",
-        "outras",
-        "física",
-        "turismo",
-        "saúde",
-        "geologia",
-    ]
-    return [
-        context
-        for context in tags
-        if all(tag not in context for tag in non_contextual_tags)
-    ]
-
-
-def get_full_condition(js: dict, tags: str) -> str:
+def get_full_condition(js: Mapping, contexts: List[str]) -> str:
     modifier = js["modificador"].replace("-", " ")
     noun = js["substantivo"].replace("-", " ")
     recipient = js["recipiente"].replace("-", " ")
-    tag_list = [tags, *(tags.split("_"))]
-    tag_list = drop_duplicates(tag_list)
-    contexts = get_contexts(tag_list)
 
     base_condition = get_base_condition(modifier, noun, recipient)
 
