@@ -14,6 +14,7 @@ from src.intents.intent_operations import get_intents
 from src.io.file_operations import load_questions, load_skill, save_skill
 from src.skills.skill_operations import mix_skills
 from src.utils.list_dict_operations import mix_list, remove
+from tests import unit
 
 
 def main(confidence: float):
@@ -62,6 +63,8 @@ def main(confidence: float):
         dialog_nodes=mixed_nodes,
     )
     save_skill(skill_path.resolve().as_posix(), mixed_skill)
+
+    unit.main()
     print("Finished at", datetime.now().strftime("%H:%M"))
 
 
