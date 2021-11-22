@@ -56,10 +56,6 @@ class NodeOrganizer:
         manual_nodes = ~generated_nodes & ~anything_else_node
         self.df_manual = self._df[manual_nodes].copy()
 
-        self._find_answers()
-
-    def _find_answers(self):
-        """Finds the index positions of nodes under the 'answers' folder."""
         answers_node = self.df_generated.title == "Respostas"
         answers_id = self.df_generated.loc[answers_node, "dialog_node"].to_list()[0]
         self.answers = self.df_generated.parent == answers_id
@@ -99,7 +95,6 @@ class NodeOrganizer:
         self.limit_intents(intent_limit)
         self.set_contexts_node()
         self.set_help_node()
-        self.set_sources()
         self.cleanup_previous_siblings()
         self.fix_previous_siblings()
 
@@ -218,60 +213,6 @@ class NodeOrganizer:
         no_parent_indices = no_parent.index[no_parent].to_list()
         last_no_parent = no_parent_indices.pop()
         return df.loc[last_no_parent].dialog_node
-
-    def set_sources(self):
-        """
-        For each answer node, adds a child node which is activated if the user asks
-        for the source of the information.
-        """
-        df_not_answers = self.df_generated[~self.answers]
-        df_answers = self.df_generated[self.answers]
-
-        # create and append the source nodes
-        sources = df_answers.apply(self._create_source, axis=1, cols=df_answers.columns)
-        df_answers_with_sources = pd.concat([df_answers, sources])
-        df_answers_with_sources.sort_index(inplace=True)
-
-        self.df_generated = pd.concat(
-            [df_not_answers, df_answers_with_sources], axis=0, ignore_index=True
-        )
-        self._find_answers()
-        print("Sources set!")
-
-    @staticmethod
-    def _create_source(parent: pd.Series, cols: pd.Index) -> pd.Series:
-        if parent.isna()["fonte"]:
-            return pd.Series()
-        fontes = parent["fonte"].split("--")
-        fontes = drop_duplicates(fontes)
-        if len(fontes) > 1:
-            answer = "As fontes dessa resposta são: " + ", ".join(fontes)
-        elif len(fontes) > 0:
-            answer = "A fonte dessa resposta é: " + ", ".join(fontes)
-        else:
-            answer = """
-                Desculpe, não tenho uma fonte específica para essa resposta.
-            """.strip()
-
-        content = {
-            "index": parent.name + 0.5,
-            "type": "standard",
-            "title": "Fonte",
-            "output": {
-                "generic": [
-                    {
-                        "values": [{"text": answer}],
-                        "response_type": "text",
-                        "selection_policy": "sequential",
-                    }
-                ]
-            },
-            "conditions": "#fonte",
-            "dialog_node": f"node_{uuid.uuid4().hex[:16]}",
-            "parent": parent["dialog_node"],
-        }
-        output = pd.Series(content, index=cols)
-        return output
 
     def limit_intents(self, limit: int):
         """
