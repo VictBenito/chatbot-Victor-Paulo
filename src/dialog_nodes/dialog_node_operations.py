@@ -11,7 +11,7 @@ import pandas as pd
 
 from src.dialog_nodes.Folder import Folder
 from src.dialog_nodes.Node import Node
-from src.dialog_nodes.get_title import get_title
+from src.dialog_nodes.get_title import get_contexts, get_title
 from src.utils.list_dict_operations import (
     remove_nans,
     drop_duplicates,

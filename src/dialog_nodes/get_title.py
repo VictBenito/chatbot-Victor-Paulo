@@ -4,12 +4,35 @@
 # @Author: Gabriel O.
 
 import re
-from typing import List
+from typing import List, Mapping
 
+from src.utils.list_dict_operations import drop_duplicates
 from src.utils.plural import plural
 
 
-def get_title(js: dict, contexts: List[str]) -> str:
+def get_contexts(tags: List[str]) -> List[str]:
+    """
+    Returns the contexts of a question which do not contain non-contextual tags.
+    """
+    tags = [t.replace("-", " ") for t in tags]
+    non_contextual_tags = [
+        "fauna",
+        "flora",
+        "outras",
+        "física",
+        "turismo",
+        "saúde",
+        "geologia",
+    ]
+    output = [
+        context
+        for context in tags
+        if all(tag not in context for tag in non_contextual_tags)
+    ]
+    return drop_duplicates(output)
+
+
+def get_title(js: Mapping, contexts: List[str]) -> str:
     """
     Returns a title for a node based on modificador, substantivo, recipiente
     and rótulos.
