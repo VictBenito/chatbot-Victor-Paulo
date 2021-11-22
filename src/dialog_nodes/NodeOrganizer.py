@@ -88,6 +88,7 @@ class NodeOrganizer:
                 "modificador",
                 "substantivo",
                 "recipiente",
+                "children",
             ],
             errors="ignore",
         )
