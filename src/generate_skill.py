@@ -14,7 +14,7 @@ from src.intents.intent_operations import get_intents
 from src.io.file_operations import load_questions, load_skill, save_skill
 from src.skills.skill_operations import mix_skills
 from src.utils.list_dict_operations import mix_list, remove
-from tests import unit
+from tests import unit, collisions
 
 
 def main(confidence: float):
@@ -55,16 +55,18 @@ def main(confidence: float):
     ]
     print("Unused intents removed!")
 
-    mixed_nodes = convert_to_list(node_organizer.df)
+    collisions.run(node_organizer)
+
+    organized_nodes = convert_to_list(node_organizer.df)
     mixed_skill = mix_skills(
         old_skill,
         intents=mixed_intents,
         entities=mixed_entities,
-        dialog_nodes=mixed_nodes,
+        dialog_nodes=organized_nodes,
     )
-    save_skill(skill_path.resolve().as_posix(), mixed_skill)
+    save_skill(skill_path.resolve(), mixed_skill)
 
-    unit.main()
+    unit.run()
     print("Finished at", datetime.now().strftime("%H:%M"))
 
 

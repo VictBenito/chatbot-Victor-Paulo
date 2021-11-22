@@ -9,7 +9,7 @@ from src.io.file_operations import load_skill
 import pandas as pd
 
 
-def main():
+def run():
     skill_path = Path(__file__).parent / "../results/skill-Amazônia-Azul2.json"
     skill = load_skill(skill_path.resolve().as_posix())
     df = pd.DataFrame(skill["dialog_nodes"])
@@ -30,4 +30,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run()
