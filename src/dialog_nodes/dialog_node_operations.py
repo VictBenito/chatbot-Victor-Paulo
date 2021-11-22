@@ -9,81 +9,76 @@ from typing import List, Tuple
 
 import pandas as pd
 
+from src.dialog_nodes.Folder import Folder
+from src.dialog_nodes.Node import Node
 from src.dialog_nodes.get_title import get_title
 from src.utils.list_dict_operations import (
     remove_nans,
     drop_duplicates,
     drop_empty,
 )
-from src.utils.list_dict_operations import unzip
 from src.utils.sanitize import sanitize
 
 
 def get_dialog_nodes(df: pd.DataFrame, confidence) -> List[dict]:
     """
-    For each question in the spreadsheet, creates 3 dialog nodes:
-    - the first one detects the tag and sets the context, then jumps to the second one;
-    - the second one detects the context, modifier, noun and recipient, then jumps to
-        the third one;
-    - the third one returns the answer.
-    In total, there are 3 lists of nodes, called, respectively: tag nodes, context nodes
-    and answer nodes. They are cancatenated in this order, and thus evaluated with this
-    priority as well.
+    Extracts dialog nodes from the spreadsheet. They serve the following purposes:
+    1. Detect and set context
+    2. Detect intent via modifier, noun and recipient
+    3. Detect intent directly and give the answer
+    They are grouped, respectively, in the folders: Context, Intent, Answers. This is
+    also the order in which they are evaluated when the bot analyses user input.
+
+    Inside the Intent folder, there is one folder for each possible context. Nodes from
+    the first folder jump to the corresponding context's folder. Nodes inside those
+    folders jump to nodes in the answers folder. There are also contextless nodes, which
+    stay in the Intent folder and also jump to nodes with answers.
+
     This model ensures that, if the user's input contains a tag, it will override the
-    previous context before evaluating it. Else, it will skip over the "tag" nodes to
-    the "context" nodes, where, if the context was set previously, it will correctly
-    identify intent. Lastly, if there was no context but also no tag, it will attempt
-    to evaluate intentions directly.
+    previous context. If it doesn't, it will skip over the Context nodes to
+    the Intent nodes, where it can identify intent. Lastly, if there was no previous
+    context but also no tag in the input, it will attempt to evaluate intentions directly.
+
+    Thus, direct intent matching by Watson is the last resort, for when other means of
+    identification have failed.
     """
     records = df.to_dict(orient="records")
+    tags = df["rótulos"].drop_duplicates().to_list()
+    contexts = get_contexts(tags)
 
-    tag_folder = create_folder_node("Rótulos")
-    context_folder = create_folder_node("Contextos")
-    answer_folder = create_folder_node("Respostas")
+    context_folder = Node(type="folder", title="Contexto")
+    intent_folder = Node(type="folder", title="Intenção")
+    answer_folder = Node(type="folder", title="Respostas")
 
-    all_nodes = [
-        get_all_nodes(
-            record,
-            confidence,
-            tag_folder_id=tag_folder["dialog_node"],
-            context_folder_id=context_folder["dialog_node"],
-            answer_folder_id=answer_folder["dialog_node"],
+    for context in contexts:
+        intent_subfolder = Node(
+            conditions=f"$contexto:({context})",
         )
-        for record in records
-    ]
-    tag_nodes, context_nodes, answer_nodes = unzip(all_nodes)
+        intent_folder.add_child(intent_subfolder)
 
-    tag_nodes = drop_empty(tag_nodes)
-    context_nodes = drop_empty(context_nodes)
-    answer_nodes = drop_empty(answer_nodes)
+        context_node = Node(
+            context={"contexto": context},
+            conditions=f"rótulos:({context})",
+            next_step={
+                "behavior": "jump_to",
+                "selector": "body",
+                "dialog_node": intent_subfolder.dialog_node,
+            },
+        )
+        context_folder.add_child(context_node)
 
-    tag_nodes.sort(key=lambda x: x["intent"])
-    context_nodes.sort(key=lambda x: x["intent"])
-    answer_nodes.sort(key=lambda x: x["intent"])
+    # context_nodes.sort(key=lambda x: x["intent"])
+    # intent_nodes.sort(key=lambda x: x["intent"])
+    # answer_nodes.sort(key=lambda x: x["intent"])
 
-    return [
-        tag_folder,
-        *tag_nodes,
-        context_folder,
-        *context_nodes,
-        answer_folder,
-        *answer_nodes,
-    ]
-
-
-def create_folder_node(title: str) -> dict:
-    return {
-        "type": "folder",
-        "title": title,
-        "dialog_node": f"node_{uuid.uuid4().hex[:16]}",
-    }
+    return []
 
 
 def get_all_nodes(
     record: dict,
     confidence: float,
-    tag_folder_id: str,
     context_folder_id: str,
+    intent_folder_id: str,
     answer_folder_id: str,
 ) -> Tuple[dict, dict, dict]:
     """Returns the tag, context and answer nodes for a record."""
@@ -93,11 +88,14 @@ def get_all_nodes(
 
     return (
         get_tag_node(
-            record, parent_node_id=tag_folder_id, next_node_id=context_node_id, tags=tags
+            record,
+            parent_node_id=context_folder_id,
+            next_node_id=context_node_id,
+            tags=tags,
         ),
         get_context_node(
             record,
-            parent_node_id=context_folder_id,
+            parent_node_id=intent_folder_id,
             self_id=context_node_id,
             next_node_id=answer_node_id,
             tags=tags,
