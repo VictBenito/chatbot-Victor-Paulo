@@ -3,9 +3,11 @@
 # @Time:   21/11/2021
 # @Author: Gabriel O.
 
+from __future__ import annotations
+
 import uuid
 from dataclasses import dataclass
-from typing import Dict
+from typing import Dict, List
 
 from src.utils.list_dict_operations import drop_empty
 
@@ -25,6 +27,14 @@ class Node:
     modificador: str = None
     substantivo: str = None
     recipiente: str = None
+    children: List["Node"] = None
+
+    def add_child(self, node: Node):
+        node.parent = self.dialog_node
+        self.children.append(node)
+
+    def to_list(self):
+        return [node.to_dict() for node in self.children]
 
     def to_dict(self):
         return drop_empty(self.__dict__)
