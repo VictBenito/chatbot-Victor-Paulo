@@ -59,6 +59,7 @@ class NodeOrganizer:
         self._find_answers()
 
     def _find_answers(self):
+        """Finds the index positions of nodes under the 'answers' folder."""
         answers_node = self.df_generated.title == "Respostas"
         answers_id = self.df_generated.loc[answers_node, "dialog_node"].to_list()[0]
         self.answers = self.df_generated.parent == answers_id
@@ -233,6 +234,7 @@ class NodeOrganizer:
         self.df_generated = pd.concat(
             [df_not_answers, df_answers_with_sources], axis=0, ignore_index=True
         )
+        self._find_answers()
         print("Sources set!")
 
     @staticmethod
