@@ -50,7 +50,9 @@ class NodeOrganizer:
         )
         self.df_anything_else = self._df[anything_else_node].copy()
 
-        generated_nodes = ~self._df.dialog_node.str.match(r"node_._")
+        generated_nodes = (
+            ~self._df.dialog_node.str.match(r"node_._") & ~anything_else_node
+        )
         self.df_generated = self._df[generated_nodes].copy()
 
         manual_nodes = ~generated_nodes & ~anything_else_node
