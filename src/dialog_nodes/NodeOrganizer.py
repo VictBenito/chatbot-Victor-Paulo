@@ -95,7 +95,6 @@ class NodeOrganizer:
         self.limit_intents(intent_limit)
         self.set_contexts_node()
         self.set_help_node()
-        self.cleanup_previous_siblings()
         self.fix_previous_siblings()
 
     def sort_nodes(self):
@@ -105,8 +104,6 @@ class NodeOrganizer:
             & self.df_manual.next_step.isna()
         )
         self.df_manual = self.sort_by_previous_siblings(self.df_manual, root)
-        # TODO this will require changes to accommodate the new folder structure
-        # self.df_generated.sort_values(by=["intent"], inplace=True)
         self._build()
         self._separate_nodes()
         print("Nodes sorted!")
@@ -167,11 +164,6 @@ class NodeOrganizer:
         }
         self.df_manual.loc[help_node, "context"] = str(node_context)
         print("Help node set!")
-
-    def cleanup_previous_siblings(self):
-        """Removes the previous_sibling field of all nodes except manual ones."""
-        self.df_anything_else["previous_sibling"] = np.nan
-        print("Previous siblings cleaned up!")
 
     def fix_previous_siblings(self):
         """

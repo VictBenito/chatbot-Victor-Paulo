@@ -23,6 +23,7 @@ class Node:
         default_factory=lambda: f"node_{uuid.uuid4().hex[:16]}", init=False
     )
     parent: str = None
+    previous_sibling: str = None
     next_step: Dict[str, str] = None
     fonte: str = None
     intent: str = None
@@ -33,6 +34,8 @@ class Node:
 
     def add_child(self, node: Node):
         node.parent = self.dialog_node
+        if self.children:
+            node.previous_sibling = self.children[-1].dialog_node
         self.children.append(node)
 
     def to_list(self) -> List[dict]:
