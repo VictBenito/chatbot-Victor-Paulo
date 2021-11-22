@@ -21,52 +21,87 @@ def get_dialog_nodes(df: pd.DataFrame, confidence: float = None) -> List[dict]:
     Extracts dialog nodes from the spreadsheet. They serve the following purposes:
     1. Detect and set context
     2. Detect intent via modifier, noun and recipient
+        a. without context
+        b. with context
     3. Detect intent directly and give the answer
-    They are grouped, respectively, in the folders: Context, Intent, Answers. This is
-    also the order in which they are evaluated when the bot analyses user input.
+    They are grouped, respectively, in the folders: Context, Contextless-intent, Intent
+    and Answers. This is also the order in which they are evaluated when the bot analyses
+    user input.
 
-    Inside the Intent folder, there is one folder for each possible context. Nodes from
-    the first folder jump to the corresponding context's folder. Nodes inside those
-    folders jump to nodes in the answers folder. There are also contextless nodes, which
-    stay in the Intent folder and also jump to nodes with answers.
+    The flow of this model is like so:
+    1. Check whether there is a context in the input, overriding the previous one if so;
+    2. check if the input matches any of the contextless conditions;
+    3. check if the input matches any of the conditions in the present context's folder;
+    4. check if the input matches any of the intents directly.
 
-    This model ensures that, if the user's input contains a tag, it will override the
-    previous context. If it doesn't, it will skip over the Context nodes to
-    the Intent nodes, where it can identify intent. Lastly, if there was no previous
-    context but also no tag in the input, it will attempt to evaluate intentions directly.
+    At any of the steps 2-4, if there is a match the bot will yield the correct answer.
 
-    Thus, direct intent matching by Watson is the last resort, for when other means of
-    identification have failed.
+    This ensures that direct intent matching by Watson is the last resort, for when other
+    means of identification have failed.
     """
-    context_folder = Node(type="folder", title="Contexto")
-    intent_folder = Node(type="folder", title="Intenção")
-    answer_folder = Node(type="folder", title="Respostas")
-
-    create_context_folders_and_intent_subfolders(
-        df=df, context_folder=context_folder, intent_folder=intent_folder
+    context_folder = Node(
+        title="Contexto", conditions="true", next_step={"behavior": "skip_user_input"}
+    )
+    contextless_intent_folder = Node(
+        title="Sem contexto", conditions="true", next_step={"behavior": "skip_user_input"}
+    )
+    intent_folder = Node(
+        title="Intenção", conditions="true", next_step={"behavior": "skip_user_input"}
+    )
+    answer_folder = Node(
+        title="Respostas", conditions="true", next_step={"behavior": "skip_user_input"}
     )
 
-    # create folder for intents without context
-    contextless_subfolder = Node(title="sem contexto")
-    intent_folder.add_child(contextless_subfolder)
+    create_context_nodes_and_intent_subfolders(
+        df=df, context_folder=context_folder, intent_folder=intent_folder
+    )
 
     # create intent, answer and source nodes
     create_intent_and_answer_nodes(
         df=df,
+        contextless_intent_folder=contextless_intent_folder,
         intent_folder=intent_folder,
         answer_folder=answer_folder,
-        contextless_subfolder=contextless_subfolder,
         confidence=confidence,
     )
 
     # create anything_else nodes
-    create_anything_else_nodes(intent_folder=intent_folder, answer_folder=answer_folder)
+    root_anything_else = Node(
+        title="Não entendi",
+        conditions="anything_else",
+        output={
+            "generic": [
+                {
+                    "values": [
+                        {
+                            "text": "Não entendi ou não tenho essa resposta, pode reformular?"
+                        }
+                    ],
+                    "response_type": "text",
+                    "selection_policy": "sequential",
+                }
+            ]
+        },
+    )
+    create_anything_else_nodes(
+        context_folder=context_folder,
+        contextless_intent_folder=contextless_intent_folder,
+        intent_folder=intent_folder,
+        answer_folder=answer_folder,
+        root_anything_else=root_anything_else,
+    )
 
-    return context_folder.to_list() + intent_folder.to_list() + answer_folder.to_list()
+    return (
+        context_folder.to_list()
+        + contextless_intent_folder.to_list()
+        + intent_folder.to_list()
+        + answer_folder.to_list()
+        + root_anything_else.to_list()
+    )
 
 
-def create_context_folders_and_intent_subfolders(
-    df: pd.DataFrame, intent_folder: Node, context_folder: Node
+def create_context_nodes_and_intent_subfolders(
+    df: pd.DataFrame, context_folder: Node, intent_folder: Node
 ):
     all_tags = df["rótulos"].drop_duplicates().to_list()
     all_contexts = get_contexts(all_tags)
@@ -92,9 +127,9 @@ def create_context_folders_and_intent_subfolders(
 
 def create_intent_and_answer_nodes(
     df: pd.DataFrame,
+    contextless_intent_folder: Node,
     intent_folder: Node,
     answer_folder: Node,
-    contextless_subfolder: Node,
     confidence: float,
 ):
     """
@@ -142,7 +177,7 @@ def create_intent_and_answer_nodes(
             )
             intent_subfolder.add_child(intent_node)
         except StopIteration:
-            contextless_subfolder.add_child(intent_node)
+            contextless_intent_folder.add_child(intent_node)
 
 
 def create_source_node(record: pd.Series):
@@ -169,38 +204,64 @@ def create_source_node(record: pd.Series):
     )
 
 
-def create_anything_else_nodes(intent_folder: Node, answer_folder: Node):
-    first_answer_node = answer_folder.children[0]
-    for subfolder in intent_folder.children:
-        anything_else_node = Node(
+def create_anything_else_nodes(
+    context_folder: Node,
+    contextless_intent_folder: Node,
+    intent_folder: Node,
+    answer_folder: Node,
+    root_anything_else: Node,
+):
+    """
+    Creates the following anything_else nodes:
+    1. one in the context folder, pointing to the contextless intent folder
+    2. one in the contextless intent folder, pointing to the intent folder
+    3. one for each intent subfolder pointing to the answer folder
+    4. one in the answer folder, pointing to the root anything_else node
+    """
+    context_anything_else = Node(
+        title="Antyhing else",
+        conditions="anything_else",
+        next_step={
+            "behavior": "jump_to",
+            "selector": "body",
+            "dialog_node": contextless_intent_folder.dialog_node,
+        },
+    )
+    context_folder.add_child(context_anything_else)
+
+    contextless_intent_anything_else = Node(
+        title="Antyhing else",
+        conditions="anything_else",
+        next_step={
+            "behavior": "jump_to",
+            "selector": "body",
+            "dialog_node": intent_folder.dialog_node,
+        },
+    )
+    contextless_intent_folder.add_child(contextless_intent_anything_else)
+
+    for i, subfolder in enumerate(intent_folder.children):
+        subfolder_anything_else = Node(
             title="Antyhing else",
             conditions="anything_else",
             next_step={
                 "behavior": "jump_to",
                 "selector": "body",
-                "dialog_node": first_answer_node.dialog_node,
+                "dialog_node": answer_folder.dialog_node,
             },
         )
-        subfolder.add_child(anything_else_node)
+        subfolder.add_child(subfolder_anything_else)
 
-    anything_else_node = Node(
+    answer_anything_else = Node(
         title="Antyhing else",
         conditions="anything_else",
-        output={
-            "generic": [
-                {
-                    "values": [
-                        {
-                            "text": "Não entendi ou não tenho essa resposta, pode reformular?"
-                        }
-                    ],
-                    "response_type": "text",
-                    "selection_policy": "sequential",
-                }
-            ]
+        next_step={
+            "behavior": "jump_to",
+            "selector": "body",
+            "dialog_node": root_anything_else.dialog_node,
         },
     )
-    answer_folder.add_child(anything_else_node)
+    answer_folder.add_child(answer_anything_else)
 
 
 def get_full_condition(js: Mapping) -> str:
