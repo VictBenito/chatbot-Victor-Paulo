@@ -1,4 +1,5 @@
 ignore/
+**/*pyc
 
 # MSMARCO
 data/train_v2.1.json
