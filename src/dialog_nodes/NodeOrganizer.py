@@ -24,13 +24,10 @@ class NodeOrganizer:
     def __init__(self, nodes: List[dict]):
         self._df = pd.DataFrame(nodes)
         self._extract_intents()
-        self.anything_else_node = pd.Series(dtype=object)
-        self.generated_nodes = pd.Series(dtype=object)
-        self.manual_nodes = pd.Series(dtype=object)
-        self.root = pd.Series(dtype=object)
         self.df_anything_else = pd.DataFrame()
         self.df_generated = pd.DataFrame()
         self.df_manual = pd.DataFrame()
+        self.answers = pd.Series(dtype=object)
         self._separate_nodes()
 
     def _extract_intents(self):
@@ -48,24 +45,35 @@ class NodeOrganizer:
         Separates the dataframe into manually added questions, auto-generated ones,
         the anything_else node and the root node.
         """
-        self.anything_else_node = self._df.parent.isna() & (
+        anything_else_node = self._df.parent.isna() & (
             self._df.conditions == "anything_else"
         )
-        self.generated_nodes = ~self._df.dialog_node.str.match(r"node_._")
-        self.manual_nodes = ~self.generated_nodes & ~self.anything_else_node
-        self.df_anything_else = self._df[self.anything_else_node].copy()
-        self.df_generated = self._df[self.generated_nodes].copy()
-        self.df_manual = self._df[self.manual_nodes].copy()
-        self.root = (
-            self.df_manual.previous_sibling.isna()
-            & self.df_manual.parent.isna()
-            & self.df_manual.next_step.isna()
-        )
+        self.df_anything_else = self._df[anything_else_node].copy()
+
+        generated_nodes = ~self._df.dialog_node.str.match(r"node_._")
+        self.df_generated = self._df[generated_nodes].copy()
+
+        manual_nodes = ~generated_nodes & ~anything_else_node
+        self.df_manual = self._df[manual_nodes].copy()
+
+        self._find_answers()
+
+    def _find_answers(self):
+        answers_node = self.df_generated.title == "Respostas"
+        answers_id = self.df_generated.loc[answers_node, "dialog_node"].to_list()[0]
+        self.answers = self.df_generated.parent == answers_id
 
     def _build(self):
         """Updates the main dataframe to reflect changes in its subparts."""
-        self._df = self.df_manual.append(self.df_generated).append(self.df_anything_else)
-        self._df.reset_index(drop=True, inplace=True)
+        self._df = pd.concat(
+            [
+                self.df_manual,
+                self.df_generated,
+                self.df_anything_else,
+            ],
+            axis=0,
+            ignore_index=True,
+        )
         self._extract_intents()
 
     @property
@@ -94,7 +102,12 @@ class NodeOrganizer:
         self.fix_previous_siblings()
 
     def sort_nodes(self):
-        self.df_manual = self.sort_by_previous_siblings(df=self.df_manual, root=self.root)
+        root = (
+            self.df_manual.previous_sibling.isna()
+            & self.df_manual.parent.isna()
+            & self.df_manual.next_step.isna()
+        )
+        self.df_manual = self.sort_by_previous_siblings(self.df_manual, root)
         # TODO this will require changes to accommodate the new folder structure
         # self.df_generated.sort_values(by=["intent"], inplace=True)
         self._build()
@@ -137,11 +150,8 @@ class NodeOrganizer:
         titles. This enables the 'help' node, which picks random integers and offers
         a set of questions to the user.
         """
-        df = self.df_generated.copy()
-        folders = df.type == "folder"
-        has_title = ~df.title.isna()
-        df_titles = df[~folders & has_title].reset_index(drop=True)
-        titles = df_titles.title.to_dict()
+        df = self.df_generated[self.answers].reset_index(drop=True)
+        titles = df.title.to_dict()
         titles = {str(k): v for k, v in titles.items()}
 
         welcome_node = self.df_manual.conditions.str.contains("welcome").fillna(False)
@@ -152,7 +162,7 @@ class NodeOrganizer:
 
     def set_help_node(self, number_of_hints: int = 3):
         help_node = self.df_manual.conditions.str.contains("ajuda").fillna(False)
-        number_of_intents = self.df_generated.shape[0]
+        number_of_intents = self.df_generated[self.answers].shape[0]
         intents_per_hint = number_of_intents // number_of_hints
         node_context = {
             f"dica{i}": f"<? new Random().nextInt({intents_per_hint}) +{i * intents_per_hint} ?>"
@@ -163,7 +173,6 @@ class NodeOrganizer:
 
     def cleanup_previous_siblings(self):
         """Removes the previous_sibling field of all nodes except manual ones."""
-        self.df_generated["previous_sibling"] = np.nan
         self.df_anything_else["previous_sibling"] = np.nan
         print("Previous siblings cleaned up!")
 
@@ -210,16 +219,20 @@ class NodeOrganizer:
 
     def set_sources(self):
         """
-        For each generated node, adds a child node which is activated if the user asks
+        For each answer node, adds a child node which is activated if the user asks
         for the source of the information.
         """
-        df = self.df_generated.reset_index(drop=False)
-        sources = df.apply(self._create_source, axis=1, cols=df.columns)
-        df_with_sources = pd.concat([df, sources])
-        df_with_sources.set_index("index", inplace=True)
-        df_with_sources.sort_index(inplace=True)
-        df_with_sources.reset_index(drop=True, inplace=True)
-        self.df_generated = df_with_sources
+        df_not_answers = self.df_generated[~self.answers]
+        df_answers = self.df_generated[self.answers]
+
+        # create and append the source nodes
+        sources = df_answers.apply(self._create_source, axis=1, cols=df_answers.columns)
+        df_answers_with_sources = pd.concat([df_answers, sources])
+        df_answers_with_sources.sort_index(inplace=True)
+
+        self.df_generated = pd.concat(
+            [df_not_answers, df_answers_with_sources], axis=0, ignore_index=True
+        )
         print("Sources set!")
 
     @staticmethod
@@ -238,7 +251,7 @@ class NodeOrganizer:
             """.strip()
 
         content = {
-            "index": parent["index"] + 0.5,
+            "index": parent.name + 0.5,
             "type": "standard",
             "title": "Fonte",
             "output": {

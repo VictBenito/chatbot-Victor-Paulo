@@ -229,7 +229,7 @@ def get_full_condition(js: dict, tags: str) -> str:
     if not contexts:
         return base_condition
 
-    conditions = [f"${contexto} &&" + base_condition for contexto in contexts]
+    conditions = [f"${contexto} && " + base_condition for contexto in contexts]
     condition_string = " || ".join(conditions)
     return condition_string
 
