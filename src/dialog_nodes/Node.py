@@ -39,7 +39,10 @@ class Node:
         self.children.append(node)
 
     def to_list(self) -> List[dict]:
-        return [self.to_dict()] + [node.to_dict() for node in self.children]
+        out = [self.to_dict()]
+        for node in self.children:
+            out += node.to_list()
+        return out
 
     def to_dict(self) -> dict:
         return drop_empty(self.__dict__)
