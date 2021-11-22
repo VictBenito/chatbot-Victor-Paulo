@@ -39,28 +39,39 @@ class Node:
         self.children.append(node)
 
     def to_list(self) -> List[NodeDict]:
+        """
+        Returns this node and it's children as a list of dicts.
+
+        First, sorts the children. The priority of the sort key is higher on later
+        sorts and 'zzzzz' is used to ensure that empty values go last without needing
+        to reverse the sorts.
+
+        Then, assembles a list, converting itself to a dict and calling to_list()
+        recursively on children.
+        """
+        if len(self.children) > 1:
+            self.sort(key=lambda x: sanitize(x.recipiente or "zzzzz"))
+            self.sort(key=lambda x: sanitize(x.substantivo or "zzzzz"))
+            self.sort(key=lambda x: sanitize(x.modificador or "zzzzz"))
+            self.sort(key=lambda x: sanitize(x.rotulos or ""))
+            self.apply_previous_siblings()
+
         out = [self.to_dict()]
         for node in self.children:
             out += node.to_list()
-        # the priority of the sort key is higher on later sorts
-        # 'zzzzz' is used to ensure that empty values go last without needing to reverse
-        out.sort(key=lambda x: sanitize(x.get("recipiente", "zzzzz")))
-        out.sort(key=lambda x: sanitize(x.get("substantivo", "zzzzz")))
-        out.sort(key=lambda x: sanitize(x.get("modificador", "zzzzz")))
-        out.sort(key=lambda x: sanitize(x.get("rotulos", "")))
-        out = self.apply_previous_siblings(out)
         return out
 
     def to_dict(self) -> NodeDict:
         return drop_empty(self.__dict__)
 
-    @staticmethod
-    def apply_previous_siblings(nodes: List[NodeDict]) -> List[NodeDict]:
-        for i, node in enumerate(nodes):
+    def sort(self, *args, **kwargs):
+        self.children.sort(*args, **kwargs)
+
+    def apply_previous_siblings(self):
+        for i, node in enumerate(self.children):
             if i == 0:
                 continue
-            node["previous_sibling"] = nodes[i - 1]["dialog_node"]
-        return nodes
+            node.previous_sibling = self.children[i - 1].dialog_node
 
 
 NodeDict = Node.__annotations__
