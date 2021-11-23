@@ -179,14 +179,13 @@ def get_title(js: Mapping, contexts: List[str]) -> str:
                 f" Pergunta: {js['pergunta']}"
             )
         trechos.append(f"{modificador} tem")
-        if not (substantivo and recipiente):
-            trechos.append(contexto)
-        elif substantivo:
+        if substantivo:
             trechos.append(plural(substantivo))
             trechos.append(f"de {recipiente or contexto}")
         else:
             trechos.append(contexto)
-            trechos.append(f"em {recipiente}")
+            if recipiente:
+                trechos.append(f"em {recipiente}")
         trechos.append("?")
     elif modificador in ["porque"]:
         if not contexto:
