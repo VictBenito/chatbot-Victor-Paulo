@@ -92,8 +92,8 @@ def get_dialog_nodes(df: pd.DataFrame, confidence: float = None) -> List[dict]:
     )
 
     return (
-        context_folder.to_list()
-        + contextless_intent_folder.to_list()
+        contextless_intent_folder.to_list()
+        + context_folder.to_list()
         + intent_folder.to_list()
         + answer_folder.to_list()
         + root_anything_else.to_list()
@@ -214,23 +214,21 @@ def create_anything_else_nodes(
 ):
     """
     Creates the following anything_else nodes:
-    1. one in the context folder, pointing to the contextless intent folder
-    2. one in the contextless intent folder, pointing to the intent folder
+    1. one in the contextless intent folder, pointing to the context folder
+    2. one in the context folder, pointing to the intent folder
     3. one in the intent folder, pointing to the answer folder
     4. one for each intent subfolder, pointing to the intent anything_else node
     5. one in the answer folder, pointing to the root anything_else node
     """
     # 1st type
-    context_anything_else = create_anything_else_node(
-        contextless_intent_folder.dialog_node
-    )
-    context_folder.add_child(context_anything_else)
-
-    # 2nd type
     contextless_intent_anything_else = create_anything_else_node(
-        intent_folder.dialog_node
+        context_folder.dialog_node
     )
     contextless_intent_folder.add_child(contextless_intent_anything_else)
+
+    # 2nd type
+    context_anything_else = create_anything_else_node(intent_folder.dialog_node)
+    context_folder.add_child(context_anything_else)
 
     # 3rd type
     intent_anything_else = create_anything_else_node(answer_folder.dialog_node)
