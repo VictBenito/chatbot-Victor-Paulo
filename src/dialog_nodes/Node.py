@@ -66,6 +66,8 @@ class Node:
 
     def sort(self, *args, **kwargs):
         self.children.sort(*args, **kwargs)
+        for i, child in enumerate(self.children):
+            child.sort(*args, **kwargs)
 
     def apply_previous_siblings(self):
         for i, node in enumerate(self.children):

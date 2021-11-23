@@ -107,9 +107,10 @@ def create_context_nodes_and_intent_subfolders(
     all_contexts = get_contexts(all_tags)
     for context in all_contexts:
         intent_subfolder = Node(
-            title=context,
+            title=context.capitalize(),
             conditions=f"$contexto:({context})",
             next_step={"behavior": "skip_user_input"},
+            rotulos="_".join(all_tags),
         )
         intent_folder.add_child(intent_subfolder)
 
@@ -121,6 +122,7 @@ def create_context_nodes_and_intent_subfolders(
                 "selector": "body",
                 "dialog_node": intent_subfolder.dialog_node,
             },
+            rotulos="_".join(all_tags),
         )
         context_folder.add_child(context_node)
 
@@ -170,11 +172,17 @@ def create_intent_and_answer_nodes(
                 "selector": "body",
                 "dialog_node": answer_node.dialog_node,
             },
+            modificador=record["modificador"],
+            substantivo=record["substantivo"],
+            recipiente=record["recipiente"],
+            rotulos="_".join(node_contexts),
         )
 
         try:
             intent_subfolder = next(
-                child for child in intent_folder.children if child.title in node_contexts
+                child
+                for child in intent_folder.children
+                if child.title.lower() in node_contexts
             )
             intent_subfolder.add_child(intent_node)
         except StopIteration:
@@ -255,6 +263,7 @@ def create_anything_else_node(jump_to: str) -> Node:
             "selector": "body",
             "dialog_node": jump_to,
         },
+        rotulos="zzzzz",
     )
 
 
