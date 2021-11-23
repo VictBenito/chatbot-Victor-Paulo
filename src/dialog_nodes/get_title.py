@@ -59,15 +59,25 @@ def get_title(js: Mapping, contexts: List[str]) -> str:
             trechos.append(f"de {contexto}")
         trechos.append("?")
     elif modificador in ["definição"]:
-        trechos.append(modificador)
-        if substantivo:
-            trechos.append(f"de {substantivo}")
+        if not (recipiente or contexto):
+            raise ValueError(
+                f"Perguntas do tipo 'definição' precisam de recipiente ou de contexto! "
+                f"Pergunta: {js['pergunta']}"
+            )
         if recipiente:
+            if contexto:
+                trechos.append(f"{contexto}:")
+            trechos.append(modificador)
+            if substantivo:
+                trechos.append(f"de {substantivo}")
             trechos.append(f"de {recipiente}?")
-        else:
+        elif contexto:
+            trechos.append(modificador)
+            if substantivo:
+                trechos.append(f"de {substantivo}")
             trechos.append(f"de {contexto}?")
     elif modificador in ["detalhar"]:
-        if not (contexto or recipiente):
+        if not (recipiente or contexto):
             raise ValueError(
                 f"Perguntas do tipo 'detalhar' precisam de recipiente ou de contexto! "
                 f"Pergunta: {js['pergunta']}"
