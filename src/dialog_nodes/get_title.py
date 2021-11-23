@@ -195,10 +195,9 @@ def get_title(js: Mapping, contexts: List[str]) -> str:
                 f" Pergunta: {js['pergunta']}"
             )
         trechos.append(f"{contexto}:")
-        trechos.append("motivo para")
         if recipiente:
             trechos.append(recipiente)
-        trechos.append(f"?")
+        trechos.append("por que?")
     elif modificador in ["quantidade"]:
         if not (substantivo or contexto):
             raise ValueError(
