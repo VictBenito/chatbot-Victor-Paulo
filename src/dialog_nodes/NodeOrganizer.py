@@ -3,11 +3,10 @@
 # @Time:   20/11/2021
 # @Author: Gabriel O.
 
-import uuid
-from typing import List
+import json
 import re
+from typing import List
 
-import numpy as np
 import pandas as pd
 
 from src.utils.list_dict_operations import drop_duplicates
@@ -28,6 +27,7 @@ class NodeOrganizer:
         self.df_generated = pd.DataFrame()
         self.df_manual = pd.DataFrame()
         self.answers = pd.Series(dtype=object)
+        self.root_anything_else = pd.Series(dtype=object)
         self._separate_nodes()
 
     def _extract_intents(self):
@@ -45,21 +45,21 @@ class NodeOrganizer:
         Separates the dataframe into manually added questions, auto-generated ones,
         the anything_else node and the root node.
         """
-        anything_else_node = self._df.parent.isna() & (
+        self.root_anything_else = self._df.parent.isna() & (
             self._df.conditions == "anything_else"
         )
-        self.df_anything_else = self._df[anything_else_node].copy()
+        self.df_anything_else = self._df[self.root_anything_else].copy()
 
         generated_nodes = (
-            ~self._df.dialog_node.str.match(r"node_._") & ~anything_else_node
+            ~self._df.dialog_node.str.match(r"node_._") & ~self.root_anything_else
         )
         self.df_generated = self._df[generated_nodes].copy()
 
-        manual_nodes = ~generated_nodes & ~anything_else_node
+        manual_nodes = ~generated_nodes & ~self.root_anything_else
         self.df_manual = self._df[manual_nodes].copy()
 
         answers_node = self.df_generated.title == "Respostas"
-        answers_id = self.df_generated.loc[answers_node, "dialog_node"].to_list()[0]
+        answers_id = self.df_generated.loc[answers_node, "dialog_node"].values[0]
         self.answers = self.df_generated.parent == answers_id
 
     def _build(self):
@@ -99,6 +99,7 @@ class NodeOrganizer:
         self.set_contexts_node()
         self.set_help_node()
         self.fix_previous_siblings()
+        self.point_to_anything_else_node()
 
     def sort_nodes(self):
         root = (
@@ -154,7 +155,7 @@ class NodeOrganizer:
         titles = {str(k): v for k, v in titles.items()}
 
         welcome_node = self.df_manual.conditions.str.contains("welcome").fillna(False)
-        node_context = self.df_manual.loc[welcome_node, "context"].to_list()[0]
+        node_context = self.df_manual.loc[welcome_node, "context"].values[0]
         node_context["titles"] = titles
         self.df_manual.loc[welcome_node, "context"] = str(node_context)
         print("Contexts set!")
@@ -210,6 +211,22 @@ class NodeOrganizer:
         no_parent_indices = no_parent.index[no_parent].to_list()
         last_no_parent = no_parent_indices.pop()
         return df.loc[last_no_parent].dialog_node
+
+    def point_to_anything_else_node(self):
+        """
+        Fixes the "jump to" field of the anything_else node inside the answers folder to
+        be the value of the root anything_else.
+        """
+        df_answers = self.df_generated[self.answers]
+        anything_else = df_answers.conditions == "anything_else"
+        root_node = self.df_anything_else.dialog_node.values[0]
+        self.df_generated.loc[self.answers & anything_else, "next_step"] = json.dumps(
+            {
+                "behavior": "jump_to",
+                "selector": "body",
+                "dialog_node": root_node,
+            }
+        )
 
     def limit_intents(self, limit: int):
         """

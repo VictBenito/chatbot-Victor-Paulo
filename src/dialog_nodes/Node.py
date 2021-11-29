@@ -17,9 +17,9 @@ from src.utils.sanitize import sanitize
 class Node:
     type: str = "standard"
     title: str = None
-    output: Dict = None
-    context: Dict = None
     conditions: str = None
+    context: Dict = None
+    output: Dict = None
     dialog_node: str = field(
         default_factory=lambda: f"node_{uuid.uuid4().hex[:16]}", init=False
     )

@@ -66,29 +66,11 @@ def get_dialog_nodes(df: pd.DataFrame, confidence: float = None) -> List[dict]:
     )
 
     # create anything_else nodes
-    root_anything_else = Node(
-        title="Não entendi",
-        conditions="anything_else",
-        output={
-            "generic": [
-                {
-                    "values": [
-                        {
-                            "text": "Não entendi ou não tenho essa resposta, pode reformular?"
-                        }
-                    ],
-                    "response_type": "text",
-                    "selection_policy": "sequential",
-                }
-            ]
-        },
-    )
     create_anything_else_nodes(
         context_folder=context_folder,
         contextless_intent_folder=contextless_intent_folder,
         intent_folder=intent_folder,
         answer_folder=answer_folder,
-        root_anything_else=root_anything_else,
     )
 
     return (
@@ -96,7 +78,6 @@ def get_dialog_nodes(df: pd.DataFrame, confidence: float = None) -> List[dict]:
         + context_folder.to_list()
         + intent_folder.to_list()
         + answer_folder.to_list()
-        + root_anything_else.to_list()
     )
 
 
@@ -144,6 +125,7 @@ def create_intent_and_answer_nodes(
         answer_node = Node(
             title=get_title(record.to_dict(), node_contexts),
             conditions=f"#{record['intent']} && intent.confidence > {confidence}",
+            context={"other_counter": 0},
             output={
                 "generic": [
                     {
@@ -218,7 +200,6 @@ def create_anything_else_nodes(
     contextless_intent_folder: Node,
     intent_folder: Node,
     answer_folder: Node,
-    root_anything_else: Node,
 ):
     """
     Creates the following anything_else nodes:
@@ -226,7 +207,9 @@ def create_anything_else_nodes(
     2. one in the context folder, pointing to the intent folder
     3. one in the intent folder, pointing to the answer folder
     4. one for each intent subfolder, pointing to the intent anything_else node
-    5. one in the answer folder, pointing to the root anything_else node
+    5. one in the answer folder, which will later point to the root anything_else folder
+        (this is done in the NodeOrganizer, since the root anything_else folder is made
+        in the web interface)
     """
     # 1st type
     contextless_intent_anything_else = create_anything_else_node(
@@ -250,7 +233,7 @@ def create_anything_else_nodes(
         subfolder.add_child(subfolder_anything_else)
 
     # 5th type
-    answer_anything_else = create_anything_else_node(root_anything_else.dialog_node)
+    answer_anything_else = create_anything_else_node("")
     answer_folder.add_child(answer_anything_else)
 
 
@@ -288,6 +271,7 @@ def convert_to_list(df: pd.DataFrame) -> List[dict]:
     list_of_dicts = df.to_dict(orient="records")
     list_of_dicts = [remove_nans(d) for d in list_of_dicts]
     list_of_dicts = [eval_context(d) for d in list_of_dicts]
+    list_of_dicts = [eval_next_step(d) for d in list_of_dicts]
     return list_of_dicts
 
 
@@ -298,4 +282,14 @@ def eval_context(d: dict):
     if isinstance(context, str):
         evaluated = ast.literal_eval(context)
         d["context"] = evaluated
+    return d
+
+
+def eval_next_step(d: dict):
+    if "next_step" not in d:
+        return d
+    next_step = d["next_step"]
+    if isinstance(next_step, str):
+        evaluated = ast.literal_eval(next_step)
+        d["next_step"] = evaluated
     return d
