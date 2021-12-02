@@ -227,6 +227,8 @@ def create_anything_else_nodes(
 
     # 4th type
     for i, subfolder in enumerate(intent_folder.children):
+        if subfolder.conditions == "anything_else":
+            continue
         subfolder_anything_else = create_anything_else_node(
             intent_anything_else.dialog_node
         )

@@ -6612,18 +6612,6 @@
     },
     {
       "type": "standard",
-      "title": "Anything else",
-      "parent": "node_2d4d90277a4f47fe",
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_2d4d90277a4f47fe"
-      },
-      "conditions": "anything_else",
-      "dialog_node": "node_4424fcd1e9ac4c01"
-    },
-    {
-      "type": "standard",
       "title": "Detalhar frequência de maré",
       "output": {
         "generic": [
