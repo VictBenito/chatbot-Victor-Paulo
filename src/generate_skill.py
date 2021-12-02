@@ -33,6 +33,7 @@ def main(confidence: float):
     print("Entities obtained!")
     key_priority = {"conditions": 1, "title": 0}
     mixed_entities = mix_list(old_skill["entities"], new_entities, key_priority)
+    mixed_entities.sort(key=lambda x: x["entity"])
     print("Entities mixed!")
 
     new_nodes = get_dialog_nodes(questions, confidence)

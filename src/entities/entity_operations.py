@@ -20,7 +20,6 @@ def get_entity_values(series):
     records = series.to_list()
     records = drop_duplicates(records)
     records = [r.replace("-", " ") for r in records]
-    values = [
-        {"type": "synonyms", "value": record, "synonyms": []} for record in records
-    ]
+    values = [{"type": "synonyms", "value": record, "synonyms": []} for record in records]
+    values.sort(key=lambda x: x["value"])
     return values

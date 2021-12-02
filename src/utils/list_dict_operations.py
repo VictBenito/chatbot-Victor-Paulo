@@ -66,16 +66,15 @@ def mix_list(a: list, b: list, priority: dict = None) -> list:
     common_keys = inner_join(a_keys, b_keys)
     if len(common_keys) > 0:
         common_keys.sort(key=lambda x: priority.get(x, 999))
-        a_key = common_keys[0]
-        b_key = a_key
+        global_key = common_keys[0]
     else:
         raise ValueError(
             f"Different global keys were found for each list: {a_keys} "
             f"and {b_keys}, respectively"
         )
 
-    a_dict = {subdict[a_key]: subdict for subdict in a}
-    b_dict = {subdict[b_key]: subdict for subdict in b}
+    a_dict = {subdict[global_key]: subdict for subdict in a}
+    b_dict = {subdict[global_key]: subdict for subdict in b}
     mixed_dicts = mix_dict(a_dict, b_dict)
     return list(mixed_dicts.values())
 

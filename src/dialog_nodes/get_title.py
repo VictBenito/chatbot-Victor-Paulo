@@ -11,15 +11,12 @@ from src.utils.plural import plural
 
 
 def get_contexts(tags: List[str]) -> List[str]:
-    """
-    Returns the contexts of a question which do not contain non-contextual tags.
-    """
+    """Returns the contexts of a question which do not contain non-contextual tags."""
     tags = [t.replace("-", " ") for t in tags]
     non_contextual_tags = [
         "fauna",
         "flora",
         "outras",
-        "física",
         "turismo",
         "saúde",
         "geologia",
