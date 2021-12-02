@@ -55,6 +55,15 @@ def get_title(js: Mapping, contexts: List[str]) -> str:
         if contexto:
             trechos.append(f"de {contexto}")
         trechos.append("?")
+    elif modificador in ["composição"]:
+        alvo = recipiente or contexto
+        if alvo[-1] == "s":
+            trechos.append("Do que são feitos")
+        else:
+            trechos.append("Do que é feito")
+        if substantivo:
+            trechos.append(f"{substantivo} de")
+        trechos.append(recipiente or contexto)
     elif modificador in ["definição"]:
         if not (recipiente or contexto):
             raise ValueError(
