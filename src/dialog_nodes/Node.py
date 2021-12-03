@@ -40,7 +40,7 @@ class Node:
 
     def to_list(self) -> List[NodeDict]:
         """
-        Returns this node and it's children as a list of dicts.
+        Returns this node and its children as a list of dicts.
 
         First, sorts the children. The priority of the sort key is higher on later
         sorts and 'zzzzz' is used to ensure that empty values go last without needing

@@ -214,7 +214,7 @@ class NodeOrganizer:
 
     def point_to_anything_else_node(self):
         """
-        Fixes the "jump to" field of the anything_else node inside the answers folder to
+        Fixes the "next_step" field of the anything_else node inside the answers folder to
         be the value of the root anything_else.
         """
         df_answers = self.df_generated[self.answers]
