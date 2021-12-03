@@ -15,7 +15,6 @@ def get_intents(df: pd.DataFrame) -> List[dict]:
         {
             "intent": record["intent"],
             "examples": get_examples(record),
-            "description": "",
         }
         for record in records
     ]
