@@ -57,6 +57,7 @@ def main(confidence: float):
     print("Unused intents removed!")
 
     collisions.run(node_organizer)
+    unit.run(node_organizer.df)
 
     organized_nodes = convert_to_list(node_organizer.df)
     mixed_skill = mix_skills(
@@ -67,7 +68,6 @@ def main(confidence: float):
     )
     save_skill(skill_path.resolve(), mixed_skill)
 
-    unit.run()
     print("Finished at", datetime.now().strftime("%H:%M"))
 
 

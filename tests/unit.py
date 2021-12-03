@@ -3,17 +3,10 @@
 # @Time:   22/11/2021
 # @Author: Gabriel O.
 
-from pathlib import Path
-
-from src.io.file_operations import load_skill
 import pandas as pd
 
 
-def run():
-    skill_path = Path(__file__).parent / "../results/skill-Amazônia-Azul2.json"
-    skill = load_skill(skill_path.resolve().as_posix())
-    df = pd.DataFrame(skill["dialog_nodes"])
-
+def run(df: pd.DataFrame):
     dup = df[df.dialog_node.duplicated()]
     empty = df[df.dialog_node.isna()]
     is_self_parent = df[df.dialog_node == df.parent]
@@ -27,7 +20,3 @@ def run():
         is_self_sibling.shape[0] == 0
     ), "There are nodes which are their own previous_sibling"
     print("Tests finished.")
-
-
-if __name__ == "__main__":
-    run()
