@@ -72,5 +72,5 @@ def main(confidence: float):
 
 
 if __name__ == "__main__":
-    MINIMUM_CONFIDENCE = 0.7
+    MINIMUM_CONFIDENCE = 0.8
     main(MINIMUM_CONFIDENCE)

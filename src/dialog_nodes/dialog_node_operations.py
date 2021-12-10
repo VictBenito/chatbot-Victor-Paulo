@@ -125,7 +125,7 @@ def create_intent_and_answer_nodes(
         answer_node = Node(
             title=get_title(record.to_dict(), node_contexts),
             conditions=f"#{record['intent']} && intent.confidence > {confidence}",
-            context={"other_counter": 0, "contexto": ""},
+            context={"other_counter": 0},
             output={
                 "generic": [
                     {
