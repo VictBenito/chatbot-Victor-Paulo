@@ -272,26 +272,16 @@ def get_base_condition(modifier, noun, recipient) -> str:
 def convert_to_list(df: pd.DataFrame) -> List[dict]:
     list_of_dicts = df.to_dict(orient="records")
     list_of_dicts = [remove_nans(d) for d in list_of_dicts]
-    list_of_dicts = [eval_context(d) for d in list_of_dicts]
-    list_of_dicts = [eval_next_step(d) for d in list_of_dicts]
+    list_of_dicts = [eval_column(d, "context") for d in list_of_dicts]
+    list_of_dicts = [eval_column(d, "next_step") for d in list_of_dicts]
     return list_of_dicts
 
 
-def eval_context(d: dict):
-    if "context" not in d:
+def eval_column(d: dict, col: str):
+    if col not in d:
         return d
-    context = d["context"]
-    if isinstance(context, str):
-        evaluated = ast.literal_eval(context)
-        d["context"] = evaluated
-    return d
-
-
-def eval_next_step(d: dict):
-    if "next_step" not in d:
-        return d
-    next_step = d["next_step"]
-    if isinstance(next_step, str):
-        evaluated = ast.literal_eval(next_step)
-        d["next_step"] = evaluated
+    value = d[col]
+    if isinstance(value, str):
+        evaluated = ast.literal_eval(value)
+        d[col] = evaluated
     return d
