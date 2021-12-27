@@ -7,6 +7,7 @@ import json
 import re
 from typing import List
 
+import numpy as np
 import pandas as pd
 
 from src.utils.list_dict_operations import drop_duplicates
@@ -88,6 +89,7 @@ class NodeOrganizer:
                 "recipiente",
                 "children",
                 "rotulos",
+                "node_above",
             ],
             errors="ignore",
         )
@@ -99,15 +101,16 @@ class NodeOrganizer:
         self.set_contexts_node()
         self.set_help_node()
         self.fix_previous_siblings()
+        self.apply_previous_siblings()
         self.point_to_anything_else_node()
 
     def sort_nodes(self):
-        root = (
+        root_node = (
             self.df_manual.previous_sibling.isna()
             & self.df_manual.parent.isna()
             & self.df_manual.next_step.isna()
         )
-        self.df_manual = self.sort_by_previous_siblings(self.df_manual, root)
+        self.df_manual = self.sort_by_previous_siblings(self.df_manual, root_node)
         self._build()
         self._separate_nodes()
         print("Nodes sorted!")
@@ -172,45 +175,40 @@ class NodeOrganizer:
         print("Help node set!")
 
     def fix_previous_siblings(self):
-        """
-        Applies previous_sibling to nodes which don't have one (generated) based on the
-        node above. Then, connects the generated nodes to the manual nodes and the last
-        node (anything_else).
-        """
-        no_upstream = (
-            self.df_generated.previous_sibling.isna() & self.df_generated.parent.isna()
+        self._build()
+        all_dialog_nodes = self._df.dialog_node.to_list()
+        self._df.previous_sibling = self._df.previous_sibling.apply(
+            lambda x: x if x in all_dialog_nodes else np.nan
         )
-        df_no_upstream = self.df_generated[no_upstream].copy()
-        df_no_upstream.reset_index(inplace=True)
-        df_no_upstream.previous_sibling = df_no_upstream.dialog_node.shift(1)
+        self._separate_nodes()
 
-        # assign the last manual node as the previous sibling for the first generated node
-        df_no_upstream.loc[0, "previous_sibling"] = self._find_last_root_node(
-            self.df_manual
+    def apply_previous_siblings(self):
+        """
+        Applies previous_sibling to root level nodes as the root level node above.
+        """
+        root_nodes = self._df.parent.isna()
+        self._df.loc[root_nodes, "previous_sibling"] = self._df.loc[
+            root_nodes, "dialog_node"
+        ].shift(1)
+        self._separate_nodes()
+
+        self.df_generated["node_above"] = self.df_generated.dialog_node.shift(1)
+        self.df_generated.previous_sibling = (
+            self.df_generated[["previous_sibling", "node_above"]]
+            .fillna("")
+            .apply(
+                lambda series: series["previous_sibling"]
+                if series["previous_sibling"]
+                else series["node_above"],
+                axis=1,
+            )
         )
-        df_no_upstream.set_index("index", inplace=True)
 
-        # assign the last generated node as the previous sibling for the anything_else node
-        root_level = self.df_generated.parent.isna()
-        last_root_generated_node = self.df_generated.loc[
-            root_level, "dialog_node"
-        ].to_list()[-1]
-        self.df_anything_else["previous_sibling"] = last_root_generated_node
-
-        # overwrites df_generated with values from df_no_upstream based on index
-        self.df_generated.update(df_no_upstream)
+        previous_sibling_is_parent = (
+            self.df_generated.previous_sibling == self.df_generated.parent
+        )
+        self.df_generated.previous_sibling[previous_sibling_is_parent] = np.nan
         print("Previous siblings fixed!")
-
-    @staticmethod
-    def _find_last_root_node(df: pd.DataFrame):
-        """
-        Returns the identifier of the last entry which is a root node (does not have
-        parents).
-        """
-        no_parent = df.parent.isna()
-        no_parent_indices = no_parent.index[no_parent].to_list()
-        last_no_parent = no_parent_indices.pop()
-        return df.loc[last_no_parent].dialog_node
 
     def point_to_anything_else_node(self):
         """
@@ -235,10 +233,17 @@ class NodeOrganizer:
         """
         if not limit:
             return
-        manual_intents = self.df_manual.conditions.str.contains(r"#\S+")
-        self.df_generated.drop(
-            self.df_generated.tail(limit - manual_intents.sum()), inplace=True
-        )
+        generated_intents = self.df_generated.intent.to_list()
+        generated_intents = drop_duplicates(generated_intents)
+        generated_intents.sort()
+        number_of_intents_to_remove = len(self.get_intents()) - limit
+        intents_to_remove = generated_intents[-number_of_intents_to_remove:]
+
+        for intent in intents_to_remove:
+            intent_nodes = self.df_generated.conditions.str.contains(intent)
+            answer_node = self.df_generated[intent_nodes]
+            self.drop_node_chain(answer_node)
+        self._build()
         self._separate_nodes()
         print("Intents limited!")
 
@@ -247,3 +252,21 @@ class NodeOrganizer:
         self._build()
         intents = self._df["intent"].to_list()
         return drop_duplicates(intents)
+
+    def drop_node_chain(self, nodes: pd.DataFrame):
+        """
+        Removes a subset of dialog nodes from the generated df and all nodes which jump
+        to those in the subset.
+        """
+        nodes_above = self.df_generated.next_step.astype(str).apply(
+            lambda x: "jump_to" in x
+            and any(node in x for node in nodes.dialog_node.to_list())
+        )
+        df_nodes_above = self.df_generated[nodes_above]
+
+        # drop the input nodes
+        self.df_generated.drop(nodes.index, inplace=True)
+
+        # drop the nodes above
+        if nodes_above.sum() > 0:
+            self.drop_node_chain(df_nodes_above)
