@@ -17,7 +17,7 @@ from src.utils.list_dict_operations import mix_list, remove
 from tests import unit, collisions
 
 
-def main(confidence: float):
+def main(confidence: float, limit: int = 0):
     sheet_path = Path(__file__).parent / "../results/Perguntas.xlsx"
     questions = load_questions(sheet_path.resolve().as_posix())
 
@@ -47,7 +47,7 @@ def main(confidence: float):
     print("Nodes mixed!")
 
     node_organizer = NodeOrganizer(mixed_nodes)
-    node_organizer.run()
+    node_organizer.run(intent_limit=limit)
 
     used_intents = node_organizer.get_intents()
     removed_intents = remove(mixed_intents, used_intents)
@@ -73,4 +73,5 @@ def main(confidence: float):
 
 if __name__ == "__main__":
     MINIMUM_CONFIDENCE = 0.8
-    main(MINIMUM_CONFIDENCE)
+    INTENT_LIMIT = 100
+    main(confidence=MINIMUM_CONFIDENCE, limit=INTENT_LIMIT)
