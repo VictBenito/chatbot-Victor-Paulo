@@ -3753,25 +3753,6 @@
     {
       "type": "standard",
       "title": "Contexto",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Veja o que encontrei sobre sua pergunta:"
-              },
-              {
-                "text": "Encontrei isso sobre sua pergunta:"
-              },
-              {
-                "text": "Veja a resposta que encontrei:"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "random"
-          }
-        ]
-      },
       "next_step": {
         "behavior": "skip_user_input"
       },
@@ -6107,13 +6088,26 @@
       "output": {
         "generic": [
           {
-            "values": [
+            "title": "Oi, meu nome é Ka'i! Gostaria de me dizer o seu?",
+            "options": [
               {
-                "text": "Oi, meu nome é Ka'i! Sou muito bom em responder perguntas sobre a Amazônia Azul. O que você gostaria de saber?"
+                "label": "Sim",
+                "value": {
+                  "input": {
+                    "text": "sim"
+                  }
+                }
+              },
+              {
+                "label": "Não",
+                "value": {
+                  "input": {
+                    "text": "não"
+                  }
+                }
               }
             ],
-            "response_type": "text",
-            "selection_policy": "sequential"
+            "response_type": "option"
           }
         ]
       },
@@ -6310,6 +6304,27 @@
     },
     {
       "type": "standard",
+      "title": "Bem vindo - sim",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1633059502031",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1633362438517"
+      },
+      "conditions": "@bool:sim",
+      "dialog_node": "node_4_1633362384011"
+    },
+    {
+      "type": "standard",
       "title": "Apenas nome",
       "output": {
         "generic": [
@@ -6340,7 +6355,11 @@
       "output": {
         "generic": [
           {
-            "values": [],
+            "values": [
+              {
+                "text": "Eu fui criado pelo Gabriel Okamoto, aluno de Engenharia Mecatrônica da Universidade de São Paulo, como um trabalho de conclusão de curso. Meu objetivo é educar as pessoas sobre o significado e a importância da Amazônia Azul e, ao mesmo tempo, demonstrar o poder dos Chatbots como ferramentas para educação. Esse trabalho é uma das iniciativas do KEML - se quiser saber mais, pergunte!"
+              }
+            ],
             "response_type": "text",
             "selection_policy": "sequential"
           }
@@ -6378,7 +6397,11 @@
       "output": {
         "generic": [
           {
-            "values": [],
+            "values": [
+              {
+                "text": "Eu fui desenvolvido ao longo de 2021 e fui lançado pela primeira vez em novembro desse ano."
+              }
+            ],
             "response_type": "text",
             "selection_policy": "sequential"
           }
@@ -7912,6 +7935,32 @@
     },
     {
       "type": "standard",
+      "title": "Bem vindo - não",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1633059502031",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1636422782005"
+      },
+      "conditions": "@bool:não",
+      "dialog_node": "node_6_1633362478482",
+      "previous_sibling": "node_4_1633362384011"
+    },
+    {
+      "type": "standard",
       "parent": "node_4_1633367794187",
       "next_step": {
         "behavior": "jump_to",
@@ -8701,6 +8750,32 @@
       "conditions": "#ajuda && intent.confidence > 0.7",
       "dialog_node": "node_7_1636770186943",
       "previous_sibling": "node_7_1638136940676"
+    },
+    {
+      "type": "standard",
+      "title": "Bem vindo - outros",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ops, responda sim ou não apenas, por favor!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1633059502031",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1633059502031"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_7_1638133256774",
+      "previous_sibling": "node_6_1633362478482"
     },
     {
       "type": "standard",
@@ -10328,7 +10403,7 @@
           {
             "values": [
               {
-                "text": "Pode falar conosco pelos e-mails: <? \"victor.benito1@usp.br ou paulo8.silva@usp.br\" ?>"
+                "text": "Pode falar comigo pelo e-mail: <? \"gabriel.carlos@usp.br\" ?>"
               }
             ],
             "response_type": "text",
@@ -11640,15 +11715,6 @@
     {
       "type": "standard",
       "title": "Intenção",
-      "output": {
-        "generic": [
-          {
-            "values": [],
-            "response_type": "text",
-            "selection_policy": "random"
-          }
-        ]
-      },
       "next_step": {
         "behavior": "skip_user_input"
       },
@@ -14900,15 +14966,6 @@
     {
       "type": "standard",
       "title": "Respostas",
-      "output": {
-        "generic": [
-          {
-            "values": [],
-            "response_type": "text",
-            "selection_policy": "random"
-          }
-        ]
-      },
       "next_step": {
         "behavior": "skip_user_input"
       },

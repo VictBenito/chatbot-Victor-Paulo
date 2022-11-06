@@ -40,7 +40,35 @@ def get_dialog_nodes(df: pd.DataFrame, confidence: float = None) -> List[dict]:
     means of identification have failed.
     """
     context_folder = Node(
-        title="Contexto", conditions="true", next_step={"behavior": "skip_user_input"}
+        title="Contexto", conditions="true", output={
+    "generic": [
+      {
+        "values": [
+          {
+            "text": "Encontrei esta resposta sobre o tema:"
+          },
+          {
+            "text": "Veja o que eu encontrei sobre sua pergunta:"
+          },
+          {
+            "text": "Veja o que eu encontrei:"
+          },
+          {
+            "text": "Aqui está o que eu pude encontrar sobre sua pergunta:"
+          },
+          {
+            "text": "Encontrei isso aqui:"
+          },
+          {
+            "text": "Da uma olhada no que achei para sua pergunta:"
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "random"
+      }
+    ],
+    "selection_policy": "random"
+  }, next_step={"behavior": "skip_user_input"}
     )
     contextless_intent_folder = Node(
         title="Sem contexto", conditions="true", next_step={"behavior": "skip_user_input"}

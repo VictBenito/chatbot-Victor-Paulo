@@ -73,5 +73,5 @@ def main(confidence: float, limit: int = 0):
 
 if __name__ == "__main__":
     MINIMUM_CONFIDENCE = 0.8
-    INTENT_LIMIT = 100
+    INTENT_LIMIT = 2000
     main(confidence=MINIMUM_CONFIDENCE, limit=INTENT_LIMIT)
