@@ -7087,7 +7087,7 @@
           {
             "values": [
               {
-                "text": "Desculpa, não entendi. Pode reformular?"
+                "text": "Acredito que não tenho resposta para esta pergunta..."
               }
             ],
             "response_type": "text",
@@ -7096,6 +7096,11 @@
         ]
       },
       "parent": "node_1_1638142591332",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1638136940676"
+      },
       "conditions": "true",
       "dialog_node": "node_5_1638142591335",
       "previous_sibling": "node_4_1638142591335"
