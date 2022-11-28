@@ -14,6 +14,4 @@ Código baseado em https://github.com/C4AI/blab-filter-msmarco, que parte dos in
 
 #### 4. Executar o programa `generate_skill.py` contido em \src
 
-Esse programa gera, em \results, o arquivo 'skill-Amazônia-Azul2.JSON', que deve ser inserido na interface do Watson em Dialog/options/Upload/Download/Upload
-
-
+Esse programa gera, em \results, o arquivo 'skill-Amazônia-Azul2.JSON', que deve ser inserido na interface do Watson (https://cloud.ibm.com/) em Dialog/options/Upload/Download/Upload
